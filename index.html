@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+    <title> Generadores varios (Cthulhu)</title>
+    <script type="text/javascript">
+        function showContent() {
+            element = document.getElementById("content");
+            check = document.getElementById("check");
+            if (check.checked) {
+                element.style.display='block';
+            }
+            else {
+                element.style.display='none';
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="col-md-3"></div>
+<div class="col-md-6 well">
+    <h1 class="text-primary">Generadores varios (Cthulhu)</h1>
+    <hr style="border-top:1px dotted #ccc;"/>
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <button class="btn btn-primary btn btn-block" onclick="NHombre()">Generar Nombre de Hombre</button>
+        <button class="btn btn-primary btn btn-block" onclick="NMujer()">Generar Nombre de Mujer</button>
+        <button class="btn btn-primary btn btn-block" onclick="NPueblo()">Generar Nombre de Pueblo</button>
+        <button class="btn btn-primary btn btn-block" onclick="Sodas()">Generar Nombre Sodas</button>
+        <button class="btn btn-primary btn btn-block" onclick="Fobias()">Generar Fobia</button>
+        
+          
+          <input type="checkbox" name="Check" id="check" value="0" onchange="javascript:showContent()" /> Lanzar Dados
+          
+        <div id="content" style="display: none;">
+          <br>
+          <p>Cantidad de tiradas</p>
+          <input type="number" value="" id="CantidadTiradas">
+          <br>
+          <p>Numero a Tirar</p>
+          <input type="number" id="numeros">
+          <input type="button" value="Lanzar" id="lanzador">
+        </div>
+             <div id="resultE"></div>
+             <div id="resultN"></div>
+             <div id="resultP"></div>
+             <div id="resultC"></div>
+             <div id="resultR"></div>
+             <div id="resultCarac"></div>
+
+
+     </div>
+</div>
+
+    <script type= "text/javascript" src="NHombre.js"></script>
+    <script type= "text/javascript" src="NMujer.js"></script>
+    <script type= "text/javascript" src="NPueblo.js"></script>
+    <script type= "text/javascript" src="Random.js"></script>
+    <script type= "text/javascript" src="Sodas.js"></script>
+    <script type= "text/javascript" src="NFobia.js"></script>
+
+</body>
+</html>
+
+
