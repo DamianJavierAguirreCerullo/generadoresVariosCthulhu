@@ -101,20 +101,19 @@ function NHombre(){
      "Manchester","Annisquam","Essex falls","Essex","Topsfield","Innsmouth","Rowley","Bolton","Gloucoster","Rockport",
      "Marblehead","Kingsport","Beverly","Arkham","Ipwitch","Danvers","Newbury Port","Amesbury","Salem"]
 
-     var rand_first = Math.floor(Math.random()*firstname.length);
-	var rand_last = Math.floor(Math.random()*lastname.length); 
+     var rand_first = Math.floor(Math.random() * firstname.length);
+	var rand_last = Math.floor(Math.random() * lastname.length); 
 	document.getElementById('resultN').innerHTML =
      "<h1>Nombre:</h1><div class='alert alert-success'><h2>"+firstname[rand_first]+" "+lastname[rand_last]+"</h2></div>";
      
-     var rand_prof = Math.floor(Math.random()*Profession.length);
+     var rand_prof = Math.floor(Math.random() * Profession.length);
      document.getElementById('resultP').innerHTML =
      "<h1>Profesion :</h1><div class='alert alert-success'><h2>"+Profession[rand_prof]+"</h2></div>";
 
-     var rand_Pueblo = Math.floor(Math.random()*Pueblo.length);
+     var rand_Pueblo = Math.floor(Math.random() * Pueblo.length);
      document.getElementById('resultC').innerHTML =
      "<h1>Ciudad/Pueblo :</h1><div class='alert alert-success'><h2>"+Pueblo[rand_Pueblo]+"</h2></div>";
 
-     var Edad = Math.floor(Math.random() * (89 - 15 +1)) + 15;
      var  Fue = Math.floor(Math.random() * (18 - 3 + 1) + 3)*5
      var  Con = Math.floor(Math.random() * (18 - 3 + 1) + 3)*5
      var  Pod = Math.floor(Math.random() * (18 - 3 + 1) + 3)*5
@@ -124,21 +123,46 @@ function NHombre(){
      var  Int = Math.floor(Math.random() * (18 - 8 + 1) + 8)*5
      var  Edu = Math.floor(Math.random() * (18 - 8 + 1) + 8)*5
      var  Sue = Math.floor(Math.random() * (18 - 8 + 1) + 8)*5
-     var  PV  = Math.floor((Tam+Con)/10)
+     var  Pv  = Math.floor((Tam+Con)/10)
+     var Edad = Math.floor(Math.random() * (89 - 15 +1)) + 15;
+     if(Edad < 20 ) {
+          var Cosas_edad = "Resta 5 puntos entre FUE y TAM, y también de EDU. Tira dos veces para determinar la Suerte y  elige el resultado mayor"
+          }
+           else if(Edad < 40){
+           var Cosas_edad = "Haz una tirada de mejora de EDU"
+            }
+            else if(Edad < 50){
+            var Cosas_edad = "Resta 5 puntos entre FUE, CON y DES (de una  sola o repartidos entre dos o tres), y reduce 5 puntos la APA. Haz 2 tiradas de mejora de EDU."
+             }
+            else if(Edad < 60){
+               var Cosas_edad = "Resta 10 puntos entre FUE, CON y DES (de una sola o repartidos entre dos o tres), y reduce 1O puntos la APA. Haz 3 tiradas de mejora de EDU."
+              }
+              else if(Edad < 70){
+                   var Cosas_edad = "Resta 20 puntos entre FUE, CON y DES (de una sola o repartidos entre dos o tres), y reduce 15 puntos la APA. Haz 4 tiradas de mejora de EDU."
+              }
+              else if(Edad < 80){
+                   var Cosas_edad = "Resta 40 puntos entre FUE, CON y DES (de una sola o repartidos entre dos o tres), y reduce 20 puntos la APA. Haz 4 tiradas de mejora de EDU."
+              }
+              else{
+                   var Cosas_edad = "Resta 80 puntos entre FUE, CON y DES (de una sola o repartidos entre dos o tres), y reduce 25 puntos la APA. Haz 4 tiradas de mejora de EDU."
+              }
      // var EdadContra = if(Edad );
      document.getElementById('resultCarac').innerHTML =
      "<h3>Stats</h3>"+
-     "Edad: "+Edad+
      "<br> Fue : "+Fue+
-     "<br> Cons : "+Con+
+     "<br> Con : "+Con+
      "<br> Pod : "+Pod+
      "<br> Des : "+Des+
      "<br> Apa : "+Apa+
      "<br> Tam : "+Tam+
      "<br> Int : "+Int+
      "<br> Edu : "+Edu+
-     "<br> PV : "+PV;
+     "<br> PV  : "+Pv+
      // +"<br> Sue : "+Sue;
+     "<br> Edad: "+Edad+
+     "<br>"+Cosas_edad
+
+     
      
 
 	

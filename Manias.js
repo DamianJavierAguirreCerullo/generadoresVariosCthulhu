@@ -1,4 +1,4 @@
-function Manias() {
+function Mania() {
 
     Manias = [
        "Ablutomarúa: Interés excesivo en la limpieza personal",
