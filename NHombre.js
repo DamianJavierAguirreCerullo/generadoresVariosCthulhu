@@ -101,6 +101,14 @@ function NHombre(){
      "Manchester","Annisquam","Essex falls","Essex","Topsfield","Innsmouth","Rowley","Bolton","Gloucoster","Rockport",
      "Marblehead","Kingsport","Beverly","Arkham","Ipwitch","Danvers","Newbury Port","Amesbury","Salem"]
 
+     var Estados = ["Alabama","Arizona","Arkansas","California","Carolina del Norte","Carolina del Sur",
+     "Colorado","Connecticut","Dakota del Norte","Dakota del Sur","Delaware","Florida","Georgia","Hawai","Idaho",
+     "Illinois","Indiana","Iowa","Kansas","Kentucky","Luisiana","Maine","Maryland","Michigan","Minenesota",
+     "Missisipi","Misuri","Montana","Nebraska","Nevada","Nueva Jersey","Nueva York","Nuevo Hampshire",
+     "Nuevo Mexico","Ohio","Oklahoma","Oregon","Pensilvania","Rhode Island","Tennessee","Texas","Utah","Vermont",
+     "Virginia","Virginia Occidental","Washington","Wisconsin","Wyoming"]
+
+
      var rand_first = Math.floor(Math.random() * firstname.length);
 	var rand_last = Math.floor(Math.random() * lastname.length); 
 	document.getElementById('resultN').innerHTML =
@@ -128,16 +136,26 @@ function NHombre(){
      var  Rasgoperso = Math.floor(Math.random() * (10 - 1 + 1) + 1)
      var  Allega = Math.floor(Math.random() * (10 - 1 + 1) + 1)
      var  RazonAllega = Math.floor(Math.random() * (10 - 1 + 1) + 1)
-     var Lugarnacimiento = Math.floor(Math.random() * (49 - 0 + 1) + 0)
+     var Lugarnacimiento = Math.floor(Math.random() * (50 - 0 + 1) + 0)
      // var  Sue = Math.floor(Math.random() * (18 - 8 + 1) + 8)*5
      var  Pv  = Math.floor((Tam+Con)/10)
      var Edad = Math.floor(Math.random() * (89 - 15 +1)) + 15;
 
+
+     
+     
      if(Lugarnacimiento < 49){
           var Lugardenacimiento = Pueblo[Lugarnacimiento]
      }
+     // else if (Lugardenacimiento === 49)
      else {
-          var Lugardenacimiento = "Nacio Fuera del Estado"}
+          var ran_Estado = Math.floor(Math.random() * (Estados.length - 0 + 1) + 0)
+          var Estado = Estados[ran_Estado]
+          var Lugardenacimiento = "Nacio en "+ Estado}
+          console.log(Estado,Lugardenacimiento)
+          // else {
+          
+          //      var Lugardenacimiento = "Nacio en "+Pais}
 
      if(Edad < 20 ) {
           var Cosas_edad = "Resta 5 puntos entre FUE y TAM, y también de EDU. Tira dos veces para determinar la Suerte y  elige el resultado mayor"
@@ -359,20 +377,20 @@ function NHombre(){
      "<br> Int : "+Int+
      "<br> Edu : "+Edu+
      "<br> PV  : "+Pv+
-     "<br> Edad: "+Edad+
-     "<br>"+Cosas_edad+
+     "<br> Edad: "+Edad+"<br>"+
+     "<br>"+Cosas_edad+"<br>"+
      "<br>"+"Ideologia/Creencia"+
-     "<br>"+IdeoCreencia+
+     "<br>"+IdeoCreencia+"<br>"+
      "<br>"+"Lugares Significativos"+
-     "<br>"+LugarSignificativo+
+     "<br>"+LugarSignificativo+"<br>"+
      "<br>"+"Posesion Preciada"+
-     "<br>"+ObjetoSignificativo+
+     "<br>"+ObjetoSignificativo+"<br>"+
      "<br>"+"Lugar De Nacimiento"+
-     "<br>"+Lugardenacimiento+
+     "<br>"+Lugardenacimiento+"<br>"+
      "<br>"+"Rasgo De Personalidad"+
-     "<br>"+Rasgopersonalidad+
+     "<br>"+Rasgopersonalidad+"<br>"+
      "<br>"+"Allegado"+
-     "<br>"+Allegados+
+     "<br>"+Allegados+"<br>"+
      "<br>"+"Porque Es Tu Allegado"+
      "<br>"+RazonAllegado
 
