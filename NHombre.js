@@ -118,7 +118,7 @@ function NHombre(){
      "Ecuador","Costa Rica","Honduras","Nicaragua","Guatemala","El Salvador","Republica Dominicana","Canada","Cuba"]
 
      var Asia = ["Japón","Irán","Rusia","Omán","Afganistan","Tailandia","Nepal","China","Butan","Mongolia"]
-     
+
      var Oceania = ["Australia","Nueva Zelanda"]
 
 
@@ -149,7 +149,7 @@ function NHombre(){
      var  Rasgoperso = Math.floor(Math.random() * (10 - 1 + 1) + 1)
      var  Allega = Math.floor(Math.random() * (10 - 1 + 1) + 1)
      var  RazonAllega = Math.floor(Math.random() * (10 - 1 + 1) + 1)
-     var Lugarnacimiento = Math.floor(Math.random() * (50 - 0 + 1) + 0)
+     var Lugarnacimiento = Math.floor(Math.random() * (100 - 1 + 1) + 1)
      // var  Sue = Math.floor(Math.random() * (18 - 8 + 1) + 8)*5
      var  Pv  = Math.floor((Tam+Con)/10)
      var Edad = Math.floor(Math.random() * (89 - 15 +1)) + 15;
@@ -157,18 +157,40 @@ function NHombre(){
 
      
      
-     if(Lugarnacimiento < 49){
+     if(Lugarnacimiento <= 40){
           var Lugardenacimiento = Pueblo[Lugarnacimiento]
      }
-     // else if (Lugardenacimiento === 49)
+
+     //  else if (Lugardenacimiento <= 70)
+     //  var ran_Continente = Math.floor(Math.random() * (5 - 1 + 1) + 1)
+
+     //   if (ran_Continente === 1){
+      
+     //  }
+     //     else if (ran_Continente === 2){
+         
+     //     }
+     //     else if (ran_Continente === 3){
+
+     //     }
+     //     else if (ran_Continente === 4){
+
+     //     }
+     //     else {
+           
+     //     }
+
+     //  var Pais = Pais[ran_Pais]
+     // var Lugardenacimiento = "Nacio en "+ Pais}
+     // console.log(Pais,Lugardenacimiento)
+     // }
      else {
           var ran_Estado = Math.floor(Math.random() * (Estados.length - 0 + 1) + 0)
           var Estado = Estados[ran_Estado]
           var Lugardenacimiento = "Nacio en "+ Estado}
           console.log(Estado,Lugardenacimiento)
-          // else {
-          
-          //      var Lugardenacimiento = "Nacio en "+Pais}
+
+
 
      if(Edad < 20 ) {
           var Cosas_edad = "Resta 5 puntos entre FUE y TAM, y también de EDU. Tira dos veces para determinar la Suerte y  elige el resultado mayor"
