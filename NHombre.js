@@ -108,6 +108,19 @@ function NHombre(){
      "Nuevo Mexico","Ohio","Oklahoma","Oregon","Pensilvania","Rhode Island","Tennessee","Texas","Utah","Vermont",
      "Virginia","Virginia Occidental","Washington","Wisconsin","Wyoming"]
 
+     var Africa = ["Etiopia","Liberia","Egipto","Sudafrica","Libia","Marruecos","Sudan","Tunez"]
+
+     var Europa = ["Francia","Dinamarca","Portugal","San Marino","Andorra","España","Suecia","Rusia","Liechtenstein","Reino Unido",
+     "Paises Bajos","Suiza","Belgica","Grecia","Italia","Monaco","Alemania","Rumania","Serbia","Luxemburgo","Noruega","Bulgaria","Albania",
+     "Austria","Finlandia","Hungria","Polonia"]
+
+     var America = ["Estados Unidos","Haiti","Colombia","Paraguay","Venezuela","Argentina","Chile","Mexico","Peru","Brasil","Bolivia","Uruguay",
+     "Ecuador","Costa Rica","Honduras","Nicaragua","Guatemala","El Salvador","Republica Dominicana","Canada","Cuba"]
+
+     var Asia = ["Japón","Irán","Rusia","Omán","Afganistan","Tailandia","Nepal","China","Butan","Mongolia"]
+     
+     var Oceania = ["Australia","Nueva Zelanda"]
+
 
      var rand_first = Math.floor(Math.random() * firstname.length);
 	var rand_last = Math.floor(Math.random() * lastname.length); 
