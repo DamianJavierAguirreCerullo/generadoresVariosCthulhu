@@ -108,6 +108,8 @@ function NHombre(){
      "Nuevo Mexico","Ohio","Oklahoma","Oregon","Pensilvania","Rhode Island","Tennessee","Texas","Utah","Vermont",
      "Virginia","Virginia Occidental","Washington","Wisconsin","Wyoming"]
 
+     var Continentes = ["Africa","Europa","America","Asia","Oceania"]
+
      var Africa = ["Etiopia","Liberia","Egipto","Sudafrica","Libia","Marruecos","Sudan","Tunez"]
 
      var Europa = ["Francia","Dinamarca","Portugal","San Marino","Andorra","España","Suecia","Rusia","Liechtenstein","Reino Unido",
@@ -122,19 +124,11 @@ function NHombre(){
      var Oceania = ["Australia","Nueva Zelanda"]
 
 
+
      var rand_first = Math.floor(Math.random() * firstname.length);
 	var rand_last = Math.floor(Math.random() * lastname.length); 
-	document.getElementById('resultN').innerHTML =
-     "<h1>Nombre:</h1><div class='alert alert-success'><h2>"+firstname[rand_first]+" "+lastname[rand_last]+"</h2></div>";
-     
      var rand_prof = Math.floor(Math.random() * Profession.length);
-     document.getElementById('resultP').innerHTML =
-     "<h1>Profesion :</h1><div class='alert alert-success'><h2>"+Profession[rand_prof]+"</h2></div>";
-
      var rand_Pueblo = Math.floor(Math.random() * Pueblo.length);
-     document.getElementById('resultC').innerHTML =
-     "<h1>Ciudad/Pueblo :</h1><div class='alert alert-success'><h2>"+Pueblo[rand_Pueblo]+"</h2></div>";
-
      var  Fue = Math.floor(Math.random() * (18 - 3 + 1) + 3)*5
      var  Con = Math.floor(Math.random() * (18 - 3 + 1) + 3)*5
      var  Pod = Math.floor(Math.random() * (18 - 3 + 1) + 3)*5
@@ -149,7 +143,10 @@ function NHombre(){
      var  Rasgoperso = Math.floor(Math.random() * (10 - 1 + 1) + 1)
      var  Allega = Math.floor(Math.random() * (10 - 1 + 1) + 1)
      var  RazonAllega = Math.floor(Math.random() * (10 - 1 + 1) + 1)
+
      var Lugarnacimiento = Math.floor(Math.random() * (100 - 1 + 1) + 1)
+     var Extranjero = Math.floor(Math.random() * (100 - 1 + 1 ) +1 )
+
      // var  Sue = Math.floor(Math.random() * (18 - 8 + 1) + 8)*5
      var  Pv  = Math.floor((Tam+Con)/10)
      var Edad = Math.floor(Math.random() * (89 - 15 +1)) + 15;
@@ -157,11 +154,11 @@ function NHombre(){
 
      
      
-     if(Lugarnacimiento <= 40){
-          var Lugardenacimiento = Pueblo[Lugarnacimiento]
+     if(Lugarnacimiento <= 60){
+          var Lugardenacimiento = Pueblo[rand_Pueblo]
      }
 
-     //  else if (Lugardenacimiento <= 70)
+     //  else if (Lugardenacimiento <= 74)
      //  var ran_Continente = Math.floor(Math.random() * (5 - 1 + 1) + 1)
 
      //   if (ran_Continente === 1){
@@ -185,7 +182,7 @@ function NHombre(){
      // console.log(Pais,Lugardenacimiento)
      // }
      else {
-          var ran_Estado = Math.floor(Math.random() * (Estados.length - 0 + 1) + 0)
+          var ran_Estado = Math.floor(Math.random() * (Estados.length ))
           var Estado = Estados[ran_Estado]
           var Lugardenacimiento = "Nacio en "+ Estado}
           console.log(Estado,Lugardenacimiento)
@@ -249,7 +246,7 @@ function NHombre(){
           var LugarSignificativo = "Donde cursaste tus estudios (colegio, universidad ,etc.)."
           }
            else if(Lugarsigni === 2){
-           var LugarSignificativo = "Tu ciudad natal (aldea rural, centro d e comercio,ciudad ajetreada,etc.)."
+           var LugarSignificativo = "Tu ciudad natal (aldea rural, centro de comercio,ciudad ajetreada, etc.)."
             }
             else if(Lugarsigni === 3){
             var LugarSignificativo = "El lugar donde conociste a tu primer amor (un concierto, de vacaciones, un refugio antiaéreo, etc.) ."
@@ -261,7 +258,7 @@ function NHombre(){
                    var LugarSignificativo = "Un lugar para socializar (club de caballeros, bar local,la casa de tu tío, etc.)."
               }
               else if(Lugarsigni === 6){
-                   var LugarSignificativo = "Un lugar vincu lado a tu id eo l ogía / cree n cias ( la parroquia, la Meca, Sto n eh e n ge , etc. )"
+                   var LugarSignificativo = "Un lugar vincu lado a tu ideología / creencias ( la parroquia, la Meca, Stonehenge , etc. )"
               }
               else if(Lugarsigni === 7){
                    var LugarSignificativo = "La tumba de un ser querido. ¿Quién? (tu padre, un hijo, un amante, etc.)."
@@ -283,7 +280,7 @@ function NHombre(){
        var ObjetoSignificativo = "Un objeto fundamental para tu ocupación (el maletín de un médico, un coche, unas ganzúas, etc.)."
         }
         else if(Objetosigni === 3){
-        var ObjetoSignificativo = "Un recuerdo de tu nii'lez (cómics, una navaja de bolsillo, una moneda de la suerte, etc.)."
+        var ObjetoSignificativo = "Un recuerdo de tu niñez (cómics, una navaja de bolsillo, una moneda de la suerte, etc.)."
          }
         else if(Objetosigni === 4){
            var ObjetoSignificativo = "Un recuerdo de una persona fallecida (una joya, una fotografía que llevas en la cartera, una carta, etc.)."
@@ -314,10 +311,10 @@ function NHombre(){
             var Rasgopersonalidad = "Bueno con los animales (amante de los gatos, creció en una granja, mano para los caballos, etc.)."
              }
              else if(Rasgoperso === 3){
-             var Rasgopersonalidad = "Soüador (tiende a estar con la cabeza en las nubes, visionario, muy creativo, etc .)."
+             var Rasgopersonalidad = "Soñador (tiende a estar con la cabeza en las nubes, visionario, muy creativo, etc.)."
               }
              else if(Rasgoperso === 4){
-                var Rasgopersonalidad = "Hedonista (el alma de la fiesta, borracho divertido, <<vive deprisa y muere joven», etc.)."
+                var Rasgopersonalidad = "Hedonista (el alma de la fiesta, borracho divertido, vive deprisa y muere joven, etc.)."
                }
                else if(Rasgoperso === 5){
                     var Rasgopersonalidad = "Jugador y amante del riesgo (cara de póquer, lo ha probado todo al menos una vez, vive al límite, etc.)."
@@ -345,7 +342,7 @@ function NHombre(){
             var Allegados = "Abuelo (abuela materna, abuelo paterno, etc.)."
              }
              else if(Allega === 3){
-             var Allegados = "Hermano (hermano, hermanastro, h ermanastra, etc.)."
+             var Allegados = "Hermano (hermano, hermanastro, hermanastra, etc.)."
               }
              else if(Allega === 4){
                 var Allegados = "Hijo (hijo, hija, hijastro, hijastra, etc.)."
@@ -354,7 +351,7 @@ function NHombre(){
                     var Allegados = "Pareja (esposa, prometida , amante , etc.)."
                }
                else if(Allega === 6){
-                    var Allegados = "La pe rsona que te ense íió tu habilidad de ocupación que tenga la mayor puntuación. Identifica la habilidad y plantéate quién te la enseñó ( un profesor d el colegio, la persona de la que fuiste aprendiz, tu padre, etc.) ."
+                    var Allegados = "La persona que te enseñó tu habilidad de ocupación que tenga la mayor puntuación. Identifica la habilidad y plantéate quién te la enseñó ( un profesor d el colegio, la persona de la que fuiste aprendiz, tu padre, etc.) ."
                }
                else if(Allega === 7){
                     var Allegados = "Amigo de la infancia (compañero de clase, vecino, amigo imaginario, etc.) ."
@@ -366,7 +363,7 @@ function NHombre(){
                     var Allegados = "Otro investigador de tu grupo de juego. Elige uno o deterrninalo al azar."
                }
                else{
-                    var Allegados = "Un personaje no jugador (PNJ) del juego. Pide al Guardián que te elij a uno."
+                    var Allegados = "Un personaje no jugador (PNJ) del juego. Pide al Guardián que te elija uno."
                }
 
      if(RazonAllega === 1 ) {
@@ -402,8 +399,11 @@ function NHombre(){
                
 
      document.getElementById('resultCarac').innerHTML =
+     "<br><h3> Nombre : "+firstname[rand_first]+" "+lastname[rand_last]+"</h3>"+
+     "<br> Profesion : "+Profession[rand_prof]+"<br>"+
+     "<br> Ciudad/Pueblo : "+Pueblo[rand_Pueblo]+
      "<h3>Stats</h3>"+
-     "<br> Fue : "+Fue+
+     "Fue : "+Fue+
      "<br> Con : "+Con+
      "<br> Pod : "+Pod+
      "<br> Des : "+Des+
