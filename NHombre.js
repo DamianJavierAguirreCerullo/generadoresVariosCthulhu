@@ -1,5 +1,7 @@
 function NHombre(){
 
+     // Comienzan las listas
+
 	var firstname = ["Aaron", "Abraham", "Addison", "Amos", "Anderson", "Archibald", "August", "Barnabas", "",
      "Blair", "Caleb", "Cecil", "Chester", "Clifford", "Clinton", "Cornelius", "Curtis", "Baxter",
      "Dayton", "Delbert", "Douglas", "Dudley", "Ernest", "Eldridge", "Elijah", "Emanuel", "Emmet", "Enoch", "Ephraim",
@@ -112,81 +114,139 @@ function NHombre(){
 
      var Africa = ["Etiopia","Liberia","Egipto","Sudafrica","Libia","Marruecos","Sudan","Tunez"]
 
-     var Europa = ["Francia","Dinamarca","Portugal","San Marino","Andorra","España","Suecia","Rusia","Liechtenstein","Reino Unido",
-     "Paises Bajos","Suiza","Belgica","Grecia","Italia","Monaco","Alemania","Rumania","Serbia","Luxemburgo","Noruega","Bulgaria","Albania",
-     "Austria","Finlandia","Hungria","Polonia"]
+     var Europa = ["Francia","Dinamarca","Portugal","San Marino","Andorra","España","Suecia","Liechtenstein",
+     "Paises Bajos","Suiza","Belgica","Grecia","Monaco","Rumania","Serbia","Luxemburgo","Noruega","Bulgaria","Albania",
+     "Finlandia","Polonia"]
 
-     var America = ["Estados Unidos","Haiti","Colombia","Paraguay","Venezuela","Argentina","Chile","Mexico","Peru","Brasil","Bolivia","Uruguay",
-     "Ecuador","Costa Rica","Honduras","Nicaragua","Guatemala","El Salvador","Republica Dominicana","Canada","Cuba"]
+     var America = ["Estados Unidos","Haiti","Colombia","Paraguay","Venezuela","Argentina","Chile","Peru","Brasil","Bolivia","Uruguay",
+     "Ecuador","Costa Rica","Honduras","Nicaragua","Guatemala","El Salvador","Republica Dominicana","Cuba"]
 
-     var Asia = ["Japón","Irán","Rusia","Omán","Afganistan","Tailandia","Nepal","China","Butan","Mongolia"]
+     var Asia = ["Japón","Irán","Omán","Afganistan","Tailandia","Nepal","China","Butan","Mongolia"]
 
      var Oceania = ["Australia","Nueva Zelanda"]
 
+     var Inmigrante = ["Alemania","Austria-Hungria","Rusia","Irlanda","Escandinavia","Reino Unido","Italia",
+     "Canada","Europa","Asia","Mexico"]
 
+     // Terminan el area de listas
+
+     //Area de variables random
 
      var rand_first = Math.floor(Math.random() * firstname.length);
 	var rand_last = Math.floor(Math.random() * lastname.length); 
      var rand_prof = Math.floor(Math.random() * Profession.length);
-     var rand_Pueblo = Math.floor(Math.random() * Pueblo.length);
-     var  Fue = Math.floor(Math.random() * (18 - 3 + 1) + 3)*5
-     var  Con = Math.floor(Math.random() * (18 - 3 + 1) + 3)*5
-     var  Pod = Math.floor(Math.random() * (18 - 3 + 1) + 3)*5
-     var  Des = Math.floor(Math.random() * (18 - 3 + 1) + 3)*5
-     var  Apa = Math.floor(Math.random() * (18 - 3 + 1) + 3)*5
-     var  Tam = Math.floor(Math.random() * (18 - 8 + 1) + 8)*5
-     var  Int = Math.floor(Math.random() * (18 - 8 + 1) + 8)*5
-     var  Edu = Math.floor(Math.random() * (18 - 8 + 1) + 8)*5
-     var  Ideocreen = Math.floor(Math.random() * (10 - 1 + 1) + 1)
-     var  Lugarsigni = Math.floor(Math.random() * (10 - 1 + 1) + 1)
-     var  Objetosigni = Math.floor(Math.random() * (10 - 1 + 1) + 1)
-     var  Rasgoperso = Math.floor(Math.random() * (10 - 1 + 1) + 1)
-     var  Allega = Math.floor(Math.random() * (10 - 1 + 1) + 1)
-     var  RazonAllega = Math.floor(Math.random() * (10 - 1 + 1) + 1)
+
+     var Fue = Math.floor(Math.random() * (18 - 3 + 1) + 3)*5
+     var Con = Math.floor(Math.random() * (18 - 3 + 1) + 3)*5
+     var Pod = Math.floor(Math.random() * (18 - 3 + 1) + 3)*5
+     var Des = Math.floor(Math.random() * (18 - 3 + 1) + 3)*5
+     var Apa = Math.floor(Math.random() * (18 - 3 + 1) + 3)*5
+     var Tam = Math.floor(Math.random() * (18 - 8 + 1) + 8)*5
+     var Int = Math.floor(Math.random() * (18 - 8 + 1) + 8)*5
+     var Edu = Math.floor(Math.random() * (18 - 8 + 1) + 8)*5
+     // var  Sue = Math.floor(Math.random() * (18 - 8 + 1) + 8)*5
+
+     var Ideocreen = Math.floor(Math.random() * (10 - 1 + 1) + 1)
+     var Lugarsigni = Math.floor(Math.random() * (10 - 1 + 1) + 1)
+     var Objetosigni = Math.floor(Math.random() * (10 - 1 + 1) + 1)
+     var Rasgoperso = Math.floor(Math.random() * (10 - 1 + 1) + 1)
+     var Allega = Math.floor(Math.random() * (10 - 1 + 1) + 1)
+     var RazonAllega = Math.floor(Math.random() * (10 - 1 + 1) + 1)
 
      var Lugarnacimiento = Math.floor(Math.random() * (100 - 1 + 1) + 1)
+     var rand_Pueblo = Math.floor(Math.random() * Pueblo.length)
+     var rand_Europa = Math.floor(Math.random() * Europa.length)
+     var rand_Africa = Math.floor(Math.random() * Africa.length)
+     var rand_Asia = Math.floor(Math.random() * Asia.length)
+     var rand_America = Math.floor(Math.random() * America.length)
+     var rand_Oceania = Math.floor(Math.random() * Oceania.length)
+     var rand_Continentes = Math.floor(Math.random() * Continentes.length)
      var Extranjero = Math.floor(Math.random() * (100 - 1 + 1 ) +1 )
 
-     // var  Sue = Math.floor(Math.random() * (18 - 8 + 1) + 8)*5
      var  Pv  = Math.floor((Tam+Con)/10)
      var Edad = Math.floor(Math.random() * (89 - 15 +1)) + 15;
 
+     //Finaliza el Area de Variables random
+
+
+     //Empiezan los if
+
+     if (rand_Continentes === 0){
+     var Pais = Europa[rand_Europa]
+     }
+     else if(rand_Continentes === 1){
+     var Pais = Africa[rand_Africa]
+     }
+     else if(rand_Continentes === 2){
+     var Pais = Asia[rand_Asia]
+     }
+     else if(rand_Continentes === 3){
+     var Pais = America[rand_America]
+     }
+     else {
+     var Pais = Oceania[rand_Oceania]
+     }
+     
+     if (Extranjero < 19){
+          var Pais = Inmigrante[0]
+     }
+     else if (Extranjero < 31){
+          var Pais = Inmigrante[1]
+     }
+     else if (Extranjero < 43){
+          var Pais = Inmigrante[2]
+     }
+     else if (Extranjero < 53){
+          var Pais = Inmigrante[3]
+     }
+     else if (Extranjero < 62){
+          var Pais = Inmigrante[4]
+     }
+     else if (Extranjero < 71){
+          var Pais = Inmigrante[5]
+     }
+     else if (Extranjero < 81){
+          var Pais = Inmigrante[6]
+     }
+     else if (Extranjero < 90){
+          var Pais = Inmigrante[7]
+     }
+     else if (Extranjero < 96){
+          var Pais = Inmigrante[8]
+     }
+     else if (Extranjero < 98){
+          var Pais = Inmigrante[9]
+     }
+     else if (Extranjero < 100){
+          var Pais = Inmigrante[10]
+     }
+     else {
+          var Pais = Pais
+     } 
+     console.log(Extranjero)
+     
+
 
      
-     
-     if(Lugarnacimiento <= 60){
+     console.log(Lugarnacimiento)
+     if(Lugardenacimiento < 61){
           var Lugardenacimiento = Pueblo[rand_Pueblo]
      }
 
-     //  else if (Lugardenacimiento <= 74)
-     //  var ran_Continente = Math.floor(Math.random() * (5 - 1 + 1) + 1)
+        if (Lugarnacimiento < 75){
 
-     //   if (ran_Continente === 1){
+      var Lugardenacimiento = "Nacio en el pais de " + Pais
+     }
       
-     //  }
-     //     else if (ran_Continente === 2){
-         
-     //     }
-     //     else if (ran_Continente === 3){
-
-     //     }
-     //     else if (ran_Continente === 4){
-
-     //     }
-     //     else {
-           
-     //     }
-
-     //  var Pais = Pais[ran_Pais]
-     // var Lugardenacimiento = "Nacio en "+ Pais}
-     // console.log(Pais,Lugardenacimiento)
-     // }
-     else {
-          var ran_Estado = Math.floor(Math.random() * (Estados.length ))
+       else {
+          
+          var ran_Estado = Math.floor(Math.random() * Estados.length )
           var Estado = Estados[ran_Estado]
-          var Lugardenacimiento = "Nacio en "+ Estado}
-          console.log(Estado,Lugardenacimiento)
+          var Lugardenacimiento = "Nacio en el estado de "+ Estado
+     }
 
+     console.log(Pais,Lugardenacimiento)
+          
 
 
      if(Edad < 20 ) {
@@ -397,22 +457,25 @@ function NHombre(){
                     var RazonAllegado = "Te hizo daño y ahora buscas venganza. ¿De qué le culpas? (la muerte de un ser querido, tu ruina finan ciera,la ruptura de tu matrimonio, etc.)."
                }
                
+     //Terminan los if
+
+
 
      document.getElementById('resultCarac').innerHTML =
      "<br><h3> Nombre : "+firstname[rand_first]+" "+lastname[rand_last]+"</h3>"+
      "<br> Profesion : "+Profession[rand_prof]+"<br>"+
      "<br> Ciudad/Pueblo : "+Pueblo[rand_Pueblo]+
      "<h3>Stats</h3>"+
-     "Fue : "+Fue+
-     "<br> Con : "+Con+
-     "<br> Pod : "+Pod+
-     "<br> Des : "+Des+
-     "<br> Apa : "+Apa+
-     "<br> Tam : "+Tam+
-     "<br> Int : "+Int+
-     "<br> Edu : "+Edu+
-     "<br> PV  : "+Pv+
-     "<br> Edad: "+Edad+"<br>"+
+     "<ul><li> Fue : "+Fue+
+     "<br><li> Con : "+Con+
+     "<br><li> Pod : "+Pod+
+     "<br><li> Des : "+Des+
+     "<br><li> Apa : "+Apa+
+     "<br><li> Tam : "+Tam+
+     "<br><li> Int : "+Int+
+     "<br><li> Edu : "+Edu+
+     "<br><li> PV  : "+Pv+
+     "<br><li> Edad: "+Edad+"<br>"+"</ul>"+
      "<br>"+Cosas_edad+"<br>"+
      "<br>"+"Ideologia/Creencia"+
      "<br>"+IdeoCreencia+"<br>"+
