@@ -104,7 +104,7 @@ function Mania() {
     ] 
 
     Manias_leght = Math.floor(Math.random() * Manias.length)
-    document.getElementById("resultE").innerHTML =
+    document.getElementById("result").innerHTML =
     "<h1>Manía</h1><h2>"+Manias[Manias_leght]+"<h2>"
 
 

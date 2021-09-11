@@ -97,22 +97,17 @@ function NMujer(){
      "Bodie","Kolmanskop","Iultin","Plymouth","Varosha","Brattleboro","Townshend","Finch","Fawn","Rosebud","Maple",
      "Paradise","Ferret","Daffodil","Grizzly","Primrose","Elk","Falcon Point","Beach Bluff","Martin's beach",
      "Manchester","Annisquam","Essex falls","Essex","Topsfield","Innsmouth","Rowley","Bolton","Gloucoster","Rockport",
-     "Marblehead","Kingsport","Beverly","Arkham","Ipwitch","Danvers","Newbury Port","Amesbury","Salem",
-     "","","","",""]
+     "Marblehead","Kingsport","Beverly","Arkham","Ipwitch","Danvers","Newbury Port","Amesbury","Salem"]
                         
 
-             
-	
      var rand_first = Math.floor(Math.random()*firstname.length); 
 	var rand_last = Math.floor(Math.random()*lastname.length); 
-	document.getElementById('resultN').innerHTML =
-     "<h1>Nombre:</h1><div class='alert alert-success'><h2>"+firstname[rand_first]+" "+lastname[rand_last]+"</h2></div>";
-	
      var rand_prof = Math.floor(Math.random()*Profession.length);
-     document.getElementById('resultP').innerHTML =
-     "<h1>Profesion :</h1><div class='alert alert-success'><h2>"+Profession[rand_prof]+"</h2></div>";
-
      var rand_Pueblo = Math.floor(Math.random()*Pueblo.length);
-     document.getElementById('resultC').innerHTML =
-     "<h1>Ciudad/Pueblo :</h1><div class='alert alert-success'><h2>"+Pueblo[rand_Pueblo]+"</h2></div>";
+	
+ 
+	document.getElementById('result').innerHTML =
+     "<br><h3> Nombre : "+firstname[rand_first]+" "+lastname[rand_last]+"</h3>"+
+     "<br> Profesion : "+Profession[rand_prof]+"<br>"+
+     "<br> Ciudad/Pueblo : "+Pueblo[rand_Pueblo];
 }

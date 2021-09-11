@@ -105,7 +105,7 @@ function Fobias(){
          ];
 
          var Fobia_leght = Math.floor(Math.random() * Fobia.length);
-         document.getElementById("resultE").innerHTML = 
+         document.getElementById("result").innerHTML = 
          "<h1>Fobia :</h1>"+"<h2>"+Fobia[Fobia_leght]+"</h2>"
         //  document.getElementById("resultE").innerHTML =
         //  "<h1>Soda:</h1>"+"<h2>"+Fobia[Fobia_leght]+"</h2>"

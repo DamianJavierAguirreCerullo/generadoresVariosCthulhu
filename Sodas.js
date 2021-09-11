@@ -14,13 +14,13 @@ function Sodas() {
     ]
 
      var Company = Math.floor(Math.random() * Sodas.length)
-     document.getElementById("resultE").innerHTML =
+     document.getElementById("result").innerHTML =
      "<h1>Soda:</h1>"+"<h2>"+Sodas[Company]+"</h2>"
-     var Company = Math.floor(Math.random() * Sodas.length)
-     document.getElementById("resultN").innerHTML =
-     "<h2>"+Sodas[Company]+"</h2>"
-     var Company = Math.floor(Math.random() * Sodas.length)
-     document.getElementById("resultP").innerHTML =
-     "<h2>"+Sodas[Company]+"</h2>"
+    //  var Company = Math.floor(Math.random() * Sodas.length)
+    //  document.getElementById("resultN").innerHTML =
+    //  "<h2>"+Sodas[Company]+"</h2>"
+    //  var Company = Math.floor(Math.random() * Sodas.length)
+    //  document.getElementById("resultP").innerHTML =
+    //  "<h2>"+Sodas[Company]+"</h2>"
 
 }

@@ -461,7 +461,7 @@ function NHombre(){
 
 
 
-     document.getElementById('resultCarac').innerHTML =
+     document.getElementById('result').innerHTML =
      "<br><h3> Nombre : "+firstname[rand_first]+" "+lastname[rand_last]+"</h3>"+
      "<br> Profesion : "+Profession[rand_prof]+"<br>"+
      "<br> Ciudad/Pueblo : "+Pueblo[rand_Pueblo]+
