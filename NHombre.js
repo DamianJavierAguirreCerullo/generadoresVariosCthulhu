@@ -95,38 +95,38 @@ function NHombre(){
      "operarios semicalificados/calificados","Fabrica de comida","Operador Telefonico","Fabrica de Zapatos",
      "fontanero","Electricista","Peluquero","Fabrica de ropa","Fabrica de muebles","Lavanderia",
      "Fabrica de Caucho","Fabrica de Escobas","Fabrica de Botones","Taquígrafo","Fabrica de Metal","Cajero",
-     "Fabrica de telas","Distribuidor minorista","Granja lechera"]
+     "Fabrica de telas","Distribuidor minorista","Granja lechera"];
 	
      var Pueblo = [ "Dakari","Dustin","Lenno","Gaetano","Hamilton","Leben","Loring","Scoville","Tabor","Wellington",
      "Bodie","Kolmanskop","Iultin","Plymouth","Varosha","Brattleboro","Townshend","Finch","Fawn","Rosebud","Maple",
      "Paradise","Ferret","Daffodil","Grizzly","Primrose","Elk","Falcon Point","Beach Bluff","Martin's beach",
      "Manchester","Annisquam","Essex falls","Essex","Topsfield","Innsmouth","Rowley","Bolton","Gloucoster","Rockport",
-     "Marblehead","Kingsport","Beverly","Arkham","Ipwitch","Danvers","Newbury Port","Amesbury","Salem"]
+     "Marblehead","Kingsport","Beverly","Arkham","Ipwitch","Danvers","Newbury Port","Amesbury","Salem"];
 
      var Estados = ["Alabama","Arizona","Arkansas","California","Carolina del Norte","Carolina del Sur",
      "Colorado","Connecticut","Dakota del Norte","Dakota del Sur","Delaware","Florida","Georgia","Hawai","Idaho",
      "Illinois","Indiana","Iowa","Kansas","Kentucky","Luisiana","Maine","Maryland","Michigan","Minenesota",
      "Missisipi","Misuri","Montana","Nebraska","Nevada","Nueva Jersey","Nueva York","Nuevo Hampshire",
      "Nuevo Mexico","Ohio","Oklahoma","Oregon","Pensilvania","Rhode Island","Tennessee","Texas","Utah","Vermont",
-     "Virginia","Virginia Occidental","Washington","Wisconsin","Wyoming"]
+     "Virginia","Virginia Occidental","Washington","Wisconsin","Wyoming"];
 
-     var Continentes = ["Africa","Europa","America","Asia","Oceania"]
+     var Continentes = ["Africa","Europa","America","Asia","Oceania"];
 
-     var Africa = ["Etiopia","Liberia","Egipto","Sudafrica","Libia","Marruecos","Sudan","Tunez"]
+     var Africa = ["Etiopia","Liberia","Egipto","Sudafrica","Libia","Marruecos","Sudan","Tunez"];
 
      var Europa = ["Francia","Dinamarca","Portugal","San Marino","Andorra","España","Suecia","Liechtenstein",
      "Paises Bajos","Suiza","Belgica","Grecia","Monaco","Rumania","Serbia","Luxemburgo","Noruega","Bulgaria","Albania",
-     "Finlandia","Polonia"]
+     "Finlandia","Polonia"];
 
      var America = ["Estados Unidos","Haiti","Colombia","Paraguay","Venezuela","Argentina","Chile","Peru","Brasil","Bolivia","Uruguay",
-     "Ecuador","Costa Rica","Honduras","Nicaragua","Guatemala","El Salvador","Republica Dominicana","Cuba"]
+     "Ecuador","Costa Rica","Honduras","Nicaragua","Guatemala","El Salvador","Republica Dominicana","Cuba"];
 
-     var Asia = ["Japón","Irán","Omán","Afganistan","Tailandia","Nepal","China","Butan","Mongolia"]
+     var Asia = ["Japón","Irán","Omán","Afganistan","Tailandia","Nepal","China","Butan","Mongolia"];
 
-     var Oceania = ["Australia","Nueva Zelanda"]
+     var Oceania = ["Australia","Nueva Zelanda"];
 
      var Inmigrante = ["Alemania","Austria-Hungria","Rusia","Irlanda","Escandinavia","Reino Unido","Italia",
-     "Canada","Europa","Asia","Mexico"]
+     "Canada","Europa","Asia","Mexico"];
 
      // Terminan el area de listas
 
@@ -136,35 +136,35 @@ function NHombre(){
 	var rand_last = Math.floor(Math.random() * lastname.length); 
      var rand_prof = Math.floor(Math.random() * Profession.length);
 
-     var Fue = Math.floor(Math.random() * (18 - 3 + 1) + 3)*5
-     var Con = Math.floor(Math.random() * (18 - 3 + 1) + 3)*5
-     var Pod = Math.floor(Math.random() * (18 - 3 + 1) + 3)*5
-     var Des = Math.floor(Math.random() * (18 - 3 + 1) + 3)*5
-     var Apa = Math.floor(Math.random() * (18 - 3 + 1) + 3)*5
-     var Tam = Math.floor(Math.random() * (18 - 8 + 1) + 8)*5
-     var Int = Math.floor(Math.random() * (18 - 8 + 1) + 8)*5
-     var Edu = Math.floor(Math.random() * (18 - 8 + 1) + 8)*5
+     var Fue = Math.floor(Math.random() * (18 - 3 + 1) + 3)*5;
+     var Con = Math.floor(Math.random() * (18 - 3 + 1) + 3)*5;
+     var Pod = Math.floor(Math.random() * (18 - 3 + 1) + 3)*5;
+     var Des = Math.floor(Math.random() * (18 - 3 + 1) + 3)*5;
+     var Apa = Math.floor(Math.random() * (18 - 3 + 1) + 3)*5;
+     var Tam = Math.floor(Math.random() * (18 - 8 + 1) + 8)*5;
+     var Int = Math.floor(Math.random() * (18 - 8 + 1) + 8)*5;
+     var Edu = Math.floor(Math.random() * (18 - 8 + 1) + 8)*5;
      // var  Sue = Math.floor(Math.random() * (18 - 8 + 1) + 8)*5
 
-     var Ideocreen = Math.floor(Math.random() * (10 - 1 + 1) + 1)
-     var Lugarsigni = Math.floor(Math.random() * (10 - 1 + 1) + 1)
-     var Objetosigni = Math.floor(Math.random() * (10 - 1 + 1) + 1)
-     var Rasgoperso = Math.floor(Math.random() * (10 - 1 + 1) + 1)
-     var Allega = Math.floor(Math.random() * (10 - 1 + 1) + 1)
-     var RazonAllega = Math.floor(Math.random() * (10 - 1 + 1) + 1)
+     var Ideocreen = Math.floor(Math.random() * (10 - 1 + 1) + 1);
+     var Lugarsigni = Math.floor(Math.random() * (10 - 1 + 1) + 1);
+     var Objetosigni = Math.floor(Math.random() * (10 - 1 + 1) + 1);
+     var Rasgoperso = Math.floor(Math.random() * (10 - 1 + 1) + 1);
+     var Allega = Math.floor(Math.random() * (10 - 1 + 1) + 1);
+     var RazonAllega = Math.floor(Math.random() * (10 - 1 + 1) + 1);
 
-     var Lugarnacimiento = Math.floor(Math.random() * (100 - 1 + 1) + 1)
-     var rand_Pueblo = Math.floor(Math.random() * Pueblo.length)
-     var rand_Europa = Math.floor(Math.random() * Europa.length)
-     var rand_Africa = Math.floor(Math.random() * Africa.length)
-     var rand_Asia = Math.floor(Math.random() * Asia.length)
-     var rand_America = Math.floor(Math.random() * America.length)
-     var rand_Oceania = Math.floor(Math.random() * Oceania.length)
-     var rand_Continentes = Math.floor(Math.random() * Continentes.length)
-     var Extranjero = Math.floor(Math.random() * (100 - 1 + 1 ) +1 )
+     var Lugarnacimiento = Math.floor(Math.random() * (100 - 1 + 1) + 1);
+     var rand_Pueblo = Math.floor(Math.random() * Pueblo.length);
+     var rand_Europa = Math.floor(Math.random() * Europa.length);
+     var rand_Africa = Math.floor(Math.random() * Africa.length);
+     var rand_Asia = Math.floor(Math.random() * Asia.length);
+     var rand_America = Math.floor(Math.random() * America.length);
+     var rand_Oceania = Math.floor(Math.random() * Oceania.length);
+     var rand_Continentes = Math.floor(Math.random() * Continentes.length);
+     var Extranjero = Math.floor(Math.random() * (100 - 1 + 1 ) +1 );
 
-     var  Pv  = Math.floor((Tam+Con)/10)
-     var Edad = Math.floor(Math.random() * (89 - 15 +1)) + 15;
+     var  Pv  = Math.floor((Tam+Con)/10);
+     var Edad = Math.floor(Math.random() * (89 - 15 +1) + 15);
 
      //Finaliza el Area de Variables random
 
@@ -223,12 +223,11 @@ function NHombre(){
      else {
           var Pais = Pais
      } 
-     console.log(Extranjero)
-     
 
 
-     
-     console.log(Lugarnacimiento)
+
+
+
      if(Lugardenacimiento < 61){
           var Lugardenacimiento = Pueblo[rand_Pueblo]
      }
@@ -459,7 +458,7 @@ function NHombre(){
                
      //Terminan los if
 
-
+     //Zona de muestra de resultados
 
      document.getElementById('result').innerHTML =
      "<br><h3> Nombre : "+firstname[rand_first]+" "+lastname[rand_last]+"</h3>"+
@@ -491,15 +490,10 @@ function NHombre(){
      "<br>"+Allegados+"<br>"+
      "<br>"+"Porque Es Tu Allegado"+
      "<br>"+RazonAllegado
-
-     
-
      // +"<br> Sue : "+Sue;
 
-     
-     
-
-	
+     //Fin Zona de muestra de resultados
+     	
 }
 
 
