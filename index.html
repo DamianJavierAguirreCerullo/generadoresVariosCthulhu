@@ -1,8 +1,17 @@
 <!DOCTYPE html>
+
 <html lang="es">
+
 <head>
+
+
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+
+    
     <style>
+
+
+
         body{
             background-color: black;
             color: whitesmoke;
@@ -16,9 +25,21 @@
         h3{
            margin: 0; 
         }
+
+
+
+
     </style>
+
+
     <title> Generadores varios (Cthulhu)</title>
+
+
     <script type="text/javascript">
+
+
+
+
         function showContent() {
             element = document.getElementById("content");
             check = document.getElementById("check");
@@ -29,38 +50,55 @@
                 element.style.display='none';
             }
         }
+
+
+
     </script>
+
+
 </head>
+
+
 <body>
+
+
     <header>
+
+
     <h1>Generador de Personajes Cthulhu</h1>
+
     <hr style="border-top:1px dotted #444;"/>
-    <i class="cthulhu"></i>
+
     </header>
+
+
         <button class="btn-generadores" onclick="NHombre()">Generar Nombre de Hombre</button>
         <button class="btn-generadores" onclick="NMujer()">Generar Nombre de Mujer</button>
         <button class="btn-generadores" onclick="NPueblo()">Generar Nombre de Pueblo</button>
         <button class="btn-generadores" onclick="Sodas()">Generar Nombre Sodas</button>
         <button class="btn-generadores" onclick="Fobias()">Generar Fobia</button>
         <button class="btn-generadores" onclick="Mania()">Generar Manía</button>
+
         
           
-          <input type="checkbox" name="Check" id="check" value="0" onchange="javascript:showContent()" /> Lanzar Dados
+          <input type="checkbox" name="Check" id="check" value="0" onchange="showContent()" /> Lanzar Dados
           
         <div id="content" style="display: none;">
           <br>
-          <p>Cantidad de tiradas</p>
+          <h3>Cantidad de tiradas</h3>
           <input type="number" value="" id="CantidadTiradas">
           <br>
-          <p>Numero a Tirar</p>
+          <h3>Numero a Tirar</h3>
           <input type="number" id="numeros">
           <input type="button" value="Lanzar" id="lanzador">
         </div>
              <div id="result"></div>
 
-
      </div>
 </div>
+
+<!-- ul.listaprinci>li.$-listado*5 -->
+
 
     <script type= "text/javascript" src="NHombre.js"></script>
     <script type= "text/javascript" src="NMujer.js"></script>
