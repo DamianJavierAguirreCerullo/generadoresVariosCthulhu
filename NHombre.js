@@ -1,147 +1,231 @@
- // Comienzan las listas
+  /* Man_checked = new Boolean(false)
+        Woman_checked = new Boolean (false)
+     
+     if(Man_checked === true && Woman_checked === true){
 
- var firstname = ["Aaron", "Abraham", "Addison", "Amos", "Anderson", "Archibald", "August", "Barnabas", "",
- "Blair", "Caleb", "Cecil", "Chester", "Clifford", "Clinton", "Cornelius", "Curtis", "Baxter",
- "Dayton", "Delbert", "Douglas", "Dudley", "Ernest", "Eldridge", "Elijah", "Emanuel", "Emmet", "Enoch", "Ephraim",
- "Everett", "Ezekiel", "Forest", "Gilbert", "Granville", "Gustaf", "Hampton", "Harmon", "Henderson",
- "Herman", "Hilliard", "Howard", "Hudson", "Irvin", "Ian", "Iker", "Isaac", "Jacob", "Jackson",
- "Jayden", "Jeremy", "Jeremiah", "Jonah", "Josiah", "Kirk", "Larkin", "Leland", "Leopold",
- "Lloyd", "Luther", "Manford", "Marcellus", "Martin", "Mason", "Maurice",
- "Maynard", "Melvin", "Miles", "Josué", "Milton", "Morgan", "Mortimer",
- "Napoleon", "Nelson", "Newton", "Oliver", "Orson", "Oswald",
- "Pablo", "Percival", "Porter", "Quincy", "Liam", "Lian", "Randall", "Reginald", "Richmond", "Rodney",
- "Roscoe", "Rowland", "Rupert", "Sanford", "Sebastian", "Martín", "Shelby",
- "Sidney", "Solomon", "Maykel", "Squire", "Sterling", "Sidney", "Noah", "Oscar", "Thaddeus", "Pedro",
- "Walter", "Wilbur", "Wilfred", "Zadok", "Zebedee", "David", "Ethan", "Samuel", "Michael",
- "James", "Charlie", "Jacob", "Harry", "Thiago", "Robert", "Tomás", "Valentino",
- "Vicente", "Callum", "", "Reece", "Joe", "Kyle", "Daniel","Abijah", "Alson", "Alton", "Amasa",
- "", "", "Comfort", "Ebenezer", "Elam", "Elijah", "Enoch", "Ephraim", "Ezra",
- "Fithian", "Freeman", "Hiram", "Holcomb", "Hosea", "Hubbard", "Jarvis", "Jasper", "John",
- "Lemuel", "Mamre", "Nahum", "Nathan", "Obadiah", "Oren", "Orris", "Ozias",
- "Reuben", "Salmon", "Stukely", "Sylvanus", "Willard","Duncan","Gordon","Henry","Hughes","Jack","Scott","Shawn",
- "Stuart","Sharman","Simon","Steven","Tailor","Todd","Travis","Vincent","William","Pierce","Mathew","Dexter"]
-              
- var lastname = ["Abraham", "Adler", "Ankins", "Avery", "Barnham", "Bentz", "Bessler", "Blakely", "Bleeker",
- "Bouche", "Bretz", "Brock", "Buchman", "Butts", "Caffey", "Click", "Cordova", "Crabtree", "Crankovitch", "Cuthburt",
- "Cuttling", "Dorman", "Eakley", "Eddie", "Elsner", "Fandrick", "Farwell", "Feigel", "Felten", "Fenske", "Fillman",
- "Finley", "Firske", "Flanagan", "Franklin", "Freeman", "Frisbe", "Gore", "Greenwald", "Hahn", "Hammermeister", "Heminger",
- "Hogue", "Hollister", "Kasper", "Kisro", "Kleeman", "Lake", "Cano", "Levard", "Lockhart", "Luckstrim", "Lynch",
- "Madison", "Mantei", "Marsh", "McBurney", "McCarney", "Moses", "Nickels", "O'Neil", "Olson", "Ozanich", "Patterson",
- "Patzer", "Peppin", "Porter", "Posch", "Raslo", "Razner", "Rifenberg", "Riley", "Ripley", "Rossini",
- "Schiltgan", "Schmidt", "Schroeder", "Schwartz", "Shane", "Shattuck", "Shea", "Slaughter", "Smith", "Speltzer",
- "Stimac", "Strenburg", "Strong", "Swanson", "Tillinghast", "Traver", "Urton", "Vallier", "Wagner", "Walsted", "Wang",
- "Warner", "Webber", "Welch", "Winters", "Yarbrough", "Yeske", "Johnson", "Williams", "Jones", "Brown",
- "Baker", "Page", "Gardener", "Thatcher", "Murphy", "Thomas", "Evans", "Roberts", "O'Sullivan", "Walsh", "O'Brien",
- "Byrne", "Li", "Gelbero", "White", "Morton", "Singh", "Silva", "Martin", "Forest", "Bridge", "Hill",
- "Atwater", "Barbour", "Beman", "Beckwith", "Bliss", "Bristol", "Cadwell", "Case", "Chittenden", "Corey",
- "Dill", "Green", "Griffith", "Higley", "Merrill", "Mills", "Northway", "Oakes", "Pettibone", "Phelps", "Pike",
- "Prentice", "Proctor", "Sephard", "Scudder", "Sedgwick", "Sidrach", "Smith", "Temple", "Tuller", "Wadsworth",
- "Ward", "Westcott", "Wickes", "Wilcox", "Willard", "Witherell", "Wolcott", "Woodford",
+          if (Gender === 0){
+               Firstname = Firstname_Man[rand_first_man];
+               Profession = Profession_Man[rand_prof_man];
+          }
 
- "Acheson","Aitken","Allan","Allaway","Allen","Angus","Atchison","Baird","Barber","Beattie","Beatty","Begbie",
- "Blackwood","Blair","Boyd","Breckenridge","Breckinridge","Brody","Bruce","Buchanan","Burns","Calhoun","Cameron",
- "Campbell","Kerr","Carson","Clacher","Coburn","Cockburn","Colquhoun","Coutts","Craig","Cruickshank","Cummins",
- "Cunningham","Darrow","Davies","Davis","Donne","Drummond","Dubhghlas","Dunbar","Dunn","Fairbairn","Falconer",
- "Faulkner","Ferguson","Findlay","Finley","Fraser","Frazier","Gibbs","Gibson","Glen","Graeme","Graham","Grant","Greer",
- "Grier","Grieve","Haig","Hardie","Henderson","Hendry","Hepburn","Houston","Hume","Hunter","Johnston","Keir",
- "Kendrick","Kinley","Kinnaird","Lenmox","Lester","Lindsay","Lister","Lithgow","Lusk","Mac Alastair","MacBeth",
- "MacCallum","MacConnell","MacDaniel","MacDougall","MacGrory","MacKay","MacNeil","Maxwell","Mathieson","McAfee","Milne",
- "Mitchell","Moffett","Monroe","Montgomery","Moray","Morris","Munro","Murdoch","Murray","Neil","Ness","Nevin","Norris",
- "Paterson","Patton","Pollock","Rae","Ralston","Ramsey","Rattray","Reid","Ross","Ruskin","Rutherford","Sangster",
- "Saunders","Sheach","Starrett","Sterling","Stewart","Stirling","Taggart","Thorburn","Urquhart","Wallace","Wallis",
- "Woods","Wolf","Woodham","Woodrow","Wootton","Wragge","Wray","Wynne","Yap","Yates","Yoxall","Seaver","Sempers",
- "Sharman","Sharrow","Shelton","Shine","Siddall","Simen","Simmons","Simpkin","Sinclair","Skeates","Slater","Snell",
- "Snider","Solomon","Sommer","Southgate","Spalding","Spear","Speight","Spencer","Stacy","Stanley","Stanton","Statham",
- "Stern","Stevenson","Stidolph","Stoddard","Stone","Strickland","Stroud","Taft","Tanner","Tash","Tate","Tatham",
- "Tatum","Tennison","Terrell","Thacker","Thompkins","Thorn","Tifft","Tindall","Tipton","Tirrel","Tobin","Trask","Toft",
- "Toller","Tolbert","Trent","Triggs","Truman","Tucker","Turner","Twist","Underhill","Upton","Vance","Varley","Varnham",
- "Verity","Vernon","Vipond","Wade","Walker","Whitney","Whittemore","Wickham","Wiley","Winslow","Winter","Winthrop",
- "Midgley","Mondy","Myers","Nash","Neville","Nielson","Norwood","Oakley","Overton","Padmore","Palmer","Parks","Payne",
- "Peak","Pearce","Pemberton","Peterson","Pickle","Pilgrim","Poindexter","Powers","Pryor","Putnam","Purcell","Rains",
- "Rake","Reed","Reeve","Remington","Reynolds","Richardson","Rigby","Rimmer","Roach","Roscoe","Rowland","Russell",
- "Rye","Sadler","Sampson","Sanderson","Sanford","Sangster","Sappington","Harland","Hartell","Hathway","Hayden",
- "Haywood","Hedley","Heath","Henson","Herbert","Herriot","Hobbs","Holland","Hooper","Hopson","Huff","Hurst","Huxley",
- "Hyland","Ikin","Ilbert","Jarrett","Jerome","Jernigan","Jinks","Jewell","Keen","Kimball","Kingsley","Knight","Lamb",
- "Langley","Lawrence","Leach","Levitt","Marchand","Marston","Mathers","Mercer","Coleman","Collingwood","Colton",
- "Crawford","Crouch","Dabney","Dixon","Dodge","Durant","Ellsworth","Emerson","Eustis","Evered","Farnham","Farran",
- "Frost","Fuller","Gadsby","Garland","Garnet","Gilliam","Gladwyn","Glass","Godfrey","Goodwin","Groves","Hackett","Haig",
- "Hambleton","Harding","Hardwick","Appleton","Armistead","Ashworth","Atkin","Audley","Averill","Bain","Bannister",
- "Barlow","Bardsley","Barret","Bartram","Batts","Belanger","Belmont","Bennett","Benson","Bernard","Bishop","Blackburn",
- "Bloodworth","Boothman","Bowman","Bradford","Bradley","Braxton","Brent","Brett","Brice","Brinley","Bronson","Burnham",
- "Caldwell","Cantrell","Carter","Carver","Causer","Chambers","Chapman","Cheshire","Clement","Colbert"];
- 
- var Profession = ["Acrobata", "Actor", "Agente Federal", "Alienista", "Alpinista", "Anticuario", "Arqueologo", "Arquitecto", "Artesano",
- "Artista", "Atleta", "Medico", "Ayudante de Laboratorio", "Barman", "Bibliotecario", "Bombero", "Boxeador/Luchador","Buzo", "Camillero",
- "Cazador", "Cazador de Recompensas", "Chofer", "Cientifico", "Cirujano Forense", "Clerigo", "Conductor", "Conservador",
- "Contador", "Corresponsal en el Extranjero", "Detective de Agencia", "Arquitecto","Pintor/Escultor","Escenista",
- "Diletante", "Diseñador", "Editor", "Entrenador de Animales", "Escritor", "Especialista", "Espia","Musico de Jass",
- "Estudiante/Interno", "Explorador", "Fanatico", "Farmaceutico","Abogado","Oficial Militar","Aviador","Buzo",
- "Forastero", "Fotografo", "Funcionario Electo", "Funerario", "Granjero","Buscador de Tesoro","Patron de Yate",
- "Guardian de Zoo", "Ingeniero", "Interprete", "Investigador Academico","Piloto de Carreras","Diacono", "Vendedor",
- "Investigador Privado", "Jugador","Juez","Lider de una Secta","Lider religioso","Ministro Protestante", "Soldado",
- "Jurista", "Leñador", "Libero", "Loquero", "Marinero", "Mayordomo", "Mecanico", "Minero", "Misionero", "Montañero", "Musico",
- "Ocultista", "Oficinista", "Parapsicologo", "Peon", "Perista", "Profesor de Universidad", "Prospector", "Psicologo/Psicoanalista",
- "Agente del oeste", "Agente Uniformado", "Inspecto de Policia", "Psiquiatra", "Reportero", "Soldado",
- "Reportero Geografico", "Secretaria", "Sindicalista", "Taxista", "Tendero", "Tratante de Antiguedades", "Vagabundo",
- "Vaquero","Sacristan","Portero","Sastre","Gerente","Constructor","Director de Obra","Ganchero","Maderero",
- "leñador","Barbero","Herrero","Stewar","Marinero","Marine","Montacargas","Supervisor","Capataz","Cristalero",
- "carretero","Camionero","Empleado","transporte ferroviario","Carpintero","Molinero","fabricantes de herramientas",
- "Maquinistas","criadores de ganado","trabajador de ganado",
- "Profesor de secundaria", "Trabajador industrial", "Encargado del registro", "Trabajador Gubernamental",
- "Guarda Expedientes", "mecanógrafo", "jardineros","Productor de Fruta","Trabajador de vivero","Trabajador textil",
- "Obrero","Repartidor","colportores","Recolectores de Basura","Colportor","Viajeros comerciales",
- "operarios semicalificados/calificados","Fabrica de comida","Operador Telefonico","Fabrica de Zapatos",
- "fontanero","Electricista","Peluquero","Fabrica de ropa","Fabrica de muebles","Lavanderia",
- "Fabrica de Caucho","Fabrica de Escobas","Fabrica de Botones","Taquígrafo","Fabrica de Metal","Cajero",
- "Fabrica de telas","Distribuidor minorista","Granja lechera"];
- 
- var Pueblo = [ "Dakari","Dustin","Lenno","Gaetano","Hamilton","Leben","Loring","Scoville","Tabor","Wellington",
- "Bodie","Kolmanskop","Iultin","Plymouth","Varosha","Brattleboro","Townshend","Finch","Fawn","Rosebud","Maple",
- "Paradise","Ferret","Daffodil","Grizzly","Primrose","Elk","Falcon Point","Beach Bluff","Martin's beach",
- "Manchester","Annisquam","Essex falls","Essex","Topsfield","Innsmouth","Rowley","Bolton","Gloucoster","Rockport",
- "Marblehead","Kingsport","Beverly","Arkham","Ipwitch","Danvers","Newbury Port","Amesbury","Salem"];
+          else {
+               Firstname = Firstname_Woman[rand_first_woman];
+               Profession = Profession_Woman[rand_prof_woman];
+          }
 
- var Estados = ["Alabama","Arizona","Arkansas","California","Carolina del Norte","Carolina del Sur",
- "Colorado","Connecticut","Dakota del Norte","Dakota del Sur","Delaware","Florida","Georgia","Hawai","Idaho",
- "Illinois","Indiana","Iowa","Kansas","Kentucky","Luisiana","Maine","Maryland","Michigan","Minenesota",
- "Missisipi","Misuri","Montana","Nebraska","Nevada","Nueva Jersey","Nueva York","Nuevo Hampshire",
- "Nuevo Mexico","Ohio","Oklahoma","Oregon","Pensilvania","Rhode Island","Tennessee","Texas","Utah","Vermont",
- "Virginia","Virginia Occidental","Washington","Wisconsin","Wyoming"];
+     }
 
- var Continentes = ["Africa","Europa","America","Asia","Oceania"];
+          else if (Man_checked === true){
+               Gender = Gender[0]
+               Firstname = Firstname_Man[rand_first_man];
+               Profession = Profession_Man[rand_prof_man];
+          }
 
- var Africa = ["Etiopia","Liberia","Egipto","Sudafrica","Libia","Marruecos","Sudan","Tunez"];
+          else if(Woman_checked === true){ 
+               Gender = Gender[1]
+               Firstname = Firstname_Woman[rand_first_woman];
+               Profession = Profession_Woman[rand_prof_woman];
+          }
+          */
 
- var Europa = ["Francia","Dinamarca","Portugal","San Marino","Andorra","España","Suecia","Liechtenstein",
- "Paises Bajos","Suiza","Belgica","Grecia","Monaco","Rumania","Serbia","Luxemburgo","Noruega","Bulgaria","Albania",
- "Finlandia","Polonia"];
 
- var America = ["Estados Unidos","Haiti","Colombia","Paraguay","Venezuela","Argentina","Chile","Peru","Brasil","Bolivia","Uruguay",
- "Ecuador","Costa Rica","Honduras","Nicaragua","Guatemala","El Salvador","Republica Dominicana","Cuba"];
+     // Comienzan las listas
 
- var Asia = ["Japón","Irán","Omán","Afganistan","Tailandia","Nepal","China","Butan","Mongolia"];
 
- var Oceania = ["Australia","Nueva Zelanda"];
+     var Firstname_Man = ["Aaron", "Abraham", "Addison", "Amos", "Anderson", "Archibald", "August", "Barnabas", "",
+     "Blair", "Caleb", "Cecil", "Chester", "Clifford", "Clinton", "Cornelius", "Curtis", "Baxter",
+     "Dayton", "Delbert", "Douglas", "Dudley", "Ernest", "Eldridge", "Elijah", "Emanuel", "Emmet", "Enoch", "Ephraim",
+     "Everett", "Ezekiel", "Forest", "Gilbert", "Granville", "Gustaf", "Hampton", "Harmon", "Henderson",
+     "Herman", "Hilliard", "Howard", "Hudson", "Irvin", "Ian", "Iker", "Isaac", "Jacob", "Jackson",
+     "Jayden", "Jeremy", "Jeremiah", "Jonah", "Josiah", "Kirk", "Larkin", "Leland", "Leopold",
+     "Lloyd", "Luther", "Manford", "Marcellus", "Martin", "Mason", "Maurice",
+     "Maynard", "Melvin", "Miles", "Josué", "Milton", "Morgan", "Mortimer",
+     "Napoleon", "Nelson", "Newton", "Oliver", "Orson", "Oswald",
+     "Pablo", "Percival", "Porter", "Quincy", "Liam", "Lian", "Randall", "Reginald", "Richmond", "Rodney",
+     "Roscoe", "Rowland", "Rupert", "Sanford", "Sebastian", "Martín", "Shelby",
+     "Sidney", "Solomon", "Maykel", "Squire", "Sterling", "Sidney", "Noah", "Oscar", "Thaddeus", "Pedro",
+     "Walter", "Wilbur", "Wilfred", "Zadok", "Zebedee", "David", "Ethan", "Samuel", "Michael",
+     "James", "Charlie", "Jacob", "Harry", "Thiago", "Robert", "Tomás", "Valentino",
+     "Vicente", "Callum", "", "Reece", "Joe", "Kyle", "Daniel","Abijah", "Alson", "Alton", "Amasa",
+     "", "", "Comfort", "Ebenezer", "Elam", "Elijah", "Enoch", "Ephraim", "Ezra",
+     "Fithian", "Freeman", "Hiram", "Holcomb", "Hosea", "Hubbard", "Jarvis", "Jasper", "John",
+     "Lemuel", "Mamre", "Nahum", "Nathan", "Obadiah", "Oren", "Orris", "Ozias",
+     "Reuben", "Salmon", "Stukely", "Sylvanus", "Willard","Duncan","Gordon","Henry","Hughes","Jack","Scott","Shawn",
+     "Stuart","Sharman","Simon","Steven","Tailor","Todd","Travis","Vincent","William","Pierce","Mathew","Dexter"]
 
- var Inmigrante = ["Alemania","Austria-Hungria","Rusia","Irlanda","Escandinavia","Reino Unido","Italia",
- "Canada","Europa","Asia","Mexico"];
+     var Firstname_Woman = ["Adele", "Agatha", "Agnes", "Albertina", "Almeda", "Mary", "Patricia", "Elizabeth", "Clarissa",
+     "Amelia", "Anastasia", "Annabelle", "Asenath", "Augusta", "Barbara", "Bernadette", "Bernice",
+     "Beryl", "Beulah", "Camilla", "Carmen", "Carmilla", "Caroline", "Cecilia", "Celeste", "Charity", "Christina",
+     "Claudia", "Constance", "Cordelia", "Cynthia", "Daisy", "Dolores", "Doris", "Edith", "Edna",
+     "Eloise", "Elsie", "Estelle", "Ethel", "Eudora", "Eugenie", "Eunice", "Florence", "Frieda", "Genevieve",
+     "Gertrude", "Gladys", "Gretchen", "Hannah", "Henrietta", "Hoshea", "Ingrid", "Irene", "Iris",
+     "Ivy", "Jeanette", "Jezebel", "Josephine", "Joyce", "Juanita", "Keziah",
+     "Laverne", "Leonora", "Letitia", "Loretta", "Lucretia", "Mabel", "Madeleine", "Margery",
+     "Marguerite", "Marjorie", "Matilda", "Melinda", "Melissa", "Mercedes", "Mildred",
+     "Millicent", "Muriel", "Myrtle", "Naomi", "Nora", "Octavia", "Ophelia", "Pansy", "Patience", "Pearle",
+     "Phoebe", "Phyllis", "Rosemary", "Ruby", "Sadie", "Selina", "Selma", "Sibyl",
+     "Sylvia", "Tabitha", "Ursula", "Veronica", "Violet", "Virginia", "Wanda", "Wilhelmina", "Winifred", "Olivia",
+     "Isla", "Emily", "Poppy", "Ava", "Isabella", "Jessica", "Lily", "Sophie",
+     "Tracy", "Lauren", "Abigail", "Mia", "Emma", "Linda", "Kate", "Margaret", "Thede",
+     "Susan", "Sarah", "Jennifer", "Amarilla", "Amoret", "Berenice",
+     "Corinthia", "Damaris", "Deliverance", "Dorcas", "Edda", "Emogene", "Flora", "Hazel", "Isabelle",
+     "Kezia", "Lavinia", "Lena Belle", "Lucelia", "Luella", "Phebe", "Pluma", "Rebecca",
+     "Rhoda", "Sarepta", "Savilla", "Sebina", "Susannah" ,"Stella", "Sybil","Zilpah","Innes","Irvine","Keith","Kelly",
+     "Kyle","Leslei","Lindsey","Lowry","Lyne","Michell","Rouse","Shirley","Stacey","Terry","Tracy","Hope","Darcy"];
+               
+     var lastname = ["Abraham", "Adler", "Ankins", "Avery", "Barnham", "Bentz", "Bessler", "Blakely", "Bleeker",
+     "Bouche", "Bretz", "Brock", "Buchman", "Butts", "Caffey", "Click", "Cordova", "Crabtree", "Crankovitch", "Cuthburt",
+     "Cuttling", "Dorman", "Eakley", "Eddie", "Elsner", "Fandrick", "Farwell", "Feigel", "Felten", "Fenske", "Fillman",
+     "Finley", "Firske", "Flanagan", "Franklin", "Freeman", "Frisbe", "Gore", "Greenwald", "Hahn", "Hammermeister", "Heminger",
+     "Hogue", "Hollister", "Kasper", "Kisro", "Kleeman", "Lake", "Cano", "Levard", "Lockhart", "Luckstrim", "Lynch",
+     "Madison", "Mantei", "Marsh", "McBurney", "McCarney", "Moses", "Nickels", "O'Neil", "Olson", "Ozanich", "Patterson",
+     "Patzer", "Peppin", "Porter", "Posch", "Raslo", "Razner", "Rifenberg", "Riley", "Ripley", "Rossini",
+     "Schiltgan", "Schmidt", "Schroeder", "Schwartz", "Shane", "Shattuck", "Shea", "Slaughter", "Smith", "Speltzer",
+     "Stimac", "Strenburg", "Strong", "Swanson", "Tillinghast", "Traver", "Urton", "Vallier", "Wagner", "Walsted", "Wang",
+     "Warner", "Webber", "Welch", "Winters", "Yarbrough", "Yeske", "Johnson", "Williams", "Jones", "Brown",
+     "Baker", "Page", "Gardener", "Thatcher", "Murphy", "Thomas", "Evans", "Roberts", "O'Sullivan", "Walsh", "O'Brien",
+     "Byrne", "Li", "Gelbero", "White", "Morton", "Singh", "Silva", "Martin", "Forest", "Bridge", "Hill",
+     "Atwater", "Barbour", "Beman", "Beckwith", "Bliss", "Bristol", "Cadwell", "Case", "Chittenden", "Corey",
+     "Dill", "Green", "Griffith", "Higley", "Merrill", "Mills", "Northway", "Oakes", "Pettibone", "Phelps", "Pike",
+     "Prentice", "Proctor", "Sephard", "Scudder", "Sedgwick", "Sidrach", "Smith", "Temple", "Tuller", "Wadsworth",
+     "Ward", "Westcott", "Wickes", "Wilcox", "Willard", "Witherell", "Wolcott", "Woodford",
+
+     "Acheson","Aitken","Allan","Allaway","Allen","Angus","Atchison","Baird","Barber","Beattie","Beatty","Begbie",
+     "Blackwood","Blair","Boyd","Breckenridge","Breckinridge","Brody","Bruce","Buchanan","Burns","Calhoun","Cameron",
+     "Campbell","Kerr","Carson","Clacher","Coburn","Cockburn","Colquhoun","Coutts","Craig","Cruickshank","Cummins",
+     "Cunningham","Darrow","Davies","Davis","Donne","Drummond","Dubhghlas","Dunbar","Dunn","Fairbairn","Falconer",
+     "Faulkner","Ferguson","Findlay","Finley","Fraser","Frazier","Gibbs","Gibson","Glen","Graeme","Graham","Grant","Greer",
+     "Grier","Grieve","Haig","Hardie","Henderson","Hendry","Hepburn","Houston","Hume","Hunter","Johnston","Keir",
+     "Kendrick","Kinley","Kinnaird","Lenmox","Lester","Lindsay","Lister","Lithgow","Lusk","Mac Alastair","MacBeth",
+     "MacCallum","MacConnell","MacDaniel","MacDougall","MacGrory","MacKay","MacNeil","Maxwell","Mathieson","McAfee","Milne",
+     "Mitchell","Moffett","Monroe","Montgomery","Moray","Morris","Munro","Murdoch","Murray","Neil","Ness","Nevin","Norris",
+     "Paterson","Patton","Pollock","Rae","Ralston","Ramsey","Rattray","Reid","Ross","Ruskin","Rutherford","Sangster",
+     "Saunders","Sheach","Starrett","Sterling","Stewart","Stirling","Taggart","Thorburn","Urquhart","Wallace","Wallis",
+     "Woods","Wolf","Woodham","Woodrow","Wootton","Wragge","Wray","Wynne","Yap","Yates","Yoxall","Seaver","Sempers",
+     "Sharman","Sharrow","Shelton","Shine","Siddall","Simen","Simmons","Simpkin","Sinclair","Skeates","Slater","Snell",
+     "Snider","Solomon","Sommer","Southgate","Spalding","Spear","Speight","Spencer","Stacy","Stanley","Stanton","Statham",
+     "Stern","Stevenson","Stidolph","Stoddard","Stone","Strickland","Stroud","Taft","Tanner","Tash","Tate","Tatham",
+     "Tatum","Tennison","Terrell","Thacker","Thompkins","Thorn","Tifft","Tindall","Tipton","Tirrel","Tobin","Trask","Toft",
+     "Toller","Tolbert","Trent","Triggs","Truman","Tucker","Turner","Twist","Underhill","Upton","Vance","Varley","Varnham",
+     "Verity","Vernon","Vipond","Wade","Walker","Whitney","Whittemore","Wickham","Wiley","Winslow","Winter","Winthrop",
+     "Midgley","Mondy","Myers","Nash","Neville","Nielson","Norwood","Oakley","Overton","Padmore","Palmer","Parks","Payne",
+     "Peak","Pearce","Pemberton","Peterson","Pickle","Pilgrim","Poindexter","Powers","Pryor","Putnam","Purcell","Rains",
+     "Rake","Reed","Reeve","Remington","Reynolds","Richardson","Rigby","Rimmer","Roach","Roscoe","Rowland","Russell",
+     "Rye","Sadler","Sampson","Sanderson","Sanford","Sangster","Sappington","Harland","Hartell","Hathway","Hayden",
+     "Haywood","Hedley","Heath","Henson","Herbert","Herriot","Hobbs","Holland","Hooper","Hopson","Huff","Hurst","Huxley",
+     "Hyland","Ikin","Ilbert","Jarrett","Jerome","Jernigan","Jinks","Jewell","Keen","Kimball","Kingsley","Knight","Lamb",
+     "Langley","Lawrence","Leach","Levitt","Marchand","Marston","Mathers","Mercer","Coleman","Collingwood","Colton",
+     "Crawford","Crouch","Dabney","Dixon","Dodge","Durant","Ellsworth","Emerson","Eustis","Evered","Farnham","Farran",
+     "Frost","Fuller","Gadsby","Garland","Garnet","Gilliam","Gladwyn","Glass","Godfrey","Goodwin","Groves","Hackett","Haig",
+     "Hambleton","Harding","Hardwick","Appleton","Armistead","Ashworth","Atkin","Audley","Averill","Bain","Bannister",
+     "Barlow","Bardsley","Barret","Bartram","Batts","Belanger","Belmont","Bennett","Benson","Bernard","Bishop","Blackburn",
+     "Bloodworth","Boothman","Bowman","Bradford","Bradley","Braxton","Brent","Brett","Brice","Brinley","Bronson","Burnham",
+     "Caldwell","Cantrell","Carter","Carver","Causer","Chambers","Chapman","Cheshire","Clement","Colbert"];
+     
+     var Profession_Man = ["Acrobata", "Actor", "Agente Federal", "Alienista", "Alpinista", "Anticuario", "Arqueologo", "Arquitecto", "Artesano",
+     "Artista", "Atleta", "Medico", "Ayudante de Laboratorio", "Barman", "Bibliotecario", "Bombero", "Boxeador/Luchador","Buzo", "Camillero",
+     "Cazador", "Cazador de Recompensas", "Chofer", "Cientifico", "Cirujano Forense", "Clerigo", "Conductor", "Conservador",
+     "Contador", "Corresponsal en el Extranjero", "Detective de Agencia", "Arquitecto","Pintor/Escultor","Escenista",
+     "Diletante", "Diseñador", "Editor", "Entrenador de Animales", "Escritor", "Especialista", "Espia","Musico de Jass",
+     "Estudiante/Interno", "Explorador", "Fanatico", "Farmaceutico","Abogado","Oficial Militar","Aviador","Buzo",
+     "Forastero", "Fotografo", "Funcionario Electo", "Funerario", "Granjero","Buscador de Tesoro","Patron de Yate",
+     "Guardian de Zoo", "Ingeniero", "Interprete", "Investigador Academico","Piloto de Carreras","Diacono", "Vendedor",
+     "Investigador Privado", "Jugador","Juez","Lider de una Secta","Lider religioso","Ministro Protestante", "Soldado",
+     "Jurista", "Leñador", "Libero", "Loquero", "Marinero", "Mayordomo", "Mecanico", "Minero", "Misionero", "Montañero", "Musico",
+     "Ocultista", "Oficinista", "Parapsicologo", "Peon", "Perista", "Profesor de Universidad", "Prospector", "Psicologo/Psicoanalista",
+     "Agente del oeste", "Agente Uniformado", "Inspecto de Policia", "Psiquiatra", "Reportero", "Soldado",
+     "Reportero Geografico", "Secretaria", "Sindicalista", "Taxista", "Tendero", "Tratante de Antiguedades", "Vagabundo",
+     "Vaquero","Sacristan","Portero","Sastre","Gerente","Constructor","Director de Obra","Ganchero","Maderero",
+     "leñador","Barbero","Herrero","Stewar","Marinero","Marine","Montacargas","Supervisor","Capataz","Cristalero",
+     "carretero","Camionero","Empleado","transporte ferroviario","Carpintero","Molinero","fabricantes de herramientas",
+     "Maquinistas","criadores de ganado","trabajador de ganado",
+     "Profesor de secundaria", "Trabajador industrial", "Encargado del registro", "Trabajador Gubernamental",
+     "Guarda Expedientes", "mecanógrafo", "jardineros","Productor de Fruta","Trabajador de vivero","Trabajador textil",
+     "Obrero","Repartidor","colportores","Recolectores de Basura","Colportor","Viajeros comerciales",
+     "operarios semicalificados/calificados","Fabrica de comida","Operador Telefonico","Fabrica de Zapatos",
+     "fontanero","Electricista","Peluquero","Fabrica de ropa","Fabrica de muebles","Lavanderia",
+     "Fabrica de Caucho","Fabrica de Escobas","Fabrica de Botones","Taquígrafo","Fabrica de Metal","Cajero",
+     "Fabrica de telas","Distribuidor minorista","Granja lechera"];
+
+     var Profession_Woman = ["Acrobata", "Actor", "Alienista", "Alpinista", "Anticuario", "Arqueologa", "Artesano",
+     "Artista", "Atleta", "Ayudante de Laboratorio", "Bibliotecario", "Bombero", "Luchadora", "Camarera",
+     "Cazador de Recompensas", "Cientifico", "Clerigo",
+     "Detective de Agencia","Asesino", "Contrabandista",
+     "Diletante", "Diseñador", "Escritor","Doncella",
+     "Estudiante/Interno", "Explorador", "Fanatica", "Farmaceutico","Criminal; independiente","Estafador",
+     "Forastero", "Fotografo", "Funerario", "Granjera","Falsificadora",
+     "Interprete", "Investigador Academico","Pareja de Gangster", "perista; criminal ",
+     "Investigador Privado", "Ama de Casa", "Miembro de una Tribu",
+     "Libero", "Misionero", "Montañero", "Musico",
+     "Ocultista", "Oficinista", "Prospector", "Psicologo/Psicoanalista", "Psiquiatra", "Reportera",
+     "Agente Uniformado", "Vendedora", "Soldado",
+     "Reportero Geografico", "Secretaria", "Tendero", "Tratante de Antiguedades", "Vagabundo", "Vaquero","Maestra",
+     "Manicurista","Modista",
+     "Profesor de secundaria", "Trabajador industrial", "Encargado del registro", "Trabajador Gubernamental",
+     "Guarda Expedientes", "mecanógrafo", "jardineros","Productor de Fruta","Trabajador de vivero","Trabajador textil",
+     "Obrero","Repartidor","colportores","Recolectores de Basura","Colportor","Viajeros comerciales",
+     "operarios semicalificados/calificados","Fabrica de comida","Operador Telefonico","Fabrica de Zapatos",
+     "fontanero","Electricista","Peluquero","Fabrica de ropa","Fabrica de muebles","Lavanderia",
+     "Fabrica de Caucho","Fabrica de Escobas","Fabrica de Botones","Taquígrafo","Fabrica de Metal","Cajera",
+     "Fabrica de telas","Distribuidor minorista","Granja lechera","Fabrica de Algodon","Fabrica de Guantes",
+     "Fabrica de Neumaticos","Limpiadoras","Trabajadora Social","Fabrica de Caramelos","Sastre","Barbera",
+     "Fabrica de Estabre/Lana","Fabrica de Sombreros","Fabrica de zapatos","Fabrica de Tabaco/Cigarrillos",
+     "Partera","Empleada de tienda","Cocinera"]
+     
+     var Pueblo = [ "Dakari","Dustin","Lenno","Gaetano","Hamilton","Leben","Loring","Scoville","Tabor","Wellington",
+     "Bodie","Kolmanskop","Iultin","Plymouth","Varosha","Brattleboro","Townshend","Finch","Fawn","Rosebud","Maple",
+     "Paradise","Ferret","Daffodil","Grizzly","Primrose","Elk","Falcon Point","Beach Bluff","Martin's beach",
+     "Manchester","Annisquam","Essex falls","Essex","Topsfield","Innsmouth","Rowley","Bolton","Gloucoster","Rockport",
+     "Marblehead","Kingsport","Beverly","Arkham","Ipwitch","Danvers","Newbury Port","Amesbury","Salem"];
+
+     var Estados = ["Alabama","Arizona","Arkansas","California","Carolina del Norte","Carolina del Sur",
+     "Colorado","Connecticut","Dakota del Norte","Dakota del Sur","Delaware","Florida","Georgia","Hawai","Idaho",
+     "Illinois","Indiana","Iowa","Kansas","Kentucky","Luisiana","Maine","Maryland","Michigan","Minenesota",
+          "Missisipi","Misuri","Montana","Nebraska","Nevada","Nueva Jersey","Nueva York","Nuevo Hampshire",
+     "Nuevo Mexico","Ohio","Oklahoma","Oregon","Pensilvania","Rhode Island","Tennessee","Texas","Utah","Vermont",
+     "Virginia","Virginia Occidental","Washington","Wisconsin","Wyoming"];
+
+     var Continentes = ["Africa","Europa","America","Asia","Oceania"];
+
+     var Africa = ["Etiopia","Liberia","Egipto","Sudafrica","Libia","Marruecos","Sudan","Tunez"];
+
+     var Europa = ["Francia","Dinamarca","Portugal","San Marino","Andorra","España","Suecia","Liechtenstein",
+     "Paises Bajos","Suiza","Belgica","Grecia","Monaco","Rumania","Serbia","Luxemburgo","Noruega","Bulgaria","Albania",
+     "Finlandia","Polonia"];
+
+      var America = ["Estados Unidos","Haiti","Colombia","Paraguay","Venezuela","Argentina","Chile","Peru","Brasil","Bolivia",    "Uruguay",
+     "Ecuador","Costa Rica","Honduras","Nicaragua","Guatemala","El Salvador","Republica Dominicana","Cuba"];
+
+     var Asia = ["Japón","Irán","Omán","Afganistan","Tailandia","Nepal","China","Butan","Mongolia"];
+
+     var Oceania = ["Australia","Nueva Zelanda"];
+
+     var Inmigrante = ["Alemania","Austria-Hungria","Rusia","Irlanda","Escandinavia","Reino Unido","Italia",
+     "Canada","Europa","Asia","Mexico"];
+
+     var Genero = ["Hombre","Mujer"]
  
  // Terminan el area de listas
 
 
 
 
+function Generate_Character(){
 
 
-
-function NHombre(){
-
-    
      //Area de variables random
-
-     var rand_first = Math.floor(Math.random() * firstname.length);
+     // var Gender = Math.floor(Math.random() * Genero.length); 
+     var rand_first_man = Math.floor(Math.random() * Firstname_Man.length);
+     var Firstname = Firstname_Man[rand_first_man]
+     var rand_prof_man = Math.floor(Math.random() * Profession_Man.length);
+     var Profession = Profession_Man [rand_prof_man]
+     var rand_prof_man = Math.floor(Math.random() * Profession_Man.length);
+     var rand_first_man = Math.floor(Math.random() * Firstname_Man.length);
+     var rand_first_woman = Math.floor(Math.random() * Firstname_Woman.length); 
+     // var rand_first = Math.floor(Math.random() * Firstname_Man.length) 
 	var rand_last = Math.floor(Math.random() * lastname.length); 
-     var rand_prof = Math.floor(Math.random() * Profession.length);
+     // var rand_prof_man = Math.floor(Math.random() * Profession_Man.length);
+     // var rand_prof_woman = Math.floor(Math.random() * Profession_Woman.length);
 
      var Fue = Math.floor(Math.random() * (18 - 3 + 1) + 3)*5;
      var Con = Math.floor(Math.random() * (18 - 3 + 1) + 3)*5;
@@ -161,6 +245,7 @@ function NHombre(){
      var RazonAllega = Math.floor(Math.random() * (10 - 1 + 1) + 1);
 
      var Lugarnacimiento = Math.floor(Math.random() * (100 - 1 + 1) + 1);
+     console.log(Lugarnacimiento)
      var rand_Pueblo = Math.floor(Math.random() * Pueblo.length);
      var rand_Europa = Math.floor(Math.random() * Europa.length);
      var rand_Africa = Math.floor(Math.random() * Africa.length);
@@ -178,80 +263,88 @@ function NHombre(){
 
      //Empiezan los if
 
+
+
+
+
+
+
      if (rand_Continentes === 0){
      var Pais = Europa[rand_Europa]
      }
-     else if(rand_Continentes === 1){
-     var Pais = Africa[rand_Africa]
-     }
-     else if(rand_Continentes === 2){
-     var Pais = Asia[rand_Asia]
-     }
-     else if(rand_Continentes === 3){
-     var Pais = America[rand_America]
-     }
-     else {
-     var Pais = Oceania[rand_Oceania]
-     }
+          else if(rand_Continentes === 1){
+          var Pais = Africa[rand_Africa]
+          }
+          else if(rand_Continentes === 2){
+          var Pais = Asia[rand_Asia]
+          }
+          else if(rand_Continentes === 3){
+          var Pais = America[rand_America]
+          }
+          else {
+          var Pais = Oceania[rand_Oceania]
+          }
+
+
+
      
      if (Extranjero < 19){
           var Pais = Inmigrante[0]
      }
-     else if (Extranjero < 31){
-          var Pais = Inmigrante[1]
-     }
-     else if (Extranjero < 43){
-          var Pais = Inmigrante[2]
-     }
-     else if (Extranjero < 53){
-          var Pais = Inmigrante[3]
-     }
-     else if (Extranjero < 62){
-          var Pais = Inmigrante[4]
-     }
-     else if (Extranjero < 71){
-          var Pais = Inmigrante[5]
-     }
-     else if (Extranjero < 81){
-          var Pais = Inmigrante[6]
-     }
-     else if (Extranjero < 90){
-          var Pais = Inmigrante[7]
-     }
-     else if (Extranjero < 96){
-          var Pais = Inmigrante[8]
-     }
-     else if (Extranjero < 98){
-          var Pais = Inmigrante[9]
-     }
-     else if (Extranjero < 100){
-          var Pais = Inmigrante[10]
-     }
-     else {
-          var Pais = Pais
-     } 
+          else if (Extranjero < 31){
+               var Pais = Inmigrante[1]
+          }
+          else if (Extranjero < 43){
+               var Pais = Inmigrante[2]
+          }
+          else if (Extranjero < 53){
+               var Pais = Inmigrante[3]
+          }
+          else if (Extranjero < 62){
+               var Pais = Inmigrante[4]
+          }
+          else if (Extranjero < 71){
+               var Pais = Inmigrante[5]
+          }
+          else if (Extranjero < 81){
+               var Pais = Inmigrante[6]
+          }
+          else if (Extranjero < 90){
+               var Pais = Inmigrante[7]
+          }
+          else if (Extranjero < 96){
+               var Pais = Inmigrante[8]
+          }
+          else if (Extranjero < 98){
+               var Pais = Inmigrante[9]
+          }
+          else if (Extranjero < 100){
+               var Pais = Inmigrante[10]
+          }
+          else {
+               var Pais = Pais
+          } 
 
 
 
 
-
-     if(Lugardenacimiento < 61){
+          
+     if(Lugarnacimiento < 61){
           var Lugardenacimiento = Pueblo[rand_Pueblo]
      }
 
-        if (Lugarnacimiento < 75){
+        else if (Lugarnacimiento < 75){
 
-      var Lugardenacimiento = "Nacio en el pais de " + Pais
-     }
+        var Lugardenacimiento = "Nacio en el pais de " + Pais
+        }
       
-       else {
+        else {
           
-          var ran_Estado = Math.floor(Math.random() * Estados.length )
-          var Estado = Estados[ran_Estado]
-          var Lugardenacimiento = "Nacio en el estado de "+ Estado
-     }
-
-     console.log(Pais,Lugardenacimiento)
+        var ran_Estado = Math.floor(Math.random() * Estados.length )
+        var Estado = Estados[ran_Estado]
+        var Lugardenacimiento = "Nacio en el estado de "+ Estado
+        }
+     
           
 
 
@@ -280,13 +373,13 @@ function NHombre(){
      if(Ideocreen === 1 ) {
           var IdeoCreencia  = "Hay un poder superior al que veneras y rezas (Vishnu,Jesucristo, Haile Selassie 1, etc.)."
           }
-           else if(Ideocreen === 2){
-           var IdeoCreencia  = "La humanidad se las puede apañar sin religiones (ateo acérrimo, humanista, secularista, etc.)."
-            }
-            else if(Ideocreen === 3){
-            var IdeoCreencia  = "La ciencia tiene todas las respuestas. Elige un área de tu interés (evolución, criogenia, exploración espacial,etc.)."
-             }
-            else if(Ideocreen === 4){
+               else if(Ideocreen === 2){
+               var IdeoCreencia  = "La humanidad se las puede apañar sin religiones (ateo acérrimo, humanista, secularista, etc.)."
+               }
+               else if(Ideocreen === 3){
+               var IdeoCreencia  = "La ciencia tiene todas las respuestas. Elige un área de tu interés (evolución, criogenia, exploración espacial,etc.)."
+               }
+               else if(Ideocreen === 4){
                var IdeoCreencia  = "Crees en el destino (el karma, el sistema de castas,supersticiones, etc.)."
               }
               else if(Ideocreen === 5){
@@ -311,13 +404,13 @@ function NHombre(){
      if(Lugarsigni === 1 ) {
           var LugarSignificativo = "Donde cursaste tus estudios (colegio, universidad ,etc.)."
           }
-           else if(Lugarsigni === 2){
-           var LugarSignificativo = "Tu ciudad natal (aldea rural, centro de comercio,ciudad ajetreada, etc.)."
-            }
-            else if(Lugarsigni === 3){
-            var LugarSignificativo = "El lugar donde conociste a tu primer amor (un concierto, de vacaciones, un refugio antiaéreo, etc.) ."
-             }
-            else if(Lugarsigni === 4){
+               else if(Lugarsigni === 2){
+               var LugarSignificativo = "Tu ciudad natal (aldea rural, centro de comercio,ciudad ajetreada, etc.)."
+               }
+               else if(Lugarsigni === 3){
+               var LugarSignificativo = "El lugar donde conociste a tu primer amor (un concierto, de vacaciones, un refugio antiaéreo, etc.) ."
+               }
+               else if(Lugarsigni === 4){
                var LugarSignificativo = "Un lugar de tranquilidad y contemplación (la biblioteca,paseos por sus campos, pesca, etc.)."
               }
               else if(Lugarsigni === 5){
@@ -342,13 +435,13 @@ function NHombre(){
      if(Objetosigni === 1 ) {
       var ObjetoSignificativo = "Un objeto vinculado a tu habilidad más alta (un traje caro, una identificación falsa, un puüo americano,etc.)."
       }
-       else if(Objetosigni === 2){
-       var ObjetoSignificativo = "Un objeto fundamental para tu ocupación (el maletín de un médico, un coche, unas ganzúas, etc.)."
-        }
-        else if(Objetosigni === 3){
-        var ObjetoSignificativo = "Un recuerdo de tu niñez (cómics, una navaja de bolsillo, una moneda de la suerte, etc.)."
-         }
-        else if(Objetosigni === 4){
+          else if(Objetosigni === 2){
+          var ObjetoSignificativo = "Un objeto fundamental para tu ocupación (el maletín de un médico, un coche, unas ganzúas, etc.)."
+          }
+          else if(Objetosigni === 3){
+          var ObjetoSignificativo = "Un recuerdo de tu niñez (cómics, una navaja de bolsillo, una moneda de la suerte, etc.)."
+          }
+          else if(Objetosigni === 4){
            var ObjetoSignificativo = "Un recuerdo de una persona fallecida (una joya, una fotografía que llevas en la cartera, una carta, etc.)."
           }
           else if(Objetosigni === 5){
@@ -373,12 +466,12 @@ function NHombre(){
      if(Rasgoperso === 1 ) {
            var Rasgopersonalidad = "Generoso (propinas generosas, siempre ayuda a personas necesitadas, filántropo, etc.)."
            }
-            else if(Rasgoperso === 2){
-            var Rasgopersonalidad = "Bueno con los animales (amante de los gatos, creció en una granja, mano para los caballos, etc.)."
-             }
-             else if(Rasgoperso === 3){
-             var Rasgopersonalidad = "Soñador (tiende a estar con la cabeza en las nubes, visionario, muy creativo, etc.)."
-              }
+               else if(Rasgoperso === 2){
+               var Rasgopersonalidad = "Bueno con los animales (amante de los gatos, creció en una granja, mano para los caballos, etc.)."
+               }
+               else if(Rasgoperso === 3){
+               var Rasgopersonalidad = "Soñador (tiende a estar con la cabeza en las nubes, visionario, muy creativo, etc.)."
+               }
              else if(Rasgoperso === 4){
                 var Rasgopersonalidad = "Hedonista (el alma de la fiesta, borracho divertido, vive deprisa y muere joven, etc.)."
                }
@@ -404,13 +497,13 @@ function NHombre(){
      if(Allega === 1 ) {
            var Allegados = "Padre (madre, padre, madrastra, etc.)."
            }
-            else if(Allega === 2){
-            var Allegados = "Abuelo (abuela materna, abuelo paterno, etc.)."
-             }
-             else if(Allega === 3){
-             var Allegados = "Hermano (hermano, hermanastro, hermanastra, etc.)."
-              }
-             else if(Allega === 4){
+               else if(Allega === 2){
+               var Allegados = "Abuelo (abuela materna, abuelo paterno, etc.)."
+               }
+               else if(Allega === 3){
+               var Allegados = "Hermano (hermano, hermanastro, hermanastra, etc.)."
+               }
+               else if(Allega === 4){
                 var Allegados = "Hijo (hijo, hija, hijastro, hijastra, etc.)."
                }
                else if(Allega === 5){
@@ -435,13 +528,13 @@ function NHombre(){
      if(RazonAllega === 1 ) {
            var RazonAllegado = "Estás en deuda con esa persona. ¿De qué forma te ayudó? (económicamente, te protegió en los malos tiempos, te consiguió tu primer trabajo, etc.)."
            }
-            else if(RazonAllega === 2){
-            var RazonAllegado = "Te enseñó algo. ¿Qué? (una habilidad, a amar, a ser un hombre, etc.) ."
-             }
-             else if(RazonAllega === 3){
-             var RazonAllegado = "Dio sentido a tu vida. ¿Cómo? (aspirar a ser como esa persona, quieres estar con ella, quieres hace rl a feliz,etc.) ."
-              }
-             else if(RazonAllega === 4){
+               else if(RazonAllega === 2){
+               var RazonAllegado = "Te enseñó algo. ¿Qué? (una habilidad, a amar, a ser un hombre, etc.) ."
+               }
+               else if(RazonAllega === 3){
+               var RazonAllegado = "Dio sentido a tu vida. ¿Cómo? (aspirar a ser como esa persona, quieres estar con ella, quieres hace rl a feliz,etc.) ."
+               }
+               else if(RazonAllega === 4){
                 var RazonAllegado = "Hiciste algo que perjudicó a esa persona y buscas la reconciliación. ¿Qué hiciste? (le robas te dinero, informaste ala policía sobre ella, te negas te a ayudarla cuando estaba deses perada, etc.)."
                }
                else if(RazonAllega === 5){
@@ -468,8 +561,10 @@ function NHombre(){
      //Zona de muestra de resultados
 
      document.getElementById('result').innerHTML =
-     "<br><h3> Nombre : "+firstname[rand_first]+" "+lastname[rand_last]+"</h3>"+
-     "<br> Profesion : "+Profession[rand_prof]+"<br>"+
+     // "<br><h3> Genero : "+Genero[Gender]+"</h3>"+
+     "<br><h3> Genero : Hombre </h3>"+
+     "<br><h3> Nombre : "+Firstname+" "+lastname[rand_last]+"</h3>"+
+     "<br> Profesion : "+Profession+"<br>"+
      "<br> Ciudad/Pueblo : "+Pueblo[rand_Pueblo]+
      "<h3><br>Stats</h3>"+
      "<ul><li> Fue : "+Fue+
