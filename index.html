@@ -28,6 +28,8 @@
                 element.style.display='none';
             }
         }
+
+       /*
         function Man_Chck() {
             Man_check = document.getElementById("Man_Check")
             if (Man_check.checked) {
@@ -46,6 +48,7 @@
             
             }
         }
+        */
 
     </script>
 
@@ -64,14 +67,16 @@
     <hr>
 
     </header>
+
         <label for="">Hombre
             <input type="checkbox" name="Man_Check" id="Man_Check"  value="0" onchange="Man_Chck()" />
         </label>
+
         <label for="">Mujer
-        <input type="checkbox" name="Woman_Check" id="Woman_Check"  value="0" onchange="Woman_Chck()" />
+            <input type="checkbox" name="Woman_Check" id="Woman_Check"  value="0" onchange="Woman_Chck()" />
         </label>
 
-        <button class="btn-generadores" onclick="Generate_Character()">Generar Personaje</button>
+        <button class="btn-generadores" onclick="Generate_Character()">Generar  Personaje</button>
         <button class="btn-generadores" onclick="NMujer()">Generar Nombre de Mujer</button>
         <button class="btn-generadores" onclick="NPueblo()">Generar Nombre de Pueblo</button>
         <button class="btn-generadores" onclick="Sodas()">Generar Nombre Sodas</button>

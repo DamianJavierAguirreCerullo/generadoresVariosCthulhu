@@ -214,7 +214,10 @@ function Generate_Character(){
 
 
      //Area de variables random
-     // var Gender = Math.floor(Math.random() * Genero.length); 
+
+
+
+
      var rand_first_man = Math.floor(Math.random() * Firstname_Man.length);
      var Firstname = Firstname_Man[rand_first_man]
      var rand_prof_man = Math.floor(Math.random() * Profession_Man.length);
@@ -222,8 +225,9 @@ function Generate_Character(){
      var rand_prof_man = Math.floor(Math.random() * Profession_Man.length);
      var rand_first_man = Math.floor(Math.random() * Firstname_Man.length);
      var rand_first_woman = Math.floor(Math.random() * Firstname_Woman.length); 
-     // var rand_first = Math.floor(Math.random() * Firstname_Man.length) 
 	var rand_last = Math.floor(Math.random() * lastname.length); 
+     // var Gender = Math.floor(Math.random() * Genero.length); 
+     // var rand_first = Math.floor(Math.random() * Firstname_Man.length) 
      // var rand_prof_man = Math.floor(Math.random() * Profession_Man.length);
      // var rand_prof_woman = Math.floor(Math.random() * Profession_Woman.length);
 
@@ -258,8 +262,14 @@ function Generate_Character(){
      var  Pv  = Math.floor((Tam+Con)/10);
      var Edad = Math.floor(Math.random() * (89 - 15 +1) + 15);
 
+
+
+
      //Finaliza el Area de Variables random
 
+
+
+     
 
      //Empiezan los if
 
@@ -555,11 +565,19 @@ function Generate_Character(){
                else{
                     var RazonAllegado = "Te hizo daño y ahora buscas venganza. ¿De qué le culpas? (la muerte de un ser querido, tu ruina finan ciera,la ruptura de tu matrimonio, etc.)."
                }
+
+
+
                
      //Terminan los if
 
+
+
+
      //Zona de muestra de resultados
 
+
+     
      document.getElementById('result').innerHTML =
      // "<br><h3> Genero : "+Genero[Gender]+"</h3>"+
      "<br><h3> Genero : Hombre </h3>"+
