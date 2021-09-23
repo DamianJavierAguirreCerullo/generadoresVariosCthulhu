@@ -1,6 +1,4 @@
-function Fobias(){
-
-         var Fobia =[ 
+         var Fobias =[ 
          "Ablutofobia:Miedo a bañarse", 
          "Acrofobia: Alturas", 
          "Aerofobia: Volar", 
@@ -102,11 +100,13 @@ function Fobias(){
          "Xenoglosofobia: Miedo a las lenguas extranjeras",
          "Zoofobia: Miedo a los animales"
                    
-         ];
+         ]
 
-         var Fobia_leght = Math.floor(Math.random() * Fobia.length);
+function Generar_Fobia(){
+
+         var Fobia_leght = Math.floor(Math.random() * Fobias.length);
          document.getElementById("result").innerHTML = 
-         "<h1>Fobia :</h1>"+"<h2>"+Fobia[Fobia_leght]+"</h2>"
+         "<h1>Fobia :</h1>"+"<h2>"+Fobias[Fobia_leght]+"</h2>"
         //  document.getElementById("resultE").innerHTML =
         //  "<h1>Soda:</h1>"+"<h2>"+Fobia[Fobia_leght]+"</h2>"
 

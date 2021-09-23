@@ -32,7 +32,14 @@
      // Comienzan las listas
 
 
-     var Firstname_Man = ["Aaron", "Abraham", "Addison", "Amos", "Anderson", "Archibald", "August", "Barnabas", "Adolf","Ali","Amadu","Amir","Ang","Apeli","Apo","Aren","Aaro","Aaron","Aart","Aatto","Aatu","Aatto","Aatu","Abacuc","Abacuc","Abaddon","Abban","Abbe","Abdelhamid","Abdelkader","Abdeltif","Abdelmajid","Abderrahim","Abderrahmane","Abdias","Abdiel","Abdiou","Abdolhossein","Abdollah","Abdolreza","Abdou","Abdoul","Abdoulaye","Abduh","Abdul","Abdulah","Abdullah","Abdullo","Abdullohi","Abdurakhman","Abduweli","Abe","Abednego","Abel","Abele","Abenner","Abessa","Abessalom","Abhay","Abhijeet","Abhijit","Abhilash","Abhilash","Abhinav","Abhishek","Abia","Abiah","Abiathar","Abidan","Abidemi","Abiel","Abihu","Abijah","Abilio","Abilio","Abimael","Abimbola","Abiodun","Abioye","Abimelech","Abiram","Abisai","Abishai","Abner","Abolfazl","Aboubacar","Abraam","Abraao","Abram","Abramo","Abrar","Abrasha","Absalom","Abu","Aca","Achaab","Achab","Achaicus","Achaicus","Achaikos","Achan","Achard","Acheloios","Achelous","Achille","Achilleas","Achilles","AChilleus","Achim","Acke","Aco","Ad","Adad","Adair","Adalberht","Adalbern","Adalberto","Adalfarus","Adalfuns","Adalhard","Adalia","Adalwin","Adalwolf","Adalya","Adam","Adamo","Adamou","Adamu","Adde","Addison","Addy","Adebayo","Adebola","Adebowale","Adedayo","Adegoke","Adelard","Adelardo","Adelbert","Adelmar","Adem","Ademar","Ademaro","Ademir","Aden","Adeodatus","Adetokunbo","Ádhamh","Adi","Adil","Adilet","Adin","Adinah","Adino","Adir","Adisa","Aditya","Adlai","Admir","Adnan","Adolf","Adolfito","Adolfo","Adolph","Adolphus","Adomas","Adonai","Adone","Adonijah","Adoniram","Adonis","Adoniyah","Adorjan","Adrastos","Adriá","Adrián","Adriano","Adrianus","Adriel","Adrien","Adrijan","Aed","Aedh","Aegidius","Aelianus","Aelius","Aemilianus","Aemilius","Aeneas","Aengus","Aeolus","Aeron","Aeschylus","Aesculapius","Aeson","Aesop","Aetius","Afan","Afanasiy","Afanasy","Affan","Afif","Afolabi","Afon","Afonso","Afonya","Africanus","Afrim","Afzal","Agafon","Agam","Agamemnon","Agapetos","Agapetus","Agapios","Agapito","Agathangelos","Agathinos","Agathon","Agatino","Aghi","Aghil","Agi","Agilmar","Agilulf","Agim","Agmundr","Agnar","Agner","Agni","Agostinho","Agostino","Agoston","Agrippa","Agung","Agus","Agustin","Ahab","Aharon","Ahenobarbus","Ahmad","Ahmadu","Ahmed","Ahmet","Ahmose","Ahoth","Ahriman","Ahtahkakoop","Ahti","Ahura","Aias","Aibek","Aidan","Aiden","Aike","Ailbhe","Ailill","Alpein","Aiman","Aimé","Aimilios","Aimo","Ain","Ainars","Aindrea","Aindreas","Aindriu","Aineias","Aingeru","Ainsley","Aiolos","Aischylos","Aisopos","Aithan","Aitor","Aivar","Aivars","Ajax","Ajay","Ajdin","Ajeet","Ajnur","Ajith","Akachi","Akaki","Akakios","Akamu","Akash","Ake","Akeem","Akhenaten","Akhenaton","Akhil","Akhmad","Aki","Akiba","Akihiko","Akihito","Akim","Akimitsu","Akio","Akira","Akiva","Akmad","Akoni","Akós","Akpan","Akpofure","Akram","Aksel","Akseli","Akshay","Aku","Akuchi","Al","Alattin","Alain","Alajos","Alan","Alaois","Alard","Alaric","Alasdair","Alassane","Alastair","Alastar","Albaer","Alban","Albano","Albanus","Alberic","Alberich","Alberico","Albert","Albertas","Alberte","ALberto","ALbertus","Albie","Albin","Albino","Albinus","ALboin","Alborz","Albrecht","Albus","Alby","Alcaeus","Alcibiades","Alcides","Aldebrand","Alden","Aldegar","Alderic","Aldert","Aldhard","Aldin","Aldo","Aldous","Aldric","Aldus","Aldwin","Ale","Alec","Alecjo","Aled","Aleifr","Aleix","Aleixo","Alejandro","Alejo","Alekos","Aleks","Aleksandro","Alekei","Aleksei","Aleksi","Alem","alemayehu","Alen","Alsander","Alessandro","Alessio","Alex","Alexander","Alexei","Alf","Alfarr","Alfbern","Alfeo","Alfie","ALfio","Alfons","Alfons","Alfred","Alfvin","Alfwin","Algar","Algautr","Alger","Algernon","Algimantas","Algirdas","Algot","Alhaji","Alhassan","Alija","Alik","Alikham","Alim","Alimjan","Alinafe","Alisher","Alistair","Aljaz","Alkaios","Alke","Alkeides","Allan","Allard","Allon","Almir","Almiro","Almog","Almos","Alois","Aloisio","Alojz","Alojzy","Alon","Alonzo","Aloys","Alp","Alparslan","Alpaslan","Alperen","Alpertti","Alpha","Alphaeus","Alphaios",
+     var Firstname_Man = ["Aaron", "Abraham", "Addison", "Amos", "Anderson", "Archibald", "August", "Barnabas", "Adolf","Ali","Amadu","Amir","Ang","Apeli","Apo","Aren","Aaro","Aaron","Aart","Aatto","Aatu","Aatto","Aatu","Abacuc","Abacuc","Abaddon","Abban","Abbe","Abdelhamid","Abdelkader","Abdeltif","Abdelmajid","Abderrahim","Abderrahmane","Abdias","Abdiel","Abdiou","Abdolhossein","Abdollah","Abdolreza","Abdou","Abdoul","Abdoulaye","Abduh","Abdul","Abdulah","Abdullah","Abdullo","Abdullohi","Abdurakhman","Abduweli","Abe","Abednego","Abel","Abele","Abenner","Abessa","Abessalom","Abhay","Abhijeet","Abhijit","Abhilash","Abhilash","Abhinav","Abhishek","Abia","Abiah","Abiathar","Abidan","Abidemi","Abiel","Abihu","Abijah","Abilio","Abilio","Abimael","Abimbola","Abiodun","Abioye","Abimelech","Abiram","Abisai","Abishai","Abner","Abolfazl","Aboubacar","Abraam",
+     "Abraao","Abram","Abramo","Abrar","Abrasha","Absalom","Abu","Aca","Achaab","Achab","Achaicus","Achaicus","Achaikos","Achan","Achard","Acheloios","Achelous","Achille","Achilleas","Achilles","AChilleus","Achim","Acke","Aco","Ad","Adad","Adair","Adalberht","Adalbern","Adalberto","Adalfarus","Adalfuns","Adalhard","Adalia","Adalwin","Adalwolf","Adalya","Adam","Adamo","Adamou","Adamu","Adde","Addison","Addy","Adebayo","Adebola","Adebowale","Adedayo","Adegoke","Adelard","Adelardo","Adelbert","Adelmar","Adem","Ademar","Ademaro",
+     "Ademir","Aden","Adeodatus","Adetokunbo","Ádhamh","Adi","Adil","Adilet","Adin","Adinah","Adino","Adir","Adisa","Aditya","Adlai","Admir","Adnan","Adolf","Adolfito","Adolfo","Adolph","Adolphus","Adomas","Adonai","Adone","Adonijah","Adoniram","Adonis","Adoniyah","Adorjan","Adrastos","Adriá","Adrián","Adriano","Adrianus",
+     "Adriel","Adrien","Adrijan","Aed","Aedh","Aegidius","Aelianus","Aelius","Aemilianus","Aemilius","Aeneas","Aengus","Aeolus","Aeron","Aeschylus","Aesculapius","Aeson","Aesop","Aetius","Afan","Afanasiy","Afanasy","Affan","Afif","Afolabi","Afon","Afonso","Afonya","Africanus","Afrim","Afzal","Agafon","Agam","Agamemnon","Agapetos","Agapetus","Agapios","Agapito","Agathangelos","Agathinos","Agathon","Agatino","Aghi","Aghil","Agi",
+     "Agilmar","Agilulf","Agim","Agmundr","Agnar","Agner","Agni","Agostinho","Agostino","Agoston","Agrippa","Agung","Agus","Agustin","Ahab","Aharon","Ahenobarbus","Ahmad","Ahmadu","Ahmed","Ahmet","Ahmose","Ahoth","Ahriman","Ahtahkakoop","Ahti","Ahura","Aias","Aibek","Aidan","Aiden","Aike","Ailbhe","Ailill","Alpein","Aiman","Aimé","Aimilios","Aimo","Ain","Ainars","Aindrea","Aindreas","Aindriu","Aineias","Aingeru","Ainsley",
+     "Aiolos","Aischylos","Aisopos","Aithan","Aitor","Aivar","Aivars","Ajax","Ajay","Ajdin","Ajeet","Ajnur","Ajith","Akachi","Akaki","Akakios","Akamu","Akash","Ake","Akeem","Akhenaten","Akhenaton","Akhil","Akhmad","Aki","Akiba","Akihiko","Akihito","Akim","Akimitsu","Akio","Akira","Akiva","Akmad","Akoni","Akós","Akpan","Akpofure","Akram","Aksel","Akseli","Akshay","Aku","Akuchi","Al","Alattin","Alain","Alajos","Alan","Alaois",
+     "Alard","Alaric","Alasdair","Alassane","Alastair","Alastar","Albaer","Alban","Albano","Albanus","Alberic","Alberich","Alberico","Albert","Albertas","Alberte","ALberto","ALbertus","Albie","Albin","Albino","Albinus","ALboin","Alborz","Albrecht","Albus","Alby","Alcaeus","Alcibiades","Alcides","Aldebrand","Alden","Aldegar","Alderic","Aldert","Aldhard","Aldin","Aldo","Aldous","Aldric","Aldus","Aldwin","Ale","Alec","Alecjo","Aled",
+     "Aleifr","Aleix","Aleixo","Alejandro","Alejo","Alekos","Aleks","Aleksandro","Alekei","Aleksei","Aleksi","Alem","alemayehu","Alen","Alsander","Alessandro","Alessio","Alex","Alexander","Alexei","Alf","Alfarr","Alfbern","Alfeo","Alfie","ALfio","Alfons","Alfons","Alfred","Alfvin","Alfwin","Algar","Algautr","Alger","Algernon","Algimantas","Algirdas","Algot","Alhaji","Alhassan","Alija","Alik","Alikham","Alim","Alimjan","Alinafe","Alisher","Alistair","Aljaz","Alkaios","Alke","Alkeides","Allan","Allard","Allon","Almir","Almiro","Almog","Almos","Alois","Aloisio","Alojz","Alojzy","Alon","Alonzo","Aloys","Alp","Alparslan","Alpaslan","Alperen","Alpertti","Alpha","Alphaeus","Alphaios",
      "Alphege","Alphege","Alphonse","Alphonsus","Alpin","Altair","Altan","Alton","Altti","Altwidus","Alun","Alvah","Alvar","Alvaro","Alvin","Alvis","Alwyn","Alyosha","Amabilis","Amadej","Amadeo",
      "Amadeus","Amador","Amahle","Amal","Amalbert","Amalric","Amacio","Amand","Amani","Amarjeet","Amaru","Amato","Amatore","Amaury","Ambakoum","Ambram","Ambrogino","Ambroise","Ambrose","Ambrus","Amenhotep","Ameqran","Amerigo","Amets","Ameyalli","Amhlaidh","Amichai","Amilcare","Amin","Amiran","Amirani","Amis","Amitabh","Amittai","Amjad","Amleto","Ammar","Ammiel",
      // https://www.behindthename.com/names/gender/masculine/3
@@ -221,6 +228,8 @@ function Generate_Character(){
 
 
 
+     //Area de Nombres y Profesiones
+
      var rand_first_man = Math.floor(Math.random() * Firstname_Man.length);
      var Firstname = Firstname_Man[rand_first_man]
      var rand_prof_man = Math.floor(Math.random() * Profession_Man.length);
@@ -234,6 +243,10 @@ function Generate_Character(){
      // var rand_prof_man = Math.floor(Math.random() * Profession_Man.length);
      // var rand_prof_woman = Math.floor(Math.random() * Profession_Woman.length);
 
+
+
+     //Area de Caracteristicas
+
      var Fue = Math.floor(Math.random() * (18 - 3 + 1) + 3)*5;
      var Con = Math.floor(Math.random() * (18 - 3 + 1) + 3)*5;
      var Pod = Math.floor(Math.random() * (18 - 3 + 1) + 3)*5;
@@ -242,7 +255,26 @@ function Generate_Character(){
      var Tam = Math.floor(Math.random() * (18 - 8 + 1) + 8)*5;
      var Int = Math.floor(Math.random() * (18 - 8 + 1) + 8)*5;
      var Edu = Math.floor(Math.random() * (18 - 8 + 1) + 8)*5;
+     var  Pv  = Math.floor((Tam+Con)/10);
+     var Edad = Math.floor(Math.random() * (89 - 15 +1) + 15);
      // var  Sue = Math.floor(Math.random() * (18 - 8 + 1) + 8)*5
+
+
+
+     
+     //Area de Fobias y Manias
+     var rand_Manias = Math.floor(Math.random() *(100 - 1 + 1) +1 )
+     var rand_Fobias = Math.floor(Math.random() *(100 - 1 + 1) +1 )
+     var Fobias_1 = Math.floor(Math.random() * Fobias.length);
+     var Fobias_2 = Math.floor(Math.random() * Fobias.length);
+     var Fobias_3 = Math.floor(Math.random() * Fobias.length);
+     var Manias_1 = Math.floor(Math.random() * Manias.length);
+     var Manias_2 = Math.floor(Math.random() * Manias.length);
+     var Manias_3 = Math.floor(Math.random() * Manias.length);
+
+
+
+     //Area de Trasfondo
 
      var Ideocreen = Math.floor(Math.random() * (10 - 1 + 1) + 1);
      var Lugarsigni = Math.floor(Math.random() * (10 - 1 + 1) + 1);
@@ -251,8 +283,12 @@ function Generate_Character(){
      var Allega = Math.floor(Math.random() * (10 - 1 + 1) + 1);
      var RazonAllega = Math.floor(Math.random() * (10 - 1 + 1) + 1);
 
+
+
+
+     //Area de Lugar de Nacimiento
+
      var Lugarnacimiento = Math.floor(Math.random() * (100 - 1 + 1) + 1);
-     console.log(Lugarnacimiento)
      var rand_Pueblo = Math.floor(Math.random() * Pueblo.length);
      var rand_Europa = Math.floor(Math.random() * Europa.length);
      var rand_Africa = Math.floor(Math.random() * Africa.length);
@@ -262,8 +298,6 @@ function Generate_Character(){
      var rand_Continentes = Math.floor(Math.random() * Continentes.length);
      var Extranjero = Math.floor(Math.random() * (100 - 1 + 1 ) +1 );
 
-     var  Pv  = Math.floor((Tam+Con)/10);
-     var Edad = Math.floor(Math.random() * (89 - 15 +1) + 15);
 
 
 
@@ -279,8 +313,40 @@ function Generate_Character(){
 
 
 
+     //Area de Fobias y Manias
+
+     if (rand_Manias < 11){
+          Mania = "No tiene Manias"
+     }
+          else if(rand_Manias < 61){
+               Mania = Manias[Manias_1]
+          }
+          else if(rand_Manias < 91){
+               Mania = Manias[Manias_1] + "<br>" + " " + Manias[Manias_2]
+          }
+          else {
+               Mania = Manias[Manias_1] + "<br>" + " " + Manias[Manias_2] + "<br>" + " " + Manias[Manias_3]
+          }
 
 
+
+     if (rand_Fobias < 86){
+          Fobia = "No tiene Fobias"
+     }
+          else if(rand_Fobias < 96){
+               Fobia = Fobias[Fobias_1]
+          }
+          else if(rand_Fobias < 100){
+               Fobia = Fobias[Fobias_1] + "<br>" + " " + Fobias[Fobias_2]
+          }
+          else {
+               Fobia = Fobias[Fobias_1] + "<br>" + " " + Fobias[Fobias_2] + "<br>" + " " + Fobias[Fobias_3]
+          }
+
+
+
+
+     //Comienza el Area de Lugar de Nacimiento
 
      if (rand_Continentes === 0){
      var Pais = Europa[rand_Europa]
@@ -359,7 +425,11 @@ function Generate_Character(){
         }
      
           
+     //Finaliza el area de lugar de Nacimiento
 
+
+
+     //Comienza el Area de Edad y Trasfondo
 
      if(Edad < 20 ) {
           var Cosas_edad = "Resta 5 puntos entre FUE y TAM, y también de EDU. Tira dos veces para determinar la Suerte y  elige el resultado mayor"
@@ -570,6 +640,10 @@ function Generate_Character(){
                }
 
 
+     
+
+     //Comienza el Area de Edad y Trasfondo
+          
 
                
      //Terminan los if
@@ -612,7 +686,10 @@ function Generate_Character(){
      "<br>"+"Allegado"+
      "<br>"+Allegados+"<br>"+
      "<br>"+"Porque Es Tu Allegado"+
-     "<br>"+RazonAllegado
+     "<br>"+RazonAllegado+"<br>"+
+     "<br>"+Mania+"<br>"+
+     "<br>"+Fobia
+     
      // +"<br> Sue : "+Sue;
 
      //Fin Zona de muestra de resultados
