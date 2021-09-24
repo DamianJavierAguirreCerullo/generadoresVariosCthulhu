@@ -8,7 +8,8 @@
             
             background: rgb(55,53,88);
             background: radial-gradient(circle, rgba(55,53,88,1) 3%, rgba(52,87,63,1) 42%, rgba(0,0,0,1) 94%);
-            color: whitesmoke;
+            color: #69776c;
+            /* color: #247940; color: #40da1d; color: #50a229a8; */
         }
 
         .btn-generadores{

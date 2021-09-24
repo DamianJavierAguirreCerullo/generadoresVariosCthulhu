@@ -182,11 +182,12 @@
      "Fabrica de Estabre/Lana","Fabrica de Sombreros","Fabrica de zapatos","Fabrica de Tabaco/Cigarrillos",
      "Partera","Empleada de tienda","Cocinera"]
      
-     var Pueblo = [ "Dakari","Dustin","Lenno","Gaetano","Hamilton","Leben","Loring","Scoville","Tabor","Wellington",
-     "Bodie","Kolmanskop","Iultin","Plymouth","Varosha","Brattleboro","Townshend","Finch","Fawn","Rosebud","Maple",
-     "Paradise","Ferret","Daffodil","Grizzly","Primrose","Elk","Falcon Point","Beach Bluff","Martin's beach",
-     "Manchester","Annisquam","Essex falls","Essex","Topsfield","Innsmouth","Rowley","Bolton","Gloucoster","Rockport",
-     "Marblehead","Kingsport","Beverly","Arkham","Ipwitch","Danvers","Newbury Port","Amesbury","Salem"];
+     var Pueblo = ["Garden Lake", "Tuxbury Pond","Merrimac River", "Merrimac Bay","Indian River", "Parker River Oeste", "Parker River Este", "Bachelder Br", "Mill River", "Mud Creek", "Egypt R", "Plum Island", 
+     "Hower Pond", "Howlett Brook", "Pye Brook", "Danes Pond", "Ipswich River", "Castle Neck", "Essex Bay", "Essex River", "Annisquam River", "Alewife Br", "Nichols Br", "Fish Br", "Muddy Pond", "Pleasan Pond", 
+     "Beck Pond", "Chebacco Lake", "Gravelly", "Round Pound", "Sawmil Br", "Cat Brook", "Miles River", "Wenham Lake", "Bass River", "Porter River", "Crane River", "Water River", "Suntaug Lake", "North River", "Breeds Pond"];
+
+     var Ciudad = ["Falcon Point","Beach Bluff","Martin's beach",
+     "Manchester","Annisquam","Essex falls","Essex","Topsfield","Innsmouth","Rowley","Bolton","Gloucoster","Rockport", "Marblehead","Kingsport","Beverly","Arkham","Ipwitch","Danvers","Newbury Port","Amesbury","Salem"]
 
      var Estados = ["Alabama","Arizona","Arkansas","California","Carolina del Norte","Carolina del Sur",
      "Colorado","Connecticut","Dakota del Norte","Dakota del Sur","Delaware","Florida","Georgia","Hawai","Idaho",
@@ -290,6 +291,7 @@ function Generate_Character(){
 
      var Lugarnacimiento = Math.floor(Math.random() * (100 - 1 + 1) + 1);
      var rand_Pueblo = Math.floor(Math.random() * Pueblo.length);
+     var rand_Ciudad = Math.floor(Math.random() * Ciudad.length);
      var rand_Europa = Math.floor(Math.random() * Europa.length);
      var rand_Africa = Math.floor(Math.random() * Africa.length);
      var rand_Asia = Math.floor(Math.random() * Asia.length);
@@ -314,6 +316,9 @@ function Generate_Character(){
 
 
      //Area de Fobias y Manias
+
+
+     
 
      if (rand_Manias < 11){
           Mania = "No tiene Manias"
@@ -408,9 +413,12 @@ function Generate_Character(){
 
 
           
-     if(Lugarnacimiento < 61){
-          var Lugardenacimiento = Pueblo[rand_Pueblo]
+     if(Lugarnacimiento < 51){
+          var Lugardenacimiento = "Nacio en la ciudad de " + Ciudad[rand_Ciudad]
      }
+        else if(Lugarnacimiento < 61){
+               var Lugardenacimiento = "Nacio en el Pueblo de " + Pueblo[rand_Pueblo]
+        }
 
         else if (Lugarnacimiento < 75){
 
@@ -430,6 +438,9 @@ function Generate_Character(){
 
 
      //Comienza el Area de Edad y Trasfondo
+
+
+
 
      if(Edad < 20 ) {
           var Cosas_edad = "Resta 5 puntos entre FUE y TAM, y también de EDU. Tira dos veces para determinar la Suerte y  elige el resultado mayor"
@@ -452,6 +463,9 @@ function Generate_Character(){
               else{
                    var Cosas_edad = "Resta 80 puntos entre FUE, CON y DES (de una sola o repartidos entre dos o tres), y reduce 25 puntos la APA. Haz 4 tiradas de mejora de EDU."
               }
+
+
+
 
      if(Ideocreen === 1 ) {
           var IdeoCreencia  = "Hay un poder superior al que veneras y rezas (Vishnu,Jesucristo, Haile Selassie 1, etc.)."
@@ -484,6 +498,9 @@ function Generate_Character(){
                    var IdeoCreencia  = "Abanderado/ Activista (feminismo, igualdad de derechos, sindicalismo, etc.)."
               }
 
+
+
+
      if(Lugarsigni === 1 ) {
           var LugarSignificativo = "Donde cursaste tus estudios (colegio, universidad ,etc.)."
           }
@@ -514,6 +531,9 @@ function Generate_Character(){
               else{
                    var LugarSignificativo = "Tu lugar de trabajo (la oficina, la biblioteca, el banco,etc.)."
               }
+
+
+
           
      if(Objetosigni === 1 ) {
       var ObjetoSignificativo = "Un objeto vinculado a tu habilidad más alta (un traje caro, una identificación falsa, un puüo americano,etc.)."
@@ -545,6 +565,9 @@ function Generate_Character(){
           else{
                var ObjetoSignificativo = "Una mascota (un perro, un gato, una tortuga, etc.)."
           }   
+
+
+
           
      if(Rasgoperso === 1 ) {
            var Rasgopersonalidad = "Generoso (propinas generosas, siempre ayuda a personas necesitadas, filántropo, etc.)."
@@ -577,6 +600,9 @@ function Generate_Character(){
                     var Rasgopersonalidad = "Ambicioso (alcanzar una meta, convertirse en el jefe, hacerse con todo, etc.)."
                }
 
+
+
+
      if(Allega === 1 ) {
            var Allegados = "Padre (madre, padre, madrastra, etc.)."
            }
@@ -607,6 +633,9 @@ function Generate_Character(){
                else{
                     var Allegados = "Un personaje no jugador (PNJ) del juego. Pide al Guardián que te elija uno."
                }
+
+
+               
 
      if(RazonAllega === 1 ) {
            var RazonAllegado = "Estás en deuda con esa persona. ¿De qué forma te ayudó? (económicamente, te protegió en los malos tiempos, te consiguió tu primer trabajo, etc.)."
@@ -695,6 +724,12 @@ function Generate_Character(){
      //Fin Zona de muestra de resultados
      	
 }
+
+
+
+// "Dakari","Dustin","Lenno","Gaetano","Hamilton","Leben","Loring","Scoville","Tabor","Wellington",
+// "Bodie","Kolmanskop","Iultin","Plymouth","Varosha","Brattleboro","Townshend","Finch","Fawn","Rosebud","Maple",
+// "Paradise","Ferret","Daffodil","Grizzly","Primrose","Elk",
 
 
      // if(154 === 1 ) {
