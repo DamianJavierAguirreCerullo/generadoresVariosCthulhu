@@ -9,8 +9,8 @@ function Random(){
         var max = parseInt(numero.value);
         const min = 1;
         var resultado = Math.floor(Math.random() * (max - min +1 )) + min;
-        document.getElementById('result').innerHTML =
-        "<h1>Numero Aleatorio :</h1><div class='alert alert-success'><h2>"+resultado+"</h2></div>";
+        document.getElementById("result").innerHTML =
+        "<h1>Numero Aleatorio :</h1><div ><h2>"+resultado+"</h2></div>";
 
       
 }

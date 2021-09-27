@@ -83,7 +83,7 @@
      "Rhoda", "Sarepta", "Savilla", "Sebina", "Susannah" ,"Stella", "Sybil","Zilpah","Innes","Irvine","Keith","Kelly",
      "Kyle","Leslei","Lindsey","Lowry","Lyne","Michell","Rouse","Shirley","Stacey","Terry","Tracy","Hope","Darcy"];
                
-     var lastname = ["Abraham", "Adler", "Ankins", "Avery", "Barnham", "Bentz", "Bessler", "Blakely", "Bleeker",
+     var Lastname = ["Abraham", "Adler", "Ankins", "Avery", "Barnham", "Bentz", "Bessler", "Blakely", "Bleeker",
      "Bouche", "Bretz", "Brock", "Buchman", "Butts", "Caffey", "Click", "Cordova", "Crabtree", "Crankovitch", "Cuthburt",
      "Cuttling", "Dorman", "Eakley", "Eddie", "Elsner", "Fandrick", "Farwell", "Feigel", "Felten", "Fenske", "Fillman",
      "Finley", "Firske", "Flanagan", "Franklin", "Freeman", "Frisbe", "Gore", "Greenwald", "Hahn", "Hammermeister", "Heminger",
@@ -214,7 +214,7 @@
      var Inmigrante = ["Alemania","Austria-Hungria","Rusia","Irlanda","Escandinavia","Reino Unido","Italia",
      "Canada","Europa","Asia","Mexico"];
 
-     var Genero = ["Hombre","Mujer"]
+     // var Genero = ["Hombre","Mujer"]
  
  // Terminan el area de listas
 
@@ -238,7 +238,7 @@ function Generate_Character(){
      var rand_prof_man = Math.floor(Math.random() * Profession_Man.length);
      var rand_first_man = Math.floor(Math.random() * Firstname_Man.length);
      var rand_first_woman = Math.floor(Math.random() * Firstname_Woman.length); 
-	var rand_last = Math.floor(Math.random() * lastname.length); 
+	var rand_last = Math.floor(Math.random() * Lastname.length); 
      // var Gender = Math.floor(Math.random() * Genero.length); 
      // var rand_first = Math.floor(Math.random() * Firstname_Man.length) 
      // var rand_prof_man = Math.floor(Math.random() * Profession_Man.length);
@@ -684,10 +684,10 @@ function Generate_Character(){
 
 
      
-     document.getElementById('result').innerHTML =
+     document.getElementById("result").innerHTML =
      // "<br><h3> Genero : "+Genero[Gender]+"</h3>"+
      "<br><h3> Genero : Hombre </h3>"+
-     "<br><h3> Nombre : "+Firstname+" "+lastname[rand_last]+"</h3>"+
+     "<br><h3> Nombre : "+Firstname+" "+Lastname[rand_last]+"</h3>"+
      "<br> Profesion : "+Profession+"<br>"+
      "<br> Ciudad/Pueblo : "+Pueblo[rand_Pueblo]+
      "<h3><br>Stats</h3>"+

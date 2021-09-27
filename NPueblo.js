@@ -10,8 +10,8 @@ function NPueblo(){
          "Beck Pond", "Chebacco Lake", "Gravelly", "Round Pound", "Sawmil Br", "Cat Brook", "Miles River", "Wenham Lake", "Bass River", "Porter River", "Crane River", "Water River", "Suntaug Lake", "North River", "Breeds Pond"]
 
         var rand_Pueblo = Math.floor(Math.random()*Pueblo.length);  
-	document.getElementById('result').innerHTML =
-         "<h1>Pueblo:</h1><div class='alert alert-success'><h2>"+Pueblo[rand_Pueblo]+"</h2></div>";
+	document.getElementById("result").innerHTML =
+         "<h1>Pueblo:</h1><div><h2>"+Pueblo[rand_Pueblo]+"</h2></div>";
 	
 
 
