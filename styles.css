@@ -1,6 +1,7 @@
         
         body{
             font-family: 'Lobster', cursive;
+            
             /* background-color: black;
             color: whitesmoke; */
             /* background: rgb(27,24,24);
@@ -12,12 +13,18 @@
             /* color: #247940; color: #40da1d; color: #50a229a8; #69776c */
         }
 
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
         .btn-generadores{
             border-radius: 40px;
         }
 
         h1{
             text-align: center;
+            margin-top: 0;
         }
 
         h3{
@@ -27,6 +34,10 @@
 
         hr{
             border-top:1px dotted #444;
+        }
+
+        a{
+            font-size: large;
         }
 
 
