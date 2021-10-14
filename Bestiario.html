@@ -9,119 +9,736 @@
 </head>
 <body>
     <a href="/">Volver</a>
+
     <table>
+
         <caption>
          Monstruos y bestias
         </caption>
         
         <thead>
-            
+            <th>Nombre</th>
+            <th>Pronunciacion</th>
+            <th>Resumen</th>
+            <th>FUE</th>
+            <th>CON</th>
+            <th>TAM</th>
+            <th>DES</th>
+            <th>INT</th>
+            <th>POD</th>
+            <th>PV</th>
+            <th>BDM</th>
+            <th>CM</th>
+            <th>MPM</th>
+            <th>MOV</th>
         </thead>
+
+        <body>
+
+        <tr>
+            <td><a href="#Angel_descarnado">Angel Descarnado</a></td>
+            <td>------</td>
+            <td>Seres sin rostro</td>
+            <td>3D6x5</td>
+            <td>3D6x5</td>
+            <td>4D6x5</td>
+            <td>(2D6+6)x5</td>
+            <td>1D6x5</td>
+            <td>3D6x5</td>
+            <td>12</td>
+            <td>0</td>
+            <td>0</td>
+            <td>10</td>
+            <td>6/12 volando</td>
+        </tr>
+
+        <tr>
+            <td><a href="#Antiguo">Antiguo</a></td>
+            <td>------</td>
+            <td>Misteriosos cientìficos de los albores del tiempo</td>
+            <td>(4D6+24)x5</td>
+            <td>(3D6+6)x5</td>
+            <td>8D6x5</td>
+            <td>(3D6+6)x5</td>
+            <td>(1D6+12)x5</td>
+            <td>3D6x5</td>
+            <td>25</td>
+            <td>3D6</td>
+            <td>4</td>
+            <td>10</td>
+            <td>8/10 volando</td>
+        </tr>
 
         <tr>
             <td><a href="#Bokrug">Bokrug</a></td>
             <td>BÓ-krug</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
 
         <tr>
             <td><a href="#Byakhee">Byakhee</a></td>
             <td>BIÁ-ki</td>
+            <td>Monturas estelares</td>
+            <td>5D6x5</td>
+            <td>3D6x5</td>
+            <td>5D6x5</td>
+            <td>(3D6+3)x5</td>
+            <td>3D6x5</td>
+            <td>3D6x5</td>
+            <td>14</td>
+            <td>1D6</td>
+            <td>2</td>
+            <td>10</td>
+            <td>5/16 volando</td>
+        </tr>
+
+        <tr>
+            <td><a href="#Color_surgido_del_espacio">Color surgido del espacio</a></td>
+            <td>------</td>
+            <td>Drenadores de fuerza vital</td>
+            <td>1D6x5x50POD</td>
+            <td>N/A</td>
+            <td>=POD</td>
+            <td>(2D6+12)x5</td>
+            <td>4D6x5</td>
+            <td>2D6x5</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>0</td>
+            <td>10*A</td>
+            <td>12 fluyendo/20 volando</td>
         </tr>
 
         <tr>
             <td><a href="#Chthonian">Chthonian</a></td>
             <td>ka-ZO-nian</td>
+            <td>Excavadores tentaculares</td>
+            <td>3D6x25</td>
+            <td>(3D6+30)x5</td>
+            <td>3D6x5</td>
+            <td>2D6x5</td>
+            <td>5D6x5</td>
+            <td>5D6x5</td>
+            <td>46</td>
+            <td>5D6</td>
+            <td>6</td>
+            <td>18</td>
+            <td>6/1 excavando</td>
         </tr>
 
         <tr>
-            <td><a href="#Dagon">Dagón</a></td>
-            <td>da-GÓN</td>
+            <td><a href="#Dagon_e_hidra">Dagón e Hidra</a></td>
+            <td>da-GÓN - I-dra</td>
+            <td>Gobernantes de los profundos</td>
+            <td>260</td>
+            <td>250</td>
+            <td>300</td>
+            <td>100</td>
+            <td>100</td>
+            <td>15</td>
+            <td>55</td>
+            <td>6D6</td>
+            <td>7</td>
+            <td>30</td>
+            <td>10/15 nadando</td>
         </tr>
 
         <tr>
             <td><a href="#Dhole">Dhole</a></td>
             <td>DOL</td>
+            <td>Horrores excavadores</td>
+            <td>10D100x5</td>
+            <td>(1D100+100)x5</td>
+            <td>(1D100+FUE÷5)x5</td>
+            <td>1D4x5</td>
+            <td>2D6x5</td>
+            <td>10D6x5</td>
+            <td>353</td>
+            <td>64D6</td>
+            <td>65</td>
+            <td>34</td>
+            <td>15 reptando/10 excavando</td>
         </tr>
 
 
         <tr>
             <td><a href="#Ghast">Ghast</a></td>
             <td>GAST</td>
+            <td>Bestias dañinas y escabrosas</td>
+            <td>(3D6+12)x5</td>
+            <td>4D6x5</td>
+            <td>(4D6+12)x5</td>
+            <td>(2D6+6)x5</td>
+            <td>1D6x5</td>
+            <td>3D6x5</td>
+            <td>20</td>
+            <td>2D6</td>
+            <td>3</td>
+            <td>10</td>
+            <td>10</td>
         </tr>
 
 
         <tr>
             <td><a href="#Gnoph-keh">Gnoph-Keh</a></td>
             <td>nof-KÉ</td>
+            <td>Demonios de hielo</td>
+            <td>(2D6+24)x5</td>
+            <td>(3D6+12)x5</td>
+            <td>(2D6+24)x5</td>
+            <td>4D6x5</td>
+            <td>(1D6+12)x5</td>
+            <td>6D6x5</td>
+            <td>26</td>
+            <td>3D6</td>
+            <td>4</td>
+            <td>21</td>
+            <td>9</td>
         </tr>
-
 
         <tr>
-            <td><a href="#Hidra">Hidra</a></td>
-            <td>I-dra</td>
+            <td><a href="#Gul">Gul</a></td>
+            <td>------</td>
+            <td>Burlones devoradores de carroña</td>
+            <td>(3D6+6)x5</td>
+            <td>(2D6+6)x5</td>
+            <td>(2D6+6)x5</td>
+            <td>(2D6+6)x5</td>
+            <td>(2D6+6)x5</td>
+            <td>(2D6+6)x5</td>
+            <td>13</td>
+            <td>1D4</td>
+            <td>1</td>
+            <td>13</td>
+            <td>9</td>
         </tr>
-
 
         <tr>
             <td><a href="#Hipnos">Hipnos</a></td>
             <td>IP-nos</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
 
+        <tr>
+            <td><a href="#Habitantes_de_las_arenas">Habitantes de las arenas</a></td>
+            <td>------</td>
+            <td>Acechadores de los yermos</td>
+            <td>3D6x5</td>
+            <td>(2D6+6)x5</td>
+            <td>(3D6+6)x5</td>
+            <td>(2D6+6)x5</td>
+            <td>3D6x5</td>
+            <td>3D6x5</td>
+            <td>14</td>
+            <td>1D4</td>
+            <td>1</td>
+            <td>10</td>
+            <td>8</td>
+        </tr>
+
+        <tr>
+            <td><a href="#Hibrido_profundo">Hibrido profundo</a></td>
+            <td>------</td>
+            <td>La progenie degenerada de Innsmouth</td>
+            <td>(2D6+6)x5</td>
+            <td>(2D6+6)x5</td>
+            <td>3D6x5</td>
+            <td>(2D6+6)x5</td>
+            <td>(2D6+6)x5</td>
+            <td>3D6x5</td>
+            <td>2D6x5</td>
+            <td>11</td>
+            <td>Ninguna</td>
+            <td>0</td>
+            <td>10</td>
+            <td>8/8 nadando</td>
+        </tr>
+
+        <tr>
+            <td><a href="#Hombre_serpiente">Hombre Serpiente</a></td>
+            <td>------</td>
+            <td>Miembro atàvico de la raza</td>
+            <td>3D6x5</td>
+            <td>3D6x5</td>
+            <td>3D6x5</td>
+            <td>(2D6+6)x5</td>
+            <td>(3D6+6)x5</td>
+            <td>(2D6+6)x5</td>
+            <td>10</td>
+            <td>Ninguna</td>
+            <td>0</td>
+            <td>13</td>
+            <td>8</td>
+        </tr>
+
+        <tr>
+            <td><a href="#Horrendo_cazador">Horrendo Cazador</a></td>
+            <td>------</td>
+            <td>Viperinos seres voladores</td>
+            <td>(5D6+12)x5</td>
+            <td>3D6x5</td>
+            <td>(5D6+24)x5</td>
+            <td>(3D6+3)x5</td>
+            <td>(1D6+12)x5</td>
+            <td>6D6x5</td>
+            <td>25</td>
+            <td>3D6</td>
+            <td>4</td>
+            <td>21</td>
+            <td>7/11 volando</td>
+        </tr>
+
+        <tr>
+            <td><a href="#Insecto_de_shaggai">Insecto de Shaggai</a></td>
+            <td>------</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
 
         <tr>
             <td><a href="#Lloigor">Lloigor</a></td>
             <td>LLÓI-gor</td>
+            <td>Maestro de la telequinesis</td>
+            <td>(3D6+30)x5</td>
+            <td>8D6x5</td>
+            <td>2D4x50</td>
+            <td>3D6x5</td>
+            <td>(4D6+6)x5</td>
+            <td>4D6x5</td>
+            <td>39</td>
+            <td>5D6</td>
+            <td>6</td>
+            <td>14</td>
+            <td>7/3 </td>
         </tr>
 
         <tr>
             <td><a href="#Mi-go">Mi-Go</a></td>
             <td>Mi-go</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
 
+        <tr>
+            <td><a href="#Perro_de_tindal">Perro de Tindal</a></td>
+            <td>------</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
 
         <tr>
             <td><a href="#Quachil">Quachil Uttaus</a></td>
             <td>KUÁ-chil u-TAUS</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
 
 
         <tr>
             <td><a href="#Shaggai">Shaggai</a></td>
             <td>sha-GAI</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td><a href="#Polipo_volante">Polipo volante</a></td>
+            <td>------</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td><a href="#Profundo">Profundo</a></td>
+            <td>------</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td><a href="#Reptante">Reptante</a></td>
+            <td>------</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td><a href="#Retoño_oscuro">Retoño_oscuro</a></td>
+            <td>------</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td><a href="#Semilla_estelar">Semilla Estelar</a></td>
+            <td>------</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td><a href="#Semilla_informe">Semilla Informe</a></td>
+            <td>------</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td><a href="#Señor_de_los_shoggoths">Señor de los Shoggoths</a></td>
+            <td>------</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td><a href="#Ser_rata">Ser rata</a></td>
+            <td>------</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td><a href="#Servidor_de_los_otros_dioses">Servidor de los otros dioses</a></td>
+            <td>------</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
 
         <tr>
             <td><a href="#Shantak">Shantak</a></td>
             <td>SHÁN-tak</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
 
         <tr>
             <td><a href="#Shoggoth">Shoggoth</a></td>
             <td>sho-GOZ</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td><a href="#Siriviente_de_glaaki">Siriviente de Gla'aki</a></td>
+            <td>------</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
 
         <tr>
             <td><a href="#Tcho-tcho">Tcho-Tcho</a></td>
             <td>CHO-cho</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
 
         <tr>
-            <td><a href="#Tindalos">Tindalos</a></td>
-            <td>TÍN-da-los</td>
+            <td><a href="#Vagabundo_dimensional">Vagabundo dimensional</a></td>
+            <td>------</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
-
 
         <tr>
-            <td><a href="#Xiclotl">Xiclotl</a></td>
-            <td>shi-KLÓ-tel</td>
+            <td><a href="#Vampiro_de_fuego">Vampiro de fuego</a></td>
+            <td>------</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
 
+        <tr>
+            <td><a href="#Vampiro_estelar">Vampiro estelar</a></td>
+            <td>------</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td><a href="#Yithiano">Yithiano</a></td>
+            <td>------</td>
+            <td>Viajeros mentales del tiempo</td>
+            <td>12D6x5</td>
+            <td>(4D6+12)x5</td>
+            <td>(8D6+36)x5</td>
+            <td>(2D6+3)x5</td>
+            <td>(4D6+6)x5</td>
+            <td>(2D6+6)x5</td>
+            <td>45</td>
+            <td>6D6</td>
+            <td>7</td>
+            <td>13</td>
+            <td>7</td>
+        </tr>
 
         <tr>
             <td><a href="#Yuggoth">Yuggoth</a></td>
             <td>yu-GOZ</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
 
+    </body>
+
     </table>
+
+    <h2>Leyenda: </h2>
+    <ul>
+        <li>FUE: Fuerza</li>
+        <li>CON: Constitucion</li>
+        <li>TAM: Tamaño</li>
+        <li>DES: Destreza</li>
+        <li>INT: Inteligencia</li>
+        <li>POD: Poder</li>
+        <li>PV: Puntos de vida</li>
+        <li>BDM: Bonificacion al daño media</li>
+        <li>CM: Corpulencia media</li>
+        <li>MPM: Media de puntos de magia</li>
+        <li>MOV: Movimiento</li>
+        <li>*A:  Cantidad inicial, que va aumentando a medida que el color se alimenta.</li>
+    </ul>
+
+
 </body>
 </html>
