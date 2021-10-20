@@ -22,9 +22,6 @@
 
     <script type="text/javascript">
 
-
-
-
         function showContent() {
             element = document.getElementById("content");
             check = document.getElementById("check");
@@ -35,27 +32,6 @@
                 element.style.display='none';
             }
         }
-
-       /*
-        function Man_Chck() {
-            Man_check = document.getElementById("Man_Check")
-            if (Man_check.checked) {
-             Man_check = true
-             console.log(Man_check)
-                
-
-            }
-            
-        }
-        function Woman_Chck() {
-            Woman_check = document.getElementById("Woman_Check")
-            if (Woman_check.checked) {
-                Woman_check = true
-                console.log(Woman_check)
-            
-            }
-        }
-        */
 
     </script>
 
@@ -82,13 +58,6 @@
 
     </header>
 
-        <!-- <label for="">Hombre
-            <input type="checkbox" name="Man_Check" id="Man_Check"  value="0" onchange="Man_Chck()" />
-        </label>
-
-        <label for="">Mujer
-            <input type="checkbox" name="Woman_Check" id="Woman_Check"  value="0" onchange="Woman_Chck()" />
-        </label> -->
 
         <button class="btn-generadores" onclick="Generate_Character()">Generar  Personaje</button>
         <button class="btn-generadores" onclick="NMujer()">Generar Nombre de Mujer</button>
@@ -97,10 +66,54 @@
         <button class="btn-generadores" onclick="Generar_Fobia()">Generar Fobia</button>
         <button class="btn-generadores" onclick="Generar_Mania()">Generar Manía</button>
         <button class="btn-generadores" onclick="Localizacion()">Area de impacto</button>
+        
 
         
           
           <input type="checkbox" name="Check" id="check" value="0" onchange="showContent()" /> Lanzar Dados
+
+          <form action="">
+              <input type="list" list="Criaturas">
+            <datalist  id="Criaturas">
+                <option value="Angel_descarnado">Angel Descarnado</option>
+                <option value="Antiguo">Antiguo</option>
+                <option value="Byakhee">Byakhee</option>
+                <option value="Chthonian">Chthonian</option>
+                <option value="Color_surgido_del_espacio">Color Surgido del espacio</option>
+                <option value="Dagon_e_hidra">Dagón e Hidra</option>
+                <option value="Dhole">Dhole</option>
+                <option value="Ghast">Ghast</option>
+                <option value="Gnoph-keh">Gnoph-keh</option>
+                <option value="Gul">Gul</option>
+                <option value="Habitantes_de_las_arenas">Habitantes de las Arena</option>
+                <option value="Hibrido_profundo">Hibrido Profundo</option>
+                <option value="Hombre_serpiente">Hombre Serpiente</option>
+                <option value="Horrendo_cazador">Horrendo Cazador</option>
+                <option value="Horror_en_la_tinta">Horror en la Tinta</option>
+                <option value="Insecto_de_shaggai">Insecto de Shaggai</option>
+                <option value="Lloigor">Lloigor</option>
+                <option value="Mi-go">Mi-Go</option>
+                <option value="Perro_de_tindal">Perro de Tindal</option>
+                <option value="Polipo_volante">Polipo Volante</option>
+                <option value="Profundo">Profundo</option>
+                <option value="Reptante">Reptante</option>
+                <option value="Retoño_oscuro">Retoño Oscuro</option>
+                <option value="Semilla_estelar">Semilla Estelar</option>
+                <option value="Semilla_informe">Semilla Informe</option>
+                <option value="Señor_de_los_shoggoths">Señor de los Shoggoths</option>
+                <option value="Ser_rata">Ser Rata</option>
+                <option value="Servidor_de_los_otros_dioses">Servidor de los otros Dioses</option>
+                <option value="Shantak">Shantak</option>
+                <option value="Shoggoth">Shoggoth</option>
+                <option value="Sirviente_de_glaaki">Siriviente de Gla'aki</option>
+                <option value="Tcho-tcho">Tcho-Tcho</option>
+                <option value="Vagabudo_dimensional"></option>
+                <option value="Vampiro_de_fuego">Vampiro de Fuego</option>
+                <option value="Vampiro_estelar">Vampiro Estelar</option>
+                <option value="Yithiano">Yithiano</option>
+            </datalist>
+        </form>
+
           
         <div id="content" style="display: none;">
           <br>
@@ -127,6 +140,7 @@
     <script type= "text/javascript" src="/js/NFobia.js"></script>
     <script type= "text/javascript" src="/js/Manias.js"></script>
     <script type= "text/javascript" src="/js/Localizacion.js"></script>
+    <script type="text/javascript" src="/js/Generador_de_criatura.js"></script>
 
 </body>
 </html>
