@@ -1,38 +1,7 @@
-  /* Man_checked = new Boolean(false)
-        Woman_checked = new Boolean (false)
-     
-     if(Man_checked === true && Woman_checked === true){
-
-          if (Gender === 0){
-               Firstname = Firstname_Man[rand_first_man];
-               Profession = Profession_Man[rand_prof_man];
-          }
-
-          else {
-               Firstname = Firstname_Woman[rand_first_woman];
-               Profession = Profession_Woman[rand_prof_woman];
-          }
-
-     }
-
-          else if (Man_checked === true){
-               Gender = Gender[0]
-               Firstname = Firstname_Man[rand_first_man];
-               Profession = Profession_Man[rand_prof_man];
-          }
-
-          else if(Woman_checked === true){ 
-               Gender = Gender[1]
-               Firstname = Firstname_Woman[rand_first_woman];
-               Profession = Profession_Woman[rand_prof_woman];
-          }
-          */
-
-
      // Comienzan las listas
 
 
-     var Firstname_Man = ["Aaron", "Abraham", "Addison", "Amos", "Anderson", "Archibald", "August", "Barnabas", "Adolf","Ali","Amadu","Amir","Ang","Apeli","Apo","Aren","Aaro","Aaron","Aart","Aatto","Aatu","Aatto","Aatu","Abacuc","Abacuc","Abaddon","Abban","Abbe","Abdelhamid","Abdelkader","Abdeltif","Abdelmajid","Abderrahim","Abderrahmane","Abdias","Abdiel","Abdiou","Abdolhossein","Abdollah","Abdolreza","Abdou","Abdoul","Abdoulaye",
+     var Firstname_Man = ["Aaron", "Abraham", "Addison", "Amos", "Anderson", "Archibald", "August", "Barnabas", "Adolf","Ali","Amadu","Amir","Ang","Apeli","Apo","Aren","Aaro","Aaron","Aart","Aatto","Aatu","Aatto","Aatu","Abacuc","Abaddon","Abban","Abbe","Abdelhamid","Abdelkader","Abdeltif","Abdelmajid","Abderrahim","Abderrahmane","Abdias","Abdiel","Abdiou","Abdolhossein","Abdollah","Abdolreza","Abdou","Abdoul","Abdoulaye",
      // https://www.behindthename.com/names/gender/masculine/3
      "Blair", "Caleb", "Cecil", "Chester", "Clifford","Clinton", "Cornelius", "Curtis", "Baxter",
      "Dayton", "Delbert", "Douglas", "Dudley", "Ernest", "Eldridge", "Elijah", "Emanuel", "Emmet", "Enoch", "Ephraim",
