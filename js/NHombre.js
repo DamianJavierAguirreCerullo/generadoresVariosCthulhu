@@ -1,47 +1,111 @@
      // Comienzan las listas
 
 
-     var Firstname_Man = ["Aaron", "Abraham", "Addison", "Amos", "Anderson", "Archibald", "August", "Barnabas", "Adolf","Ali","Amadu","Amir","Ang","Apeli","Apo","Aren","Aaro","Aaron","Aart","Aatto","Aatu","Aatto","Aatu","Abacuc","Abaddon","Abban","Abbe","Abdelhamid","Abdelkader","Abdeltif","Abdelmajid","Abderrahim","Abderrahmane","Abdias","Abdiel","Abdiou","Abdolhossein","Abdollah","Abdolreza","Abdou","Abdoul","Abdoulaye",
-     // https://www.behindthename.com/names/gender/masculine/3
-     "Blair", "Caleb", "Cecil", "Chester", "Clifford","Clinton", "Cornelius", "Curtis", "Baxter",
-     "Dayton", "Delbert", "Douglas", "Dudley", "Ernest", "Eldridge", "Elijah", "Emanuel", "Emmet", "Enoch", "Ephraim",
-     "Everett", "Ezekiel", "Forest", "Gilbert", "Granville", "Gustaf", "Hampton", "Harmon", "Henderson",
-     "Herman", "Hilliard", "Howard", "Hudson", "Irvin", "Ian", "Iker", "Isaac", "Jacob", "Jackson",
-     "Jayden", "Jeremy", "Jeremiah", "Jonah", "Josiah", "Kirk", "Larkin", "Leland", "Leopold",
-     "Lloyd", "Luther", "Manford", "Marcellus", "Martin", "Mason", "Maurice",
-     "Maynard", "Melvin", "Miles", "Josué", "Milton", "Morgan", "Mortimer",
-     "Napoleon", "Nelson", "Newton", "Oliver", "Orson", "Oswald",
-     "Pablo", "Percival", "Porter", "Quincy", "Liam", "Lian", "Randall", "Reginald", "Richmond", "Rodney",
-     "Roscoe", "Rowland", "Rupert", "Sanford", "Sebastian", "Martín", "Shelby",
-     "Sidney", "Solomon", "Maykel", "Squire", "Sterling", "Sidney", "Noah", "Oscar", "Thaddeus", "Pedro",
-     "Walter", "Wilbur", "Wilfred", "Zadok", "Zebedee", "David", "Ethan", "Samuel", "Michael",
-     "James", "Charlie", "Jacob", "Harry", "Thiago", "Robert", "Tomás", "Valentino",
-     "Vicente", "Callum", "", "Reece", "Joe", "Kyle", "Daniel","Abijah", "Alson", "Alton", "Amasa",
-     "", "", "Comfort", "Ebenezer", "Elam", "Elijah", "Enoch", "Ephraim", "Ezra",
-     "Fithian", "Freeman", "Hiram", "Holcomb", "Hosea", "Hubbard", "Jarvis", "Jasper", "John",
-     "Lemuel", "Mamre", "Nahum", "Nathan", "Obadiah", "Oren", "Orris", "Ozias",
-     "Reuben", "Salmon", "Stukely", "Sylvanus", "Willard","Duncan","Gordon","Henry","Hughes","Jack","Scott","Shawn",
-     "Stuart","Sharman","Simon","Steven","Tailor","Todd","Travis","Vincent","William","Pierce","Mathew","Dexter"]
+     var Firstname_Man = ["Abraham", "Addison", "Archibald","Apeli","Alton", "Andrew", "Arnold", "Axel", "Alan", "Albano", "Albert", "Ambroise", "Andie", "Ansel", "Aonghus", "Apollo", "Archie" ,"Arlen" ,"Atreus" ,"Auster" , "Arwel" ,
 
-     var Firstname_Woman = ["Adele", "Agatha", "Agnes", "Albertin","Albertas","Alberte","ALberto","ALbertus","Albie","Albin","Albino","Albinus","ALboin","Alborz","Albrecht","Albus","Alby","Alcaeus","Alcibiades","Alcides","Aldebrand","Alden","Aldegar","Alderic","Aldert","Aldhard","Aldin","Aldo","Aldous","Aldric","Aldus","Aldwin","Ale","Alec","Alecjo","Aled","Aleifr","Aleix","Aleixo","Alejandro","Alejo","Alekos","Aleks","Aleksandro","Alekei","Aleksei","Aleksi","Alem","alemayehu","Alen","Alsander","Alessandro","Alessio","Alex","Alexander","Alexei", "Almeda", "Mary", "Patricia", "Elizabeth", "Clarissa",
-     "Amelia", "Anastasia", "Annabelle", "Asenath", "Augusta", "Barbara", "Bernadette", "Bernice",
-     "Beryl", "Beulah", "Camilla", "Carmen", "Carmilla", "Caroline", "Cecilia", "Celeste", "Charity", "Christina",
-     "Claudia", "Constance", "Cordelia", "Cynthia", "Daisy", "Dolores", "Doris", "Edith", "Edna",
-     "Eloise", "Elsie", "Estelle", "Ethel", "Eudora", "Eugenie", "Eunice", "Florence", "Frieda", "Genevieve",
-     "Gertrude", "Gladys", "Gretchen", "Hannah", "Henrietta", "Hoshea", "Ingrid", "Irene", "Iris",
-     "Ivy", "Jeanette", "Jezebel", "Josephine", "Joyce", "Juanita", "Keziah",
-     "Laverne", "Leonora", "Letitia", "Loretta", "Lucretia", "Mabel", "Madeleine", "Margery",
-     "Marguerite", "Marjorie", "Matilda", "Melinda", "Melissa", "Mercedes", "Mildred",
-     "Millicent", "Muriel", "Myrtle", "Naomi", "Nora", "Octavia", "Ophelia", "Pansy", "Patience", "Pearle",
-     "Phoebe", "Phyllis", "Rosemary", "Ruby", "Sadie", "Selina", "Selma", "Sibyl",
-     "Sylvia", "Tabitha", "Ursula", "Veronica", "Violet", "Virginia", "Wanda", "Wilhelmina", "Winifred", "Olivia",
-     "Isla", "Emily", "Poppy", "Ava", "Isabella", "Jessica", "Lily", "Sophie",
-     "Tracy", "Lauren", "Abigail", "Mia", "Emma", "Linda", "Kate", "Margaret", "Thede",
-     "Susan", "Sarah", "Jennifer", "Amarilla", "Amoret", "Berenice",
-     "Corinthia", "Damaris", "Deliverance", "Dorcas", "Edda", "Emogene", "Flora", "Hazel", "Isabelle",
-     "Kezia", "Lavinia", "Lena Belle", "Lucelia", "Luella", "Phebe", "Pluma", "Rebecca",
-     "Rhoda", "Sarepta", "Savilla", "Sebina", "Susannah" ,"Stella", "Sybil","Zilpah","Innes","Irvine","Keith","Kelly",
-     "Kyle","Leslei","Lindsey","Lowry","Lyne","Michell","Rouse","Shirley","Stacey","Terry","Tracy","Hope","Darcy"];
+     // https://www.behindthename.com/names/gender/masculine/3
+
+     "Baxter", "Bradon","Baldwin" ,"Bennet" ,"Benton" ,"Beret" ,"Biff" ,"Billie" ,"Bobbie" ,"Bongani" ,"Boris" ,"Braiden" ,"Bruno" ,"Brook" ,"Buster" ,"Byron" ,"Bronte" ,"Basilio" ,"Bayran" ,"Bellamy" ,
+
+     "Caleb", "Cecil", "Chester", "Clifford","Clinton", "Cornelius", "Curtis","Comfort","Charlie","Callum","Calvin" ,"Cameron" ,"Charlie" ,"Christopher" ,"Connor" ,"Conrad" ,"Constantine" ,"Cristian" ,"Cyril" ,"Craig" ,
+
+     "Dayton", "Delbert", "Douglas", "Dudley","Dixon", "Dexter","Daniel","Duncan","Daniel" ,"Darrel" ,"Demetrio" ,"Dermot" ,"Dillan" ,"Dmitri" ,"Dominic" ,"Donar" ,"Douglas" ,"Dietmar" ,"Dorin" ,"Dean" ,
+
+     "Ernest", "Eldridge", "Elwin", "Emanuel", "Emmet", "Edgard", "Emilio", "Everett", "","Ethan","Engel", "Elam", "Erik", "Ernie", "Ezra","Eugen" ,"Ezra" ,"Elwood" ,"Erasmus" ,
+
+     "Forest","Freeman","Fabian" ,"Fabio" ,"Fenton" ,"Ferdo" ,"Festus" ,"Filat" ,"Flavio" ,"Florent" ,"Folant" ,"Franco" ,"Franklyn" ,"Fredrick" ,"Friso" ,"Fulco" ,"Fynn" ,"Folcher" ,"Frank" ,"Firmin" ,
+
+     "Gilbert", "Granville", "Gustaf","Gordon","Gabe" ,"Garnett" ,"Garth" ,"Geoffrey" ,"Georgius" ,"Gerry" ,"Gideon" ,"Glenn" ,"Gollum" ,"Gordon" ,"Gunni" ,"Gwydion" ,"Glauco" ,"Gary" ,"Genesio" ,"Georgy" ,
+
+     "Helios", "Harmon", "Henderson", "Herman", "Hilliard", "Howard", "Hernando","Henry","Hugo","Hiram", "Holcom", "Hosea", "Hubbard","Harry","Hannibal" ,"Hector" ,"Holger" ,"Hoyt" ,"Howie" ,"Herberto" ,
+
+     "Irvin", "Ian", "Iker", "Isaac","Isador" ,"Indra" ,"Igor" ,"Ignacio" ,"Ignac" ,"Idwal" ,"Ismael" ,"Ivan" ,"Ingomar" ,"Illiam" ,"Iared" ,"Isidro" ,"Issur" ,"Izem" ,"Iustinus" ,"Ivairo" ,
+
+     "Jacob", "Jackson", "Jayden", "Jeremy", "Jeremiah", "Jonah", "Josiah", "Jarvis", "Jasper", "Joris","Joe","James","Jack","Josué","Jules" ,"Jeff" ,"Jere" ,"Joaquin" ,"Joffrey" ,"Joseph" ,
+
+     "Kirk","Kyle","Kaden" ,"Kane" ,"Kapel" ,"Kenan" ,"Kenton" ,"Kenzo" ,"Ketil" ,"Kian" ,"Klavs" ,"Knox" ,"Koba" ,"Koldo" ,"Kord" ,"Korey" ,"Kreios" ,"Kudret" ,"Kumar" ,"Kusti" ,
+
+     "Larkin", "Leland", "Leopold", "Lloyd", "Luther","Liam", "Lian","Leandro","Larry" ,"Lebron" ,"Lenni" ,"Leonard" ,"Lester" ,"Livio" ,"Lochan" ,"Logan" ,"Loman" ,"Lovro" ,"Lucius" ,"Lutfi" ,
+
+     "Manford", "Martin", "Merdan", "Maurice", "Maynard", "Melvin", "Miles", "Milton", "Morgan", "Mortimer","Maykel","Michael","Mark","Mathew","Macsen" ,"Malcom" ,"Merlin" ,"Monty" ,"Morley" ,"Murali" ,
+
+     "Napoleon", "Nelson", "Newton","Noah", "Nahum", "Nathan","Nabu" ,"Nando" ,"Narir" ,"Nathaniel" ,"Neitan" ,"Nicholai" ,"Nick" ,"Norton" ,"Nazim" ,"Ned" ,"Nemanja" ,"Nereus" ,"Neville" ,"Noa" ,
+
+     "Oliver", "Orson", "Oswald","Oscar","Obadiah", "Oren", "Orris", "Ozias","Omondi" ,"Omri" ,"Ophir" ,"Orel" ,"Orril" ,"Orso" ,"Osmond" ,"Oswald" ,"Ovid" ,"Orestes" ,"Orhan" ,"Onisim" ,
+
+     "Pablo", "Percival", "Porter", "Pedro","Pierce","Patryk" ,"Patton" ,"Perun" ,"Peti" ,"Photios" ,"Pierino" ,"Pierre" ,"Placidus" ,"Pratap" ,"Pridon" ,"Prosper" ,"Pythios" ,"Poncio" ,"Porter" ,"Pranav" ,
+
+     "Quincy","Quinti" ,"Quique" ,"Qamar" ,"Qemal" ,"Qadir" ,"Quanah" ,"Quidel" ,"Quincey" ,"Quinlan" ,"Quang" ,"Qismat" ,"Quidel" ,
+
+     "Randall", "Reginald", "Richmond", "Rodney", "Roscoe", "Rowland", "Rupert","Robert","Reece","Reuben","Ralph" ,"Rasmus" ,"Raymund" ,"Reggie" ,"Ronald" ,"Rufus" ,"Rupert" ,"Raffael" ,"Ramon" ,"Rashaun" ,
+
+     "Sanford", "Sebastian", "Shelby", "Sidney", "Solomon","Squire", "Sterling", "Sidney","Stuart","Sharman","Simon","Steven", "Salmon", "Sefton", "Sylvanus","Samuel","Scott","Shawn","Sven" ,"Sullivan" ,
+
+     "Thaddeus","Tomas","Tailor","Todd","Travis","Thiago","Ted" ,"Teodoro" ,"Terence" ,"Tilen" ,"Timur" ,"Tobias" ,"Torin" ,"Tristan" ,"Tian" ,"Tieder" ,"Tito" ,"Torben" ,"Tancred" ,"Taras" ,
+
+     "Uzziel","Uttar","Usman","Urien","Urias","Urbanus","Umran","Ulysse","Ujarak","Udo","Ualan","Ubirajara","Udi","Ulick","Ulrich",
+
+     "Valentino","Vincent","Vicente","Vadik" ,"Vadim" ,"Viriato" ,"Vipun" ,"Vilmos" ,"Vikrama" ,"Vibol" ,"Veselko" ,"Veselin" ,"Vergil" ,"Vazgen" ,"Vaughan" ,"Vlado" ,"Vlas" ,"Volker" ,"Vragi" ,"Vural" ,
+
+     "Walter", "Wilbur", "Wilfred","William","Willard","Wade" ,"Wadud" ,"Wetzel" ,"Wigand" ,"Wilmer" ,"Wilson" ,"Winfred" ,"Wotan" ,"Wulfsige" ,"Wystan" ,"Wilmot" ,"Waldo" ,"Waheed" ,"Waclaw" ,"Webster" ,
+
+     "Xabi" ,"Xanti" ,"Xenon" ,"Xolani" ,"Xystos" ,"Xacobe" ,"Xaime" ,
+
+     "Yachin" ,"Yacoub" ,"Yahui" ,"Yaqoob" ,"Yaromir" ,"Yaron" ,"Yasen" ,"Yasin" ,"Yavor" ,"Yefim" ,"Yisra" ,"Yoan" ,"Yolotli" ,"Yehiel" ,"Yegor" ,"Yefren" ,
+
+     "Zadok", ,"Zaahir" ,"Zach" ,"Zimri" ,"Zawar" ,"Zahi" ,"Zabulon" ,"Zac"]
+
+     var Firstname_Woman = [ "Agatha", "Agnes","Alborz","Albrecht","Alden","Alejandra","Alexei", "Adelyn","Amelia", "Adriana", "Agatha", "Aileen", "Augusta","Ava","Abby","Abril","Alessa", "Alice","Amanda", "Anemone",
+
+     "Barbara", "Bernadette", "Beatriz","Beryl", "Beulah","Berenice","Bella", "Bellona","Bernadett", "Bettye","Blanca", "Blossom","Brandie", "Brenda","Briana", "Bridgette","Brittney", "Brie","Benedicta", "Bisera",
+
+     "Camilla", "Carmen", "Carmilla", "Caroline", "Chloe", "Christine", "Charity", "Cindy","Clarissa","Claudia", "Constance", "Cordelia", "Cynthia","Clarette","Clarisse", "Coline","Candace", "Cassidy","Charity", "Chelsey",
+      
+     "Daisy", "Dolores", "Doris","Damaris","Darcy","Deliverance", "Dorcas",
+
+     "Edith", "Edna","Eloise", "Elsie", "Estelle", "Ethel", "Eudora", "Eugenie", "Eunice", "Elizabeth","Emily","Emma","Edda", "Emogene",
+
+     "Florence", "Frieda","Flora",
+
+     "Gertrude", "Gladys", "Gretchen",
+
+     "Hannah", "Henrietta", "Hoshea","Hope","Hazel", 
+
+     "Ingrid", "Irene", "", "Ivy","Isla","Isabella","Innes","Irvine",
+
+     "Jeanette", "Jezebel", "Josephine", "Joyce", "Juanita","Jessica","Jennifer",
+
+     "Keziah","Kate","Kezia","Keith","Kelly",
+     "Kyle",
+
+     "Laverne", "Leonora", "Letitia", "Loretta", "Lucretia","Leslei","Lindsey","Lowry","Lyne", "Lily","Lauren","Linda","Lavinia","Lena Belle", "Lucelia", "Luella",
+     
+
+     "Mabel", "Madeleine", "Margery","Marguerite", "Marjorie", "Matilda", "Melinda","Melissa", "Mercedes", "Mildred","Mary","Millicent", "Muriel", "Myrtle","Mia","Margaret","Michell",
+
+     "Naomi", "Nora",
+
+     "Octavia", "Ophelia","Olivia",
+
+     "Pansy", "Patience", "Pearle","Phoebe", "Phyllis","Pluma","Phebe",
+
+     // q
+
+     "Rosemary", "Ruby","Rebecca","Rhoda","Rouse",
+
+     "Sadie", "Selina", "Selma", "Sibyl","Sylvia","Susan", "Sarah","Sarepta", "Savilla", "Sebina", "Susannah" ,"Stella", "Sybil","Shirley","Stacey","Sophie",
+
+     "Tabitha","Terry","Tracy","Tracy",
+
+     "Ursula",
+
+     "Veronica", "Violet", "Virginia",
+     
+     "Wanda", "Wilhelmina", "Winifred",
+
+     //x
+
+     "Zilpah",];
                
      var Lastname = ["Abraham", "Adler", "Ankins", "Avery", "Barnham", "Bentz", "Bessler", "Blakely", "Bleeker",
      "Bouche", "Bretz", "Brock", "Buchman", "Butts", "Caffey", "Click", "Cordova", "Crabtree", "Crankovitch", "Cuthburt",
@@ -174,7 +238,7 @@
      var Inmigrante = ["Alemania","Austria-Hungria","Rusia","Irlanda","Escandinavia","Reino Unido","Italia",
      "Canada","Europa","Asia","Mexico"];
 
-     // var Genero = ["Hombre","Mujer"]
+
  
  // Terminan el area de listas
 
