@@ -1,7 +1,7 @@
      // Comienzan las listas
 
 
-     var Firstname_Man = ["Abraham", "Addison", "Archibald","Apeli","Alton", "Andrew", "Arnold", "Axel", "Alan", "Albano", "Albert", "Ambroise", "Andie", "Ansel", "Aonghus", "Apollo", "Archie" ,"Arlen" ,"Atreus" ,"Auster" , "Arwel" ,
+     var Firstname_Man = ["Abraham", "Addison", "Archibald","Angelo","Alton", "Andrew", "Arnold", "Axel", "Alan", "Albano", "Albert", "Ambroise", "Andie", "Ansel", "Alfredo", "Apollo", "Archie" ,"Arlen" ,"Atreus" ,"Auster" , "Arwel" ,
 
      // https://www.behindthename.com/names/gender/masculine/3
 
@@ -92,68 +92,72 @@
 
      "Rosemary", "Ruby","Rebecca","Rhoda","Rouse","Raine","Rachel","Raquel","Rhonda","Rita","Roberta","Rose","Rosalia","Rosario","Roxie","Ruth",
 
-     "Sadie", "Selina", "Selma", "Sibyl","Sylvia","Stefanie", "Sarah","Sophia", "Stacy", "", "Susan" ,"Stella", "Shirley","Stacey","Sophie","Shelly",
+     "Sadie", "Selina", "Selma", "Sibyl","Sylvia","Stefanie", "Sarah","Sophia", "Stacy","Stella", "Shirley","Stacey","Sophie","Shelly",
 
-     "Tabitha","Terry","Tracy","Tracy","","","","","","","","","","","","","","","","",
+     "Tabitha","Terry","Tanya","Tracy","Tatiana","Tempest","Theresa","Thelma","Tierra","Tiffany","Tori","Tracy",
 
-     "Ursula","","","","","","","","","","","","","","","","","","","",
+     "Ursula","Urve","Usha",
 
-     "Veronica", "Violet", "Virginia","","","","","","","","","","","","","","","","","",
+     "Veronica", "Violet", "Virginia","Valeria","Valentina","Venus","Vesela","Victoria","Virna","Vivianne",
      
-     "Wanda", "Wilhelmina", "Winifred","","","","","","","","","","","","","","","","","",
+     "Wanda", "Whitney", "Winifreda","Winona","Winter",
 
-     "","","","","","","","","","","","","","","","","","","","",
+     "Yachna","Yamila","Yasmine","Yesenia","Yoseline",
 
-     "Zilpah","","","","","","","","","","","","","","","","","","",""];
+     "Zilpah","Zahira","Zaria","Zilpah","Zoe"];
                
-     var Lastname = ["Abraham", "Adler", "Ankins", "Avery", "Barnham", "Bentz", "Bessler", "Blakely", "Bleeker",
-     "Bouche", "Bretz", "Brock", "Buchman", "Butts", "Caffey", "Click", "Cordova", "Crabtree", "Crankovitch", "Cuthburt",
-     "Cuttling", "Dorman", "Eakley", "Eddie", "Elsner", "Fandrick", "Farwell", "Feigel", "Felten", "Fenske", "Fillman",
-     "Finley", "Firske", "Flanagan", "Franklin", "Freeman", "Frisbe", "Gore", "Greenwald", "Hahn", "Hammermeister", "Heminger",
-     "Hogue", "Hollister", "Kasper", "Kisro", "Kleeman", "Lake", "Cano", "Levard", "Lockhart", "Luckstrim", "Lynch",
-     "Madison", "Mantei", "Marsh", "McBurney", "McCarney", "Moses", "Nickels", "O'Neil", "Olson", "Ozanich", "Patterson",
-     "Patzer", "Peppin", "Porter", "Posch", "Raslo", "Razner", "Rifenberg", "Riley", "Ripley", "Rossini",
-     "Schiltgan", "Schmidt", "Schroeder", "Schwartz", "Shane", "Shattuck", "Shea", "Slaughter", "Smith", "Speltzer",
-     "Stimac", "Strenburg", "Strong", "Swanson", "Tillinghast", "Traver", "Urton", "Vallier", "Wagner", "Walsted", "Wang",
-     "Warner", "Webber", "Welch", "Winters", "Yarbrough", "Yeske", "Johnson", "Williams", "Jones", "Brown",
-     "Baker", "Page", "Gardener", "Thatcher", "Murphy", "Thomas", "Evans", "Roberts", "O'Sullivan", "Walsh", "O'Brien",
-     "Byrne", "Li", "Gelbero", "White", "Morton", "Singh", "Silva", "Martin", "Forest", "Bridge", "Hill",
-     "Atwater", "Barbour", "Beman", "Beckwith", "Bliss", "Bristol", "Cadwell", "Case", "Chittenden", "Corey",
-     "Dill", "Green", "Griffith", "Higley", "Merrill", "Mills", "Northway", "Oakes", "Pettibone", "Phelps", "Pike",
-     "Prentice", "Proctor", "Sephard", "Scudder", "Sedgwick", "Sidrach", "Smith", "Temple", "Tuller", "Wadsworth",
-     "Ward", "Westcott", "Wickes", "Wilcox", "Willard", "Witherell", "Wolcott", "Woodford",
+     var Lastname = ["Abraham", "Adler", "Ankins", "Avery","Acheson","Aitken","Allan","Allaway","Allen","Angus","Atchison","Atwater","Appleton","Armistead","Ashworth","Atkin","Audley","Averill",
 
-     "Acheson","Aitken","Allan","Allaway","Allen","Angus","Atchison","Baird","Barber","Beattie","Beatty","Begbie",
-     "Blackwood","Blair","Boyd","Breckenridge","Breckinridge","Brody","Bruce","Buchanan","Burns","Calhoun","Cameron",
-     "Campbell","Kerr","Carson","Clacher","Coburn","Cockburn","Colquhoun","Coutts","Craig","Cruickshank","Cummins",
-     "Cunningham","Darrow","Davies","Davis","Donne","Drummond","Dubhghlas","Dunbar","Dunn","Fairbairn","Falconer",
-     "Faulkner","Ferguson","Findlay","Finley","Fraser","Frazier","Gibbs","Gibson","Glen","Graeme","Graham","Grant","Greer",
-     "Grier","Grieve","Haig","Hardie","Henderson","Hendry","Hepburn","Houston","Hume","Hunter","Johnston","Keir",
-     "Kendrick","Kinley","Kinnaird","Lenmox","Lester","Lindsay","Lister","Lithgow","Lusk","Mac Alastair","MacBeth",
-     "MacCallum","MacConnell","MacDaniel","MacDougall","MacGrory","MacKay","MacNeil","Maxwell","Mathieson","McAfee","Milne",
-     "Mitchell","Moffett","Monroe","Montgomery","Moray","Morris","Munro","Murdoch","Murray","Neil","Ness","Nevin","Norris",
-     "Paterson","Patton","Pollock","Rae","Ralston","Ramsey","Rattray","Reid","Ross","Ruskin","Rutherford","Sangster",
-     "Saunders","Sheach","Starrett","Sterling","Stewart","Stirling","Taggart","Thorburn","Urquhart","Wallace","Wallis",
-     "Woods","Wolf","Woodham","Woodrow","Wootton","Wragge","Wray","Wynne","Yap","Yates","Yoxall","Seaver","Sempers",
-     "Sharman","Sharrow","Shelton","Shine","Siddall","Simen","Simmons","Simpkin","Sinclair","Skeates","Slater","Snell",
-     "Snider","Solomon","Sommer","Southgate","Spalding","Spear","Speight","Spencer","Stacy","Stanley","Stanton","Statham",
-     "Stern","Stevenson","Stidolph","Stoddard","Stone","Strickland","Stroud","Taft","Tanner","Tash","Tate","Tatham",
-     "Tatum","Tennison","Terrell","Thacker","Thompkins","Thorn","Tifft","Tindall","Tipton","Tirrel","Tobin","Trask","Toft",
-     "Toller","Tolbert","Trent","Triggs","Truman","Tucker","Turner","Twist","Underhill","Upton","Vance","Varley","Varnham",
-     "Verity","Vernon","Vipond","Wade","Walker","Whitney","Whittemore","Wickham","Wiley","Winslow","Winter","Winthrop",
-     "Midgley","Mondy","Myers","Nash","Neville","Nielson","Norwood","Oakley","Overton","Padmore","Palmer","Parks","Payne",
-     "Peak","Pearce","Pemberton","Peterson","Pickle","Pilgrim","Poindexter","Powers","Pryor","Putnam","Purcell","Rains",
-     "Rake","Reed","Reeve","Remington","Reynolds","Richardson","Rigby","Rimmer","Roach","Roscoe","Rowland","Russell",
-     "Rye","Sadler","Sampson","Sanderson","Sanford","Sangster","Sappington","Harland","Hartell","Hathway","Hayden",
-     "Haywood","Hedley","Heath","Henson","Herbert","Herriot","Hobbs","Holland","Hooper","Hopson","Huff","Hurst","Huxley",
-     "Hyland","Ikin","Ilbert","Jarrett","Jerome","Jernigan","Jinks","Jewell","Keen","Kimball","Kingsley","Knight","Lamb",
-     "Langley","Lawrence","Leach","Levitt","Marchand","Marston","Mathers","Mercer","Coleman","Collingwood","Colton",
-     "Crawford","Crouch","Dabney","Dixon","Dodge","Durant","Ellsworth","Emerson","Eustis","Evered","Farnham","Farran",
-     "Frost","Fuller","Gadsby","Garland","Garnet","Gilliam","Gladwyn","Glass","Godfrey","Goodwin","Groves","Hackett","Haig",
-     "Hambleton","Harding","Hardwick","Appleton","Armistead","Ashworth","Atkin","Audley","Averill","Bain","Bannister",
-     "Barlow","Bardsley","Barret","Bartram","Batts","Belanger","Belmont","Bennett","Benson","Bernard","Bishop","Blackburn",
-     "Bloodworth","Boothman","Bowman","Bradford","Bradley","Braxton","Brent","Brett","Brice","Brinley","Bronson","Burnham",
-     "Caldwell","Cantrell","Carter","Carver","Causer","Chambers","Chapman","Cheshire","Clement","Colbert"];
+     "Barnham", "Bentz", "Bessler", "Bleeker", "Bretz", "Brock", "Buchman", "Brown","Baker","Byrne",,"Barlow","Bardsley","Barret","Bartram","Batts","Belanger","Belmont","Bennett","Benson","Bernard","Bishop","Blackburn","Bloodworth","Boothman","Bowman","Bradford","Bradley","Braxton","Brent","Brett","Brice","Brinley","Bronson","Burnham","Baird","Barber","Beattie","Beatty","Begbie","Blackwood","Blair","Boyd","Breckenridge","Breckinridge","Brody","Bruce","Burns","Bridge","Barbour", "Beman", "Beckwith", "Bliss", "Bristol","Bain","Bannister",
+
+     "Caffey", "Click", "Cordova", "Crabtree", "Crankovitch", "Cuthburt","Cuttling","Caldwell","Cantrell","Carter","Carver","Causer","Chambers","Chapman","Cheshire","Clement","Colbert","Cadwell", "Case", "Chittenden", "Corey","Calhoun","Campbell","Carson","Clacher","Coburn","Cockburn","Coutts","Craig","Cunningham","Coleman","Collingwood","Colton","Crawford","Crouch",
+
+     "Dorman","Darrow","Davies","Davis","Donne","Drummond","Dubhghlas","Dunbar","Dunn","Dabney","Dixon","Dodge","Durant","Dill",
+
+     "Eakley", "Eddie", "Elsner","Ellsworth","Emerson","Eustis","Evered","Evans", 
+     
+     "Fandrick", "Farwell", "Felten", "Fenske", "Fillman","Finley", "Firske", "Flanagan", "Franklin", "Freeman", "Frisbe","Fairbairn","Falconer","Faulkner","Ferguson","Findlay","Fraser","Farnham","Farran","Frost","Fuller","Forest",
+
+     "Gore", "Greenwald","Gibbs","Gibson","Glen","Graeme","Graham","Grant","Grier","Grieve","Gadsby","Garland","Garnet","Gilliam","Gladwyn","Glass","Godfrey","Goodwin","Groves","Gardener","Green", "Griffith",
+
+     "Hahn", "Heminger","Hogue","Hollister","Harland","Hartell","Hathway","Hayden","Haywood","Hedley","Heath","Henson","Herbert","Herriot","Hobbs","Holland","Hooper","Hopson","Huff","Hurst","Huxley","Hyland","Haig","Hardie","Henderson","Hendry","Hepburn","Houston","Hume","Hunter","Hackett","Haig","Hambleton","Harding","Hardwick","Hill","Higley",
+
+     //i
+
+     "Johnson","Jones","Jarrett","Jerome","Jernigan","Jinks","Jewell","Johnston",
+
+     "Kasper", "Kisro", "Kleeman","Keir","Kendrick","Kinley","Kinnaird","Kerr","Keen","Kimball","Kingsley","Knight",
+
+     "Lake","Levard", "Lockhart", "Luckstrim", "Lynch","Lenmox","Lester","Lindsay","Lister","Lithgow","Lusk","Lamb","Langley","Lawrence","Leach","Levitt","Li",
+     
+     "Madison", "Mantei", "Marsh", "McBurney", "McCarney", "Moses","Mac Alastair","MacBeth", "MacCallum","MacConnell","MacDaniel","MacDougall","MacGrory","MacKay","MacNeil","Maxwell","Mathieson","McAfee","Milne","Mitchell","Moffett","Monroe","Moray","Morris","Munro","Murdoch","Murray","Midgley","Mondy","Myers","Marchand","Marston","Mathers","Mercer","Morton",  "Martin", "Murphy","Merrill", "Mills",
+
+     "Nickels", "O'Neil","Neil","Ness","Nevin","Norris","Nash","Neville","Nielson","Norwood","Northway",
+
+     "Olson", "Ozanich","Oakley","Overton","O'Sullivan",  "O'Brien","Oakes",
+     
+     "Patterson","Patzer", "Peppin", "Porter","Posch","Pettibone", "Phelps", "Pike","Prentice", "Proctor","Padmore","Palmer","Parks","Payne","Peak","Pearce","Pemberton","Peterson","Pickle","Pilgrim","Poindexter","Powers","Pryor","Putnam","Purcell","Paterson","Patton","Pollock","Page",
+
+     //q
+
+     "Raslo", "Razner", "Rifenberg", "Riley", "Ripley", "Rossini","Rains","Rake","Reed","Reeve","Remington","Reynolds","Richardson","Rigby","Rimmer","Roach","Roscoe","Rowland","Russell","Rae","Ralston","Ramsey","Rattray","Reid","Ross","Ruskin","Rutherford","Rye","Roberts", 
+
+     "Schiltgan", "Schmidt", "Schroeder", "Schwartz", "Shane", "Shattuck", "Shea", "Slaughter", "Smith", "Speltzer","Stimac", "Strenburg", "Strong", "Swanson","Sangster","Saunders","Sheach","Starrett","Sterling","Stewart","Stirling","Seaver","Sempers","Sharman","Sharrow","Shelton","Shine","Siddall","Simen","Simmons","Simpkin","Sinclair","Skeates","Slater","Snell", "Snider","Solomon","Sommer","Southgate","Spalding","Spear","Speight","Spencer","Stacy","Stanley","Stanton","Statham","Stern","Stevenson","Stidolph","Stoddard","Stone","Strickland","Stroud","Sadler","Sampson","Sanderson","Sanford","Sangster","Sappington","Sephard", "Scudder","Singh", "Silva", "Sedgwick", "Sidrach", "Smith",
+     
+     "Tillinghast", "Traver","Taft","Tanner","Tash","Tate","Tatham","Temple", "Tuller","Tatum","Tennison","Terrell","Thacker","Thompkins","Thorn","Tifft","Tindall","Tipton","Tirrel","Tobin","Trask","Toft","Toller","Tolbert","Trent","Triggs","Truman","Tucker","Turner","Twist","Taggart","Thorburn","Thatcher","Thomas",
+     
+     "Urton","Urquhart","Underhill","Upton",
+     
+     "Vallier","Vance","Varley","Varnham","Verity","Vernon","Vipond",
+     
+     "Wagner", "Walsted", "Wang",
+     "Warner", "Webber", "Welch", "Winters",  "Williams","Walsh", "Wadsworth","Ward", "Westcott", "Wickes", "Wilcox", "Willard", "Witherell", "Wolcott", "Woodford","Wallace","Wallis","Woods","Wolf","Woodham","Woodrow","Wootton","Wragge","Wray","Wynne","Wade","Walker","Whitney","Whittemore","Wickham","Wiley","Winslow","Winter","Winthrop","White",
+     
+     "Yarbrough", "Yeske","Yap","Yates","Yoxall",
+
+     //z
+
+     ];
      
      var Profession_Man = ["Acrobata", "Actor", "Agente Federal", "Alienista", "Alpinista", "Anticuario", "Arqueologo", "Arquitecto", "Artesano",
      "Artista", "Atleta", "Medico", "Ayudante de Laboratorio", "Barman", "Bibliotecario", "Bombero", "Boxeador/Luchador","Buzo", "Camillero",
