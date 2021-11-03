@@ -1,9 +1,9 @@
      // Comienzan las listas
 
 
-     var Firstname_Man = ["Abraham", "Addison", "Archibald","Angelo","Alton", "Andrew", "Arnold", "Axel", "Alan", "Albano", "Albert", "Ambroise", "Andie", "Ansel", "Alfredo", "Apollo", "Archie" ,"Arlen" ,"Atreus" ,"Auster" , "Arwel" ,
+     // https://www.behindthename.com/
 
-     // https://www.behindthename.com/names/gender/masculine/3
+     var Firstname_Man = ["Abraham", "Addison", "Archibald","Angelo","Alton", "Andrew", "Arnold", "Axel", "Alan", "Albano", "Albert", "Ambroise", "Andie", "Ansel", "Alfredo", "Apollo", "Archie" ,"Arlen" ,"Atreus" ,"Auster" , "Arwel" ,
 
      "Baxter", "Bradon","Baldwin" ,"Bennet" ,"Benton" ,"Beret" ,"Biff" ,"Billie" ,"Bobbie" ,"Bongani" ,"Boris" ,"Braiden" ,"Bruno" ,"Brook" ,"Buster" ,"Byron" ,"Bronte" ,"Basilio" ,"Bayran" ,"Bellamy" ,
 
@@ -108,9 +108,9 @@
                
      var Lastname = ["Abraham", "Adler", "Ankins", "Avery","Acheson","Aitken","Allan","Allaway","Allen","Angus","Atchison","Atwater","Appleton","Armistead","Ashworth","Atkin","Audley","Averill",
 
-     "Barnham", "Bentz", "Bessler", "Bleeker", "Bretz", "Brock", "Buchman", "Brown","Baker","Byrne",,"Barlow","Bardsley","Barret","Bartram","Batts","Belanger","Belmont","Bennett","Benson","Bernard","Bishop","Blackburn","Bloodworth","Boothman","Bowman","Bradford","Bradley","Braxton","Brent","Brett","Brice","Brinley","Bronson","Burnham","Baird","Barber","Beattie","Beatty","Begbie","Blackwood","Blair","Boyd","Breckenridge","Breckinridge","Brody","Bruce","Burns","Bridge","Barbour", "Beman", "Beckwith", "Bliss", "Bristol","Bain","Bannister",
+     "Barnham", "Bentz", "Bessler", "Bleeker", "Bretz", "Brock", "Buchman", "Brown","Baker","Byrne",,"Barlow","Bardsley","Barret","Bartram","Batts","Belanger","Bennett","Benson","Bernard","Bishop","Blackburn","Bloodworth","Boothman","Bowman","Bradford","Bradley","Braxton","Brent","Brett","Brinley","Bronson","Burnham","Baird","Barber","Beattie","Beatty","Begbie","Blackwood","Blair","Boyd","Breckenridge","Breckinridge","Brody","Bruce","Burns","Bridge","Barbour", "Beman", "Beckwith", "Bliss", "Bristol","Bain","Bannister",
 
-     "Caffey", "Click", "Cordova", "Crabtree", "Crankovitch", "Cuthburt","Cuttling","Caldwell","Cantrell","Carter","Carver","Causer","Chambers","Chapman","Cheshire","Clement","Colbert","Cadwell", "Case", "Chittenden", "Corey","Calhoun","Campbell","Carson","Clacher","Coburn","Cockburn","Coutts","Craig","Cunningham","Coleman","Collingwood","Colton","Crawford","Crouch",
+     "Click", "Cordova", "Crabtree", "Crankovitch", "Cuthburt","Cuttling","Caldwell","Cantrell","Carter","Carver","Causer","Chambers","Chapman","Cheshire","Clement","Colbert","Cadwell", "Case", "Chittenden", "Corey","Calhoun","Campbell","Carson","Clacher","Coburn","Cockburn","Coutts","Craig","Cunningham","Coleman","Collingwood","Colton","Crawford","Crouch",
 
      "Dorman","Darrow","Davies","Davis","Donne","Drummond","Dubhghlas","Dunbar","Dunn","Dabney","Dixon","Dodge","Durant","Dill",
 
@@ -159,8 +159,8 @@
 
      ];
      
-     var Profession_Man = ["Acrobata", "Actor", "Agente Federal", "Alienista", "Alpinista", "Anticuario", "Arqueologo", "Arquitecto", "Artesano",
-     "Artista", "Atleta", "Medico", "Ayudante de Laboratorio", "Barman", "Bibliotecario", "Bombero", "Boxeador/Luchador","Buzo", "Camillero",
+     var Profession_Man = ["Acrobata", "Actor", "Agente Federal", "Alienista", "Alpinista", "Anticuario", "Arqueologo", "Arquitecto", "Artesano","Artista", "Atleta", "Medico", "Ayudante de Laboratorio",
+      "Barman", "Bibliotecario", "Bombero", "Boxeador/Luchador","Buzo", "Camillero",
      "Cazador", "Cazador de Recompensas", "Chofer", "Cientifico", "Cirujano Forense", "Clerigo", "Conductor", "Conservador",
      "Contador", "Corresponsal en el Extranjero", "Detective de Agencia", "Arquitecto","Pintor/Escultor","Escenista",
      "Diletante", "Diseñador", "Editor", "Entrenador de Animales", "Escritor", "Especialista", "Espia","Musico de Jass",
