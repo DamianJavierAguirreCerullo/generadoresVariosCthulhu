@@ -219,7 +219,7 @@
      var Estados = ["Alabama","Arizona","Arkansas","California","Carolina del Norte","Carolina del Sur",
      "Colorado","Connecticut","Dakota del Norte","Dakota del Sur","Delaware","Florida","Georgia","Hawai","Idaho",
      "Illinois","Indiana","Iowa","Kansas","Kentucky","Luisiana","Maine","Maryland","Michigan","Minenesota",
-          "Missisipi","Misuri","Montana","Nebraska","Nevada","Nueva Jersey","Nueva York","Nuevo Hampshire",
+     "Missisipi","Misuri","Montana","Nebraska","Nevada","Nueva Jersey","Nueva York","Nuevo Hampshire",
      "Nuevo Mexico","Ohio","Oklahoma","Oregon","Pensilvania","Rhode Island","Tennessee","Texas","Utah","Vermont",
      "Virginia","Virginia Occidental","Washington","Wisconsin","Wyoming"];
 

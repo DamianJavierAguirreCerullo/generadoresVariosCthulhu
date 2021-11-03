@@ -1,7 +1,9 @@
+// Area de 
 var Criatura = document.getElementById("Criaturas");
 var crear = document.getElementById("creador");
 crear.addEventListener ("click",Crear_criatura);
 
+// registro de criaturas
 
 var Angel_descarnado = {
         Nombre : "Angel Descarnado de la Noche" ,
@@ -200,10 +202,19 @@ var Gul = {
 
 function Crear_criatura(){
 
-         var Codigo = parseInt(Criatura.value);
-         pepe = Codigo === 1
+        var Poder_especial_criatura = "No"
 
-        if (Codigo === 1) {
+        var Codigo_criatura = parseInt(Criatura.value);
+
+        //
+
+        //if de calculos para hechizos
+        var Probabilidad_hechizo_criatura = Math.floor(Math.random() * (100 - 1 + 1) + 1)
+
+
+        // if criaturas
+
+        if (Codigo_criatura === 1) {
 
          var Nombre_criatura = Angel_descarnado.Nombre;
 
@@ -224,7 +235,7 @@ function Crear_criatura(){
         }
          
 
-        else if (Codigo === 2) {
+        else if (Codigo_criatura === 2) {
 
          var Nombre_criatura = Antiguo.Nombre;
 
@@ -242,10 +253,16 @@ function Crear_criatura(){
 
          var Movimiento_criatura = Antiguo.Movimiento;
 
+                if (Probabilidad_hechizo_criatura < 71){
+                        var Hechizo_criatura = ""
+                }
+
+         var Poder_especial_criatura = Hechizo_criatura
+
         }
          
 
-        else if (Codigo === 3) {
+        else if (Codigo_criatura === 3) {
 
          var Nombre_criatura = Byakhee.Nombre;
 
@@ -266,7 +283,7 @@ function Crear_criatura(){
         }
          
 
-        else if (Codigo === 4) {
+        else if (Codigo_criatura === 4) {
 
          var Nombre_criatura = Cthonian.Nombre;
 
@@ -287,7 +304,7 @@ function Crear_criatura(){
         }
          
 
-        else if (Codigo === 5) {
+        else if (Codigo_criatura === 5) {
 
          var Nombre_criatura = Color_surgido_del_espacio.Nombre;
 
@@ -308,7 +325,7 @@ function Crear_criatura(){
         }
 
         
-        else if (Codigo === 6) {
+        else if (Codigo_criatura === 6) {
 
                 var Nombre_criatura = Dagon_e_hidra.Nombre;
        
@@ -328,7 +345,7 @@ function Crear_criatura(){
        
                }
 
-        else if (Codigo === 36) {
+        else if (Codigo_criatura === 36) {
 
                 var Nombre_criatura = El_horror_en_la_tinta.Nombre;
        
@@ -350,7 +367,7 @@ function Crear_criatura(){
 
 
 
-        else if (Codigo === 7) {
+        else if (Codigo_criatura === 7) {
 
                 var Nombre_criatura = Dhole.Nombre;
        
@@ -371,7 +388,7 @@ function Crear_criatura(){
                }
                
                
-        else if (Codigo === 8) {
+        else if (Codigo_criatura === 8) {
 
                 var Nombre_criatura = Byakhee.Nombre;
        
@@ -457,5 +474,7 @@ function Crear_criatura(){
         "<br><li>"+"Corpulencia media: "+Corpulencia_criatura+
         "<br><li>"+"Bonificación al daño media: "+Daño_extra_criatura+
         "<br><li>"+"Media de puntos de magia: "+Magia_criatura+
-        "<br><li>"+"Movimiento: "+Movimiento_criatura
+        "<br><li>"+"Movimiento: "+Movimiento_criatura+
+        "<br><li>"+"Poder Especial: "+Poder_especial_criatura
+
 }
