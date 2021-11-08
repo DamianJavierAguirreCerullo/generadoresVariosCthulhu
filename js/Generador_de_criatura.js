@@ -127,75 +127,479 @@ var El_horror_en_la_tinta = {
 
 var Ghast = {
         Nombre : "Ghast" ,
-        FUE_max : "" ,
-        FUE_min : "" ,
-        CON_max : "" ,
-        CON_min : "" ,
-        TAM_max : "" ,
-        TAM_min : "" ,
-        DES_max : "" ,
-        DES_min : "" ,
-        INT_max : "" ,
-        INT_min : "" ,
-        POD_max : "" ,
-        POD_min : "" ,
+        FUE_max : 30 ,
+        FUE_min : 15 ,
+        CON_max : 24 ,
+        CON_min : 4 ,
+        TAM_max : 36 ,
+        TAM_min : 16 ,
+        DES_max : 18 ,
+        DES_min : 8 ,
+        INT_max : 6 ,
+        INT_min : 1 ,
+        POD_max : 18 ,
+        POD_min : 3 ,
         Movimiento : "10"
 }
 
 var Gnoph_keh = {
         Nombre : "Gnoph_keh" ,
-        FUE_max : "" ,
-        FUE_min : "" ,
-        CON_max : "" ,
-        CON_min : "" ,
-        TAM_max : "" ,
-        TAM_min : "" ,
-        DES_max : "" ,
-        DES_min : "" ,
-        INT_max : "" ,
-        INT_min : "" ,
-        POD_max : "" ,
-        POD_min : "" ,
+        FUE_max : 36 ,
+        FUE_min : 26 ,
+        CON_max : 30 ,
+        CON_min : 15 ,
+        TAM_max : 36 ,
+        TAM_min : 26 ,
+        DES_max : 24 ,
+        DES_min : 4 ,
+        INT_max : 18 ,
+        INT_min : 13 ,
+        POD_max : 36 ,
+        POD_min : 6 ,
         Movimiento : "9"
 }
 
 var Gul = {
         Nombre : "Gul" ,
-        FUE_max : "" ,
-        FUE_min : "" ,
-        CON_max : "" ,
-        CON_min : "" ,
-        TAM_max : "" ,
-        TAM_min : "" ,
-        DES_max : "" ,
-        DES_min : "" ,
-        INT_max : "" ,
-        INT_min : "" ,
-        POD_max : "" ,
-        POD_min : "" ,
+        FUE_max : 24 ,
+        FUE_min : 9 ,
+        CON_max : 18 ,
+        CON_min : 8 ,
+        TAM_max : 18 ,
+        TAM_min : 8 ,
+        DES_max : 18 ,
+        DES_min : 8 ,
+        INT_max : 18 ,
+        INT_min : 8 ,
+        POD_max : 18 ,
+        POD_min : 8 ,
         Movimiento : "9"
 }
 
-// var  = {
-//         Nombre : "" ,
-//         FUE_max :  ,
-//         FUE_min :  ,
-//         CON_max :  ,
-//         CON_min :  ,
-//         TAM_max :  ,
-//         TAM_min :  ,
-//         DES_max :  ,
-//         DES_min :  ,
-//         INT_max :  ,
-//         INT_min :  ,
-//         POD_max :  ,
-//         POD_min :  ,
-//         Movimiento : ""
-// }
+ var Habitante_de_las_arenas = {
+         Nombre : "Habitante de las Arenas" ,
+         FUE_max : 18 ,
+         FUE_min : 3 ,
+         CON_max : 18 ,
+         CON_min : 8 ,
+         TAM_max : 24 ,
+         TAM_min : 9 ,
+         DES_max : 18 ,
+         DES_min : 8 ,
+         INT_max : 18 ,
+         INT_min : 3 ,
+         POD_max : 18 ,
+         POD_min : 3 ,
+         Movimiento : "8"
+ }
 
+ var Hombre_serpiente = {
+         Nombre : "Hombre Serpiente" ,
+         FUE_max : 18 ,
+         FUE_min : 3 ,
+         CON_max : 18 ,
+         CON_min : 3 ,
+         TAM_max : 18 ,
+         TAM_min : 3 ,
+         DES_max : 18 ,
+         DES_min : 8 ,
+         INT_max : 24 ,
+         INT_min : 9 ,
+         POD_max : 18 ,
+         POD_min : 8 ,
+         Movimiento : "8"
+ }
 
+ var Horrendo_cazador = {
+         Nombre : "Horrendo Cazador" ,
+         FUE_max : 42 ,
+         FUE_min : 17 ,
+         CON_max : 18 ,
+         CON_min : 3 ,
+         TAM_max : 54 ,
+         TAM_min : 29 ,
+         DES_max : 21 ,
+         DES_min : 6 ,
+         INT_max : 18 ,
+         INT_min : 13 ,
+         POD_max : 36 ,
+         POD_min : 6 ,
+         Movimiento : "7/11"
+ }
 
+ var Lloigor = {
+         Nombre : "Lloigor" ,
+         FUE_max : 48 ,
+         FUE_min : 33 ,
+         CON_max : 48 ,
+         CON_min : 8 ,
+         TAM_max : 8 ,
+         TAM_min : 2 ,
+         DES_max : 18 ,
+         DES_min : 3 ,
+         INT_max : 30 ,
+         INT_min : 10 ,
+         POD_max : 24 ,
+         POD_min : 4 ,
+         Movimiento : "7(Material)/3(Inmaterial)"
+ }
 
+ var Migo = {
+         Nombre : "Mi-Go" ,
+         FUE_max : 18 ,
+         FUE_min : 3 ,
+         CON_max : 18 ,
+         CON_min : 3 ,
+         TAM_max : 18 ,
+         TAM_min : 3 ,
+         DES_max : 18 ,
+         DES_min : 4 ,
+         INT_max : 18 ,
+         INT_min : 8 ,
+         POD_max : 18 ,
+         POD_min : 8 ,
+         Movimiento : "7/13 Volando"
+ }
+
+ var Perros_de_tindalos = {
+         Nombre : "Perros de Tíndalos" ,
+         FUE_max : 24 ,
+         FUE_min : 9 ,
+         CON_max : 38 ,
+         CON_min : 23 ,
+         TAM_max : 24 ,
+         TAM_min : 9 ,
+         DES_max : 18 ,
+         DES_min : 3 ,
+         INT_max : 30 ,
+         INT_min : 5 ,
+         POD_max : 42 ,
+         POD_min : 7 ,
+         Movimiento : "6/20 Volando"
+ }
+
+ var Polipo_volante = {
+         Nombre : "Pólipos Volantes" ,
+         FUE_max : 60 ,
+         FUE_min : 40 ,
+         CON_max : 30 ,
+         CON_min : 20 ,
+         TAM_max : 60 ,
+         TAM_min : 40 ,
+         DES_max : 18 ,
+         DES_min : 8 ,
+         INT_max : 24 ,
+         INT_min : 4 ,
+         POD_max : 24 ,
+         POD_min : 9 ,
+         Movimiento : "8/12 Volando"
+ }
+
+ var Profundo = {
+         Nombre : "Profundos" ,
+         FUE_max : 24 ,
+         FUE_min : 4 ,
+         CON_max : 18 ,
+         CON_min : 3 ,
+         TAM_max : 24 ,
+         TAM_min : 9 ,
+         DES_max : 18 ,
+         DES_min : 3 ,
+         INT_max : 18 ,
+         INT_min : 8 ,
+         POD_max : 18 ,
+         POD_min : 3 ,
+         Movimiento : "8/10 Nadando"
+ }
+
+ var Hibrido_profundo = {
+         Nombre : "Híbrido Profundo" ,
+         FUE_max : 18 ,
+         FUE_min : 8 ,
+         CON_max : 18 ,
+         CON_min : 8 ,
+         TAM_max : 18 ,
+         TAM_min : 3 ,
+         DES_max : 18 ,
+         DES_min : 8 ,
+         INT_max : 18 ,
+         INT_min : 8 ,
+         POD_max : 18 ,
+         POD_min : 3 ,
+         APA_max : 12 ,
+         APA_min : 2 ,
+         Movimiento : ""
+ }
+
+ var Reptante = {
+         Nombre : "Reptantes" ,
+         FUE_max : 12 ,
+         FUE_min : 7 ,
+         CON_max : 24 ,
+         CON_min : 4 ,
+         TAM_max : 18 ,
+         TAM_min : 8 ,
+         DES_max : 12 ,
+         DES_min : 2 ,
+         INT_max : 24 ,
+         INT_min : 4 ,
+         POD_max : 30 ,
+         POD_min : 10 ,
+         Movimiento : "8"
+ }
+
+ var Retoño_oscuro = {
+         Nombre : "Retoños oscuros" ,
+         FUE_max : 54 ,
+         FUE_min : 34 ,
+         CON_max : 24 ,
+         CON_min : 9 ,
+         TAM_max : 54 ,
+         TAM_min : 34 ,
+         DES_max : 24 ,
+         DES_min : 9 ,
+         INT_max : 24 ,
+         INT_min : 4 ,
+         POD_max : 30 ,
+         POD_min : 5 ,
+         Movimiento : "8"
+ }
+
+ var Semilla_estelar = {
+         Nombre : "Semillas estelares de Cthulhu" ,
+         FUE_max : 12 ,
+         FUE_min : 2 ,
+         CON_max : 18 ,
+         CON_min : 3 ,
+         TAM_max : 18 ,
+         TAM_min : 3 ,
+         DES_max : 18 ,
+         DES_min : 3 ,
+         INT_max : 36 ,
+         INT_min : 6 ,
+         POD_max : 36 ,
+         POD_min : 6 ,
+         Movimiento : "15/15 Nadando"
+ }
+
+ var Semilla_informe = {
+         Nombre : "Semillas informe" ,
+         FUE_max : 42 ,
+         FUE_min : 7 ,
+         CON_max : 18 ,
+         CON_min : 3 ,
+         TAM_max : 48 ,
+         TAM_min : 13 ,
+         DES_max : 24 ,
+         DES_min : 14 ,
+         INT_max : 18 ,
+         INT_min : 8 ,
+         POD_max : 18 ,
+         POD_min : 3 ,
+         Movimiento : "12"
+ }
+
+ var Ser_rata = {
+         Nombre : "Seres Rata" ,
+         FUE_max : 3 ,
+         FUE_min : 1 ,
+         CON_max : 12 ,
+         CON_min : 2 ,
+         TAM : 5 ,
+         DES_max : 28 ,
+         DES_min : 8 ,
+         INT_max : 18 ,
+         INT_min : 3 ,
+         POD_max : 12 ,
+         POD_min : 2 ,
+         Movimiento : "9"
+ }
+
+ var Servidor_de_los_otros_dioses = {
+         Nombre : "Servidor de los Otros Dioses" ,
+         FUE_max : 24 ,
+         FUE_min : 4 ,
+         CON_max : 24 ,
+         CON_min : 9 ,
+         TAM_max : 30 ,
+         TAM_min : 10 ,
+         DES_max : 24 ,
+         DES_min : 9 ,
+         INT_max : 30 ,
+         INT_min : 5 ,
+         POD_max : 24 ,
+         POD_min : 14 ,
+         Movimiento : "7"
+ }
+
+ var Insectos_de_shaggai = {
+         Nombre : "Insectos de Shaggai" ,
+         FUE_max : 3 ,
+         FUE_min : 1 ,
+         CON_max : 3 ,
+         CON_min : 1 ,
+         TAM : 5 ,
+         DES_max : 36 ,
+         DES_min : 26 ,
+         INT_max : 24 ,
+         INT_min : 9 ,
+         POD_max : 30 ,
+         POD_min : 5 ,
+         Movimiento : "4/20 Volando"
+ }
+
+ var Shantak = {
+         Nombre : "Shantak" ,
+         FUE_max : 44 ,
+         FUE_min : 24 ,
+         CON_max : 18 ,
+         CON_min : 8 ,
+         TAM_max : 60 ,
+         TAM_min : 40 ,
+         DES_max : 15 ,
+         DES_min : 5 ,
+         INT_max : 6 ,
+         INT_min : 1 ,
+         POD_max : 18 ,
+         POD_min : 3 ,
+         Movimiento : "6/18 Volando"
+ }
+
+ var Shoggoth = {
+         Nombre : "Shoggoth" ,
+         FUE_max : 108 ,
+         FUE_min : 18 ,
+         CON_max : 72 ,
+         CON_min : 12 ,
+         TAM_max : 144 ,
+         TAM_min : 24 ,
+         DES_max : 6 ,
+         DES_min : 1 ,
+         INT_max : 12 ,
+         INT_min : 2 ,
+         POD_max : 18 ,
+         POD_min : 3 ,
+         Movimiento : "6/18 Volando"
+ }
+
+ var Señor_de_los_shoggoths = {
+         Nombre : "Señor de los Shoggoths" ,
+         FUE_max :  ,
+         FUE_min :  ,
+         CON_max :  ,
+         CON_min :  ,
+         TAM_max :  ,
+         TAM_min :  ,
+         DES_max :  ,
+         DES_min :  ,
+         INT_max :  ,
+         INT_min :  ,
+         POD_max :  ,
+         POD_min :  ,
+         Movimiento : ""
+ }
+
+ var Señor_de_los_shoggoths_humano = {
+         Nombre : "" ,
+         FUE_max :  ,
+         FUE_min :  ,
+         CON_max :  ,
+         CON_min :  ,
+         TAM_max :  ,
+         TAM_min :  ,
+         DES_max :  ,
+         DES_min :  ,
+         INT_max :  ,
+         INT_min :  ,
+         POD_max :  ,
+         POD_min :  ,
+         Movimiento : ""
+ }
+
+ var  = {
+         Nombre : "" ,
+         FUE_max :  ,
+         FUE_min :  ,
+         CON_max :  ,
+         CON_min :  ,
+         TAM_max :  ,
+         TAM_min :  ,
+         DES_max :  ,
+         DES_min :  ,
+         INT_max :  ,
+         INT_min :  ,
+         POD_max :  ,
+         POD_min :  ,
+         Movimiento : ""
+ }
+
+ var  = {
+         Nombre : "" ,
+         FUE_max :  ,
+         FUE_min :  ,
+         CON_max :  ,
+         CON_min :  ,
+         TAM_max :  ,
+         TAM_min :  ,
+         DES_max :  ,
+         DES_min :  ,
+         INT_max :  ,
+         INT_min :  ,
+         POD_max :  ,
+         POD_min :  ,
+         Movimiento : ""
+ }
+
+ var  = {
+         Nombre : "" ,
+         FUE_max :  ,
+         FUE_min :  ,
+         CON_max :  ,
+         CON_min :  ,
+         TAM_max :  ,
+         TAM_min :  ,
+         DES_max :  ,
+         DES_min :  ,
+         INT_max :  ,
+         INT_min :  ,
+         POD_max :  ,
+         POD_min :  ,
+         Movimiento : ""
+ }
+
+ var  = {
+         Nombre : "" ,
+         FUE_max :  ,
+         FUE_min :  ,
+         CON_max :  ,
+         CON_min :  ,
+         TAM_max :  ,
+         TAM_min :  ,
+         DES_max :  ,
+         DES_min :  ,
+         INT_max :  ,
+         INT_min :  ,
+         POD_max :  ,
+         POD_min :  ,
+         Movimiento : ""
+ }
+
+ var Yithiano = {
+         Nombre : "Yithiano" ,
+         FUE_max : 72 ,
+         FUE_min : 12 ,
+         CON_max : 36 ,
+         CON_min : 16 ,
+         TAM_max : 66 ,
+         TAM_min : 44 ,
+         DES_max : 15 ,
+         DES_min : 5 ,
+         INT_max : 30 ,
+         INT_min : 10 ,
+         POD_max : 18 ,
+         POD_min : 8 ,
+         Movimiento : "7"
+ }
 
 
 
