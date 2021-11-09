@@ -3,6 +3,29 @@ var Criatura = document.getElementById("Criaturas");
 var crear = document.getElementById("creador");
 crear.addEventListener ("click",Crear_criatura);
 
+var D4 = Math.floor(Math.random() * (4 - 1 + 1) + 1);
+var D6 = Math.floor(Math.random() * (6 - 1 + 1) + 1);
+var D8 = Math.floor(Math.random() * (8 - 1 + 1) + 1);
+var D10 = Math.floor(Math.random() * (10 - 1 + 1) + 1);
+var D100 = Math.floor(Math.random() * (100 - 1 + 1) + 1);
+
+// grimorio
+
+var Grimorio = ["Ajar un miembro","Aliento de las profundidades","Atormentar","Bendecir hoja","Cancion de Hastur","Cántico de Thoth","Crear barrera de Naach-Tith","Crear niebla de R'lyeh","Crear zombie","Cruz ansada de Prinn","Descomposición verde","Destierro de Yde Etad","Dividir el ka","Dominar","Encantar cuchillo","Encantar daga sacrificial","Encantar libro","Explosion mental","Fabrica de hidromiel espacial","Fundir carne","Garra de Nyogtha","Hechizo mortal","Imitar apariencia","Inducir el pánico","Inmoviliar a una victima","Intercambio de mentes","Mal de ojo","Maldición de Azathoth","Maldición del pellejo pútrido","Nublar la memoria","Ola de olvido","Palabras poderosas","Polvo de Ibn-Ghazi","Polvo de Suleimán","Crear portal","Caja Portal","Encontrar portal","Portal temporal","Proteccion","Protección corporal","Provocar/Curar la ceguera","Puño de Yog-Sothoth","Resurrección","Signo rojo de Shudde M'ell","Signo de Voorish","Simbolo arcano","Sugestión mental","Trasformación corporal de Gorgoroth","Trasferencia de mente"];
+
+var Hechizo_1 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
+var Hechizo_2 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
+var Hechizo_3 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
+var Hechizo_4 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
+var Hechizo_5 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
+var Hechizo_6 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
+var Hechizo_7 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
+var Hechizo_8 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
+var Hechizo_9 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
+var Hechizo_10 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
+console.log(Hechizo_1,Hechizo_2,Hechizo_3,Hechizo_4,Hechizo_5,Hechizo_6,Hechizo_7,Hechizo_8,Hechizo_9,Hechizo_10);
+
+
 // registro de criaturas
 
 var Angel_descarnado = {
@@ -483,7 +506,7 @@ var Gul = {
  }
 
  var Señor_de_los_shoggoths_humano = {
-         Nombre : "Señor de los Shoggoths Humano" ,
+         Nombre : "Señor de los Shoggoths humano" ,
          FUE_max : 20 ,
          FUE_min : 10 ,
          CON_max : 18 ,
@@ -632,10 +655,13 @@ function Crear_criatura(){
 
         var Codigo_criatura = parseInt(Criatura.value);
 
+        var Poder_especial_humano = "No";
+
         //
 
         //if de calculos para hechizos
-        var Probabilidad_hechizo_criatura = Math.floor(Math.random() * (100 - 1 + 1) + 1)
+
+        var Probabilidad_hechizo_criatura = Porcentual;
 
 
         // if criaturas
@@ -736,7 +762,7 @@ function Crear_criatura(){
 
          var Fuerza_criatura = Math.floor(Math.random() * (Color_surgido_del_espacio.FUE_max - Color_surgido_del_espacio.FUE_min + 1 ) + Color_surgido_del_espacio.FUE_min) * 5;
 
-         var Constitucion_criatura = "N/A"
+         var Constitucion_criatura = 0;
          
          var Destresa_criatura = Math.floor(Math.random() * (Color_surgido_del_espacio.DES_max - Color_surgido_del_espacio.DES_min + 1 ) + Color_surgido_del_espacio.DES_min) * 5;
          
@@ -755,17 +781,17 @@ function Crear_criatura(){
 
                 var Nombre_criatura = Dagon_e_hidra.Nombre;
        
-                var Fuerza_criatura = Dagon_e_hidra.FUE_max
+                var Fuerza_criatura = Dagon_e_hidra.FUE_max;
        
-                var Constitucion_criatura = Dagon_e_hidra.CON_max
+                var Constitucion_criatura = Dagon_e_hidra.CON_max;
        
-                var Tamaño_criatura = Dagon_e_hidra.TAM_max
+                var Tamaño_criatura = Dagon_e_hidra.TAM_max;
        
-                var Destresa_criatura = Dagon_e_hidra.DES_max
+                var Destresa_criatura = Dagon_e_hidra.DES_max;
        
-                var Inteligencia_criatura = Dagon_e_hidra.INT_max
+                var Inteligencia_criatura = Dagon_e_hidra.INT_max;
        
-                var Poder_criatura = Dagon_e_hidra.POD_max
+                var Poder_criatura = Dagon_e_hidra.POD_max;
        
                 var Movimiento_criatura = Dagon_e_hidra.Movimiento;
        
@@ -1158,6 +1184,67 @@ function Crear_criatura(){
                
         else if (Codigo_criatura === 26) {
 
+                //forma humana
+
+                var Nombre_humano = Math.floor(Math.random() * Firstname_Man.length);
+       
+                var Fuerza_humano = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.FUE_max - Señor_de_los_shoggoths_humano.FUE_min + 1 ) + Señor_de_los_shoggoths_humano.FUE_min) * 5;
+       
+                var Constitucion_humano = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.CON_max - Señor_de_los_shoggoths_humano.CON_min + 1 ) + Señor_de_los_shoggoths_humano.CON_min) * 5;
+       
+                var Tamaño_humano = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.TAM_max - Señor_de_los_shoggoths_humano.TAM_min + 1 ) + Señor_de_los_shoggoths_humano.TAM_min) * 5;
+       
+                var Destresa_humano = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.DES_max - Señor_de_los_shoggoths_humano.DES_min + 1 ) + Señor_de_los_shoggoths_humano.DES_min) * 5;
+       
+                var Inteligencia_humano = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.INT_max - Señor_de_los_shoggoths_humano.INT_min + 1 ) + Señor_de_los_shoggoths_humano.INT_min) * 5;
+       
+                var Poder_humano = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.POD_max - Señor_de_los_shoggoths_humano.POD_min + 1 ) + Señor_de_los_shoggoths_humano.POD_min) * 5;
+       
+                var Apariencia_humano = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.APA_max - Señor_de_los_shoggoths_humano.APA_min + 1 ) + Señor_de_los_shoggoths_humano.APA_min) * 5;
+       
+                var Educacion_humano = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.EDU_max - Señor_de_los_shoggoths_humano.EDU_min + 1 ) + Señor_de_los_shoggoths_humano.EDU_min) * 5;
+
+                var  Vida_humano  = Math.floor((Tamaño_humano+Constitucion_humano)/10);
+        
+                var Magia_humano = (Poder_humano/5);
+       
+                var Movimiento_humano = Señor_de_los_shoggoths_humano.Movimiento;
+
+                var Corpulencia = Fuerza_humano + Tamaño_humano;
+
+                if (Corpulencia < 85){
+
+                        var Corpulencia_humano = -1
+                        var Daño_extra_humano = -1
+                }
+
+                else if (Corpulencia < 125){
+
+                        var Corpulencia_humano = 0
+                        var Daño_extra_humano = 0
+                }
+
+                else if (Corpulencia < 165){
+
+                        var Corpulencia_humano = 1
+                        var Daño_extra_humano = "1D4"
+                }
+
+                else if (Corpulencia < 205){
+
+                        var Corpulencia_humano = 2
+                        var Daño_extra_humano = "1D6"
+                }
+
+                else {
+
+                        var Corpulencia_humano = 3
+                        var Daño_extra_humano = "2D6"
+                }
+
+
+                // forma real
+
                 var Nombre_criatura = Señor_de_los_shoggoths.Nombre;
        
                 var Fuerza_criatura = Math.floor(Math.random() * (Señor_de_los_shoggoths.FUE_max - Señor_de_los_shoggoths.FUE_min + 1 ) + Señor_de_los_shoggoths.FUE_min) * 5;
@@ -1176,27 +1263,8 @@ function Crear_criatura(){
        
                }
                
+        
         else if (Codigo_criatura === 27) {
-
-                var Nombre_criatura = Señor_de_los_shoggoths_humano.Nombre;
-       
-                var Fuerza_criatura = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.FUE_max - Señor_de_los_shoggoths_humano.FUE_min + 1 ) + Señor_de_los_shoggoths_humano.FUE_min) * 5;
-       
-                var Constitucion_criatura = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.CON_max - Señor_de_los_shoggoths_humano.CON_min + 1 ) + Señor_de_los_shoggoths_humano.CON_min) * 5;
-       
-                var Tamaño_criatura = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.TAM_max - Señor_de_los_shoggoths_humano.TAM_min + 1 ) + Señor_de_los_shoggoths_humano.TAM_min) * 5;
-       
-                var Destresa_criatura = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.DES_max - Señor_de_los_shoggoths_humano.DES_min + 1 ) + Señor_de_los_shoggoths_humano.DES_min) * 5;
-       
-                var Inteligencia_criatura = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.INT_max - Señor_de_los_shoggoths_humano.INT_min + 1 ) + Señor_de_los_shoggoths_humano.INT_min) * 5;
-       
-                var Poder_criatura = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.POD_max - Señor_de_los_shoggoths_humano.POD_min + 1 ) + Señor_de_los_shoggoths_humano.POD_min) * 5;
-       
-                var Movimiento_criatura = Señor_de_los_shoggoths_humano.Movimiento;
-       
-               }
-               
-        else if (Codigo_criatura === 28) {
 
                 var Nombre_criatura = Ser_rata.Nombre;
        
@@ -1216,7 +1284,7 @@ function Crear_criatura(){
        
                }
                
-        else if (Codigo_criatura === 29) {
+        else if (Codigo_criatura === 28) {
 
                 var Nombre_criatura = Servidor_de_los_otros_dioses.Nombre;
        
@@ -1236,7 +1304,7 @@ function Crear_criatura(){
        
                }
                
-        else if (Codigo_criatura === 30) {
+        else if (Codigo_criatura === 29) {
 
                 var Nombre_criatura = Shantak.Nombre;
        
@@ -1256,7 +1324,7 @@ function Crear_criatura(){
        
                }
                
-        else if (Codigo_criatura === 31) {
+        else if (Codigo_criatura === 30) {
 
                 var Nombre_criatura = Shoggoth.Nombre;
        
@@ -1276,7 +1344,7 @@ function Crear_criatura(){
        
                }
                
-        else if (Codigo_criatura === 32) {
+        else if (Codigo_criatura === 31) {
 
                 var Nombre_criatura = Sirviente_Glaaki.Nombre;
        
@@ -1296,7 +1364,7 @@ function Crear_criatura(){
        
                }
                
-        else if (Codigo_criatura === 33) {
+        else if (Codigo_criatura === 32) {
 
                 var Nombre_criatura = Tcho_tcho.Nombre;
        
@@ -1316,7 +1384,7 @@ function Crear_criatura(){
        
                }
                
-        else if (Codigo_criatura === 34) {
+        else if (Codigo_criatura === 33) {
 
                 var Nombre_criatura = Vampiro_de_fuego.Nombre;
        
@@ -1336,7 +1404,7 @@ function Crear_criatura(){
        
                }
                
-        else if (Codigo_criatura === 35) {
+        else if (Codigo_criatura === 34) {
 
                 var Nombre_criatura = Vampiro_estelar.Nombre;
        
@@ -1356,7 +1424,7 @@ function Crear_criatura(){
        
                }
                
-        else if (Codigo_criatura === 36) {
+        else if (Codigo_criatura === 35) {
 
                 var Nombre_criatura = Yithiano.Nombre;
        
@@ -1380,35 +1448,41 @@ function Crear_criatura(){
 
         // if de Corpulencia 
 
-        var Corpulencia = Fuerza_criatura + Tamaño_criatura
-
+        var Corpulencia = Fuerza_criatura + Tamaño_criatura;
+        
         if (Corpulencia < 65 ){
+
                 var Corpulencia_criatura = -2
                 var Daño_extra_criatura = -2
 
         }
 
                 else if (Corpulencia < 85){
+
                         var Corpulencia_criatura = -1
                         var Daño_extra_criatura = -1
                 }
 
                 else if (Corpulencia < 125){
+
                         var Corpulencia_criatura = 0
                         var Daño_extra_criatura = 0
                 }
 
                 else if (Corpulencia < 165){
+
                         var Corpulencia_criatura = 1
                         var Daño_extra_criatura = "1D4"
                 }
 
                 else if (Corpulencia < 205){
+
                         var Corpulencia_criatura = 2
                         var Daño_extra_criatura = "1D6"
                 }
 
                 else {
+
                         var Corpulencia_criatura = (Math.ceil(((Corpulencia - 204) / 80))) + 2
                         var Daño_extra_criatura = (Corpulencia_criatura-1) + "D6"
 
@@ -1417,9 +1491,7 @@ function Crear_criatura(){
 
         var  Vida_criatura  = Math.floor((Tamaño_criatura+Constitucion_criatura)/10);
 
-        var Magia_criatura = (Poder_criatura/5)
-
-
+        var Magia_criatura = (Poder_criatura/5);
 
 
 
@@ -1428,9 +1500,26 @@ function Crear_criatura(){
 
         // Se Genera en el html lo que se pida
         
-        if ( Codigo_criatura != 27 && Codigo_criatura != 12) {
+        if ( Codigo_criatura === 26 ) {
 
                 document.getElementById("result").innerHTML =
+                "<br><h3> Nombre : "+Firstname_Man[Nombre_humano]+"</h3>"+
+                "<h3><br>Stats</h3>"+
+                "<ul><li> Fue : "+Fuerza_humano+
+                "<br><li> Con : "+Constitucion_humano+
+                "<br><li> Pod : "+Poder_humano+
+                "<br><li> Des : "+Destresa_humano+
+                "<br><li> Tam : "+Tamaño_humano+
+                "<br><li> Int : "+Inteligencia_humano+
+                "<br><li> PV  : "+Vida_humano+
+                "<br><li> APA  : "+Apariencia_humano+
+                "<br><li> EDU  : "+Educacion_humano+
+                "<br><li>"+"Corpulencia media: "+Corpulencia_humano+
+                "<br><li>"+"Bonificación al daño media: "+Daño_extra_humano+
+                "<br><li>"+"Media de puntos de magia: "+Magia_humano+
+                "<br><li>"+"Movimiento: "+Movimiento_humano+
+                "<br><li>"+"Poder Especial: "+Poder_especial_humano+"</ul><br><br>"+
+
                 "<br><h3> Nombre : "+Nombre_criatura+"</h3>"+
                 "<h3><br>Stats</h3>"+
                 "<ul><li> Fue : "+Fuerza_criatura+
@@ -1440,12 +1529,15 @@ function Crear_criatura(){
                 "<br><li> Tam : "+Tamaño_criatura+
                 "<br><li> Int : "+Inteligencia_criatura+
                 "<br><li> PV  : "+Vida_criatura+
+                "<br><li> APA  : "+Apariencia_criatura+
+                "<br><li> EDU  : "+Educacion_criatura+
                 "<br><li>"+"Corpulencia media: "+Corpulencia_criatura+
                 "<br><li>"+"Bonificación al daño media: "+Daño_extra_criatura+
                 "<br><li>"+"Media de puntos de magia: "+Magia_criatura+
                 "<br><li>"+"Movimiento: "+Movimiento_criatura+
                 "<br><li>"+"Poder Especial: "+Poder_especial_criatura
         }
+
         else if (Codigo_criatura === 12) {
 
                 document.getElementById("result").innerHTML =
@@ -1465,6 +1557,7 @@ function Crear_criatura(){
                 "<br><li>"+"Movimiento: "+Movimiento_criatura+
                 "<br><li>"+"Poder Especial: "+Poder_especial_criatura
         } 
+
         else {
                 document.getElementById("result").innerHTML =
                 "<br><h3> Nombre : "+Nombre_criatura+"</h3>"+
@@ -1476,8 +1569,6 @@ function Crear_criatura(){
                 "<br><li> Tam : "+Tamaño_criatura+
                 "<br><li> Int : "+Inteligencia_criatura+
                 "<br><li> PV  : "+Vida_criatura+
-                "<br><li> APA  : "+Apariencia_criatura+
-                "<br><li> EDU  : "+Educacion_criatura+
                 "<br><li>"+"Corpulencia media: "+Corpulencia_criatura+
                 "<br><li>"+"Bonificación al daño media: "+Daño_extra_criatura+
                 "<br><li>"+"Media de puntos de magia: "+Magia_criatura+
