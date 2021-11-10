@@ -13,17 +13,6 @@ var D100 = Math.floor(Math.random() * (100 - 1 + 1) + 1);
 
 var Grimorio = ["Ajar un miembro","Aliento de las profundidades","Atormentar","Bendecir hoja","Cancion de Hastur","Cántico de Thoth","Crear barrera de Naach-Tith","Crear niebla de R'lyeh","Crear zombie","Cruz ansada de Prinn","Descomposición verde","Destierro de Yde Etad","Dividir el ka","Dominar","Encantar cuchillo","Encantar daga sacrificial","Encantar libro","Explosion mental","Fabrica de hidromiel espacial","Fundir carne","Garra de Nyogtha","Hechizo mortal","Imitar apariencia","Inducir el pánico","Inmoviliar a una victima","Intercambio de mentes","Mal de ojo","Maldición de Azathoth","Maldición del pellejo pútrido","Nublar la memoria","Ola de olvido","Palabras poderosas","Polvo de Ibn-Ghazi","Polvo de Suleimán","Crear portal","Caja Portal","Encontrar portal","Portal temporal","Proteccion","Protección corporal","Provocar/Curar la ceguera","Puño de Yog-Sothoth","Resurrección","Signo rojo de Shudde M'ell","Signo de Voorish","Simbolo arcano","Sugestión mental","Trasformación corporal de Gorgoroth","Trasferencia de mente"];
 
-var Hechizo_1 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
-var Hechizo_2 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
-var Hechizo_3 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
-var Hechizo_4 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
-var Hechizo_5 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
-var Hechizo_6 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
-var Hechizo_7 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
-var Hechizo_8 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
-var Hechizo_9 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
-var Hechizo_10 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
-console.log(Hechizo_1,Hechizo_2,Hechizo_3,Hechizo_4,Hechizo_5,Hechizo_6,Hechizo_7,Hechizo_8,Hechizo_9,Hechizo_10);
 
 
 // registro de criaturas
@@ -42,7 +31,8 @@ var Angel_descarnado = {
         INT_min : 1 ,
         POD_max : 18 ,
         POD_min : 3 ,
-        Movimiento : "6/12 Volando"
+        Movimiento : "6/12 Volando" ,
+        Informacion_extra: "<strong>Ataques por asalto:</strong> 1 <br> <strong>Ataques de combate:</strong>Atacan con sus zarpas, cola, cuernos o extremidades.<br> <strong>Capturar (mnbr):</strong> Los Ángeles descarnados de la noche prefieren capturar a sus adversarios para después hacerles cosquillas con su cola espinosa. Suelen atacar en masa e intentan acechar en silencio a sus víctimas , arrebatarles sus armas y someterlas. Dos Ángeles descarnados de la noche o más pueden combinar sus ataques para retener a una víctima más poderosa (lo que puede llegar adarles un dado de bonificación por superarla en número).<br> <strong>Cosquilleo:</strong> Los Ángeles descarnados de la noche solo pueden cosquillear a criaturas a las que hayan capturado. Un ataque de cosquilleo con éxito resulta extremadamente perturbador, ya que la lengüeta de su cola es afilada como una cuchilla y peligrosa a pesar de que su contacto no causa daño. La víctima queda perpleja, humillada y desorientada, y sufre un dado de penalización en todas sus tiradas durante 1D4 asaltos o hasta que cesa el cosquilleo. La cola de un Ángel descarnado de la noche puede pasar a través de agujeros y aberturas, atravesar ropas gruesas e incluso, encontrar los intersticios de una armadura metálica.<br><strong>Combatir</strong> 45 % (22/9), daño 1D4 + Bonificación al daño.<br><strong> Capturar (mnbr)</strong> la víctima queda apresada y lista para el cosquilleo o cualquier ataque posterior.<br><strong>Cosquilleo</strong> 35% (17/7), inmovilizado 1 D6+1 asaltos (el objetivo debe haber sido capturado previamente).<br><strong>Esquivar</strong> 35% (17 /7).<br><strong>Armadura:</strong> 2 puntos de piel.<br><strong>Habilidades:</strong> Sigilo 90 %.<br><strong>Pérdida de Cordura:</strong> Ver a un Ángel descarnado de la noche produce una pérdida de 0/1D6 Puntos de Cordura.",
 }
 
 var Antiguo = {
@@ -59,7 +49,8 @@ var Antiguo = {
         INT_min : 13 ,
         POD_max : 18 ,
         POD_min : 3 ,
-        Movimiento : "8/10 Volando"
+        Movimiento : "8/10 Volando",
+        Informacion_extra: "<strong>Ataques por asalto:</strong> 5        <br><strong>Ataques de combate:</strong> Un antiguo puede utilizar sus tentáculosy su masa corporal para golpear a sus adversarios.<br><strong>Capturar (mnbr):</strong> Cuando un tentáculo acierta a su objetivo, seadhiere a la víctima, que cada asalto perderá una cantidadde Puntos de Vida igual a la mitad de la Bonificación al daño del Antiguo a causa de la constricción y el aplastamiento.Los Antiguos poseen cinco tentáculos, por lo que no podrán        apresar a más de cinco víctimas de este modo.<br><strong>Combatir</strong> 40% (20/8), Bonificación al daño.<br><strong>Capturar (mnbr)</strong> atrapa al objetivo, que a partir de entoncessufre 1/2 de Bonificación al daño de constricción por asalto.<br><strong>Esquivar</strong> 40% (20/8).<br><strong>Armadura:</strong> 7 puntos de piel.<br><strong>Pérdida de Cordura:</strong> Ver a un Antiguo produce una pérdida de 0/1 06 Puntos de Cordura."
 }
 
 var Byakhee = {
@@ -76,7 +67,8 @@ var Byakhee = {
         INT_min : 3 ,
         POD_max : 18 ,
         POD_min : 3 ,
-        Movimiento : "5/16 Volando"
+        Movimiento : "5/16 Volando",
+        Informacion_extra: ""
 }
 
 var Cthonian = {
@@ -106,7 +98,8 @@ var Color_surgido_del_espacio = {
         INT_min : 4 ,
         POD_max : 12 ,
         POD_min : 6 ,
-        Movimiento : "12 Fluyendo / 20 Volando "
+        Movimiento : "12 Fluyendo / 20 Volando ",
+        Informacion_extra: ""
 }
 
 var Dagon_e_hidra = {
@@ -117,7 +110,8 @@ var Dagon_e_hidra = {
         DES_max : 100 ,
         INT_max : 100 ,
         POD_max : 150 ,
-        Movimiento : "10/15 Nadando"
+        Movimiento : "10/15 Nadando",
+        Informacion_extra: ""
 }
 
 var Dhole = {
@@ -134,7 +128,8 @@ var Dhole = {
         INT_min : 2 ,
         POD_max : 60 ,
         POD_min : 10 ,
-        Movimiento : "15 Reptando / 10 Excavando"
+        Movimiento : "15 Reptando / 10 Excavando",
+        Informacion_extra: ""
 }
 
 var El_horror_en_la_tinta = {
@@ -145,7 +140,8 @@ var El_horror_en_la_tinta = {
         DES_max : 80 ,
         INT_max : 20 ,
         POD_max : 150 ,
-        Movimiento : "10"
+        Movimiento : "10",
+        Informacion_extra: ""
 }
 
 var Ghast = {
@@ -162,7 +158,8 @@ var Ghast = {
         INT_min : 1 ,
         POD_max : 18 ,
         POD_min : 3 ,
-        Movimiento : "10"
+        Movimiento : "10",
+        Informacion_extra: ""
 }
 
 var Gnoph_keh = {
@@ -179,7 +176,8 @@ var Gnoph_keh = {
         INT_min : 13 ,
         POD_max : 36 ,
         POD_min : 6 ,
-        Movimiento : "9"
+        Movimiento : "9",
+        Informacion_extra: ""
 }
 
 var Gul = {
@@ -196,7 +194,8 @@ var Gul = {
         INT_min : 8 ,
         POD_max : 18 ,
         POD_min : 8 ,
-        Movimiento : "9"
+        Movimiento : "9",
+        Informacion_extra: ""
 }
 
  var Habitante_de_las_arenas = {
@@ -213,7 +212,8 @@ var Gul = {
          INT_min : 3 ,
          POD_max : 18 ,
          POD_min : 3 ,
-         Movimiento : "8"
+         Movimiento : "8",
+         Informacion_extra: ""
  }
 
  var Hombre_serpiente = {
@@ -230,7 +230,8 @@ var Gul = {
          INT_min : 9 ,
          POD_max : 18 ,
          POD_min : 8 ,
-         Movimiento : "8"
+         Movimiento : "8",
+         Informacion_extra: ""
  }
 
  var Horrendo_cazador = {
@@ -247,7 +248,8 @@ var Gul = {
          INT_min : 13 ,
          POD_max : 36 ,
          POD_min : 6 ,
-         Movimiento : "7/11"
+         Movimiento : "7/11",
+         Informacion_extra: ""
  }
 
  var Lloigor = {
@@ -264,7 +266,8 @@ var Gul = {
          INT_min : 10 ,
          POD_max : 24 ,
          POD_min : 4 ,
-         Movimiento : "7(Material)/3(Inmaterial)"
+         Movimiento : "7(Material)/3(Inmaterial)",
+         Informacion_extra: ""
  }
 
  var Migo = {
@@ -281,7 +284,8 @@ var Gul = {
          INT_min : 8 ,
          POD_max : 18 ,
          POD_min : 8 ,
-         Movimiento : "7/13 Volando"
+         Movimiento : "7/13 Volando",
+         Informacion_extra: ""
  }
 
  var Perros_de_tindalos = {
@@ -298,7 +302,8 @@ var Gul = {
          INT_min : 5 ,
          POD_max : 42 ,
          POD_min : 7 ,
-         Movimiento : "6/20 Volando"
+         Movimiento : "6/20 Volando",
+         Informacion_extra: ""
  }
 
  var Polipo_volante = {
@@ -315,7 +320,8 @@ var Gul = {
          INT_min : 4 ,
          POD_max : 24 ,
          POD_min : 9 ,
-         Movimiento : "8/12 Volando"
+         Movimiento : "8/12 Volando",
+         Informacion_extra: ""
  }
 
  var Profundo = {
@@ -332,7 +338,8 @@ var Gul = {
          INT_min : 8 ,
          POD_max : 18 ,
          POD_min : 3 ,
-         Movimiento : "8/10 Nadando"
+         Movimiento : "8/10 Nadando",
+         Informacion_extra: ""
  }
 
  var Hibrido_profundo = {
@@ -351,7 +358,8 @@ var Gul = {
          POD_min : 3 ,
          APA_max : 12 ,
          APA_min : 2 ,
-         Movimiento : "8/8 Nadando"
+         Movimiento : "8/8 Nadando",
+         Informacion_extra: ""
  }
 
  var Reptante = {
@@ -368,7 +376,8 @@ var Gul = {
          INT_min : 4 ,
          POD_max : 30 ,
          POD_min : 10 ,
-         Movimiento : "8"
+         Movimiento : "8",
+         Informacion_extra: ""
  }
 
  var Retoño_oscuro = {
@@ -385,7 +394,8 @@ var Gul = {
          INT_min : 4 ,
          POD_max : 30 ,
          POD_min : 5 ,
-         Movimiento : "8"
+         Movimiento : "8",
+         Informacion_extra: ""
  }
 
  var Semilla_estelar = {
@@ -402,7 +412,8 @@ var Gul = {
          INT_min : 6 ,
          POD_max : 36 ,
          POD_min : 6 ,
-         Movimiento : "15/15 Nadando"
+         Movimiento : "15/15 Nadando",
+         Informacion_extra: ""
  }
 
  var Semilla_informe = {
@@ -419,7 +430,8 @@ var Gul = {
          INT_min : 8 ,
          POD_max : 18 ,
          POD_min : 3 ,
-         Movimiento : "12"
+         Movimiento : "12",
+         Informacion_extra: ""
  }
 
  var Ser_rata = {
@@ -435,7 +447,8 @@ var Gul = {
          INT_min : 3 ,
          POD_max : 12 ,
          POD_min : 2 ,
-         Movimiento : "9"
+         Movimiento : "9",
+         Informacion_extra: ""
  }
 
  var Servidor_de_los_otros_dioses = {
@@ -452,7 +465,8 @@ var Gul = {
          INT_min : 5 ,
          POD_max : 24 ,
          POD_min : 14 ,
-         Movimiento : "7"
+         Movimiento : "7",
+         Informacion_extra: ""
  }
 
  var Insectos_de_shaggai = {
@@ -468,7 +482,8 @@ var Gul = {
          INT_min : 9 ,
          POD_max : 30 ,
          POD_min : 5 ,
-         Movimiento : "4/20 Volando"
+         Movimiento : "4/20 Volando",
+         Informacion_extra: ""
  }
 
  var Shantak = {
@@ -485,7 +500,8 @@ var Gul = {
          INT_min : 1 ,
          POD_max : 18 ,
          POD_min : 3 ,
-         Movimiento : "6/18 Volando"
+         Movimiento : "6/18 Volando",
+         Informacion_extra: ""
  }
 
  var Shoggoth = {
@@ -502,7 +518,8 @@ var Gul = {
          INT_min : 2 ,
          POD_max : 18 ,
          POD_min : 3 ,
-         Movimiento : "6/18 Volando"
+         Movimiento : "6/18 Volando",
+         Informacion_extra: ""
  }
 
  var Señor_de_los_shoggoths_humano = {
@@ -523,7 +540,8 @@ var Gul = {
          APA_min : 4 ,
          EDU_max : 18 ,
          EDU_min : 3 ,
-         Movimiento : "8 Caminando"
+         Movimiento : "8 Caminando",
+         Informacion_extra: ""
  }
 
  var Señor_de_los_shoggoths = {
@@ -540,7 +558,8 @@ var Gul = {
          INT_min : 8 ,
          POD_max : 21 ,
          POD_min : 6 ,
-         Movimiento : "8 Caminando/10 Rodando"
+         Movimiento : "8 Caminando/10 Rodando",
+         Informacion_extra: ""
  }
 
  var Sirviente_Glaaki = {
@@ -557,7 +576,8 @@ var Gul = {
          INT_min : 8 ,
          POD_max : 18 ,
          POD_min : 3 ,
-         Movimiento : "5"
+         Movimiento : "5",
+         Informacion_extra: ""
  }
 
  var Tcho_tcho = {
@@ -574,7 +594,8 @@ var Gul = {
          INT_min : 3 ,
          POD_max : 18 ,
          POD_min : 3 ,
-         Movimiento : "8"
+         Movimiento : "8",
+         Informacion_extra: ""
  }
 
  var Vagabundo_dimensiona = {
@@ -591,7 +612,8 @@ var Gul = {
          INT_min : 2 ,
          POD_max : 18 ,
          POD_min : 3 ,
-         Movimiento : "7"
+         Movimiento : "7",
+         Informacion_extra: ""
  }
 
  var Vampiro_estelar = {
@@ -608,7 +630,8 @@ var Gul = {
          INT_min : 3 ,
          POD_max : 18 ,
          POD_min : 13 ,
-         Movimiento : "6/9 Volando"
+         Movimiento : "6/9 Volando",
+         Informacion_extra: ""
  }
 
  var Vampiro_de_fuego = {
@@ -622,7 +645,8 @@ var Gul = {
          INT_min : 3 ,
          POD_max : 18 ,
          POD_min : 8 ,
-         Movimiento : "11 Volando"
+         Movimiento : "11 Volando",
+         Informacion_extra: ""
  }
 
  var Yithiano = {
@@ -639,13 +663,25 @@ var Gul = {
          INT_min : 10 ,
          POD_max : 18 ,
          POD_min : 8 ,
-         Movimiento : "7"
+         Movimiento : "7",
+         Informacion_extra: ""
  }
 
 
 
 
 function Crear_criatura(){
+
+        var Hechizo_1 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
+        var Hechizo_2 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
+        var Hechizo_3 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
+        var Hechizo_4 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
+        var Hechizo_5 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
+        var Hechizo_6 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
+        var Hechizo_7 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
+        var Hechizo_8 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
+        var Hechizo_9 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
+        var Hechizo_10 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
 
         var Poder_especial_criatura = "No";
 
@@ -661,7 +697,7 @@ function Crear_criatura(){
 
         //if de calculos para hechizos
 
-        var Probabilidad_hechizo_criatura = Porcentual;
+        var Probabilidad_hechizo_criatura = D100;
 
 
         // if criaturas
@@ -683,6 +719,8 @@ function Crear_criatura(){
          var Poder_criatura = Math.floor(Math.random() * (Angel_descarnado.POD_max - Angel_descarnado.POD_min + 1 ) + Angel_descarnado.POD_min) * 5;
 
          var Movimiento_criatura = Angel_descarnado.Movimiento;
+
+         var Informacion = Angel_descarnado.Informacion_extra;
 
         }
          
@@ -709,7 +747,9 @@ function Crear_criatura(){
                         var Hechizo_criatura = ""
                 }
 
-         var Poder_especial_criatura = Hechizo_criatura
+         var Poder_especial_criatura = Hechizo_criatura;
+
+         var Informacion = Antiguo.Informacion_extra;
 
         }
          
@@ -1573,7 +1613,8 @@ function Crear_criatura(){
                 "<br><li>"+"Bonificación al daño media: "+Daño_extra_criatura+
                 "<br><li>"+"Media de puntos de magia: "+Magia_criatura+
                 "<br><li>"+"Movimiento: "+Movimiento_criatura+
-                "<br><li>"+"Poder Especial: "+Poder_especial_criatura
+                "<br><li>"+"Poder Especial: "+Poder_especial_criatura+
+                "</ul><br>"+Informacion
         }
         
 
