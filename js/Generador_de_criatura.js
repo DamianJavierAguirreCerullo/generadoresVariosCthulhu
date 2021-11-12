@@ -13,12 +13,19 @@ var D100 = Math.floor(Math.random() * (100 - 1 + 1) + 1);
 
 var Grimorio = ["Ajar un miembro","Aliento de las profundidades","Atormentar","Bendecir hoja","Cancion de Hastur","Cántico de Thoth","Crear barrera de Naach-Tith","Crear niebla de R'lyeh","Crear zombie","Cruz ansada de Prinn","Descomposición verde","Destierro de Yde Etad","Dividir el ka","Dominar","Encantar cuchillo","Encantar daga sacrificial","Encantar libro","Explosion mental","Fabrica de hidromiel espacial","Fundir carne","Garra de Nyogtha","Hechizo mortal","Imitar apariencia","Inducir el pánico","Inmoviliar a una victima","Intercambio de mentes","Mal de ojo","Maldición de Azathoth","Maldición del pellejo pútrido","Nublar la memoria","Ola de olvido","Palabras poderosas","Polvo de Ibn-Ghazi","Polvo de Suleimán","Crear portal","Caja Portal","Encontrar portal","Portal temporal","Proteccion","Protección corporal","Provocar/Curar la ceguera","Puño de Yog-Sothoth","Resurrección","Signo rojo de Shudde M'ell","Signo de Voorish","Simbolo arcano","Sugestión mental","Trasformación corporal de Gorgoroth","Trasferencia de mente"];
 
+function Generarpdf(){
+        var Criatura_pdf = document.getElementById("result");
+
+        html2pdf().from(Criatura_pdf).save();
+}
+
 
 
 // registro de criaturas
 
 var Angel_descarnado = {
         Nombre : "Angel Descarnado de la Noche" ,
+        Descripcion_breve: "Seres sin rostro" ,
         FUE_max : 18 ,
         FUE_min : 3 ,
         CON_max : 18 ,
@@ -32,7 +39,12 @@ var Angel_descarnado = {
         POD_max : 18 ,
         POD_min : 3 ,
         Movimiento : "6/12 Volando" ,
-        Informacion_extra: "<em>Ataques por asalto:</em> 1 <br><em>Ataques de combate:</em>Atacan con sus zarpas, cola, cuernos o extremidades.<br> <em>Capturar (mnbr):</em> Los Ángeles descarnados de la noche prefieren capturar a sus adversarios para después hacerles cosquillas con su cola espinosa. Suelen atacar en masa e intentan acechar en silencio a sus víctimas , arrebatarles sus armas y someterlas. Dos Ángeles descarnados de la noche o más pueden combinar sus ataques para retener a una víctima más poderosa (lo que puede llegar adarles un dado de bonificación por superarla en número).<br> <em>Cosquilleo:</em> Los Ángeles descarnados de la noche solo pueden cosquillear a criaturas a las que hayan capturado. Un ataque de cosquilleo con éxito resulta extremadamente perturbador, ya que la lengüeta de su cola es afilada como una cuchilla y peligrosa a pesar de que su contacto no causa daño. La víctima queda perpleja, humillada y desorientada, y sufre un dado de penalización en todas sus tiradas durante 1D4 asaltos o hasta que cesa el cosquilleo. La cola de un Ángel descarnado de la noche puede pasar a través de agujeros y aberturas, atravesar ropas gruesas e incluso, encontrar los intersticios de una armadura metálica.<br><em>Combatir</em> 45 % (22/9), daño 1D4 + Bonificación al daño.<br><em> Capturar (mnbr)</em> la víctima queda apresada y lista para el cosquilleo o cualquier ataque posterior.<br><em>Cosquilleo</em> 35% (17/7), inmovilizado 1 D6+1 asaltos (el objetivo debe haber sido capturado previamente).<br><em>Esquivar</em> 35% (17 /7).<br><em>Armadura:</em> 2 puntos de piel.<br><em>Habilidades:</em> Sigilo 90 %.<br><em>Pérdida de Cordura:</em> Ver a un Ángel descarnado de la noche produce una pérdida de 0/1D6 Puntos de Cordura.",
+        Armadura :  "2 puntos de piel." ,
+        Ataques_por_asalto : 1 ,
+        Ataques_de_combate : "Atacan con sus zarpas, cola, cuernos o extremidades. <br><strong>Capturar (mnbr):</strong> Los Ángeles descarnados de la noche prefieren capturar a sus adversarios para después hacerles cosquillas con su cola espinosa. Suelen atacar en masa e intentan acechar en silencio a sus víctimas , arrebatarles sus armas y someterlas. Dos Ángeles descarnados de la noche o más pueden combinar sus ataques para retener a una víctima más poderosa (lo que puede llegar adarles un dado de bonificación por superarla en número).<br><strong>Cosquilleo:</strong> Los Ángeles descarnados de la noche solo pueden cosquillear a criaturas a las que hayan capturado. Un ataque de cosquilleo con éxito resulta extremadamente perturbador, ya que la lengüeta de su cola es afilada como una cuchilla y peligrosa a pesar de que su contacto no causa daño. La víctima queda perpleja, humillada y desorientada, y sufre un dado de penalización en todas sus tiradas durante 1D4 asaltos o hasta que cesa el cosquilleo. La cola de un Ángel descarnado de la noche puede pasar a través de agujeros y aberturas, atravesar ropas gruesas e incluso, encontrar los intersticios de una armadura metálica." ,
+        Habilidades_de_combate : "Combatir 45 % (22/9), daño 1D4 + Bonificación al daño.<br> Capturar (mnbr) la víctima queda apresada y lista para el cosquilleo o cualquier ataque posterior.<br>Cosquilleo 35% (17/7), inmovilizado 1 D6+1 asaltos (el objetivo debe haber sido capturado previamente).<br>Esquivar 35% (17/7)." ,
+        Habilidades : "Sigilo 90%." ,
+        Cordura : "Ver a un Ángel descarnado de la noche produce una pérdida de 0/1D6 Puntos de Cordura."
 }
 
 var Antiguo = {
@@ -1021,7 +1033,21 @@ function Crear_criatura(){
 
          var Movimiento_criatura = Angel_descarnado.Movimiento;
 
-         var Informacion = Angel_descarnado.Informacion_extra;
+         var Descripcion = Angel_descarnado.Descripcion_breve;
+
+         var Armadura = Angel_descarnado.Armadura;
+
+         var Cantidad_ataques = Angel_descarnado.Ataques_por_asalto;
+
+         var Ataques = Angel_descarnado.Ataques_de_combate;
+
+         var Habilidad_combate = Angel_descarnado.Habilidades_de_combate;
+
+         var Habilidades = Angel_descarnado.Habilidades;
+
+         var Perdida_de_Cordura = Angel_descarnado.Cordura;
+
+        //  var Poder_especial_criatura = Angel_descarnado
 
         }
          
@@ -1839,7 +1865,7 @@ function Crear_criatura(){
 
 
 
-        // Se Genera en el html lo que se pida
+        // Se Genera en el html la criatura que se pide
         
         if ( Codigo_criatura === 26 ) {
 
@@ -1902,20 +1928,27 @@ function Crear_criatura(){
         else {
                 document.getElementById("result").innerHTML =
                 "<br><h3> Nombre : "+Nombre_criatura+"</h3>"+
+                "<br><h4> Descripcion breve : "+Descripcion+"</h4>"+
                 "<h3><br>Stats</h3>"+
                 "<ul><li> Fue : "+Fuerza_criatura+
                 "<br><li> Con : "+Constitucion_criatura+
                 "<br><li> Pod : "+Poder_criatura+
                 "<br><li> Des : "+Destresa_criatura+
                 "<br><li> Tam : "+Tamaño_criatura+
-                "<br><li> Int : "+Inteligencia_criatura+
-                "<br><li> PV  : "+Vida_criatura+
-                "<br><li>"+"Corpulencia media: "+Corpulencia_criatura+
-                "<br><li>"+"Bonificación al daño media: "+Daño_extra_criatura+
-                "<br><li>"+"Media de puntos de magia: "+Magia_criatura+
-                "<br><li>"+"Movimiento: "+Movimiento_criatura+
-                "<br><li>"+"Poder Especial: "+Poder_especial_criatura+
-                "</ul><br>"+Informacion
+                "<br><li> Int : "+Inteligencia_criatura+"</ul>"+
+                "</ul><br><h3>Combate, habilidades y poderes especiales</h3>"+
+                "<br><strong>PV : </strong>"+Vida_criatura+
+                "<br><strong>Corpulencia media: </strong>"+Corpulencia_criatura+"</ul>"+
+                "<br><strong>Bonificación al daño media: </strong>"+Daño_extra_criatura+
+                "<br><strong>Media de puntos de magia: </strong>"+Magia_criatura+
+                "<br><strong>Movimiento: </strong>"+Movimiento_criatura+
+                "<br><strong>Armadura : </strong>"+Armadura+
+                "<br><strong>Cantidad de Ataques: </strong>"+Cantidad_ataques+
+                "<br><br><strong>Ataques durante el combate: </strong>"+Ataques+
+                "<br><br><strong>Habilidades del combate : </strong><br>"+Habilidad_combate+
+                "<br><br><strong>Habilidades : </strong>"+Habilidades+
+                "<br><strong>Perdida de cordura : </strong>"+Perdida_de_Cordura+ 
+                "<br><h3>Poderes Especial : </h3>"+Poder_especial_criatura
         }
         
 
