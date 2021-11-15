@@ -11,7 +11,49 @@ var D100 = Math.floor(Math.random() * (100 - 1 + 1) + 1);
 
 // grimorio
 
-var Grimorio = ["Ajar un miembro","Aliento de las profundidades","Atormentar","Bendecir hoja","Cancion de Hastur","Cántico de Thoth","Crear barrera de Naach-Tith","Crear niebla de R'lyeh","Crear zombie","Cruz ansada de Prinn","Descomposición verde","Destierro de Yde Etad","Dividir el ka","Dominar","Encantar cuchillo","Encantar daga sacrificial","Encantar libro","Explosion mental","Fabrica de hidromiel espacial","Fundir carne","Garra de Nyogtha","Hechizo mortal","Imitar apariencia","Inducir el pánico","Inmoviliar a una victima","Intercambio de mentes","Mal de ojo","Maldición de Azathoth","Maldición del pellejo pútrido","Nublar la memoria","Ola de olvido","Palabras poderosas","Polvo de Ibn-Ghazi","Polvo de Suleimán","Crear portal","Caja Portal","Encontrar portal","Portal temporal","Proteccion","Protección corporal","Provocar/Curar la ceguera","Puño de Yog-Sothoth","Resurrección","Signo rojo de Shudde M'ell","Signo de Voorish","Simbolo arcano","Sugestión mental","Trasformación corporal de Gorgoroth","Trasferencia de mente"];
+var Grimorio_Cthulhu = ["Ajar un miembro","Aliento de las profundidades","Atormentar","Bendecir hoja","Cancion de Hastur","Cántico de Thoth","Crear barrera de Naach-Tith","Crear niebla de R'lyeh","Crear zombie","Cruz ansada de Prinn","Descomposición verde","Destierro de Yde Etad","Dividir el ka","Dominar","Encantar cuchillo","Encantar daga sacrificial","Encantar libro","Explosion mental","Fabrica de hidromiel espacial","Fundir carne","Garra de Nyogtha","Hechizo mortal","Imitar apariencia","Inducir el pánico","Inmoviliar a una victima","Intercambio de mentes","Mal de ojo","Maldición de Azathoth","Maldición del pellejo pútrido","Nublar la memoria","Ola de olvido","Palabras poderosas","Polvo de Ibn-Ghazi","Polvo de Suleimán","Crear portal","Caja Portal","Encontrar portal","Portal temporal","Proteccion","Protección corporal","Provocar/Curar la ceguera","Puño de Yog-Sothoth","Resurrección","Signo rojo de Shudde M'ell","Signo de Voorish","Simbolo arcano","Sugestión mental","Trasformación corporal de Gorgoroth","Trasferencia de mente",];
+
+var Grimorio_Aquelarre_blanca_1 = ["Alivio del Esclavo","Aliento de Salamandra","Amuleto contra la Ponzoña","Amuleto del Fullero","Amuleto del Fullero","Arma Inquebrantable","Bebedizo de Sueños","Bendición de San Nuño","Brazalete Solar","Dolores de Parto","Leche de Sapiencia","Saber de Partera","Vitriolo Salvaje",]
+
+var Grimorio_Aquelarre_negra_1 = ["Amor","Atadura del Deseo","Cerradura Maldita","Discordia","Lámpara de Búsqueda","Lujuria","Polvos de Seducción",]
+
+var Grimorio_Aquelarre_infernal_1 = ["Maldición"]
+
+var Grimorio_Aquelarre_blanca_2 = ["Bálsamo de Curación","Bendición de Pepin","Don de Tritón","Expulsar Enfermedades","Filtro de Inteligencia","Guarda contra Embrujos","Infusión de Serenidad","Intuir la Magia","Licor Sedante","Mal de Ojo","Mal del Tullido","Maldición de Caín","Manto de Salamandra","Medalla de Virilidad","Ojos de Lobo","Polvos de Hechicería","Polvos del Mentiroso","Revocar Maldición","Sueño Reparador","Tinta Prodigiosa","Virtud de Doncella"]
+
+var Grimorio_Aquelarre_negra_2 = ["Atadura de Eunuco","Dominación","Estupidez","Morada Maldita","Sangre Negra","Subyugación",]
+
+var Grimorio_Aquelarre_infernal_2 = ["Don de Surgat","Maldición de Ashavero"]
+
+var Grimorio_Aquelarre_blanca_3 = ["Aceite de Grandeza","Aceite de Hechicerías","Alivio del Rabioso","Amansar Fieras","Arma Invicta","Bardas Encantadas","Clarividencia","Cuerda de Cridavents","Destilación de Quintaesencias","Don de Cipriano","Falsas Visiones","Guerra","Incienso de Cópula","Inquisición","Lengua de Babel","Mensaje Onírico","Piedra de Sanación","Polvos Elementales","Prodigio de Amenón","Varita de Búsqueda","Velo de la Muerte","Visión de Futuro","",""]
+
+var Grimorio_Aquelarre_negra_3 = ["Deseo Carnal","Filtro de Olvido","Furia","Rostro de Ladrón","Vela de Temor","Veneno de Escorpión","","",]
+
+var Grimorio_Aquelarre_infernal_3 = ["Cadena de Silcharde","Filtro Amoroso","Oración Oscura","","","","","",]
+
+var Grimorio_Aquelarre_blanca_4 = ["Amuleto","Asesino de Fantasmas","Bendición de Hada","Bendición de Jonás","Bolsa de Duendes","Corazón de León","Cruz de Caravaca","Danza","Encanto del Viajero","Esencias de Éter","Hechizo Rojo","Invocación de Ánimas","Invocar al Fenicio","Manto de Sombras","Piel de Lobo","Purificar Ponzoñas","Rama de los Deseos","Ritual del Clavo","Sangre de Dragón","Sombras Fantasmales","Talismán de Protección","Transmutación de Metales","Ungüento de Bruja","Vela de Difuntos","Vino de la Verdad"]
+
+var Grimorio_Aquelarre_negra_4 = ["Alas del Maligno","Anillo de Nigromancia","Arrancar la Esencia","Belleza","Calor Sofocante","Dibbuk","Esencia de Hostilidad","Filo Maldito","Herrumbre de Saturno","Maldición de la Vela","Mano de Gloria","Nigromancia","Regalo Envenenado"]
+
+var Grimorio_Aquelarre_infernal_4 = ["Alimento de Guland","Beso de Thamur","Maldición del Lobisome","Sangre de Upiro","Tormento",]
+
+var Grimorio_Aquelarre_blanca_5 = ["Alma de Estatua","Círculo de Protección","Dominio del Fuego","Don de Palabra","Entereza del Mártir","Expulsión","Filo Constelado","Guarda contra Maleficios","Hermosura","Homúnculo","Presteza","Refugio del Hechicero","Sabiduría","Susurro de los Secretos","Velo de Hada"]
+
+var Grimorio_Aquelarre_negra_5 = ["Demencia","Maldición del Gul","Maldición de la Herida","Maldición del Hierro","Maldición de Strigiles","Pellejo de Bestia","Saco de Quebradura","Trampa Goética",]
+
+var Grimorio_Aquelarre_infernal_5 = ["Aliento del Diablo","Incubar Diablillo","Infortunio"]
+
+var Grimorio_Aquelarre_blanca_6 = ["Caldero Mágico","Espejo de Salomón","Fuerza de Gigante","Latón de Nuevas","","","","",]
+
+var Grimorio_Aquelarre_negra_6 = ["Aceite de Usurpación ","Condenación","Consultar a los Muertos","Golpe de la Parca","Hambruna","Maldición del Clavo","Maldición de la Bestia","",]
+
+var Grimorio_Aquelarre_infernal_6 = ["Maldición de la Bruja","Misa Negra","","","","","","",]
+
+var Grimorio_Aquelarre_blanca_7 = ["","","","","","","","",]
+
+var Grimorio_Aquelarre_negra_7 = ["","","","","","","","",]
+
+var Grimorio_Aquelarre_infernal_7 = ["","","","","","","","",]
 
 function Generarpdf(){
         var Criatura_pdf = document.getElementById("result");
