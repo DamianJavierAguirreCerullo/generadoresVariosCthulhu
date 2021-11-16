@@ -27,9 +27,9 @@ var Grimorio_Aquelarre_infernal_2 = ["Don de Surgat","Maldición de Ashavero"]
 
 var Grimorio_Aquelarre_blanca_3 = ["Aceite de Grandeza","Aceite de Hechicerías","Alivio del Rabioso","Amansar Fieras","Arma Invicta","Bardas Encantadas","Clarividencia","Cuerda de Cridavents","Destilación de Quintaesencias","Don de Cipriano","Falsas Visiones","Guerra","Incienso de Cópula","Inquisición","Lengua de Babel","Mensaje Onírico","Piedra de Sanación","Polvos Elementales","Prodigio de Amenón","Varita de Búsqueda","Velo de la Muerte","Visión de Futuro","",""]
 
-var Grimorio_Aquelarre_negra_3 = ["Deseo Carnal","Filtro de Olvido","Furia","Rostro de Ladrón","Vela de Temor","Veneno de Escorpión","","",]
+var Grimorio_Aquelarre_negra_3 = ["Deseo Carnal","Filtro de Olvido","Furia","Rostro de Ladrón","Vela de Temor","Veneno de Escorpión"]
 
-var Grimorio_Aquelarre_infernal_3 = ["Cadena de Silcharde","Filtro Amoroso","Oración Oscura","","","","","",]
+var Grimorio_Aquelarre_infernal_3 = ["Cadena de Silcharde","Filtro Amoroso","Oración Oscura"]
 
 var Grimorio_Aquelarre_blanca_4 = ["Amuleto","Asesino de Fantasmas","Bendición de Hada","Bendición de Jonás","Bolsa de Duendes","Corazón de León","Cruz de Caravaca","Danza","Encanto del Viajero","Esencias de Éter","Hechizo Rojo","Invocación de Ánimas","Invocar al Fenicio","Manto de Sombras","Piel de Lobo","Purificar Ponzoñas","Rama de los Deseos","Ritual del Clavo","Sangre de Dragón","Sombras Fantasmales","Talismán de Protección","Transmutación de Metales","Ungüento de Bruja","Vela de Difuntos","Vino de la Verdad"]
 
@@ -67,7 +67,6 @@ function Generarpdf(){
 
 var Angel_descarnado = {
         Nombre : "Angel Descarnado de la Noche" ,
-        Descripcion_breve: "Seres sin rostro" ,
         FUE_max : 18 ,
         FUE_min : 3 ,
         CON_max : 18 ,
@@ -81,6 +80,7 @@ var Angel_descarnado = {
         POD_max : 18 ,
         POD_min : 3 ,
         Movimiento : "6/12 Volando" ,
+        Descripcion_breve: "Seres sin rostro" ,
         Armadura :  "2 puntos de piel." ,
         Ataques_por_asalto : 1 ,
         Ataques_de_combate : "Atacan con sus zarpas, cola, cuernos o extremidades. <br><strong>Capturar (mnbr):</strong> Los Ángeles descarnados de la noche prefieren capturar a sus adversarios para después hacerles cosquillas con su cola espinosa. Suelen atacar en masa e intentan acechar en silencio a sus víctimas , arrebatarles sus armas y someterlas. Dos Ángeles descarnados de la noche o más pueden combinar sus ataques para retener a una víctima más poderosa (lo que puede llegar adarles un dado de bonificación por superarla en número).<br><strong>Cosquilleo:</strong> Los Ángeles descarnados de la noche solo pueden cosquillear a criaturas a las que hayan capturado. Un ataque de cosquilleo con éxito resulta extremadamente perturbador, ya que la lengüeta de su cola es afilada como una cuchilla y peligrosa a pesar de que su contacto no causa daño. La víctima queda perpleja, humillada y desorientada, y sufre un dado de penalización en todas sus tiradas durante 1D4 asaltos o hasta que cesa el cosquilleo. La cola de un Ángel descarnado de la noche puede pasar a través de agujeros y aberturas, atravesar ropas gruesas e incluso, encontrar los intersticios de una armadura metálica." ,
@@ -104,7 +104,12 @@ var Antiguo = {
         POD_max : 18 ,
         POD_min : 3 ,
         Movimiento : "8/10 Volando",
-        Informacion_extra: "<em>Ataques por asalto:</em>5<br><em>Ataques de combate:</em> Un antiguo puede utilizar sus tentáculosy su masa corporal para golpear a sus adversarios.<br><em>Capturar (mnbr):</em> Cuando un tentáculo acierta a su objetivo, seadhiere a la víctima, que cada asalto perderá una cantidadde Puntos de Vida igual a la mitad de la Bonificación al daño del Antiguo a causa de la constricción y el aplastamiento.Los Antiguos poseen cinco tentáculos, por lo que no podrán apresar a más de cinco víctimas de este modo.<br><em>Combatir</em> 40% (20/8), Bonificación al daño.<br><em>Capturar (mnbr)</em> atrapa al objetivo, que a partir de entoncessufre 1/2 de Bonificación al daño de constricción por asalto.<br><em>Esquivar</em> 40% (20/8).<br><em>Armadura:</em> 7 puntos de piel.<br><em>Pérdida de Cordura:</em> Ver a un Antiguo produce una pérdida de 0/1 06 Puntos de Cordura."
+        Descripcion_breve: "Misteriosos científicos de los albores del tiempo" ,
+        Armadura : "7 puntos de piel." ,
+        Ataques_por_asalto : 5 ,
+        Ataques_de_combate : "Un antiguo puede utilizar sus tentáculosy su masa corporal para golpear a sus adversarios.<br><em>Capturar (mnbr):</em> Cuando un tentáculo acierta a su objetivo, seadhiere a la víctima, que cada asalto perderá una cantidadde Puntos de Vida igual a la mitad de la Bonificación al daño del Antiguo a causa de la constricción y el aplastamiento.Los Antiguos poseen cinco tentáculos, por lo que no podrán apresar a más de cinco víctimas de este modo." ,
+        Habilidades_de_combate : "<em>Combatir</em> 40% (20/8), Bonificación al daño.<br><em>Capturar (mnbr)</em> atrapa al objetivo, que a partir de entoncessufre 1/2 de Bonificación al daño de constricción por asalto.<br><em>Esquivar</em> 40% (20/8)." ,
+        Cordura : "Pérdida de Cordura: Ver a un Antiguo produce una pérdida de 0/1D6 Puntos de Cordura."
 }
 
 var Byakhee = {
@@ -122,7 +127,13 @@ var Byakhee = {
         POD_max : 18 ,
         POD_min : 3 ,
         Movimiento : "5/16 Volando",
-        Informacion_extra: "<strong>Ataques por asalto:</strong> 2 <br><strong>Ataques de combate:</strong> Un byakhee puede a ta car con sus garras o embestir a su víctim a, causánd ole graves heridas. <br><strong>Morder Y retener (mnbr):</strong> Si el mordisco impacta a su objetivo, el byakhee quedará adherido a la víctima y le empezará a chupar la sangre. Cada asalto que el byakhee permanezca ad he rido, inclu yendo el primero , el drenaje de sangre hará que la víctima pierda 3 01 o puntos de FUE ha sta que muera (cuando su FUE quede reducida a O) . Los byakhee suelen utilizar este ataque para permanecer adheridos hasta drenar toda la sangre de la víctima, a no ser que esta tenga éxito en una tirada enfrentada de FUE. Si sobrevive, la víctima podrá guardar reposo y regenerar su sangre (también se puede hacer mediante una transfusión) a un ritmo de 1D10 + 5 FUE por día. Un byakhee solo puede retener a una víctima al mismo tiempo. <br><strong>Combatir</strong> 55% (27 / 11 ), daño 1D6 + Bonificación a l daño. <br><strong>Morder y retener (mnbr)</strong> daño 106 + 3 01 O FUE (sa ngre) drenaje (so lo una víctima) . <br><strong>Esquivar</strong> 33% (16 / 6) . <br><strong>Armadura:</strong> 2 puntos de pelaje y pie l endurec ida. <br><strong>Habilidades:</strong> De scubrir 50%, Escuchar 50%. <br><strong>Pérdida de Cordura:</strong> Ver a un byakhee produce una pérdida de 1/106 Puntos de Cordura."
+        Descripcion_breve: "Monturas Estelares" , 
+        Armadura : "2 puntos de pelaje y pie l endurecida.",
+        Ataques_por_asalto : 2 ,
+        Ataques_de_combate : "Un byakhee puede atacar con sus garras o embestir a su víctima, causándole graves heridas. <br><strong>Morder Y retener (mnbr):</strong> Si el mordisco impacta a su objetivo, el byakhee quedará adherido a la víctima y le empezará a chupar la sangre. Cada asalto que el byakhee permanezca ad he rido, inclu yendo el primero , el drenaje de sangre hará que la víctima pierda 3D10 puntos de FUE hasta que muera (cuando su FUE quede reducida a O). Los byakhee suelen utilizar este ataque para permanecer adheridos hasta drenar toda la sangre de la víctima, a no ser que esta tenga éxito en una tirada enfrentada de FUE. Si sobrevive, la víctima podrá guardar reposo y regenerar su sangre (también se puede hacer mediante una transfusión) a un ritmo de 1D10 + 5 FUE por día. Un byakhee solo puede retener a una víctima al mismo tiempo." ,
+        Habilidades_de_combate : "<strong>Combatir</strong> 55% (27/11 ), daño 1D6 + Bonificación a l daño. <br><strong>Morder y retener (mnbr)</strong> daño 1D6 + 3D10 FUE (sangre) drenaje (solo una víctima). <br><strong>Esquivar</strong> 33% (16/6)." ,
+        Habilidades : " Descubrir 50%,<br> Escuchar 50%." ,
+        Cordura : "Ver a un byakhee produce una pérdida de 1/1D6 Puntos de Cordura."
 }
 
 var Cthonian = {
@@ -140,7 +151,13 @@ var Cthonian = {
         POD_max : 30 ,
         POD_min : 5 ,
         Movimiento : "6/1 Cavando",
-        Informacion_extra :"<em>Ataques por asalto:</em>1D8. Solo puede utilizar su ataque de aplastamiento una vez por asalto.<br><strong>Ataques de combate:</strong>Es peligroso acercarse a estas criaturas. Su enorme mole y sus agitados tentáculos pueden golpear en cualquier momento.<br><strong>Retener y drenar:</strong>puede atacar con 1D8 tentáculos cada asalto, y cada uno de ellos causa un daño igual a la mitad de la Bonificación al daño de la criatura. Si un tentáculo consigue alcanzar a su objetivo, se adhiere a él, horada el cuerpo de la víctima en dirección a sus órganos vitales y comienza a drenar sangre y fluidos, provocando una pérdida de 3D10 CON por asalto. Cuando la CON queda reducida a O, la víctima muere. La CON perdida por el ataque de un chthonian se pierde para siempre. Mientras un tentáculo esté drenando a una víctima, no se podrá utilizar para drenar a otros objetivos, pero se podrá seguir utilizando para contraatacar, zara ndeando a la pobre víctima apresada como si fuera una bola al final de una cadena. Los tentáculos que estén drenando a una víct ima seguirán absorbiendo CON todos los asaltos. Cada tentáculo podrá atacar a un objetivo distinto, o podrán atacar todos al mismo.<br><strong>Aplastar:</strong>puede utilizar su enorme masa para aplastar a un enemigo. Cuando vaya a aplastar a alguien, podrá seguir reteniendo y drenando víctimas que ya tuviera apresadas.Se abalanza sobre un grupo y cae sobre ellos: el área de aplastamiento es circular y golpea a todos por igual. El área de aplastamiento tiene un diámetro en metros igual al TAM del chthonian dividido por cincuenta. Dentro del área de aplastamiento, los investigadores deberán superar una tirada de DES, Esquivar o Saltar o perderán una cantidad de Puntos de Vida igual a la Bonificac ión al daño comp leta de la criatura. <br><strong>Combatir</strong>75%, daño 2D6(paliza tentacular).<br><strong>Retener y drenar</strong> daño 2D6+drenaje de sangre(tentáculos adheridos). <br><strong>Aplastamiento</strong> 80%, daño: Bonificación al daño(mole, grupo).<br><strong>Armadura:</strong>5 puntos de piel y musculatura; tras recibir una herida regenera 5 Puntos de Vida por asalto, pero la regeneración dejará de funcionar cuando sus Puntos de Vida se reduzcan por debajo de 1.<br><strong>Pérdida de Cordura:</strong>1D3/1D20 Puntos de Cordura por ver a un adulto; 1/1D10 Puntos de Cordura por ver estadios inferiores; ver a una cría no produce ninguna pérdid a de Puntos de Cordura."
+        Informacion_extra :"<em>Ataques por asalto:</em>1D8. Solo puede utilizar su ataque de aplastamiento una vez por asalto.<br><strong>Ataques de combate:</strong>Es peligroso acercarse a estas criaturas. Su enorme mole y sus agitados tentáculos pueden golpear en cualquier momento.<br><strong>Retener y drenar:</strong>puede atacar con 1D8 tentáculos cada asalto, y cada uno de ellos causa un daño igual a la mitad de la Bonificación al daño de la criatura. Si un tentáculo consigue alcanzar a su objetivo, se adhiere a él, horada el cuerpo de la víctima en dirección a sus órganos vitales y comienza a drenar sangre y fluidos, provocando una pérdida de 3D10 CON por asalto. Cuando la CON queda reducida a O, la víctima muere. La CON perdida por el ataque de un chthonian se pierde para siempre. Mientras un tentáculo esté drenando a una víctima, no se podrá utilizar para drenar a otros objetivos, pero se podrá seguir utilizando para contraatacar, zara ndeando a la pobre víctima apresada como si fuera una bola al final de una cadena. Los tentáculos que estén drenando a una víct ima seguirán absorbiendo CON todos los asaltos. Cada tentáculo podrá atacar a un objetivo distinto, o podrán atacar todos al mismo.<br><strong>Aplastar:</strong>puede utilizar su enorme masa para aplastar a un enemigo. Cuando vaya a aplastar a alguien, podrá seguir reteniendo y drenando víctimas que ya tuviera apresadas.Se abalanza sobre un grupo y cae sobre ellos: el área de aplastamiento es circular y golpea a todos por igual. El área de aplastamiento tiene un diámetro en metros igual al TAM del chthonian dividido por cincuenta. Dentro del área de aplastamiento, los investigadores deberán superar una tirada de DES, Esquivar o Saltar o perderán una cantidad de Puntos de Vida igual a la Bonificac ión al daño comp leta de la criatura. <br><strong>Combatir</strong>75%, daño 2D6(paliza tentacular).<br><strong>Retener y drenar</strong> daño 2D6+drenaje de sangre(tentáculos adheridos). <br><strong>Aplastamiento</strong> 80%, daño: Bonificación al daño(mole, grupo).<br><strong>Armadura:</strong>5 puntos de piel y musculatura; tras recibir una herida regenera 5 Puntos de Vida por asalto, pero la regeneración dejará de funcionar cuando sus Puntos de Vida se reduzcan por debajo de 1.<br><strong>Pérdida de Cordura:</strong>1D3/1D20 Puntos de Cordura por ver a un adulto; 1/1D10 Puntos de Cordura por ver estadios inferiores; ver a una cría no produce ninguna pérdid a de Puntos de Cordura." ,
+        Descripcion_breve: "" ,
+        Armadura : "5 puntos de piel y musculatura" ,
+        Ataques_por_asalto : "" ,
+        Ataques_de_combate : "" ,
+        Habilidades : "" ,
+        Cordura : "" ,
 }
 
 var Color_surgido_del_espacio = {
@@ -1048,6 +1065,8 @@ function Crear_criatura(){
 
         var Poder_especial_humano = "No";
 
+        var Habilidades = "No" ;
+
         //
 
         //if de calculos para hechizos
@@ -1113,12 +1132,27 @@ function Crear_criatura(){
          var Movimiento_criatura = Antiguo.Movimiento;
 
                 if (Probabilidad_hechizo_criatura < 71){
+
+                        let Cantidad = Math.floor((Math.random() * (4 - 1 + 1 ) + 1))
+
                         var Hechizo_criatura = ""
                 }
 
          var Poder_especial_criatura = Hechizo_criatura;
 
-         var Informacion = Antiguo.Informacion_extra;
+         var Movimiento_criatura = Antiguo.Movimiento;
+
+         var Descripcion = Antiguo.Descripcion_breve;
+
+         var Armadura = Antiguo.Armadura;
+
+         var Cantidad_ataques = Antiguo.Ataques_por_asalto;
+
+         var Ataques = Antiguo.Ataques_de_combate;
+
+         var Habilidad_combate = Antiguo.Habilidades_de_combate;
+
+         var Perdida_de_Cordura = Antiguo.Cordura;
 
         }
          
@@ -1140,6 +1174,20 @@ function Crear_criatura(){
          var Poder_criatura = Math.floor(Math.random() * (Byakhee.POD_max - Byakhee.POD_min + 1 ) + Byakhee.POD_min) * 5;
 
          var Movimiento_criatura = Byakhee.Movimiento;
+
+         var Descripcion = Byakhee.Descripcion_breve;
+
+         var Armadura = Byakhee.Armadura;
+
+         var Cantidad_ataques = Byakhee.Ataques_por_asalto;
+
+         var Ataques = Byakhee.Ataques_de_combate;
+
+         var Habilidad_combate = Byakhee.Habilidades_de_combate;
+
+         var Habilidades = Byakhee.Habilidades;
+
+         var Perdida_de_Cordura = Byakhee.Cordura;
 
         }
          
@@ -1990,7 +2038,7 @@ function Crear_criatura(){
                 "<br><br><strong>Habilidades del combate : </strong><br>"+Habilidad_combate+
                 "<br><br><strong>Habilidades : </strong>"+Habilidades+
                 "<br><strong>Perdida de cordura : </strong>"+Perdida_de_Cordura+ 
-                "<br><h3>Poderes Especial : </h3>"+Poder_especial_criatura
+                "<br><br><h3>Poderes Especial : </h3>"+Poder_especial_criatura
         }
         
 
