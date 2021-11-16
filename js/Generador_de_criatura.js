@@ -45,9 +45,9 @@ var Grimorio_Aquelarre_infernal_5 = ["Aliento del Diablo","Incubar Diablillo","I
 
 var Grimorio_Aquelarre_blanca_6 = ["Caldero Mágico","Espejo de Salomón","Fuerza de Gigante","Latón de Nuevas","","","","",]
 
-var Grimorio_Aquelarre_negra_6 = ["Aceite de Usurpación ","Condenación","Consultar a los Muertos","Golpe de la Parca","Hambruna","Maldición del Clavo","Maldición de la Bestia","",]
+var Grimorio_Aquelarre_negra_6 = ["Aceite de Usurpación ","Condenación","Consultar a los Muertos","Golpe de la Parca","Hambruna","Maldición del Clavo","Maldición de la Bestia",]
 
-var Grimorio_Aquelarre_infernal_6 = ["Maldición de la Bruja","Misa Negra","","","","","","",]
+var Grimorio_Aquelarre_infernal_6 = ["Maldición de la Bruja","Misa Negra"]
 
 var Grimorio_Aquelarre_blanca_7 = ["","","","","","","","",]
 
@@ -152,12 +152,12 @@ var Cthonian = {
         POD_min : 5 ,
         Movimiento : "6/1 Cavando",
         Informacion_extra :"<em>Ataques por asalto:</em>1D8. Solo puede utilizar su ataque de aplastamiento una vez por asalto.<br><strong>Ataques de combate:</strong>Es peligroso acercarse a estas criaturas. Su enorme mole y sus agitados tentáculos pueden golpear en cualquier momento.<br><strong>Retener y drenar:</strong>puede atacar con 1D8 tentáculos cada asalto, y cada uno de ellos causa un daño igual a la mitad de la Bonificación al daño de la criatura. Si un tentáculo consigue alcanzar a su objetivo, se adhiere a él, horada el cuerpo de la víctima en dirección a sus órganos vitales y comienza a drenar sangre y fluidos, provocando una pérdida de 3D10 CON por asalto. Cuando la CON queda reducida a O, la víctima muere. La CON perdida por el ataque de un chthonian se pierde para siempre. Mientras un tentáculo esté drenando a una víctima, no se podrá utilizar para drenar a otros objetivos, pero se podrá seguir utilizando para contraatacar, zara ndeando a la pobre víctima apresada como si fuera una bola al final de una cadena. Los tentáculos que estén drenando a una víct ima seguirán absorbiendo CON todos los asaltos. Cada tentáculo podrá atacar a un objetivo distinto, o podrán atacar todos al mismo.<br><strong>Aplastar:</strong>puede utilizar su enorme masa para aplastar a un enemigo. Cuando vaya a aplastar a alguien, podrá seguir reteniendo y drenando víctimas que ya tuviera apresadas.Se abalanza sobre un grupo y cae sobre ellos: el área de aplastamiento es circular y golpea a todos por igual. El área de aplastamiento tiene un diámetro en metros igual al TAM del chthonian dividido por cincuenta. Dentro del área de aplastamiento, los investigadores deberán superar una tirada de DES, Esquivar o Saltar o perderán una cantidad de Puntos de Vida igual a la Bonificac ión al daño comp leta de la criatura. <br><strong>Combatir</strong>75%, daño 2D6(paliza tentacular).<br><strong>Retener y drenar</strong> daño 2D6+drenaje de sangre(tentáculos adheridos). <br><strong>Aplastamiento</strong> 80%, daño: Bonificación al daño(mole, grupo).<br><strong>Armadura:</strong>5 puntos de piel y musculatura; tras recibir una herida regenera 5 Puntos de Vida por asalto, pero la regeneración dejará de funcionar cuando sus Puntos de Vida se reduzcan por debajo de 1.<br><strong>Pérdida de Cordura:</strong>1D3/1D20 Puntos de Cordura por ver a un adulto; 1/1D10 Puntos de Cordura por ver estadios inferiores; ver a una cría no produce ninguna pérdid a de Puntos de Cordura." ,
-        Descripcion_breve: "" ,
-        Armadura : "5 puntos de piel y musculatura" ,
-        Ataques_por_asalto : "" ,
-        Ataques_de_combate : "" ,
-        Habilidades : "" ,
-        Cordura : "" ,
+        Descripcion_breve: "Excavadores Tentaculares" ,
+        Armadura : "5 puntos de piel y musculatura; tras recibir una herida regenera 5 Puntos de Vida por asalto, pero la regeneración dejará de funcionar cuando sus Puntos de Vida se reduzcan por debajo de 1." ,
+        Ataques_por_asalto : "1D8. Solo puede utilizar su ataque de aplastamiento una vez por asalto." ,
+        Ataques_de_combate : "Es peligroso acercarse a estas criaturas. Su enorme mole y sus agitados tentáculos pueden golpear en cualquier momento.<br><strong>Retener y drenar:</strong>puede atacar con 1D8 tentáculos cada asalto, y cada uno de ellos causa un daño igual a la mitad de la Bonificación al daño de la criatura. Si un tentáculo consigue alcanzar a su objetivo, se adhiere a él, horada el cuerpo de la víctima en dirección a sus órganos vitales y comienza a drenar sangre y fluidos, provocando una pérdida de 3D10 CON por asalto. Cuando la CON queda reducida a O, la víctima muere. La CON perdida por el ataque de un chthonian se pierde para siempre. Mientras un tentáculo esté drenando a una víctima, no se podrá utilizar para drenar a otros objetivos, pero se podrá seguir utilizando para contraatacar, zara ndeando a la pobre víctima apresada como si fuera una bola al final de una cadena. Los tentáculos que estén drenando a una víct ima seguirán absorbiendo CON todos los asaltos. Cada tentáculo podrá atacar a un objetivo distinto, o podrán atacar todos al mismo.<br><strong>Aplastar:</strong>puede utilizar su enorme masa para aplastar a un enemigo. Cuando vaya a aplastar a alguien, podrá seguir reteniendo y drenando víctimas que ya tuviera apresadas.Se abalanza sobre un grupo y cae sobre ellos: el área de aplastamiento es circular y golpea a todos por igual. El área de aplastamiento tiene un diámetro en metros igual al TAM del chthonian dividido por cincuenta. Dentro del área de aplastamiento, los investigadores deberán superar una tirada de DES, Esquivar o Saltar o perderán una cantidad de Puntos de Vida igual a la Bonificac ión al daño completa de la criatura. <br><strong>Combatir</strong>75%, daño 2D6 (paliza tentacular).<br><strong>Retener y drenar</strong> daño 2D6+drenaje de sangre (tentáculos adheridos). <br><strong>Aplastamiento</strong> 80%, daño: Bonificación al daño (mole, grupo)." ,
+        Habilidades : "Esquivar 17% (8/3)." ,
+        Cordura : "1D3/1D20 Puntos de Cordura por ver a un adulto; 1/1D10 Puntos de Cordura por ver estadios inferiores; ver a una cría no produce ninguna pérdida de Puntos de Cordura."
 }
 
 var Color_surgido_del_espacio = {
@@ -171,49 +171,12 @@ var Color_surgido_del_espacio = {
         POD_max : 12 ,
         POD_min : 6 ,
         Movimiento : "12 Fluyendo / 20 Volando ",
-        // Informacion_extra: "<strong>Ataques por asalto:</strong> 1
-        // Como los colores son atacantes tan eficientes, puede que el
-        // Guardián quiera dejar que los investigadores vean cómo
-        // se aproximan y permitirles hacer tiradas de Descubrir para
-        // detectar su tenue resplandor o para advertir una súbita
-        // presencia de ozono. Los colores carecen de una habilidad
-        // de Combatir reconocible y no pueden sufrir daño por
-        // medios normales.
-        // <br><strong>Drenaje de características:</strong> Cuando un color se alimenta debe
-        // hacer una tirada enfrentada de POD contra su víctima. Si
-        // gana el color, drenará 1 D1 O puntos de FUE, CON, POD,
-        // DES y APA de la víctima de forma permanente, además de
-        // causarle 1D6 puntos de daño. Cada punto de POD drenado
-        // aumentará en un punto el POD del color. La víctima notará
-        // una sensación ardiente y consumidora, y se irá marchitando
-        // y tornándose gris. La cara de la víctima se consumirá, y su
-        // piel envejecerá con arrugas y grietas horrendas. Una vez
-        // consumida, la víctima morirá.
-        // <br><strong>Ataque mental:</strong> Un color puede debilitar la mente de otros
-        // seres inteligentes que se encuentren en las inmediaciones.
-        // Cada día que una persona pase en las inmediaciones de un
-        // color, deberá tener éxito en una tirada enfrentada de INT
-        // o perderá 1D6 Puntos de Magia y 1D6 Puntos de Cordura .
-        // Los Puntos de Magia perdidos de esta forma no se podrán
-        // recuperar si no se abandona la zona. Esta influencia también
-        // obliga a las víctimas a permanecer en sus hogares, y se
-        // vuelve más irresistible a medida que se debilita la voluntad
-        // de los afectados . Para decidirse a abandonar el área, la
-        // víctima deberá superar una tirada Difícil o Extrema de POD
-        // (Difícil si sus Puntos de Magia se han reducido en un SO%
-        // o Extrema si han quedado reducidos a O o menos), o se
-        // sentirá inexplicablemente obligada a quedarse.
-        // <br><strong>Tirada enfrentada de drenaje:</strong> POD de la víctima vs. POD del
-        // color, daño 1D6 de pérdida de características.
-        // Tirada enfrentada de ataque mental: INT de la víctima vs INT del
-        // color, daño 1D6 Puntos de Magia + 1D6 Puntos de Cordura .
-        // <br><em>Esquivar</em> 47%.
-        // <br><em>Armadura:</em> Ninguna. Son invulnerables a todos los ataques
-        // físicos, a excepción de los camp os magnéticos, que son
-        // capaces de aprisionados. Son vulnerables a la magia.
-        // <br><em>Pérdida de Cordura:</em> Ver a un color produce una pérdida de
-        // 1/1D4 Puntos de Cordura; ver a la víctima de un color produce
-        // una pérdida de 1/1D8 Puntos de Cordura."
+        Descripcion_breve: "Drenadores de fuerza Vital" ,
+        Armadura : "Ninguna. Son invulnerables a todos los ataques físicos, a excepción de los camp os magnéticos, que son capaces de aprisionados. Son vulnerables a la magia." ,
+        Ataques_por_asalto : "1" ,
+        Ataques_de_combate :"Como los colores son atacantes tan eficientes, puede que el Guardián quiera dejar que los investigadores vean cómo se aproximan y permitirles hacer tiradas de Descubrir para detectar su tenue resplandor o para advertir una súbita presencia de ozono. Los colores carecen de una habilidad de Combatir reconocible y no pueden sufrir daño por medios normales. <br><strong>Drenaje de características:</strong> Cuando un color se alimenta debe hacer una tirada enfrentada de POD contra su víctima. Si gana el color, drenará 1D1O puntos de FUE, CON, POD, DES y APA de la víctima de forma permanente, además de causarle 1D6 puntos de daño. Cada punto de POD drenado aumentará en un punto el POD del color. La víctima notará una sensación ardiente y consumidora, y se irá marchitando y tornándose gris. La cara de la víctima se consumirá, y su piel envejecerá con arrugas y grietas horrendas. Una vez consumida, la víctima morirá. <br><strong>Ataque mental:</strong> Un color puede debilitar la mente de otros seres inteligentes que se encuentren en las inmediaciones. Cada día que una persona pase en las inmediaciones de un color, deberá tener éxito en una tirada enfrentada de INT o perderá 1D6 Puntos de Magia y 1D6 Puntos de Cordura . Los Puntos de Magia perdidos de esta forma no se podrán recuperar si no se abandona la zona. Esta influencia también obliga a las víctimas a permanecer en sus hogares, y se vuelve más irresistible a medida que se debilita la voluntad de los afectados . Para decidirse a abandonar el área, la víctima deberá superar una tirada Difícil o Extrema de POD (Difícil si sus Puntos de Magia se han reducido en un SO% o Extrema si han quedado reducidos a O o menos), o se sentirá inexplicablemente obligada a quedarse. <br><strong>Tirada enfrentada de drenaje:</strong> POD de la víctima vs. POD del color, daño 1D6 de pérdida de características. Tirada enfrentada de ataque mental: INT de la víctima vs INT del color, daño 1D6 Puntos de Magia+1D6 Puntos de Cordura ." ,
+        Habilidades : "Esquivar 47% (23/9)." ,
+        Cordura : "Ver a un color produce una pérdida de 1/1D4 Puntos de Cordura; ver a la víctima de un color produce una pérdida de 1/1D8 Puntos de Cordura."
 }
 
 var Dagon_e_hidra = {
@@ -1044,16 +1007,16 @@ var Gul = {
 
 function Crear_criatura(){
 
-        var Hechizo_1 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
-        var Hechizo_2 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
-        var Hechizo_3 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
-        var Hechizo_4 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
-        var Hechizo_5 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
-        var Hechizo_6 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
-        var Hechizo_7 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
-        var Hechizo_8 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
-        var Hechizo_9 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
-        var Hechizo_10 = Grimorio[Math.floor(Math.random() * Grimorio.length)];
+        var Hechizo_1 = Grimorio_Cthulhu[Math.floor(Math.random() * Grimorio_Cthulhu.length)];
+        var Hechizo_2 = Grimorio_Cthulhu[Math.floor(Math.random() * Grimorio_Cthulhu.length)];
+        var Hechizo_3 = Grimorio_Cthulhu[Math.floor(Math.random() * Grimorio_Cthulhu.length)];
+        var Hechizo_4 = Grimorio_Cthulhu[Math.floor(Math.random() * Grimorio_Cthulhu.length)];
+        var Hechizo_5 = Grimorio_Cthulhu[Math.floor(Math.random() * Grimorio_Cthulhu.length)];
+        var Hechizo_6 = Grimorio_Cthulhu[Math.floor(Math.random() * Grimorio_Cthulhu.length)];
+        var Hechizo_7 = Grimorio_Cthulhu[Math.floor(Math.random() * Grimorio_Cthulhu.length)];
+        var Hechizo_8 = Grimorio_Cthulhu[Math.floor(Math.random() * Grimorio_Cthulhu.length)];
+        var Hechizo_9 = Grimorio_Cthulhu[Math.floor(Math.random() * Grimorio_Cthulhu.length)];
+        var Hechizo_10 = Grimorio_Cthulhu[Math.floor(Math.random() * Grimorio_Cthulhu.length)];
 
         var Poder_especial_criatura = "No";
 
@@ -1140,8 +1103,6 @@ function Crear_criatura(){
 
          var Poder_especial_criatura = Hechizo_criatura;
 
-         var Movimiento_criatura = Antiguo.Movimiento;
-
          var Descripcion = Antiguo.Descripcion_breve;
 
          var Armadura = Antiguo.Armadura;
@@ -1210,6 +1171,18 @@ function Crear_criatura(){
 
          var Movimiento_criatura = Cthonian.Movimiento;
 
+         var Descripcion = Cthonian.Descripcion_breve;
+
+         var Armadura = Cthonian.Armadura;
+
+         var Cantidad_ataques = Cthonian.Ataques_por_asalto;
+
+         var Ataques = Cthonian.Ataques_de_combate;
+
+         var Habilidad_combate = Cthonian.Habilidades_de_combate;
+
+         var Perdida_de_Cordura = Cthonian.Cordura;
+
         }
          
 
@@ -1230,6 +1203,18 @@ function Crear_criatura(){
          var Tamaño_criatura = Poder_criatura;
          
          var Movimiento_criatura = Color_surgido_del_espacio.Movimiento;
+
+         var Descripcion = Color_surgido_del_espacio.Descripcion_breve;
+
+         var Armadura = Color_surgido_del_espacio.Armadura;
+
+         var Cantidad_ataques = Color_surgido_del_espacio.Ataques_por_asalto;
+
+         var Ataques = Color_surgido_del_espacio.Ataques_de_combate;
+
+         var Habilidad_combate = Color_surgido_del_espacio.Habilidades_de_combate;
+
+         var Perdida_de_Cordura = Color_surgido_del_espacio.Cordura;
 
         }
 
