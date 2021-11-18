@@ -285,7 +285,7 @@ function Generate_Character(){
      var Edu = Math.floor(Math.random() * (18 - 8 + 1) + 8)*5;
      var Pv  = Math.floor((Tam+Con)/10);
      var Edad = Math.floor(Math.random() * (89 - 15 +1) + 15);
-     // var  Sue = Math.floor(Math.random() * (18 - 8 + 1) + 8)*5
+     var  Sue = Math.floor(Math.random() * (18 - 8 + 1) + 8)*5
 
 
 
@@ -806,6 +806,7 @@ function Generate_Character(){
      "<br><li> Int : "+Int+
      "<br><li> Edu : "+Edu+
      "<br><li> PV  : "+Pv+
+     "<br> Sue : "+Sue+
      "<br><li> Edad: "+Edad+"<br>"+"</ul>"+
      "<br>"+Cosas_edad+"<br>"+
      "<br>"+"Ideologia/Creencia"+
@@ -825,7 +826,7 @@ function Generate_Character(){
      "<br>"+Mania+"<br>"+
      "<br>"+Fobia
      
-     // +"<br> Sue : "+Sue;
+     
 
      //Fin Zona de muestra de resultados
      	
