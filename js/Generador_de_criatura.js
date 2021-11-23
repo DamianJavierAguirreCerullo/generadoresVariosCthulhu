@@ -805,9 +805,9 @@ var Gul = {
         POD_min : 3 ,
         Movimiento : "8",
         Descripcion_breve: "Crueles y Salvajes Adoradores de los Dioses Oscuros" ,
-        Armadura : "" ,
-        Ataques_por_asalto : "" ,
-        Ataques_de_combate : "" ,
+        Armadura : "Ninguna." ,
+        Ataques_por_asalto : "1" ,
+        Ataques_de_combate : "Los Tcho -Tcho cuentan con el repertorio habitual de ataques sin armas disponible para cualquier humanoide, y pueden utilizar cualquier arma humana." ,
         Habilidades : "<strong>Combatir</strong> 45% (22/9), daño 1D3 + Bonificación al daño o según el tipo de arma . <br><strong>Esquivar</strong> 26% (13/5). <br><strong>Intimidar</strong> 40%, <br><strong>Nadar</strong> 45%, <br><strong>Seguir rastros</strong> 50%, <br><strong>Sigilo</strong> 60%." ,
         Cordura : "Ver a estas criaturas degeneradas produce una pérdida d e 0/1D3 Puntos de Cordura."
  }
@@ -832,7 +832,7 @@ var Gul = {
         Ataques_por_asalto : "2" ,
         Ataques_de_combate : "Los vagabundos dimensionales pueden atacar con ambas garras, pueden intentar apresar a un adversario y desplazarse con él hasta otra dimensión utilizando un ataque sin armas." ,
         Habilidades : "<strong>Combatir</strong> 45% (22/9), 1D8 + Bonificación al daño. <br><strong>Apresar (mnbr)</strong> apresado y retenido durante 1 asalto antes de desaparecer rumbo a ... ¿quién sabe dónde7 <br><strong>Esquivar</strong> 30% (15/6)." ,
-        Cordura : ""
+        Cordura : "Ver a un vagabundo dimensional produce una pérdida de Cordura de 0/1D10."
  }
 
  var Vampiro_estelar = {
@@ -853,8 +853,8 @@ var Gul = {
         Descripcion_breve: "Rapaces Invisibles" ,
         Armadura : "4 puntos de piel gruesa. Las balas solo causan la mitad de daño al integumento extraterrestre de los vampiros estelares." ,
         Ataques_por_asalto : "3" ,
-        Ataques_de_combate : "Pueden utilizar sus garras para atacar. <br><strong>Capturar con las garras (mnbr):</strong> Una vez atrape a su víctima, en el asalto siguiente el vampiro este lar utilizará su ataque de mordisco para absorberle la sangre. <br><strong>Mordisco:</strong> Solo se puede uti lizar contra una víctima apresada, ya sea viva o muerta; una víctima v iva perderá 3D10 puntos de FUE por asa lto debido a la pérd ida de sangre. Si no muere, la víctima recuperará esta pérd ida rápidamente, en tres días o menos." ,
-        Habilidades : "<strong>Combatir</strong> 45% (22/9), daño 1D6 + Bonificación al daño. <br><strong>Capturar (mnbr)</strong> no causa daño, captura al objetivo . Se puede morder a un objetivo capturado en el asalto siguiente. <br><strong>Mordisco</strong> éxito automático contra un objetivo capturado, daño 3D1O FUE por asalto por la pérdida de sangre. <br><strong>Esquivar</strong> 23% (11/4)." ,
+        Ataques_de_combate : "Pueden utilizar sus garras para atacar. <br><strong>Capturar con las garras (mnbr):</strong> Una vez atrape a su víctima, en el asalto siguiente el vampiro este lar utilizará su ataque de mordisco para absorberle la sangre. <br><strong>Mordisco:</strong> Solo se puede uti lizar contra una víctima apresada, ya sea viva o muerta; una víctima viva perderá 3D10 puntos de FUE por asalto debido a la pérd ida de sangre. Si no muere, la víctima recuperará esta pérdida rápidamente, en tres días o menos." ,
+        Habilidades : "<strong>Combatir</strong> 45% (22/9), daño 1D6 + Bonificación al daño. <br><strong>Capturar (mnbr)</strong> no causa daño, captura al objetivo . Se puede morder a un objetivo capturado en el asalto siguiente. <br><strong>Mordisco</strong> éxito automático contra un objetivo capturado, daño 3D1O FUE por asalto por la pérdida de sangre.<br><strong>Esquivar</strong> 23% (11/4)." ,
         Cordura : "Ver a un vampiro estelar o ser testigo de uno de sus ataques produce una pérdida de 1/1D10 Puntos de Cordura."
  }
 
@@ -873,7 +873,7 @@ var Gul = {
         Descripcion_breve: "Los que Alimentan la Llama" ,
         Armadura : "Las armas materiales normales (cuchillas, balas, etc.) no les hacen daño . El agua les causa 1 punto de daño por cada 2 litros que se les vierta encima; un extintor de mano les causa 1D6 puntos de daño; y un cubo de agua , 1D3 puntos de daño." ,
         Ataques_por_asalto : "1" ,
-        Ataques_de_combate : "Los vampiros de fuego atacan tocando a sus víctimas, y pueden prender objetos inflamables con solo tocarlos. Causan daño a los humanos por el golpe de calor. Para determinar la gravedad de este golpe de calor, tira 2D6 puntos de daño correspondientes al ataque de l vamp i ro. Si el investigador supera una tirada de CON, solo sufrirá la mitad de est e daño; si fracasa, sufrirá todo el daño. En ese mismo ataque, el vampiro intentará absorber Puntos de Magia de su objetivo: plantea una tirada enfrentada de POD; si gana el vampiro, robará 1D1O Puntos de Magia de su víctima; si gana el objetivo, el vampiro de fuego perderá uno de sus propios Puntos de Magia. Así, por cada ataque de un vampiro de fuego tendrás que tirar dos veces: una para determinar el daño producido por el calor y otra para determinar la pérdida de Puntos de Magia ." ,
+        Ataques_de_combate : "Los vampiros de fuego atacan tocando a sus víctimas, y pueden prender objetos inflamables con solo tocarlos. Causan daño a los humanos por el golpe de calor. Para determinar la gravedad de este golpe de calor, tira 2D6 puntos de daño correspondientes al ataque del vampiro. Si el investigador supera una tirada de CON, solo sufrirá la mitad de est e daño; si fracasa, sufrirá todo el daño. En ese mismo ataque, el vampiro intentará absorber Puntos de Magia de su objetivo: plantea una tirada enfrentada de POD; si gana el vampiro, robará 1D1O Puntos de Magia de su víctima; si gana el objetivo, el vampiro de fuego perderá uno de sus propios Puntos de Magia. Así, por cada ataque de un vampiro de fuego tendrás que tirar dos veces: una para determinar el daño producido por el calor y otra para determinar la pérdida de Puntos de Magia ." ,
         Habilidades : "<strong>Combatir</strong> 85% (42/17), daño 2D6 por la quemadura + drenaje de Puntos de Magia. <br><strong>Esquivar</strong> 40% (20/8)." ,
         Cordura : "Ver a un vampiro de fuego provoca una pérdida de 0/1D6 Puntos de Cordura."
  }
@@ -896,7 +896,7 @@ var Gul = {
         Descripcion_breve: "Viajeros Menta les del Tiempo" ,
         Armadura : "8 puntos de piel." ,
         Ataques_por_asalto : "2 (solo se puede disparar elarma lanzarrayos una vez por asalto)." ,
-        Ataques_de_combate : "Durante el combate, un yithiano puede atacar con sus pinzas. También posee un gran tamaño que podrá aprovechar para aplastar o golpear a un investigador. Sin embargo, esta especie civilizada evita el combate cuerpo a cuerpo, y prefieren usar armas que escupen intensas descargas eléctricas, armas que se crearon originalmente para destruir a los pólipos volantes. <br><strong>Arma lanzarrayos:</strong> Existen muchos tipos de Armas lanzarrayos (véase la página 278). Una de las más comunes contiene una batería con 32 cargas, y se tarda 1 asalto en recargarla . Se pueden disparar varias cargas a la vez, aunque cada carga que se dispara por encima de cuatro hará que aumenten las probabilidades de que el arma se queme en un 5% acumulativo. Así, si se disparan 7 cargas a la vez, el arma quedará destruida si se obtiene un resultado de 15 o menos en una tirada de 1D1OO. Cada carga causa 1D1O puntos de daño al objetivo, por lo que 3 cargas causarán 3D1O puntos de daño . El arma tiene un alcance básico de 100 m. Por cada 100 m adicionales, añade un dado de penalización a la tirada de ataque." ,
+        Ataques_de_combate : "Durante el combate, un yithiano puede atacar con sus pinzas. También posee un gran tamaño que podrá aprovechar para aplastar o golpear a un investigador. Sin embargo, esta especie civilizada evita el combate cuerpo a cuerpo, y prefieren usar armas que escupen intensas descargas eléctricas, armas que se crearon originalmente para destruir a los pólipos volantes. <br><strong>Arma lanzarrayos:</strong> Existen muchos tipos de Armas lanzarrayos (véase la página 278). Una de las más comunes contiene una batería con 32 cargas, y se tarda 1 asalto en recargarla . Se pueden disparar varias cargas a la vez, aunque cada carga que se dispara por encima de cuatro hará que aumenten las probabilidades de que el arma se queme en un 5% acumulativo. Así, si se disparan 7 cargas a la vez, el arma quedará destruida si se obtiene un resultado de 15 o menos en una tirada de 1D1OO. Cada carga causa 1D1O puntos de daño al objetivo, por lo que 3 cargas causarán 3D1O puntos de daño . El arma tiene un alcance básico de 100m. Por cada 100m adicionales, añade un dado de penalización a la tirada de ataque." ,
         Habilidades : "<strong>Combatir</strong> 40% (20/8), daño 1 D6 + Bonificación al daño. <br><strong>Arma lanzarrayos</strong> 30% (15/6), daño 1D1O por cada carga.<br><strong>Esquivar</strong> 25% (12/5)." ,
         Cordura : "Ver a un miembro de la Gran Raza produce una pérdida de 0/1D6 Puntos de Cordura."
  }
@@ -1829,7 +1829,6 @@ function Crear_criatura(){
        
                 var Perdida_de_Cordura_humano = Señor_de_los_shoggoths_humano.Cordura;
        
-
                 var Corpulencia = Fuerza_humano + Tamaño_humano;
 
                 if (Corpulencia < 85){
@@ -2097,6 +2096,39 @@ function Crear_criatura(){
                
         else if (Codigo_criatura === 33) {
 
+                var Nombre_criatura = Vagabundo_dimensiona.Nombre;
+       
+                var Fuerza_criatura = Math.floor(Math.random() * (Vagabundo_dimensiona.FUE_max - Vagabundo_dimensiona.FUE_min + 1 ) + Vagabundo_dimensiona.FUE_min) * 5;
+       
+                var Constitucion_criatura = Math.floor(Math.random() * (Vagabundo_dimensiona.CON_max - Vagabundo_dimensiona.CON_min + 1 ) + Vagabundo_dimensiona.CON_min) * 5;
+       
+                var Tamaño_criatura = Math.floor(Math.random() * (Vagabundo_dimensiona.TAM_max - Vagabundo_dimensiona.TAM_min + 1 ) + Vagabundo_dimensiona.TAM_min) * 5;
+       
+                var Destresa_criatura = Math.floor(Math.random() * (Vagabundo_dimensiona.DES_max - Vagabundo_dimensiona.DES_min + 1 ) + Vagabundo_dimensiona.DES_min) * 5;
+       
+                var Inteligencia_criatura = Math.floor(Math.random() * (Vagabundo_dimensiona.INT_max - Vagabundo_dimensiona.INT_min + 1 ) + Vagabundo_dimensiona.INT_min) * 5;
+       
+                var Poder_criatura = Math.floor(Math.random() * (Vagabundo_dimensiona.POD_max - Vagabundo_dimensiona.POD_min + 1 ) + Vagabundo_dimensiona.POD_min) * 5;
+       
+                var Movimiento_criatura = Vagabundo_dimensiona.Movimiento;
+
+                var Descripcion = Vagabundo_dimensiona.Descripcion_breve;
+
+                var Armadura = Vagabundo_dimensiona.Armadura;
+       
+                var Cantidad_ataques = Vagabundo_dimensiona.Ataques_por_asalto;
+       
+                var Ataques = Vagabundo_dimensiona.Ataques_de_combate;
+       
+                var Habilidades = Vagabundo_dimensiona.Habilidades;
+       
+                var Perdida_de_Cordura = Vagabundo_dimensiona.Cordura;
+       
+       
+               }
+               
+        else if (Codigo_criatura === 34) {
+
                 var Nombre_criatura = Vampiro_de_fuego.Nombre;
        
                 var Fuerza_criatura = 0;
@@ -2128,7 +2160,7 @@ function Crear_criatura(){
        
                }
                
-        else if (Codigo_criatura === 34) {
+        else if (Codigo_criatura === 35) {
 
                 var Nombre_criatura = Vampiro_estelar.Nombre;
        
@@ -2161,7 +2193,7 @@ function Crear_criatura(){
        
                }
                
-        else if (Codigo_criatura === 35) {
+        else if (Codigo_criatura === 36) {
 
                 var Nombre_criatura = Yithiano.Nombre;
        
@@ -2292,6 +2324,11 @@ function Crear_criatura(){
                 "<br><li>"+"Bonificación al daño media: "+Daño_extra_criatura+
                 "<br><li>"+"Media de puntos de magia: "+Magia_criatura+
                 "<br><li>"+"Movimiento: "+Movimiento_criatura+
+                "</ul><br><strong>Armadura : </strong>"+Armadura+
+                "<br><strong>Cantidad de Ataques: </strong>"+Cantidad_ataques+
+                "<br><br><strong>Ataques durante el combate: </strong>"+Ataques+
+                "<br><br><strong>Habilidades : </strong>"+Habilidades+
+                "<br><strong>Perdida de cordura : </strong>"+Perdida_de_Cordura+ 
                 "<br><li>"+"Poder Especial: "+Poder_especial_criatura
         }
 
