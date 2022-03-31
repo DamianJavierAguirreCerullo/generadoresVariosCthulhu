@@ -31,33 +31,6 @@
      "Zadok", ,"Zaahir" ,"Zach" ,"Zimri" ,"Zawar" ,"Zahi" ,"Zabulon" ,"Zac"];
 
 
-     const Firstname_Woman = [ "Agatha", "Agnes","Alborz","Albrecht","Alden","Alejandra","Alexei", "Adelyn","Amelia", "Adriana", "Agatha", "Aileen", "Augusta","Ava","Abby","Abril","Alessa", "Alice","Amanda", "Anemone",
-     "Barbara", "Bernadette", "Beatriz","Beryl", "Beulah","Berenice","Bella", "Bellona","Bernadett", "Bettye","Blanca", "Blossom","Brandie", "Brenda","Briana", "Bridgette","Brittney", "Brie","Benedicta", "Bisera",
-     "Camilla", "Carmen", "Carmilla", "Caroline", "Chloe", "Christine", "Charity", "Cindy","Clarissa","Claudia", "Constance", "Cordelia", "Cynthia","Clarette","Clarisse", "Coline","Candace", "Cassidy","Charity", "Chelsey",
-     "Daisy", "Daphné", "Doris","Dahlia","Daina","Deliverance", "Dakota","Dalma","Damla","Darlene","Dinah","Dollie","Dominica","Dora","Dorine","Dorothee",
-     "Edith", "Edna","Eloise", "Elsie", "Estella", "Eleonora", "Esther", "Eugenie", "Eunice", "Elyzabeth","Emily","Emma","Evangeline", "Emogene","Eva","Erika","Eloise","Emilia","Erin","Estelle",
-     "Florencia", "Frieda","Flora","Fanny","Felicity","Fiona","Fiorella","Fortuna","Francesca","Freya","Faustina","Fatima","Fayza","Feige",
-     "Gertrude", "Gladys", "Gretchen","Gabby","Galya","Gertrude","Giorgia","Gisella","Grace","Gretchen","Gwen","Gypsy","Gorgina",
-     "Hannah", "Hilda", "Hilary","Hope","Hellen", "Helena","Heidi","Hayley","Harriet","Harmony","Harley","Honora",
-     "Ingrid", "Irene","Ivy","Isla","Isabel","Innes","Irvine","Iara","India","Isidora","Ivana","Ivett","Isidora",
-     "Jeanette", "Jezebel", "Josephine", "Joyce", "Juanita","Jessica","Jennifer","Judit","Jacklyn","Janett","Janine","Jasmine","Joanna","Jull","Jody","Joyce","Judie","Julia",
-     "Keziah","Kate","Kezia","Keith","Kelly","Kyle","Karina","Kaylyn","Kassandra","Kathina","Keira","Kelly","Kiara","Kim","Kimberly",
-     "Leila", "Leonora", "Letitia", "Loretta", "Lucretia","Lally","Lindsey","Lowry","Lyne", "Lily","Lauren","Linda","Lara","Luisa", "Lillian","Lynette","Lisa","Lucie",
-     "Mabel", "Madeleine", "Maia","Margaret", "Marjorie", "Marcella", "Melinda","Melissa", "Marissa", "Mildred","Mary","Mikaela", "Muriel", "Mia","","Michell","Megan","Magali","Magdalena",
-     "Naomi", "Nora","Nadia","Nancy","Nessa","Natalie","Nicole","Nisa","Noelia","Nuria",
-     "Octavia", "Ophelia","Olivia","Odette","Olga","Otilia",
-     "Pansy", "Patience", "Pearle","Phoebe", "Phyllis","Pluma","Phebe","Paola","Patricia","Patty","Peace","Penelope","Petronella","Piper","Priscilla",
-     "Quinn","Quiana","Quirina",
-     "Rosemary", "Ruby","Rebecca","Rhoda","Rouse","Raine","Rachel","Raquel","Rhonda","Rita","Roberta","Rose","Rosalia","Rosario","Roxie","Ruth",
-     "Sadie", "Selina", "Selma", "Sibyl","Sylvia","Stefanie", "Sarah","Sophia", "Stacy","Stella", "Shirley","Stacey","Sophie","Shelly",
-     "Tabitha","Terry","Tanya","Tracy","Tatiana","Tempest","Theresa","Thelma","Tierra","Tiffany","Tori","Tracy",
-     "Ursula","Urve","Usha",
-     "Veronica", "Violet", "Virginia","Valeria","Valentina","Venus","Vesela","Victoria","Virna","Vivianne",
-     "Wanda", "Whitney", "Winifreda","Winona","Winter",
-     "Yachna","Yamila","Yasmine","Yesenia","Yoseline",
-     "Zilpah","Zahira","Zaria","Zilpah","Zoe"];
-
-
      const Lastname = ["Abraham", "Adler", "Ankins", "Avery","Acheson","Aitken","Allan","Allaway","Allen","Angus","Atchison","Atwater","Appleton","Armistead","Ashworth","Atkin","Audley","Averill",
      "Barnham", "Bentz", "Bessler", "Bleeker", "Bretz", "Brock", "Buchman", "Brown","Baker","Byrne",,"Barlow","Bardsley","Barret","Bartram","Batts","Belanger","Bennett","Benson","Bernard","Bishop","Blackburn","Bloodworth","Boothman","Bowman","Bradford","Bradley","Braxton","Brent","Brett","Brinley","Bronson","Burnham","Baird","Barber","Beattie","Beatty","Begbie","Blackwood","Blair","Boyd","Breckenridge","Breckinridge","Brody","Bruce","Burns","Bridge","Barbour", "Beman", "Beckwith", "Bliss", "Bristol","Bain","Bannister",
      "Click", "Cordova", "Crabtree", "Crankovitch", "Cuthburt","Cuttling","Caldwell","Cantrell","Carter","Carver","Causer","Chambers","Chapman","Cheshire","Clement","Colbert","Cadwell", "Case", "Chittenden", "Corey","Calhoun","Campbell","Carson","Clacher","Coburn","Cockburn","Coutts","Craig","Cunningham","Coleman","Collingwood","Colton","Crawford","Crouch",
@@ -83,9 +56,9 @@
      "Wagner", "Walsted", "Wang",
      "Warner", "Webber", "Welch", "Winters",  "Williams","Walsh", "Wadsworth","Ward", "Westcott", "Wickes", "Wilcox", "Willard", "Witherell", "Wolcott", "Woodford","Wallace","Wallis","Woods","Wolf","Woodham","Woodrow","Wootton","Wragge","Wray","Wynne","Wade","Walker","Whitney","Whittemore","Wickham","Wiley","Winslow","Winter","Winthrop","White",
      "Yarbrough", "Yeske","Yap","Yates","Yoxall",
-     zanquell];
+     "zanquell"];
 
-     
+
      const Profession_Man = ["Acrobata", "Actor", "Agente Federal", "Alienista", "Alpinista", "Anticuario", "Arqueologo", "Arquitecto", "Artesano","Artista", "Atleta", "Medico", "Ayudante de Laboratorio",
      "Barman", "Bibliotecario", "Bombero", "Boxeador/Luchador","Buzo", "Camillero",
      "Cazador", "Cazador de Recompensas", "Chofer", "Cientifico", "Cirujano Forense", "Clerigo", "Conductor", "Conservador",
@@ -111,32 +84,6 @@
      "Fabrica de Caucho","Fabrica de Escobas","Fabrica de Botones","Taquígrafo","Fabrica de Metal","Cajero",
      "Fabrica de telas","Distribuidor minorista","Granja lechera"];
 
-
-     const Profession_Woman = ["Acrobata", "Actor", "Alienista", "Alpinista", "Anticuario", "Arqueologa", "Artesano",
-     "Artista", "Atleta", "Ayudante de Laboratorio", "Bibliotecario", "Bombero", "Luchadora", "Camarera",
-     "Cazador de Recompensas", "Cientifico", "Clerigo",
-     "Detective de Agencia","Asesino", "Contrabandista",
-     "Diletante", "Diseñador", "Escritor","Doncella",
-     "Estudiante/Interno", "Explorador", "Fanatica", "Farmaceutico","Criminal; independiente","Estafador",
-     "Forastero", "Fotografo", "Funerario", "Granjera","Falsificadora",
-     "Interprete", "Investigador Academico","Pareja de Gangster", "perista; criminal ",
-     "Investigador Privado", "Ama de Casa", "Miembro de una Tribu",
-     "Libero", "Misionero", "Montañero", "Musico",
-     "Ocultista", "Oficinista", "Prospector", "Psicologo/Psicoanalista", "Psiquiatra", "Reportera",
-     "Agente Uniformado", "Vendedora", "Soldado",
-     "Reportero Geografico", "Secretaria", "Tendero", "Tratante de Antiguedades", "Vagabundo", "Vaquero","Maestra",
-     "Manicurista","Modista",
-     "Profesor de secundaria", "Trabajador industrial", "Encargado del registro", "Trabajador Gubernamental",
-     "Guarda Expedientes", "mecanógrafo", "jardineros","Productor de Fruta","Trabajador de vivero","Trabajador textil",
-     "Obrero","Repartidor","colportores","Recolectores de Basura","Colportor","Viajeros comerciales",
-     "operarios semicalificados/calificados","Fabrica de comida","Operador Telefonico","Fabrica de Zapatos",
-     "fontanero","Electricista","Peluquero","Fabrica de ropa","Fabrica de muebles","Lavanderia",
-     "Fabrica de Caucho","Fabrica de Escobas","Fabrica de Botones","Taquígrafo","Fabrica de Metal","Cajera",
-     "Fabrica de telas","Distribuidor minorista","Granja lechera","Fabrica de Algodon","Fabrica de Guantes",
-     "Fabrica de Neumaticos","Limpiadoras","Trabajadora Social","Fabrica de Caramelos","Sastre","Barbera",
-     "Fabrica de Estabre/Lana","Fabrica de Sombreros","Fabrica de zapatos","Fabrica de Tabaco/Cigarrillos",
-     "Partera","Empleada de tienda","Cocinera"];
-     
 
      const Pueblo = ["Garden Lake", "Tuxbury Pond","Merrimac River", "Merrimac Bay","Indian River", "Parker River Oeste", "Parker River Este", "Bachelder Br", "Mill River", "Mud Creek", "Egypt R", "Plum Island", 
      "Hower Pond", "Howlett Brook", "Pye Brook", "Danes Pond", "Ipswich River", "Castle Neck", "Essex Bay", "Essex River", "Annisquam River", "Alewife Br", "Nichols Br", "Fish Br", "Muddy Pond", "Pleasan Pond", 
@@ -236,15 +183,15 @@
                          "Ambicioso (alcanzar una meta, convertirse en el jefe, hacerse con todo, etc.)."];
 
      const cualAllegado = ["Padre (madre, padre, madrastra, etc.).",
-          "Abuelo (abuela materna, abuelo paterno, etc.).",
-          "Hermano (hermano, hermanastro, hermanastra, etc.).",
-          "Hijo (hijo, hija, hijastro, hijastra, etc.).",
-          "Pareja (esposa, prometida , amante , etc.).",
-          "La persona que te enseñó tu habilidad de ocupación que tenga la mayor puntuación. Identifica la habilidad y plantéate quién te la enseñó ( un profesor d el colegio, la persona de la que fuiste aprendiz, tu padre, etc.) .",
-          "Amigo de la infancia (compañero de clase, vecino, amigo imaginario, etc.).",
-          "Una persona famosa. Tu ídolo o t u héroe. Puede que nunca os hayáis conocido (estrella de cine, político,músico, etc.).",
-          "Otro investigador de tu grupo de juego. Elige uno o deterrninalo al azar.",
-          "Un personaje no jugador (PNJ) del juego. Pide al Guardián que te elija uno."];
+                         "Abuelo (abuela materna, abuelo paterno, etc.).",
+                         "Hermano (hermano, hermanastro, hermanastra, etc.).",
+                         "Hijo (hijo, hija, hijastro, hijastra, etc.).",
+                         "Pareja (esposa, prometida , amante , etc.).",
+                         "La persona que te enseñó tu habilidad de ocupación que tenga la mayor puntuación. Identifica la habilidad y plantéate quién te la enseñó ( un profesor d el colegio, la persona de la que fuiste aprendiz, tu padre, etc.) .",
+                         "Amigo de la infancia (compañero de clase, vecino, amigo imaginario, etc.).",
+                         "Una persona famosa. Tu ídolo o t u héroe. Puede que nunca os hayáis conocido (estrella de cine, político,músico, etc.).",
+                         "Otro investigador de tu grupo de juego. Elige uno o deterrninalo al azar.",
+                         "Un personaje no jugador (PNJ) del juego. Pide al Guardián que te elija uno."];
 
 
      const razon_allegado = ["Estás en deuda con esa persona. ¿De qué forma te ayudó? (económicamente, te protegió en los malos tiempos, te consiguió tu primer trabajo, etc.).",
@@ -260,6 +207,18 @@
 
 
      //Terminan el area de listas
+
+     const D4 = Math.floor(Math.random() * (4 - 1 + 1) + 1);
+     const D6 = Math.floor(Math.random() * (6 - 1 + 1) + 1);
+     const D8 = Math.floor(Math.random() * (8 - 1 + 1) + 1);
+     const D10 = Math.floor(Math.random() * (10 - 1 + 1) + 1);
+     const D100 = Math.floor(Math.random() * (100 - 1 + 1) + 1);
+     const tresD6 = Math.floor(Math.random() * (18 - 3 + 1) + 3)*5;
+     const dosD6Mas6 = Math.floor(Math.random() * (18 - 8 + 1) + 8)*5;
+     // const fobiasRandom = Math.floor(Math.random() * Fobias.length);
+     // const maniasRandom = Math.floor(Math.random() * Manias.length);
+
+
 
 
 
@@ -278,8 +237,6 @@ function Generate_Character(){
      let Firstname = Firstname_Man[rand_first_man];
      let rand_prof_man = Math.floor(Math.random() * Profession_Man.length);
      let Profession = Profession_Man [rand_prof_man];
-     let rand_prof_man = Math.floor(Math.random() * Profession_Man.length);
-     let rand_first_man = Math.floor(Math.random() * Firstname_Man.length);
 	let rand_last = Math.floor(Math.random() * Lastname.length); 
      // var rand_first_woman = Math.floor(Math.random() * Firstname_Woman.length); 
      // var Gender = Math.floor(Math.random() * Genero.length); 
@@ -289,42 +246,30 @@ function Generate_Character(){
 
 
 
-     //Area de Caracteristicas
-
-     let Fue = tresD6;
-     let Con = tresD6;
-     let Pod = tresD6;
-     let Des = tresD6;
-     let Apa = tresD6;
-     let Sue = tresD6;
-     let Tam = dosD6Mas6;
-     let Int = dosD6Mas6;
-     let Edu = dosD6Mas6;
-     let Pv  = Math.floor((Tam+Con)/10);
-     let Edad = Math.floor(Math.random() * (89 - 15 + 1) + 15);
 
 
 
-     
+
      //Area de Fobias y Manias
+
      let rand_Manias = D100;
      let rand_Fobias = D100;
-     let Fobias_1 = fobiasRandom;
-     let Fobias_2 = fobiasRandom;
-     let Fobias_3 = fobiasRandom;
-     let Manias_1 = maniasRandom;
-     let Manias_2 = maniasRandom;
-     let Manias_3 = maniasRandom;
+     // let Fobias_1 = fobiasRandom;
+     // let Fobias_2 = fobiasRandom;
+     // let Fobias_3 = fobiasRandom;
+     // let Manias_1 = maniasRandom;
+     // let Manias_2 = maniasRandom;
+     // let Manias_3 = maniasRandom;
 
 
 
      //Area de Trasfondo
-     let Ideocreen = D10;
-     let Lugarsigni = D10;
-     let Objetosigni = D10;
-     let Rasgoperso = D10;
-     let Allega = D10;
-     let RazonAllega = D10;
+     let Ideocreen = D10();
+     let Lugarsigni = D10();
+     let Objetosigni = D10();
+     let Rasgoperso = D10();
+     let Allega = D10();
+     let RazonAllega = D10();
 
 
 
@@ -362,36 +307,36 @@ function Generate_Character(){
 
      
 
-     if (rand_Manias < 11) {
-          Mania = "No tiene Manias";
-     }
-          else if(rand_Manias < 61) {
-               Mania = Manias[Manias_1];
-          }
-          else if(rand_Manias < 91) {
-               Mania = Manias[Manias_1] + "<br>" + " " + Manias[Manias_2];
-          }
-          else {
-               Mania = Manias[Manias_1] + "<br>" + " " + Manias[Manias_2] + "<br>" + " " + Manias[Manias_3];
-          }
+     // if (rand_Manias < 11) {
+     //      Mania = "No tiene Manias";
+     // }
+     //      else if(rand_Manias < 61) {
+     //           Mania = Manias[Manias_1];
+     //      }
+     //      else if(rand_Manias < 91) {
+     //           Mania = Manias[Manias_1] + "<br>" + " " + Manias[Manias_2];
+     //      }
+     //      else {
+     //           Mania = Manias[Manias_1] + "<br>" + " " + Manias[Manias_2] + "<br>" + " " + Manias[Manias_3];
+     //      }
 
 
 
-     if (rand_Fobias < 86) {
-          Fobia = "No tiene Fobias";
-     }
+     // if (rand_Fobias < 86) {
+     //      Fobia = "No tiene Fobias";
+     // }
 
-          else if(rand_Fobias < 96) {
-               Fobia = Fobias[Fobias_1];
-          }
+     //      else if(rand_Fobias < 96) {
+     //           Fobia = Fobias[Fobias_1];
+     //      }
 
-          else if(rand_Fobias < 100) {
-               Fobia = Fobias[Fobias_1] + "<br>" + " " + Fobias[Fobias_2];
-          }
+     //      else if(rand_Fobias < 100) {
+     //           Fobia = Fobias[Fobias_1] + "<br>" + " " + Fobias[Fobias_2];
+     //      }
 
-          else {
-               Fobia = Fobias[Fobias_1] + "<br>" + " " + Fobias[Fobias_2] + "<br>" + " " + Fobias[Fobias_3];
-          }
+     //      else {
+     //           Fobia = Fobias[Fobias_1] + "<br>" + " " + Fobias[Fobias_2] + "<br>" + " " + Fobias[Fobias_3];
+     //      }
 
 
 
@@ -477,22 +422,22 @@ function Generate_Character(){
           var Lugardenacimiento = "Nacio en la ciudad de " + Ciudad[rand_Ciudad];
 
      }
-        else if(Lugarnacimiento < 61){
+     else if(Lugarnacimiento < 61){
                var Lugardenacimiento = "Nacio en el Pueblo de " + Pueblo[rand_Pueblo];
 
-        }
+     }
 
-        else if (Lugarnacimiento < 75){
-        var Lugardenacimiento = "Nacio en el pais de " + Pais;
+     else if (Lugarnacimiento < 75){
+     var Lugardenacimiento = "Nacio en el pais de " + Pais;
 
-        }
-      
-        else { 
+     }
+     
+     else { 
         var ran_Estado = Math.floor(Math.random() * Estados.length );
-        var Estado = Estados[ran_Estado];
-        var Lugardenacimiento = "Nacio en el estado de "+ Estado;
+     var Estado = Estados[ran_Estado];
+     var Lugardenacimiento = "Nacio en el estado de "+ Estado;
 
-        }
+     }
      
           
      //Finaliza el area de lugar de Nacimiento
@@ -509,31 +454,42 @@ function edad(){
           return edad = cosas_edad[0];
           }
 
-           else if(Edad < 40) {
-           return edad = cosas_edad[1];
-            }
-
-           else if(Edad < 50) {
-            return edad = cosas_edad[2];
-             }
-
-           else if(Edad < 60) {
-               return edad = cosas_edad[3];
-              }
-
-           else if(Edad < 70) {
-                   return edad = cosas_edad[4];
-              }
-
-           else if(Edad < 80) {
-                   return edad = cosas_edad[5];
-              }
-
-           else {
-                   return edad = cosas_edad[6];
-              }
+          else if(Edad < 40) {
+          return edad = cosas_edad[1];
           }
+
+          else if(Edad < 50) {
+          return edad = cosas_edad[2];
+          }
+
+          else if(Edad < 60) {
+          return edad = cosas_edad[3];
+          }
+
+          else if(Edad < 70) {
+          return edad = cosas_edad[4];
+          }
+
+          else if(Edad < 80) {
+          return edad = cosas_edad[5];
+          }
+
+          else {
+          return edad = cosas_edad[6];
+          }
+     }
      
+     function tresD6(){
+          return Math.floor(Math.random() * (18 - 3 + 1) + 3)*5;
+     }
+
+     function dosD6Mas6(){
+          return Math.floor(Math.random() * (18 - 8 + 1) + 8)*5
+     }
+
+     function D10(){
+          return Math.floor(Math.random() * (10 - 1 + 1) + 1)
+     }
 
      //Comienza el Area de Edad y Trasfondo
           
@@ -543,6 +499,19 @@ function edad(){
 
      //Zona de toma de valores para despues mostrarlos
 
+          //Area de Caracteristicas y variables para resultados
+
+     const Fue = tresD6();
+     const Con = tresD6();
+     const Pod = tresD6();
+     const Des = tresD6();
+     const Apa = tresD6();
+     const Sue = tresD6();
+     const Tam = dosD6Mas6();
+     const Int = dosD6Mas6();
+     const Edu = dosD6Mas6();
+     const Pv  = Math.floor((Tam+Con)/10);
+     const Edad = Math.floor(Math.random() * (89 - 15 + 1) + 15);
      const cosasEdad = edad();
      const ideoCreencia = ideo_creencias[Ideocreen];
      const lugarSignificativo = lugar_significativo[Lugarsigni];
@@ -591,49 +560,49 @@ function edad(){
      "<br>"+"Allegado"+
      "<br>"+allegados+"<br>"+
      "<br>"+"Porque Es Tu Allegado"+
-     "<br>"+razonAllegado+"<br>"+
-     "<br>"+Mania+"<br>"+
-     "<br>"+Fobia
+     "<br>"+razonAllegado+"<br>"
+     // "<br>"+Mania+"<br>"+
+     // "<br>"+Fobia
      
      //Fin Zona de muestra de resultados
 }
 
 
-  /*
-  "Dakari","Dustin","Lenno","Gaetano","Hamilton","Leben","Loring","Scoville","Tabor","Wellington",
-  "Bodie","Kolmanskop","Iultin","Plymouth","Varosha","Brattleboro","Townshend","Finch","Fawn","Rosebud","Maple",
-  "Paradise","Ferret","Daffodil","Grizzly","Primrose","Elk",
+/*
+"Dakari","Dustin","Lenno","Gaetano","Hamilton","Leben","Loring","Scoville","Tabor","Wellington",
+"Bodie","Kolmanskop","Iultin","Plymouth","Varosha","Brattleboro","Townshend","Finch","Fawn","Rosebud","Maple",
+"Paradise","Ferret","Daffodil","Grizzly","Primrose","Elk",
 
 
-      if(154 === 1 ) {
-           var 184 = ""
-           }
-            else if(154 === 2){
-            var 184 = ""
-             }
-             else if(154 === 3){
-             var 184 = ""
-              }
-             else if(154 === 4){
-                var 184 = ""
+     if(154 === 1 ) {
+          var 184 = ""
+          }
+          else if(154 === 2){
+          var 184 = ""
+          }
+          else if(154 === 3){
+          var 184 = ""
+          }
+          else if(154 === 4){
+               var 184 = ""
                }
-               else if(154 === 5){
-                    var 184 = ""
+          else if(154 === 5){
+               var 184 = ""
                }
-               else if(154 === 6){
-                    var 184 = ""
+          else if(154 === 6){
+               var 184 = ""
                }
-               else if(154 === 7){
-                    var 184 = ""
+          else if(154 === 7){
+               var 184 = ""
                }
-               else if(154 === 8){
-                    var 184 = ""
+          else if(154 === 8){
+               var 184 = ""
                }
-               else if(154 === 9){
-                    var 184 = ""
+          else if(154 === 9){
+               var 184 = ""
                }
-               else{
-                    var 184 = ""
+          else{
+               var 184 = ""
                }
 
      "Abduh","Abdul","Abdulah","Abdullah","Abdullo","Abdullohi","Abdurakhman","Abduweli","Abe","Abednego","Abel","Abele","Abenner","Abessa","Abessalom","Abhay","Abhijeet","Abhijit","Abhilash","Abhilash","Abhinav","Abhishek","Abia","Abiah","Abiathar","Abidan","Abidemi","Abiel","Abihu","Abijah","Abilio","Abilio","Abimael","Abimbola","Abiodun","Abioye","Abimelech","Abiram","Abisai","Abishai","Abner","Abolfazl","Aboubacar","Abraam",
