@@ -1,99 +1,95 @@
 // Area de 
-var Criatura = document.getElementById("Criaturas");
-var crear = document.getElementById("creador");
-crear.addEventListener ("click",Crear_criatura);
+const Criatura = document.getElementById("Criaturas");
 
-const D4 = Math.floor(Math.random() * (4 - 1 + 1) + 1);
-const D6 = Math.floor(Math.random() * (6 - 1 + 1) + 1);
-const D8 = Math.floor(Math.random() * (8 - 1 + 1) + 1);
-const D10 = Math.floor(Math.random() * (10 - 1 + 1) + 1);
-const D100 = Math.floor(Math.random() * (100 - 1 + 1) + 1);
-const tresD6 = Math.floor(Math.random() * (18 - 3 + 1) + 3)*5;
-const dosD6Mas6 = Math.floor(Math.random() * (18 - 8 + 1) + 8)*5;
-const fobiasRandom = Math.floor(Math.random() * Fobias.length);
-const maniasRandom = Math.floor(Math.random() * Manias.length);
+const crear = document.getElementById("creador");
+crear.addEventListener ("click",Crear_criatura);
+// var value = Criatura.options[Criatura.selectedIndex].value;
+// console.log(value); // en
+
+
+
 
 
 // grimorio
 
-var Grimorio_Cthulhu = ["Ajar un miembro","Aliento de las profundidades","Atormentar","Bendecir hoja","Cancion de Hastur","Cántico de Thoth","Crear barrera de Naach-Tith",
+const Grimorio_Cthulhu = ["Ajar un miembro","Aliento de las profundidades","Atormentar","Bendecir hoja","Cancion de Hastur","Cántico de Thoth","Crear barrera de Naach-Tith",
 "Crear niebla de R'lyeh","Crear zombie","Cruz ansada de Prinn","Descomposición verde","Destierro de Yde Etad","Dividir el ka","Dominar","Encantar cuchillo",
 "Encantar daga sacrificial","Encantar libro","Explosion mental","Fabrica de hidromiel espacial","Fundir carne","Garra de Nyogtha","Hechizo mortal","Imitar apariencia",
 "Inducir el pánico","Inmoviliar a una victima","Intercambio de mentes","Mal de ojo","Maldición de Azathoth","Maldición del pellejo pútrido","Nublar la memoria","Ola de olvido",
 "Palabras poderosas","Polvo de Ibn-Ghazi","Polvo de Suleimán","Crear portal","Caja Portal","Encontrar portal","Portal temporal","Proteccion","Protección corporal","Provocar/Curar la ceguera",
 "Puño de Yog-Sothoth","Resurrección","Signo rojo de Shudde M'ell","Signo de Voorish","Simbolo arcano","Sugestión mental","Trasformación corporal de Gorgoroth","Trasferencia de mente",];
 
-var Grimorio_ambientales = ["Aliento de la muerte","Alteracion meteorologica","Arenas de la separacion","Crear niebla de R´lyeh","Desafiar la gravedad","Hambre de Kazan","Levantar niebla nocturna",
+const Grimorio_ambientales = ["Aliento de la muerte","Alteracion meteorologica","Arenas de la separacion","Crear niebla de R´lyeh","Desafiar la gravedad","Hambre de Kazan","Levantar niebla nocturna",
 "Llamar al rayo","Maldición de Apofis","Mirada solar","Mitigar la luz","Ola del olvido","Traer el Haboob"]
 
-var Gromorio_daño_nocombat = ["Abismo al infierno","Abrazo de Yog-Sothoth","Absorber la juventud","Absorber la vida","Activacion","Arbusto humano","Atar un alma","Bacanal","Barrera de dolor",
+const Gromorio_daño_nocombat = ["Abismo al infierno","Abrazo de Yog-Sothoth","Absorber la juventud","Absorber la vida","Activacion","Arbusto humano","Atar un alma","Bacanal","Barrera de dolor",
 "Cimoticismo","Corrupcion de lo sagrado","Decadencia insidiosa","Descomposicion verde","Desgarrar velo","Despertar a la Gran Tortuga","Destierro por nombre","Detener corazón","Ensalmo de la sexta sathlatta",
-"Enviar a los muertos","Enivar serpiente sagrada","Flautas de locura","Fundir carne","Iluminacion instantánea","Larvas","Llamar a la Negrura","Llamar al rayo","Mal de ojo","Maldición de Chaugnar Faugn",
+"Enviar a los muertos","Enviar serpiente sagrada","Flautas de locura","Fundir carne","Iluminacion instantánea","Larvas","Llamar a la Negrura","Llamar al rayo","Mal de ojo","Maldición de Chaugnar Faugn",
 "Maldición del pellejo pútrido","La maldición marchitante","Maleficio de las runas","Mirada envenenada","Necrosis","Ojo maldito","Pesadilla","Pesadillas","Petrificar","Provocar la enfermedad",
 "Provocar/Curar la ceguera","Retirar velo","Signo amarillo","Sombra de Nyarlathotep","Traer la peste"]
 
-var Grimorio_combate= ["Absorcion de poder","Acelerar","Ahogar la mente","Ajar un miembro","Aliento de las profundidades","Aliento de Pazuzu","Anudar carne","Atormentar","Atormentar",
+const Grimorio_combate= ["Absorcion de poder","Acelerar","Ahogar la mente","Ajar un miembro","Aliento de las profundidades","Aliento de Pazuzu","Anudar carne","Atormentar","Atormentar",
 "Canción de Hastur","Canto fúnebre de Nyhargo","Conceder atosbo de verdad","Cuchilla espectral","Danza de fuego","Declamación de la bilis","Desgarro temporal","Destello de Ra","Desvanecimiento",
 "Desviar el daño","Dominar","Explosión mental","Garra de Cthulhu","Garra de Nyogtha","Golpe cegador","Gusanos","Hechizo mortal","Incinerar","Inducir el pánico","Ira de Pazuzu","Ira del tiempo","Liquidez",
 "Maldición de Azathoth","Maldición de la piedra","Manos de colubra","Manto de fuego","Muerte liquida","Nube mental","Numantina","Ojos de un extraño","Petrificar las extremidades inferiores",
 "Polvo dañino de Hermes trimegisto","Polvo de Ibn-Ghazi","Polvo de Suleimán","Puño de Yog-Sothoth","Roce de la decadencia","El signo rojo","Sugestión mental","Tormento inflamatorio","Trance","Vacío de sombras",
 "Yugo de la lengua sangrienta"]
 
-var Grimorio_comunicacion = ["Comprensión de lo inefable","Comunicación por vela","Enviar sueño","Espejo de Tarkhun Atep","Ojo maldito","Palabras poderosas","Telepatía","Vocalizar el pensamiento"]
+const Grimorio_comunicacion = ["Comprensión de lo inefable","Comunicación por vela","Enviar sueño","Espejo de Tarkhun Atep","Ojo maldito","Palabras poderosas","Telepatía","Vocalizar el pensamiento"]
 
-var Grimorio_crear_monstruos = ["Abosrber la sangre de la vida","Acelerar una larva de la niebla","Animar criatura de carne","Animar momia","Atadura gris","Beso del cementerio",
+const Grimorio_crear_monstruos = ["Abosrber la sangre de la vida","Acelerar una larva de la niebla","Animar criatura de carne","Animar momia","Atadura gris","Beso del cementerio",
 "Convertirse en un cazador espectral","Crar gólem","Crear hijo de la esfinge","Crear muerto viviente","Crear zombi","Despertar/Expulsar al dios interior","Efigie del odio","Fabricar elixir de la vida eterna",
 "Maldicion de los seres rata","Obligar a la carne","Ojos de zombi","Piel que camina","Reanimación","Regreso del ser amado","Resurrección","Sombra de Nyarlathotep"]
 
-var Grimorio_destierro_control = ["Ahurentar a un shan","Anzuelo para seres humanos","Atar a un ángel descarnado de la noche","Atar a un Byakhee","Atar a un Cambiaforma","Atar a un Hijo de la esfinge",
+const Grimorio_destierro_control = ["Ahurentar a un shan","Anzuelo para seres humanos","Atar a un ángel descarnado de la noche","Atar a un Byakhee","Atar a un Cambiaforma","Atar a un Hijo de la esfinge",
 "Atar a un Horrendo cazador","Atar a un Profundo","Atar a un Retorño oscuro de Shub-Niggurath","Atar a un Servidor de los dioses exteriores","Atar a un Shoggoth","Atar a un Vagabundo Dimensional",
 "Atar a un Vampiro de fuego","Atar a un Vampiro Estelar","Atrapar un alma","Canto fúnebre de Nyhargo","Cruz ansada de Prinn","Desenmascarar a un demonio","Destello de Ra","Desterrar a Apep","Desterrar a Byatis",
 "Destierro de Yde Etad","Encarcelar mente","Encerrar a Eihort","Engañar a un soñador","Expulsar a un dios","Expulsar a un espíritu","Exuplsar a un shan","Expulsar al demonio","Extensión oscilante","Gracia elísea",
 "Identificar a un espíritu","Inmovilizar a una victima","Llama purificadora de Vorvadoss","Maldición de la oscuridad","Mortificación","Pérdida de favor","Pesquisa de los no muertos","Polvo de Ibn-Ghazi",
 "Polvo de Suleiman","Retornar servidor","Sellar pozo","Signo Voorish","Subyugar a las plantas","Subyugar a un shoggoth"]
 
-var Grimorio_encantamiento = ["Armonizar cristal","Bendecir hoja","Collar de persuasión","Crear amuleto","Crear cayado mágico","Crear flauta maldita","Crear signo de Barzai","Crear tablilla maldita",
+const Grimorio_encantamiento = ["Armonizar cristal","Bendecir hoja","Collar de persuasión","Crear amuleto","Crear cayado mágico","Crear flauta maldita","Crear signo de Barzai","Crear tablilla maldita",
 "Encantamiento de la mala suerte","Encantar amuleto de los primigenios","Encantar anillo","Encantar antorcha","Encantar atributos de poder","Encantar azagaya","Encantar bastón","Encantar brasero",
 "Encantar campanas del horror","Encantar carne","Encantar cuadro","Encantar cuchillo","Encantar daga de Nyarlathotep","Encantar efigie animal","Encantar flauta","Encantar grabación","Encantar gris-gris",
 "Encantar libro","Encantar muñeca","Encantar palo","Encantar palo","Encantar proyectil","Encantar silbato","Encantar suero","Encantar tablilla de piedra","Encantar vela","Imposición del Signo de Koth",
 "Inutilizar objeto","Petrificar","Polvo encantado de Anubis","Vigilia ensoñadora"]
 
-var Grimorio_influencia = ["Activación","Anzuelo para seres humanos","atar a un enemigo","Bacanal","Cimoticismo","Collar de persuasión","Conceder atisbo de verdad","Contactar con un humano",
+const Grimorio_influencia = ["Activación","Anzuelo para seres humanos","atar a un enemigo","Bacanal","Cimoticismo","Collar de persuasión","Conceder atisbo de verdad","Contactar con un humano",
 "Crear signo de Barzai","Decadencia insidiosa","Dominar","Exalación","Exaltación del Ser sin Piel","Fabricar brebaje de Phan","Festín final, El","Hibernar","Inducir el pánico","Jaula dorada del deseo",
 "Nube mental","Nublar la memoria","Obligar a la carne","Ojos de un extraño","Palabras poderosas","Pesadilla","Pesadillas","Reunir y canalizar el miedo","Signo de amarillo","Sugestión mental","Trance",
 "Vocalizar el pensamiento","Voz de Ra"]
 
-var Grimorio_otros = ["Absorción de poder","Alma errante","Atraer a un barco de peces","Beber del espíritu","Bendición de Bast","Buscar lo perdido","Cántico de poder","Cántico de Thoth","Colmillo de Yig",
+const Grimorio_otros = ["Absorción de poder","Alma errante","Atraer a un barco de peces","Beber del espíritu","Bendición de Bast","Buscar lo perdido","Cántico de poder","Cántico de Thoth","Colmillo de Yig",
 "Consumir recuerdos","Danza mental","Descubrir encantamiento","Despertar la luz interior","Encontrar a un hombre serpiente","Encontrar a un soñador","Encontrar Portal","Localizar resonancia vital",
 "Exaltación","Fabricar paut","Fórmula Dho","Gran rito del sacrificio","Hilo de Ariadna","Intuir la presencia del otro","Luz de luna","Luz de Seker","Mal de ojo","Mortificación","Percibir texto","Percibir vida",
 "Perfección","Perspicacia de las almas gemelas","Poder de Nyambe","Preparar cadáver","Promesa innombrable","Reencarnación","Reunir y canalizar el miedo","Ritual de purificacion","Ritual del momoy",
 "Serenidad terrenal","Singo de Voorish","Sofocar la sospecha","Transición espectral","Ver portal"]
 
-var Grimorio_prolongar_vida = ["Absorber la sangre de la vida","Absorber la vida","Alimento de la vida","Crear Protección personal","Dividir el ka","Inmortalidad","Muda sagrada de la serpiente",
+const Grimorio_prolongar_vida = ["Absorber la sangre de la vida","Absorber la vida","Alimento de la vida","Crear Protección personal","Dividir el ka","Inmortalidad","Muda sagrada de la serpiente",
 "Muerte de Koschéi, La","Pacto de Quachil Uttaus","Posesión","Prolongar vida","Resurrección","Transferencia de mente","Transferir alma","Transferir órgano","Transferir parte corporal"]
 
-var Grimorio_proteccion = ["Calidez mental","Campana de Tezchaptl","Cántico de proteccion","Círculo de náusea","Circulo de proteccion","Crear barrera de Naach-Tith","Crear polvo contra zombis",
+const Grimorio_proteccion = ["Calidez mental","Campana de Tezchaptl","Cántico de proteccion","Círculo de náusea","Circulo de proteccion","Crear barrera de Naach-Tith","Crear polvo contra zombis",
 "Crear protección personal","Desviar el daño","Devorar filo","Dicha","Dividir el ka","Extensión oscilante","Extracción del alma","Formula de Einstein","Impetu del corazón","Imposición del Pentágono pnakótico",
 "Imposición del Signo de Koth","Ojo de luz de oscuridad","Pegar carne","Protección","Protección contra el Mal de ojo","Protección de Anubis","Ritaul Saaamaaa","Rueda de niebla de Eibon","Sello de Isis",
 "Sello de Nephren-Ka","Serenidad terrenal","Signo protector","Símbolo arcano","Trazar círculo","Vaciar la mente"]
 
-var Grimorio_temporales = ["Adivinación","Conjurar cristal de Mortlan","Crear ventana de obsevación","Desgarro temporal","Fabricar droga de Liao","Fabricar parakete","Mirar al futuro","Mostrar el fin del camino",
+const Grimorio_temporales = ["Adivinación","Conjurar cristal de Mortlan","Crear ventana de obsevación","Desgarro temporal","Fabricar droga de Liao","Fabricar parakete","Mirar al futuro","Mostrar el fin del camino",
 "Portal temporal","Roce de la decadencia","Trampa temporal","Visión premonitoria"]
 
-var Grimorio_tierra_del_sueño = ["Alzar a los fantasmas de Ib","Anatema","Anillos concéntricos del gusano","Barrera oblonga","Caja negra","Canción de Glissande","Cascada de Florin","Convocar a la plaga",
+const Grimorio_tierra_del_sueño = ["Alzar a los fantasmas de Ib","Anatema","Anillos concéntricos del gusano","Barrera oblonga","Caja negra","Canción de Glissande","Cascada de Florin","Convocar a la plaga",
 "Cortnas de encaje de Hish","Creación de venerabilidad","Dardos esmeralda de Ptath","Deflexión","Destripador","Disolver esqueleto","Encontrar a un soñador","Escudo flamígero","Esfera lavada de Ptath",
 "Espiral de Suth","estabilidad","Explosión cardíaca","Explosión conmocionante","Expulsión onírica","Fabricar hidromiel espacial","Fauces del pandemónium","Fuerza irresistible","Gloria del serafín",
 "Hechizo perdido de Ib, El","Hinchar","Horno de Bolonath","Invisibilidad","Involución","Ladrón de almas","Lasitud de Phein","Levantar a los muertos","Llama macilenta","La locura furiosa","Maldición de Cerrit",
 "Mandrágora","Mente de hierro","Minimizar","Mundo de cristal","Niebla plateada, La","Ola de calor de Katarien","Pantalla equilátera","Paralización de Eanora","Pared opaca","Potencia de Throth",
 "Rayo de Malenkamon","Red blanca de Soren","Ropas vivientes","Serpiente de Mnomquah","Sirviente","Torbellino","Traer la peste","Tremendo picor","Viento viridiano","Vórtice de viajes lejanos","X viviente"]
 
-var Grimorio_tradicional = ["Agua del buen ladrón","Arruinar/bendecir cultivo","Atar a un animal","Atraer karma","Augurio","Bendición","Buscar lo perdido","Cantar al alma","Canto de sirena",
+const Grimorio_tradicional = ["Agua del buen ladrón","Arruinar/bendecir cultivo","Atar a un animal","Atraer karma","Augurio","Bendición","Buscar lo perdido","Cantar al alma","Canto de sirena",
 "Convocar a un fantasma","Crear amuleto de buena suerte","Crear bulla","Crear tormenta","Curación","Despertar a la bestia","Encantar ju-ju","Encatar paviut","Envenenamiento sanguíneo",
 "Fabricar filtro de amor","Festín de la lechuza","Formar de murciélago","Furia","Hechizar a un animal","Lanzamiento impecable","Lisiar/Curar a un animal","Maldición","MEditación restauradora",
 "Patas de oso","Piel de oso","Polvo de coyote","Prosperidad","Radiestesia","Revés de la fortuna","Sello amarillo de salto espiritual","Serenidad terrenal","Subyugar a un animal","Vaciar la mente",
 "Ven a verme","Vientos de la desolación"]
 
-var Grimorio_traer_monstruos_o_dioses1 = ["Abismo al infierno","Ángulos inversos de Tagh-Clatur","Canalización divina","Conjuración del turua","Construir Carcosa","Contactar con Abhoth",
+const Grimorio_traer_monstruos_o_dioses1 = ["Abismo al infierno","Ángulos inversos de Tagh-Clatur","Canalización divina","Conjuración del turua","Construir Carcosa","Contactar con Abhoth",
 "Contactar con Aku-shin Kage","Contactar con Azathoth","Contactar Bokrug","Contactar Byatis","Contactar Chaugnar Faugn","Contactar Cthulhu","Contactar Eihort","Contactar con la Lama Esmeralda",
 "Contactar con Ghroth","Contactar Gla´aki","Contactar con Iod","Contactar Koth","Contactar con los Maestros","Contactar con los espíritus de los muertos","Contactar con Nodens",
 "Contactar con Nyarlathotep","Contactar Nyarlatophis","Contactar con Othuyeg","Contactar con Pazuzu","Contactar con Shub-Niggurath","Contactar con Tsathoggua","Contactar con un antiguo",
@@ -108,69 +104,69 @@ var Grimorio_traer_monstruos_o_dioses1 = ["Abismo al infierno","Ángulos inverso
 "Llamar a Azathoth","Llamar a Bugg-Shash","Llamar Cthugha","Llamar Cyaegha","Llamar a Daoloth","Llamar a El Negro","Llamar a Ghatanothoa","Llamar a Gla´aki","Llamar a Gol-Goroth","Llamar a Hastur",
 "Llamar a Iod","Llamar a Ithaqua","Llamar a la bestia","Llamar a La llorona"]
 
-var Grimorio_traer_monstruos_o_dioses2 = ["Lamar a la Negrura","Llamar a los zombis","Llamar a Mappo no Ryuujin","Llamar a M´nagalah","Llamar a Nyogtha","Llamar a Ossadogowah","Llamar a Rlim Shaikorth",
+const Grimorio_traer_monstruos_o_dioses2 = ["Lamar a la Negrura","Llamar a los zombis","Llamar a Mappo no Ryuujin","Llamar a M´nagalah","Llamar a Nyogtha","Llamar a Ossadogowah","Llamar a Rlim Shaikorth",
 "Llamar a Saaitii","Llamar a Shub-Niggurath","Llamar a un avatar del Ser sin Piel","Llamar a Yibb-Tstll","Llamar a Yig","Llamar a Yog-Sothoth","Llamar a Zu-Che-Quon",
 "Llamar al Guardián de la Lente Lunar","Llamar al Hombre Astado","Llamar al Ser sin Piel","Luz de la verdad sagrada","Molestar a las crias","Promesa innombrable","Suplicar a Caronte"]
 
-var Grimorio_transformacion = ["Acelerar","Acelerar la voz de las profundidades","Alcanzar","Aliento del kappa","Apariencia humana","Arbusto humano","Cántico de residencia","Controlar piel",
+const Grimorio_transformacion = ["Acelerar","Acelerar la voz de las profundidades","Alcanzar","Aliento del kappa","Apariencia humana","Arbusto humano","Cántico de residencia","Controlar piel",
 "Corrupción de lo sagrado","Cortar lazos cordiales","Destrasferencia","Don de Innanna","Fabricar droga de Liao","Imitar apariencia","Incorpóreo de la red","Infuencia benévola","Intercambio de mente",
 "Máscara de muerte","Mirada interior","Ojos de zombi","Poseer cadáver","Posesión","Sentidos demoníacos","Sofocar sopecha","Trasferencia de mente","Transferir alma","Transferir órgano",
 "Transferir parte corporal","Transformación","Transformación corporal de Gorgoroth","Volver incorpóreo","Yugo de la lengua sangriente"]
 
-var Grimorio_viajes_y_trasportacion = ["Alma errante","Ascender la escalera de la inmortalidad","Ayudar a un soñador","Cajas-portal","Crear ventana","Desgarrar velo","Desvanecimiento",
+const Grimorio_viajes_y_trasportacion = ["Alma errante","Ascender la escalera de la inmortalidad","Ayudar a un soñador","Cajas-portal","Crear ventana","Desgarrar velo","Desvanecimiento",
 "Fabricar droga de Liao","Fabricar hidromiel espacial","Fabricar parakete","Levitar","Portal","Portal al limbo","Portal de los sueños","Portal temporal","Preparar droga onírica","Puerta onirológica",
 "Ritual del momoy","Trasladar portal","Ver portal","Viaje al otro lado","Volar"]
 
-var Grimorio_Aquelarre_blanca_1 = ["Alivio del Esclavo","Aliento de Salamandra","Amuleto contra la Ponzoña","Amuleto del Fullero","Amuleto del Fullero","Arma Inquebrantable","Bebedizo de Sueños",
+const Grimorio_Aquelarre_blanca_1 = ["Alivio del Esclavo","Aliento de Salamandra","Amuleto contra la Ponzoña","Amuleto del Fullero","Amuleto del Fullero","Arma Inquebrantable","Bebedizo de Sueños",
 "Bendición de San Nuño","Brazalete Solar","Dolores de Parto","Leche de Sapiencia","Saber de Partera","Vitriolo Salvaje",]
 
-var Grimorio_Aquelarre_negra_1 = ["Amor","Atadura del Deseo","Cerradura Maldita","Discordia","Lámpara de Búsqueda","Lujuria","Polvos de Seducción",]
+const Grimorio_Aquelarre_negra_1 = ["Amor","Atadura del Deseo","Cerradura Maldita","Discordia","Lámpara de Búsqueda","Lujuria","Polvos de Seducción",]
 
-var Grimorio_Aquelarre_infernal_1 = ["Maldición"]
+const Grimorio_Aquelarre_infernal_1 = ["Maldición"]
 
-var Grimorio_Aquelarre_blanca_2 = ["Bálsamo de Curación","Bendición de Pepin","Don de Tritón","Expulsar Enfermedades","Filtro de Inteligencia","Guarda contra Embrujos","Infusión de Serenidad",
+const Grimorio_Aquelarre_blanca_2 = ["Bálsamo de Curación","Bendición de Pepin","Don de Tritón","Expulsar Enfermedades","Filtro de Inteligencia","Guarda contra Embrujos","Infusión de Serenidad",
 "Intuir la Magia","Licor Sedante","Mal de Ojo","Mal del Tullido","Maldición de Caín","Manto de Salamandra","Medalla de Virilidad","Ojos de Lobo","Polvos de Hechicería","Polvos del Mentiroso",
 "Revocar Maldición","Sueño Reparador","Tinta Prodigiosa","Virtud de Doncella"]
 
-var Grimorio_Aquelarre_negra_2 = ["Atadura de Eunuco","Dominación","Estupidez","Morada Maldita","Sangre Negra","Subyugación",]
+const Grimorio_Aquelarre_negra_2 = ["Atadura de Eunuco","Dominación","Estupidez","Morada Maldita","Sangre Negra","Subyugación",]
 
-var Grimorio_Aquelarre_infernal_2 = ["Don de Surgat","Maldición de Ashavero"]
+const Grimorio_Aquelarre_infernal_2 = ["Don de Surgat","Maldición de Ashavero"]
 
-var Grimorio_Aquelarre_blanca_3 = ["Aceite de Grandeza","Aceite de Hechicerías","Alivio del Rabioso","Amansar Fieras","Arma Invicta","Bardas Encantadas","Clarividencia","Cuerda de Cridavents",
+const Grimorio_Aquelarre_blanca_3 = ["Aceite de Grandeza","Aceite de Hechicerías","Alivio del Rabioso","Amansar Fieras","Arma Invicta","Bardas Encantadas","Clarividencia","Cuerda de Cridavents",
 "Destilación de Quintaesencias","Don de Cipriano","Falsas Visiones","Guerra","Incienso de Cópula","Inquisición","Lengua de Babel","Mensaje Onírico","Piedra de Sanación","Polvos Elementales",
-"Prodigio de Amenón","Varita de Búsqueda","Velo de la Muerte","Visión de Futuro","",""]
+"Prodigio de Amenón","varita de Búsqueda","Velo de la Muerte","Visión de Futuro","",""]
 
-var Grimorio_Aquelarre_negra_3 = ["Deseo Carnal","Filtro de Olvido","Furia","Rostro de Ladrón","Vela de Temor","Veneno de Escorpión"]
+const Grimorio_Aquelarre_negra_3 = ["Deseo Carnal","Filtro de Olvido","Furia","Rostro de Ladrón","Vela de Temor","Veneno de Escorpión"]
 
-var Grimorio_Aquelarre_infernal_3 = ["Cadena de Silcharde","Filtro Amoroso","Oración Oscura"]
+const Grimorio_Aquelarre_infernal_3 = ["Cadena de Silcharde","Filtro Amoroso","Oración Oscura"]
 
-var Grimorio_Aquelarre_blanca_4 = ["Amuleto","Asesino de Fantasmas","Bendición de Hada","Bendición de Jonás","Bolsa de Duendes","Corazón de León","Cruz de Caravaca","Danza","Encanto del Viajero",
+const Grimorio_Aquelarre_blanca_4 = ["Amuleto","Asesino de Fantasmas","Bendición de Hada","Bendición de Jonás","Bolsa de Duendes","Corazón de León","Cruz de Caravaca","Danza","Encanto del Viajero",
 "Esencias de Éter","Hechizo Rojo","Invocación de Ánimas","Invocar al Fenicio","Manto de Sombras","Piel de Lobo","Purificar Ponzoñas","Rama de los Deseos","Ritual del Clavo","Sangre de Dragón",
 "Sombras Fantasmales","Talismán de Protección","Transmutación de Metales","Ungüento de Bruja","Vela de Difuntos","Vino de la Verdad"]
 
-var Grimorio_Aquelarre_negra_4 = ["Alas del Maligno","Anillo de Nigromancia","Arrancar la Esencia","Belleza","Calor Sofocante","Dibbuk","Esencia de Hostilidad","Filo Maldito","Herrumbre de Saturno",
+const Grimorio_Aquelarre_negra_4 = ["Alas del Maligno","Anillo de Nigromancia","Arrancar la Esencia","Belleza","Calor Sofocante","Dibbuk","Esencia de Hostilidad","Filo Maldito","Herrumbre de Saturno",
 "Maldición de la Vela","Mano de Gloria","Nigromancia","Regalo Envenenado"]
 
-var Grimorio_Aquelarre_infernal_4 = ["Alimento de Guland","Beso de Thamur","Maldición del Lobisome","Sangre de Upiro","Tormento",]
+const Grimorio_Aquelarre_infernal_4 = ["Alimento de Guland","Beso de Thamur","Maldición del Lobisome","Sangre de Upiro","Tormento",]
 
-var Grimorio_Aquelarre_blanca_5 = ["Alma de Estatua","Círculo de Protección","Dominio del Fuego","Don de Palabra","Entereza del Mártir","Expulsión","Filo Constelado","Guarda contra Maleficios",
+const Grimorio_Aquelarre_blanca_5 = ["Alma de Estatua","Círculo de Protección","Dominio del Fuego","Don de Palabra","Entereza del Mártir","Expulsión","Filo Constelado","Guarda contra Maleficios",
 "Hermosura","Homúnculo","Presteza","Refugio del Hechicero","Sabiduría","Susurro de los Secretos","Velo de Hada"]
 
-var Grimorio_Aquelarre_negra_5 = ["Demencia","Maldición del Gul","Maldición de la Herida","Maldición del Hierro","Maldición de Strigiles","Pellejo de Bestia","Saco de Quebradura","Trampa Goética",]
+const Grimorio_Aquelarre_negra_5 = ["Demencia","Maldición del Gul","Maldición de la Herida","Maldición del Hierro","Maldición de Strigiles","Pellejo de Bestia","Saco de Quebradura","Trampa Goética",]
 
-var Grimorio_Aquelarre_infernal_5 = ["Aliento del Diablo","Incubar Diablillo","Infortunio"]
+const Grimorio_Aquelarre_infernal_5 = ["Aliento del Diablo","Incubar Diablillo","Infortunio"]
 
-var Grimorio_Aquelarre_blanca_6 = ["Caldero Mágico","Espejo de Salomón","Fuerza de Gigante","Latón de Nuevas"]
+const Grimorio_Aquelarre_blanca_6 = ["Caldero Mágico","Espejo de Salomón","Fuerza de Gigante","Latón de Nuevas"]
 
-var Grimorio_Aquelarre_negra_6 = ["Aceite de Usurpación ","Condenación","Consultar a los Muertos","Golpe de la Parca","Hambruna","Maldición del Clavo","Maldición de la Bestia",]
+const Grimorio_Aquelarre_negra_6 = ["Aceite de Usurpación ","Condenación","Consultar a los Muertos","Golpe de la Parca","Hambruna","Maldición del Clavo","Maldición de la Bestia",]
 
-var Grimorio_Aquelarre_infernal_6 = ["Maldición de la Bruja","Misa Negra"]
+const Grimorio_Aquelarre_infernal_6 = ["Maldición de la Bruja","Misa Negra"]
 
-var Grimorio_Aquelarre_blanca_7 = ["","","","","","","","",]
+const Grimorio_Aquelarre_blanca_7 = ["","","","","","","","",]
 
-var Grimorio_Aquelarre_negra_7 = ["","","","","","","","",]
+const Grimorio_Aquelarre_negra_7 = ["","","","","","","","",]
 
-var Grimorio_Aquelarre_infernal_7 = ["","","","","","","","",]
+const Grimorio_Aquelarre_infernal_7 = ["","","","","","","","",]
 
 function Generarpdf(){
         var Criatura_pdf = document.getElementById("result");

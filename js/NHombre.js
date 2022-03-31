@@ -144,6 +144,7 @@
                          "En la sociedad hay un mal que debe ser erradicado.¿Cuál es este mal? (drogas, violencia, racismo, etc.).",
                          "Lo oculto (astrología, espiritualismo, tarot, etc.).",
                          "Política (conservador, soc ialista, liberal, etc .).",
+                         "El dinero es poder, y voy a amasar tanto como pueda (avaro, emprendedor, implacable, etc.).",
                          "Abanderado/ Activista (feminismo, igualdad de derechos, sindicalismo, etc.)."]
 
 
