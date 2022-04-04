@@ -247,14 +247,14 @@ const Byakhee = {
         Cordura : "Ver a un byakhee produce una pérdida de 1/1D6 Puntos de Cordura."
 }
 
-const Cthonian = {
+const Chthonian = {
         Nombre : "Cthonian" ,
-        FUE_max : 18 ,
-        FUE_min : 3 ,
+        FUE_max : 90 ,
+        FUE_min : 15 ,
         CON_max : 48 ,
         CON_min : 33 ,
-        TAM_max : 18 ,
-        TAM_min : 3 ,
+        TAM_max : 90 ,
+        TAM_min : 15 ,
         DES_max : 12 ,
         DES_min : 2 ,
         INT_max : 30 ,
@@ -274,6 +274,8 @@ const Color_surgido_del_espacio = {
         Nombre : "Color Surgido del espacio" ,
         FUE_max : 6 ,
         FUE_min : 1 ,
+        CON_max : 0 ,
+        CON_min : 0 ,
         DES_max : 24 ,
         DES_min : 14 ,
         INT_max : 24 ,
@@ -671,10 +673,10 @@ const Retoño_oscuro = {
 
 const Semilla_estelar = {
         Nombre : "Semillas estelares de Cthulhu" ,
-        FUE_max : 12 ,
-        FUE_min : 2 ,
-        CON_max : 18 ,
-        CON_min : 3 ,
+        FUE_max : 120 ,
+        FUE_min : 20 ,
+        CON_max : 90 ,
+        CON_min : 15 ,
         TAM_max : 18 ,
         TAM_min : 3 ,
         DES_max : 18 ,
@@ -766,7 +768,8 @@ const Insectos_de_shaggai = {
         FUE_min : 1 ,
         CON_max : 3 ,
         CON_min : 1 ,
-        TAM : 5 ,
+        TAM_max : 1 ,
+        TAM_min : 1 ,
         DES_max : 36 ,
         DES_min : 26 ,
         INT_max : 24 ,
@@ -882,8 +885,8 @@ const Sirviente_Glaaki = {
         Nombre : "Sirviente de Gla'aki" ,
         FUE_max : 18 ,
         FUE_min : 3 ,
-        CON_max : 18 ,
-        CON_min : 3 ,
+        CON_max : 36 ,
+        CON_min : 6 ,
         TAM_max : 18 ,
         TAM_min : 8 ,
         DES_max : 6 ,
@@ -1013,6 +1016,46 @@ const Yithiano = {
         Cordura : "Ver a un miembro de la Gran Raza produce una pérdida de 0/1D6 Puntos de Cordura."
 }
 
+const Numero_Criatura = [
+        "",
+        Angel_descarnado,
+        Antiguo,
+        Byakhee,
+        Chthonian,
+        Color_surgido_del_espacio,
+        Dagon_e_hidra,
+        Dhole,
+        Ghast,
+        Gnoph_keh,
+        Gul,
+        Habitante_de_las_arenas,
+        Hombre_serpiente,
+        Horrendo_cazador,
+        Lloigor,
+        Migo,
+        Perros_de_tindalos,
+        Polipo_volante,
+        Profundo,
+        Hibrido_profundo,
+        Reptante,
+        Retoño_oscuro,
+        Semilla_estelar,
+        Semilla_informe,
+        Ser_rata,
+        Servidor_de_los_otros_dioses,
+        Insectos_de_shaggai,
+        Shantak,
+        Shoggoth,
+        Señor_de_los_shoggoths_humano,
+        Señor_de_los_shoggoths,
+        Sirviente_Glaaki,
+        Tcho_tcho,
+        Vagabundo_dimensiona,
+        Vampiro_estelar,
+        Vampiro_de_fuego,
+        Yithiano
+]
+
 
 
 
@@ -1047,1297 +1090,239 @@ function Crear_criatura(){
 
         var Codigo_criatura = parseInt(Criatura.value);
 
+        let Codigo_Creacion = Numero_Criatura[Codigo_criatura]
+
         var Poder_especial_humano = "No";
 
-        var Habilidades = "No" ;
+        // var Habilidades = "No" ;
 
         //if de calculos para hechizos
-
-        var Probabilidad_hechizo_criatura = D100;
 
 
         // if criaturas
 
-        if (Codigo_criatura === 1) {
-
-        var Nombre_criatura = Angel_descarnado.Nombre;
-
-         var Fuerza_criatura = (Math.floor(Math.random() * (Angel_descarnado.FUE_max - Angel_descarnado.FUE_min + 1 ) + Angel_descarnado.FUE_min)) * 5;
-
-         var Constitucion_criatura = Math.floor(Math.random() * (Angel_descarnado.CON_max - Angel_descarnado.CON_min + 1 ) + Angel_descarnado.CON_min) * 5;
-
-         var Tamaño_criatura = Math.floor(Math.random() * (Angel_descarnado.TAM_max - Angel_descarnado.TAM_min + 1 ) + Angel_descarnado.TAM_min) * 5;
-
-         var Destresa_criatura = Math.floor(Math.random() * (Angel_descarnado.DES_max - Angel_descarnado.DES_min + 1 ) + Angel_descarnado.DES_min) * 5;
-
-         var Inteligencia_criatura = Math.floor(Math.random() * (Angel_descarnado.INT_max - Angel_descarnado.INT_min + 1 ) + Angel_descarnado.INT_min) * 5;
-
-         var Poder_criatura = Math.floor(Math.random() * (Angel_descarnado.POD_max - Angel_descarnado.POD_min + 1 ) + Angel_descarnado.POD_min) * 5;
-
-        var Movimiento_criatura = Angel_descarnado.Movimiento;
-
-        var Descripcion = Angel_descarnado.Descripcion_breve;
-
-        var Armadura = Angel_descarnado.Armadura;
-
-        var Cantidad_ataques = Angel_descarnado.Ataques_por_asalto;
-
-        var Ataques = Angel_descarnado.Ataques_de_combate;
-
-        var Habilidades = Angel_descarnado.Habilidades;
-
-        var Perdida_de_Cordura = Angel_descarnado.Cordura;
-
-        //  var Poder_especial_criatura = Angel_descarnado
-
-        }
 
 
-        else if (Codigo_criatura === 2) {
 
-        var Nombre_criatura = Antiguo.Nombre;
+        // if (Codigo_criatura === 12) {
 
-         var Fuerza_criatura = Math.floor(Math.random() * (Antiguo.FUE_max - Antiguo.FUE_min + 1 ) + Antiguo.FUE_min) * 5;
+        //         var Nombre_criatura = Hibrido_profundo.Nombre;
 
-         var Constitucion_criatura = Math.floor(Math.random() * (Antiguo.CON_max - Antiguo.CON_min + 1 ) + Antiguo.CON_min) * 5;
+        //         var Fuerza_criatura = Math.floor(Math.random() * (Hibrido_profundo.FUE_max - Hibrido_profundo.FUE_min + 1 ) + Hibrido_profundo.FUE_min) * 5;
 
-         var Tamaño_criatura = Math.floor(Math.random() * (Antiguo.TAM_max - Antiguo.TAM_min + 1 ) + Antiguo.TAM_min) * 5;
+        //         var Constitucion_criatura = Math.floor(Math.random() * (Hibrido_profundo.CON_max - Hibrido_profundo.CON_min + 1 ) + Hibrido_profundo.CON_min) * 5;
 
-         var Destresa_criatura = Math.floor(Math.random() * (Antiguo.DES_max - Antiguo.DES_min + 1 ) + Antiguo.DES_min) * 5;
+        //         var Tamaño_criatura = Math.floor(Math.random() * (Hibrido_profundo.TAM_max - Hibrido_profundo.TAM_min + 1 ) + Hibrido_profundo.TAM_min) * 5;
 
-         var Inteligencia_criatura = Math.floor(Math.random() * (Antiguo.INT_max - Antiguo.INT_min + 1 ) + Antiguo.INT_min) * 5;
+        //         var Destresa_criatura = Math.floor(Math.random() * (Hibrido_profundo.DES_max - Hibrido_profundo.DES_min + 1 ) + Hibrido_profundo.DES_min) * 5;
 
-         var Poder_criatura = Math.floor(Math.random() * (Antiguo.POD_max - Antiguo.POD_min + 1 ) + Antiguo.POD_min) * 5;
+        //         var Inteligencia_criatura = Math.floor(Math.random() * (Hibrido_profundo.INT_max - Hibrido_profundo.INT_min + 1 ) + Hibrido_profundo.INT_min) * 5;
 
-        var Movimiento_criatura = Antiguo.Movimiento;
+        //         var Apariencia_criatura = Math.floor(Math.random() * (Hibrido_profundo.APA_max - Hibrido_profundo.APA_min + 1 ) + Hibrido_profundo.APA_min) * 5;
 
-                if (Probabilidad_hechizo_criatura < 71){
+        //         var Poder_criatura = Math.floor(Math.random() * (Hibrido_profundo.POD_max - Hibrido_profundo.POD_min + 1 ) + Hibrido_profundo.POD_min) * 5;
 
-                        let Cantidad = Math.floor((Math.random() * (4 - 1 + 1 ) + 1))
+        //         var Movimiento_criatura = Hibrido_profundo.Movimiento;
 
-                        var Hechizo_criatura = ""
-                }
+        //         var Descripcion = Hibrido_profundo.Descripcion_breve;
 
-        var Poder_especial_criatura = Hechizo_criatura;
+        //         var Armadura = Hibrido_profundo.Armadura;
 
-        var Descripcion = Antiguo.Descripcion_breve;
+        //         var Cantidad_ataques = Hibrido_profundo.Ataques_por_asalto;
 
-        var Armadura = Antiguo.Armadura;
+        //         var Ataques = Hibrido_profundo.Ataques_de_combate;
 
-        var Cantidad_ataques = Antiguo.Ataques_por_asalto;
+        //         var Habilidades = Hibrido_profundo.Habilidades;
 
-        var Ataques = Antiguo.Ataques_de_combate;
-
-        var Habilidades = Antiguo.Habilidades;
-
-        var Perdida_de_Cordura = Antiguo.Cordura;
-
-        }
+        //         var Perdida_de_Cordura = Hibrido_profundo.Cordura;
 
 
-        else if (Codigo_criatura === 3) {
+        // }
 
-        var Nombre_criatura = Byakhee.Nombre;
+        // else if (Codigo_criatura === 26) {
 
-         var Fuerza_criatura = Math.floor(Math.random() * (Byakhee.FUE_max - Byakhee.FUE_min + 1 ) + Byakhee.FUE_min) * 5;
+        //         //forma humana
 
-         var Constitucion_criatura = Math.floor(Math.random() * (Byakhee.CON_max - Byakhee.CON_min + 1 ) + Byakhee.CON_min) * 5;
+        //         var Nombre_humano = Math.floor(Math.random() * Firstname_Man.length);
 
-         var Tamaño_criatura = Math.floor(Math.random() * (Byakhee.TAM_max - Byakhee.TAM_min + 1 ) + Byakhee.TAM_min) * 5;
+        //         var Fuerza_humano = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.FUE_max - Señor_de_los_shoggoths_humano.FUE_min + 1 ) + Señor_de_los_shoggoths_humano.FUE_min) * 5;
 
-         var Destresa_criatura = Math.floor(Math.random() * (Byakhee.DES_max - Byakhee.DES_min + 1 ) + Byakhee.DES_min) * 5;
+        //         var Constitucion_humano = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.CON_max - Señor_de_los_shoggoths_humano.CON_min + 1 ) + Señor_de_los_shoggoths_humano.CON_min) * 5;
 
-         var Inteligencia_criatura = Math.floor(Math.random() * (Byakhee.INT_max - Byakhee.INT_min + 1 ) + Byakhee.INT_min) * 5;
+        //         var Tamaño_humano = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.TAM_max - Señor_de_los_shoggoths_humano.TAM_min + 1 ) + Señor_de_los_shoggoths_humano.TAM_min) * 5;
 
-         var Poder_criatura = Math.floor(Math.random() * (Byakhee.POD_max - Byakhee.POD_min + 1 ) + Byakhee.POD_min) * 5;
+        //         var Destresa_humano = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.DES_max - Señor_de_los_shoggoths_humano.DES_min + 1 ) + Señor_de_los_shoggoths_humano.DES_min) * 5;
 
-        var Movimiento_criatura = Byakhee.Movimiento;
+        //         var Inteligencia_humano = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.INT_max - Señor_de_los_shoggoths_humano.INT_min + 1 ) + Señor_de_los_shoggoths_humano.INT_min) * 5;
 
-        var Descripcion = Byakhee.Descripcion_breve;
+        //         var Poder_humano = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.POD_max - Señor_de_los_shoggoths_humano.POD_min + 1 ) + Señor_de_los_shoggoths_humano.POD_min) * 5;
 
-        var Armadura = Byakhee.Armadura;
+        //         var Apariencia_humano = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.APA_max - Señor_de_los_shoggoths_humano.APA_min + 1 ) + Señor_de_los_shoggoths_humano.APA_min) * 5;
 
-        var Cantidad_ataques = Byakhee.Ataques_por_asalto;
+        //         var Educacion_humano = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.EDU_max - Señor_de_los_shoggoths_humano.EDU_min + 1 ) + Señor_de_los_shoggoths_humano.EDU_min) * 5;
 
-        var Ataques = Byakhee.Ataques_de_combate;
-
-        var Habilidades = Byakhee.Habilidades;
-
-        var Perdida_de_Cordura = Byakhee.Cordura;
-
-        }
+        //         var  Vida_humano  = Math.floor((Tamaño_humano+Constitucion_humano)/10);
         
+        //         var Magia_humano = (Poder_humano/5);
 
-        else if (Codigo_criatura === 4) {
+        //         var Movimiento_humano = Señor_de_los_shoggoths_humano.Movimiento;
 
-        var Nombre_criatura = Cthonian.Nombre;
+        //         var Descripcion_humano = Señor_de_los_shoggoths_humano.Descripcion_breve;
 
-         var Fuerza_criatura = Math.floor(Math.random() * (Cthonian.FUE_max - Cthonian.FUE_min + 1 ) + Cthonian.FUE_min) * 25;
+        //         var Armadura_humano = Señor_de_los_shoggoths_humano.Armadura;
 
-         var Constitucion_criatura = Math.floor(Math.random() * (Cthonian.CON_max - Cthonian.CON_min + 1 ) + Cthonian.CON_min) * 5;
+        //         var Cantidad_ataques_humano = Señor_de_los_shoggoths_humano.Ataques_por_asalto;
 
-         var Tamaño_criatura = Math.floor(Math.random() * (Cthonian.TAM_max - Cthonian.TAM_min + 1 ) + Cthonian.TAM_min) * 25;
+        //         var Ataques_humano = Señor_de_los_shoggoths_humano.Ataques_de_combate;
 
-         var Destresa_criatura = Math.floor(Math.random() * (Cthonian.DES_max - Cthonian.DES_min + 1 ) + Cthonian.DES_min) * 5;
+        //         var Habilidades_humano = Señor_de_los_shoggoths_humano.Habilidades;
 
-         var Inteligencia_criatura = Math.floor(Math.random() * (Cthonian.INT_max - Cthonian.INT_min + 1 ) + Cthonian.INT_min) * 5;
+        //         var Perdida_de_Cordura_humano = Señor_de_los_shoggoths_humano.Cordura;
 
-         var Poder_criatura = Math.floor(Math.random() * (Cthonian.POD_max - Cthonian.POD_min + 1 ) + Cthonian.POD_min) * 5;
+        //         var Corpulencia = Fuerza_humano + Tamaño_humano;
 
-        var Movimiento_criatura = Cthonian.Movimiento;
+        //         if (Corpulencia < 85){
 
-        var Descripcion = Cthonian.Descripcion_breve;
+        //                 var Corpulencia_humano = -1
+        //                 var Daño_extra_humano = -1
+        //         }
 
-        var Armadura = Cthonian.Armadura;
+        //         else if (Corpulencia < 125){
 
-        var Cantidad_ataques = Cthonian.Ataques_por_asalto;
+        //                 var Corpulencia_humano = 0
+        //                 var Daño_extra_humano = 0
+        //         }
 
-        var Ataques = Cthonian.Ataques_de_combate;
+        //         else if (Corpulencia < 165){
 
-        var Habilidades = Cthonian.Habilidades;
+        //                 var Corpulencia_humano = 1
+        //                 var Daño_extra_humano = "1D4"
+        //         }
 
-        var Perdida_de_Cordura = Cthonian.Cordura;
+        //         else if (Corpulencia < 205){
 
-        }
+        //                 var Corpulencia_humano = 2
+        //                 var Daño_extra_humano = "1D6"
+        //         }
 
+        //         else {
 
-        else if (Codigo_criatura === 5) {
+        //                 var Corpulencia_humano = 3
+        //                 var Daño_extra_humano = "2D6"
+        //         }
 
-        var Nombre_criatura = Color_surgido_del_espacio.Nombre;
 
-         var Fuerza_criatura = Math.floor(Math.random() * (Color_surgido_del_espacio.FUE_max - Color_surgido_del_espacio.FUE_min + 1 ) + Color_surgido_del_espacio.FUE_min) * 5;
+        //         // forma real
 
-        var Constitucion_criatura = 0;
-        
-         var Destresa_criatura = Math.floor(Math.random() * (Color_surgido_del_espacio.DES_max - Color_surgido_del_espacio.DES_min + 1 ) + Color_surgido_del_espacio.DES_min) * 5;
-        
-         var Inteligencia_criatura = Math.floor(Math.random() * (Color_surgido_del_espacio.INT_max - Color_surgido_del_espacio.INT_min + 1 ) + Color_surgido_del_espacio.INT_min) * 5;
-        
-         var Poder_criatura = Math.floor(Math.random() * (Color_surgido_del_espacio.POD_max - Color_surgido_del_espacio.POD_min + 1 ) + Color_surgido_del_espacio.POD_min) * 5;
+        //         var Nombre_criatura = Señor_de_los_shoggoths.Nombre;
 
-        var Tamaño_criatura = Poder_criatura;
+        //         var Fuerza_criatura = Math.floor(Math.random() * (Señor_de_los_shoggoths.FUE_max - Señor_de_los_shoggoths.FUE_min + 1 ) + Señor_de_los_shoggoths.FUE_min) * 5;
 
-        var Movimiento_criatura = Color_surgido_del_espacio.Movimiento;
+        //         var Constitucion_criatura = Math.floor(Math.random() * (Señor_de_los_shoggoths.CON_max - Señor_de_los_shoggoths.CON_min + 1 ) + Señor_de_los_shoggoths.CON_min) * 5;
 
-        var Descripcion = Color_surgido_del_espacio.Descripcion_breve;
+        //         var Tamaño_criatura = Math.floor(Math.random() * (Señor_de_los_shoggoths.TAM_max - Señor_de_los_shoggoths.TAM_min + 1 ) + Señor_de_los_shoggoths.TAM_min) * 5;
 
-        var Armadura = Color_surgido_del_espacio.Armadura;
+        //         var Destresa_criatura = Math.floor(Math.random() * (Señor_de_los_shoggoths.DES_max - Señor_de_los_shoggoths.DES_min + 1 ) + Señor_de_los_shoggoths.DES_min) * 5;
 
-        var Cantidad_ataques = Color_surgido_del_espacio.Ataques_por_asalto;
+        //         var Inteligencia_criatura = Math.floor(Math.random() * (Señor_de_los_shoggoths.INT_max - Señor_de_los_shoggoths.INT_min + 1 ) + Señor_de_los_shoggoths.INT_min) * 5;
 
-        var Ataques = Color_surgido_del_espacio.Ataques_de_combate;
+        //         var Poder_criatura = Math.floor(Math.random() * (Señor_de_los_shoggoths.POD_max - Señor_de_los_shoggoths.POD_min + 1 ) + Señor_de_los_shoggoths.POD_min) * 5;
 
-        var Habilidades = Color_surgido_del_espacio.Habilidades;
+        //         var Movimiento_criatura = Señor_de_los_shoggoths.Movimiento;
 
-        var Perdida_de_Cordura = Color_surgido_del_espacio.Cordura;
+        //         var Descripcion = Señor_de_los_shoggoths.Descripcion_breve;
 
-        }
+        //         var Armadura = Señor_de_los_shoggoths.Armadura;
 
-        
-        else if (Codigo_criatura === 6) {
+        //         var Cantidad_ataques = Señor_de_los_shoggoths.Ataques_por_asalto;
 
-                var Nombre_criatura = Dagon_e_hidra.Nombre;
+        //         var Ataques = Señor_de_los_shoggoths.Ataques_de_combate;
 
-                var Fuerza_criatura = Dagon_e_hidra.FUE_max;
+        //         var Habilidades = Señor_de_los_shoggoths.Habilidades;
 
-                var Constitucion_criatura = Dagon_e_hidra.CON_max;
+        //         var Perdida_de_Cordura = Señor_de_los_shoggoths.Cordura;
 
-                var Tamaño_criatura = Dagon_e_hidra.TAM_max;
 
-                var Destresa_criatura = Dagon_e_hidra.DES_max;
-
-                var Inteligencia_criatura = Dagon_e_hidra.INT_max;
-
-                var Poder_criatura = Dagon_e_hidra.POD_max;
-
-                var Movimiento_criatura = Dagon_e_hidra.Movimiento;
-
-                var Descripcion = Dagon_e_hidra.Descripcion_breve;
-
-                var Armadura = Dagon_e_hidra.Armadura;
-
-                var Cantidad_ataques = Dagon_e_hidra.Ataques_por_asalto;
-
-                var Ataques = Dagon_e_hidra.Ataques_de_combate;
-
-                var Habilidades = Dagon_e_hidra.Habilidades;
-
-                var Perdida_de_Cordura = Dagon_e_hidra.Cordura;
-
-
-        }
-
-
-
-        else if (Codigo_criatura === 7) {
-
-                var Nombre_criatura = Dhole.Nombre;
-
-                var Fuerza_criatura = Math.floor(Math.random() * (Dhole.FUE_max - Dhole.FUE_min + 1 ) + Dhole.FUE_min) * 5;
-
-                var Constitucion_criatura = Math.floor(Math.random() * (Dhole.CON_max - Dhole.CON_min + 1 ) + Dhole.CON_min) * 5;
-
-                var Tamaño_criatura = Math.floor(Math.random() * ((Dhole.TAM_max + (Fuerza_criatura/5)) - Dhole.TAM_min + 1 ) + Dhole.TAM_min) * 5;
-
-                var Destresa_criatura = Math.floor(Math.random() * (Dhole.DES_max - Dhole.DES_min + 1 ) + Dhole.DES_min) * 5;
-
-                var Inteligencia_criatura = Math.floor(Math.random() * (Dhole.INT_max - Dhole.INT_min + 1 ) + Dhole.INT_min) * 5;
-
-                var Poder_criatura = Math.floor(Math.random() * (Dhole.POD_max - Dhole.POD_min + 1 ) + Dhole.POD_min) * 5;
-
-                var Movimiento_criatura = Dhole.Movimiento;
-
-                var Descripcion = Dhole.Descripcion_breve;
-
-                var Armadura = Dhole.Armadura;
-
-                var Cantidad_ataques = Dhole.Ataques_por_asalto;
-
-                var Ataques = Dhole.Ataques_de_combate;
-
-                var Habilidades = Dhole.Habilidades;
-
-                var Perdida_de_Cordura = Dhole.Cordura;
-
-
-        }
-
-
-        else if (Codigo_criatura === 8) {
-
-                var Nombre_criatura = Ghast.Nombre;
-
-                var Fuerza_criatura = Math.floor(Math.random() * (Ghast.FUE_max - Ghast.FUE_min + 1 ) + Ghast.FUE_min) * 5;
-
-                var Constitucion_criatura = Math.floor(Math.random() * (Ghast.CON_max - Ghast.CON_min + 1 ) + Ghast.CON_min) * 5;
-
-                var Tamaño_criatura = Math.floor(Math.random() * (Ghast.TAM_max - Ghast.TAM_min + 1 ) + Ghast.TAM_min) * 5;
-
-                var Destresa_criatura = Math.floor(Math.random() * (Ghast.DES_max - Ghast.DES_min + 1 ) + Ghast.DES_min) * 5;
-
-                var Inteligencia_criatura = Math.floor(Math.random() * (Ghast.INT_max - Ghast.INT_min + 1 ) + Ghast.INT_min) * 5;
-
-                var Poder_criatura = Math.floor(Math.random() * (Ghast.POD_max - Ghast.POD_min + 1 ) + Ghast.POD_min) * 5;
-
-                var Movimiento_criatura = Ghast.Movimiento;
-
-                var Descripcion = Ghast.Descripcion_breve;
-
-                var Armadura = Ghast.Armadura;
-
-                var Cantidad_ataques = Ghast.Ataques_por_asalto;
-
-                var Ataques = Ghast.Ataques_de_combate;
-
-                var Habilidades = Ghast.Habilidades;
-
-                var Perdida_de_Cordura = Ghast.Cordura;
-
-
-        }
-
-        else if (Codigo_criatura === 9) {
-
-                var Nombre_criatura = Gnoph_keh.Nombre;
-
-                var Fuerza_criatura = Math.floor(Math.random() * (Gnoph_keh.FUE_max - Gnoph_keh.FUE_min + 1 ) + Gnoph_keh.FUE_min) * 5;
-
-                var Constitucion_criatura = Math.floor(Math.random() * (Gnoph_keh.CON_max - Gnoph_keh.CON_min + 1 ) + Gnoph_keh.CON_min) * 5;
-
-                var Tamaño_criatura = Math.floor(Math.random() * (Gnoph_keh.TAM_max - Gnoph_keh.TAM_min + 1 ) + Gnoph_keh.TAM_min) * 5;
-
-                var Destresa_criatura = Math.floor(Math.random() * (Gnoph_keh.DES_max - Gnoph_keh.DES_min + 1 ) + Gnoph_keh.DES_min) * 5;
-
-                var Inteligencia_criatura = Math.floor(Math.random() * (Gnoph_keh.INT_max - Gnoph_keh.INT_min + 1 ) + Gnoph_keh.INT_min) * 5;
-
-                var Poder_criatura = Math.floor(Math.random() * (Gnoph_keh.POD_max - Gnoph_keh.POD_min + 1 ) + Gnoph_keh.POD_min) * 5;
-
-                var Movimiento_criatura = Gnoph_keh.Movimiento;
-
-                var Descripcion = Gnoph_keh.Descripcion_breve;
-
-                var Armadura = Gnoph_keh.Armadura;
-
-                var Cantidad_ataques = Gnoph_keh.Ataques_por_asalto;
-
-                var Ataques = Gnoph_keh.Ataques_de_combate;
-
-                var Habilidades = Gnoph_keh.Habilidades;
-
-                var Perdida_de_Cordura = Gnoph_keh.Cordura;
-
-
-        }
-
-        else if (Codigo_criatura === 10) {
-
-                var Nombre_criatura = Gul.Nombre;
-
-                var Fuerza_criatura = Math.floor(Math.random() * (Gul.FUE_max - Gul.FUE_min + 1 ) + Gul.FUE_min) * 5;
-
-                var Constitucion_criatura = Math.floor(Math.random() * (Gul.CON_max - Gul.CON_min + 1 ) + Gul.CON_min) * 5;
-
-                var Tamaño_criatura = Math.floor(Math.random() * (Gul.TAM_max - Gul.TAM_min + 1 ) + Gul.TAM_min) * 5;
-
-                var Destresa_criatura = Math.floor(Math.random() * (Gul.DES_max - Gul.DES_min + 1 ) + Gul.DES_min) * 5;
-
-                var Inteligencia_criatura = Math.floor(Math.random() * (Gul.INT_max - Gul.INT_min + 1 ) + Gul.INT_min) * 5;
-
-                var Poder_criatura = Math.floor(Math.random() * (Gul.POD_max - Gul.POD_min + 1 ) + Gul.POD_min) * 5;
-
-                var Movimiento_criatura = Gul.Movimiento;
-
-                var Descripcion = Gul.Descripcion_breve;
-
-                var Armadura = Gul.Armadura;
-
-                var Cantidad_ataques = Gul.Ataques_por_asalto;
-
-                var Ataques = Gul.Ataques_de_combate;
-
-                var Habilidades = Gul.Habilidades;
-
-                var Perdida_de_Cordura = Gul.Cordura;
-
-
-        }
-
-        else if (Codigo_criatura === 11) {
-
-                var Nombre_criatura = Habitante_de_las_arenas.Nombre;
-
-                var Fuerza_criatura = Math.floor(Math.random() * (Habitante_de_las_arenas.FUE_max - Habitante_de_las_arenas.FUE_min + 1 ) + Habitante_de_las_arenas.FUE_min) * 5;
-
-                var Constitucion_criatura = Math.floor(Math.random() * (Habitante_de_las_arenas.CON_max - Habitante_de_las_arenas.CON_min + 1 ) + Habitante_de_las_arenas.CON_min) * 5;
-
-                var Tamaño_criatura = Math.floor(Math.random() * (Habitante_de_las_arenas.TAM_max - Habitante_de_las_arenas.TAM_min + 1 ) + Habitante_de_las_arenas.TAM_min) * 5;
-
-                var Destresa_criatura = Math.floor(Math.random() * (Habitante_de_las_arenas.DES_max - Habitante_de_las_arenas.DES_min + 1 ) + Habitante_de_las_arenas.DES_min) * 5;
-
-                var Inteligencia_criatura = Math.floor(Math.random() * (Habitante_de_las_arenas.INT_max - Habitante_de_las_arenas.INT_min + 1 ) + Habitante_de_las_arenas.INT_min) * 5;
-
-                var Poder_criatura = Math.floor(Math.random() * (Habitante_de_las_arenas.POD_max - Habitante_de_las_arenas.POD_min + 1 ) + Habitante_de_las_arenas.POD_min) * 5;
-
-                var Movimiento_criatura = Habitante_de_las_arenas.Movimiento;
-
-                var Descripcion = Habitante_de_las_arenas.Descripcion_breve;
-
-                var Armadura = Habitante_de_las_arenas.Armadura;
-
-                var Cantidad_ataques = Habitante_de_las_arenas.Ataques_por_asalto;
-
-                var Ataques = Habitante_de_las_arenas.Ataques_de_combate;
-
-                var Habilidades = Habitante_de_las_arenas.Habilidades;
-
-                var Perdida_de_Cordura = Habitante_de_las_arenas.Cordura;
-
-
-        }
-
-        else if (Codigo_criatura === 12) {
-
-                var Nombre_criatura = Hibrido_profundo.Nombre;
-
-                var Fuerza_criatura = Math.floor(Math.random() * (Hibrido_profundo.FUE_max - Hibrido_profundo.FUE_min + 1 ) + Hibrido_profundo.FUE_min) * 5;
-
-                var Constitucion_criatura = Math.floor(Math.random() * (Hibrido_profundo.CON_max - Hibrido_profundo.CON_min + 1 ) + Hibrido_profundo.CON_min) * 5;
-
-                var Tamaño_criatura = Math.floor(Math.random() * (Hibrido_profundo.TAM_max - Hibrido_profundo.TAM_min + 1 ) + Hibrido_profundo.TAM_min) * 5;
-
-                var Destresa_criatura = Math.floor(Math.random() * (Hibrido_profundo.DES_max - Hibrido_profundo.DES_min + 1 ) + Hibrido_profundo.DES_min) * 5;
-
-                var Inteligencia_criatura = Math.floor(Math.random() * (Hibrido_profundo.INT_max - Hibrido_profundo.INT_min + 1 ) + Hibrido_profundo.INT_min) * 5;
-
-                var Apariencia_criatura = Math.floor(Math.random() * (Hibrido_profundo.APA_max - Hibrido_profundo.APA_min + 1 ) + Hibrido_profundo.APA_min) * 5;
-
-                var Poder_criatura = Math.floor(Math.random() * (Hibrido_profundo.POD_max - Hibrido_profundo.POD_min + 1 ) + Hibrido_profundo.POD_min) * 5;
-
-                var Movimiento_criatura = Hibrido_profundo.Movimiento;
-
-                var Descripcion = Hibrido_profundo.Descripcion_breve;
-
-                var Armadura = Hibrido_profundo.Armadura;
-
-                var Cantidad_ataques = Hibrido_profundo.Ataques_por_asalto;
-
-                var Ataques = Hibrido_profundo.Ataques_de_combate;
-
-                var Habilidades = Hibrido_profundo.Habilidades;
-
-                var Perdida_de_Cordura = Hibrido_profundo.Cordura;
-
-
-        }
-
-        else if (Codigo_criatura === 13) {
-
-                var Nombre_criatura = Hombre_serpiente.Nombre;
-
-                var Fuerza_criatura = Math.floor(Math.random() * (Hombre_serpiente.FUE_max - Hombre_serpiente.FUE_min + 1 ) + Hombre_serpiente.FUE_min) * 5;
-
-                var Constitucion_criatura = Math.floor(Math.random() * (Hombre_serpiente.CON_max - Hombre_serpiente.CON_min + 1 ) + Hombre_serpiente.CON_min) * 5;
-
-                var Tamaño_criatura = Math.floor(Math.random() * (Hombre_serpiente.TAM_max - Hombre_serpiente.TAM_min + 1 ) + Hombre_serpiente.TAM_min) * 5;
-
-                var Destresa_criatura = Math.floor(Math.random() * (Hombre_serpiente.DES_max - Hombre_serpiente.DES_min + 1 ) + Hombre_serpiente.DES_min) * 5;
-
-                var Inteligencia_criatura = Math.floor(Math.random() * (Hombre_serpiente.INT_max - Hombre_serpiente.INT_min + 1 ) + Hombre_serpiente.INT_min) * 5;
-
-                var Poder_criatura = Math.floor(Math.random() * (Hombre_serpiente.POD_max - Hombre_serpiente.POD_min + 1 ) + Hombre_serpiente.POD_min) * 5;
-
-                var Movimiento_criatura = Hombre_serpiente.Movimiento;
-
-                var Descripcion = Hombre_serpiente.Descripcion_breve;
-
-                var Armadura = Hombre_serpiente.Armadura;
-
-                var Cantidad_ataques = Hombre_serpiente.Ataques_por_asalto;
-
-                var Ataques = Hombre_serpiente.Ataques_de_combate;
-
-                var Habilidades = Hombre_serpiente.Habilidades;
-
-                var Perdida_de_Cordura = Hombre_serpiente.Cordura;
-
-
-        }
-
-        else if (Codigo_criatura === 14) {
-
-                var Nombre_criatura = Horrendo_cazador.Nombre;
-
-                var Fuerza_criatura = Math.floor(Math.random() * (Horrendo_cazador.FUE_max - Horrendo_cazador.FUE_min + 1 ) + Horrendo_cazador.FUE_min) * 5;
-
-                var Constitucion_criatura = Math.floor(Math.random() * (Horrendo_cazador.CON_max - Horrendo_cazador.CON_min + 1 ) + Horrendo_cazador.CON_min) * 5;
-
-                var Tamaño_criatura = Math.floor(Math.random() * (Horrendo_cazador.TAM_max - Horrendo_cazador.TAM_min + 1 ) + Horrendo_cazador.TAM_min) * 5;
-
-                var Destresa_criatura = Math.floor(Math.random() * (Horrendo_cazador.DES_max - Horrendo_cazador.DES_min + 1 ) + Horrendo_cazador.DES_min) * 5;
-
-                var Inteligencia_criatura = Math.floor(Math.random() * (Horrendo_cazador.INT_max - Horrendo_cazador.INT_min + 1 ) + Horrendo_cazador.INT_min) * 5;
-
-                var Poder_criatura = Math.floor(Math.random() * (Horrendo_cazador.POD_max - Horrendo_cazador.POD_min + 1 ) + Horrendo_cazador.POD_min) * 5;
-
-                var Movimiento_criatura = Horrendo_cazador.Movimiento;
-
-                var Descripcion = Horrendo_cazador.Descripcion_breve;
-
-                var Armadura = Horrendo_cazador.Armadura;
-
-                var Cantidad_ataques = Horrendo_cazador.Ataques_por_asalto;
-
-                var Ataques = Horrendo_cazador.Ataques_de_combate;
-
-                var Habilidades = Horrendo_cazador.Habilidades;
-
-                var Perdida_de_Cordura = Horrendo_cazador.Cordura;
-
-
-        }
-
-        else if (Codigo_criatura === 15) {
-
-                var Nombre_criatura = El_horror_en_la_tinta.Nombre;
-
-                var Fuerza_criatura = El_horror_en_la_tinta.FUE_max
-
-                var Constitucion_criatura = El_horror_en_la_tinta.CON_max
-
-                var Tamaño_criatura = El_horror_en_la_tinta.TAM_max
-
-                var Destresa_criatura = El_horror_en_la_tinta.DES_max
-
-                var Inteligencia_criatura = El_horror_en_la_tinta.INT_max
-
-                var Poder_criatura = El_horror_en_la_tinta.POD_max
-
-                var Movimiento_criatura = El_horror_en_la_tinta.Movimiento;
-
-                var Descripcion = El_horror_en_la_tinta.Descripcion_breve;
-
-                var Armadura = El_horror_en_la_tinta.Armadura;
-
-                var Cantidad_ataques = El_horror_en_la_tinta.Ataques_por_asalto;
-
-                var Ataques = El_horror_en_la_tinta.Ataques_de_combate;
-
-                var Habilidades = El_horror_en_la_tinta.Habilidades;
-
-                var Perdida_de_Cordura = El_horror_en_la_tinta.Cordura;
-
-
-        }
-
-        else if (Codigo_criatura === 16) {
-
-                var Nombre_criatura = Insectos_de_shaggai.Nombre;
-
-                var Fuerza_criatura = Math.floor(Math.random() * (Insectos_de_shaggai.FUE_max - Insectos_de_shaggai.FUE_min + 1 ) + Insectos_de_shaggai.FUE_min) * 5;
-
-                var Constitucion_criatura = Math.floor(Math.random() * (Insectos_de_shaggai.CON_max - Insectos_de_shaggai.CON_min + 1 ) + Insectos_de_shaggai.CON_min) * 5;
-
-                var Tamaño_criatura = Insectos_de_shaggai.TAM;
-
-                var Destresa_criatura = Math.floor(Math.random() * (Insectos_de_shaggai.DES_max - Insectos_de_shaggai.DES_min + 1 ) + Insectos_de_shaggai.DES_min) * 5;
-
-                var Inteligencia_criatura = Math.floor(Math.random() * (Insectos_de_shaggai.INT_max - Insectos_de_shaggai.INT_min + 1 ) + Insectos_de_shaggai.INT_min) * 5;
-
-                var Poder_criatura = Math.floor(Math.random() * (Insectos_de_shaggai.POD_max - Insectos_de_shaggai.POD_min + 1 ) + Insectos_de_shaggai.POD_min) * 5;
-
-                var Movimiento_criatura = Insectos_de_shaggai.Movimiento;
-
-                var Descripcion = Insectos_de_shaggai.Descripcion_breve;
-
-                var Armadura = Insectos_de_shaggai.Armadura;
-
-                var Cantidad_ataques = Insectos_de_shaggai.Ataques_por_asalto;
-
-                var Ataques = Insectos_de_shaggai.Ataques_de_combate;
-
-                var Habilidades = Insectos_de_shaggai.Habilidades;
-
-                var Perdida_de_Cordura = Insectos_de_shaggai.Cordura;
-
-
-        }
-
-        else if (Codigo_criatura === 17) {
-
-                var Nombre_criatura = Lloigor.Nombre;
-
-                var Fuerza_criatura = Math.floor(Math.random() * (Lloigor.FUE_max - Lloigor.FUE_min + 1 ) + Lloigor.FUE_min) * 5;
-
-                var Constitucion_criatura = Math.floor(Math.random() * (Lloigor.CON_max - Lloigor.CON_min + 1 ) + Lloigor.CON_min) * 5;
-
-                var Tamaño_criatura = Math.floor(Math.random() * (Lloigor.TAM_max - Lloigor.TAM_min + 1 ) + Lloigor.TAM_min) * 50;
-
-                var Destresa_criatura = Math.floor(Math.random() * (Lloigor.DES_max - Lloigor.DES_min + 1 ) + Lloigor.DES_min) * 5;
-
-                var Inteligencia_criatura = Math.floor(Math.random() * (Lloigor.INT_max - Lloigor.INT_min + 1 ) + Lloigor.INT_min) * 5;
-
-                var Poder_criatura = Math.floor(Math.random() * (Lloigor.POD_max - Lloigor.POD_min + 1 ) + Lloigor.POD_min) * 5;
-
-                var Movimiento_criatura = Lloigor.Movimiento;
-
-                var Descripcion = Lloigor.Descripcion_breve;
-
-                var Armadura = Lloigor.Armadura;
-
-                var Cantidad_ataques = Lloigor.Ataques_por_asalto;
-
-                var Ataques = Lloigor.Ataques_de_combate;
-
-                var Habilidades = Lloigor.Habilidades;
-
-                var Perdida_de_Cordura = Lloigor.Cordura;
-
-
-        }
-
-        else if (Codigo_criatura === 18) {
-
-                var Nombre_criatura = Migo.Nombre;
-
-                var Fuerza_criatura = Math.floor(Math.random() * (Migo.FUE_max - Migo.FUE_min + 1 ) + Migo.FUE_min) * 5;
-
-                var Constitucion_criatura = Math.floor(Math.random() * (Migo.CON_max - Migo.CON_min + 1 ) + Migo.CON_min) * 5;
-
-                var Tamaño_criatura = Math.floor(Math.random() * (Migo.TAM_max - Migo.TAM_min + 1 ) + Migo.TAM_min) * 5;
-
-                var Destresa_criatura = Math.floor(Math.random() * (Migo.DES_max - Migo.DES_min + 1 ) + Migo.DES_min) * 5;
-
-                var Inteligencia_criatura = Math.floor(Math.random() * (Migo.INT_max - Migo.INT_min + 1 ) + Migo.INT_min) * 5;
-
-                var Poder_criatura = Math.floor(Math.random() * (Migo.POD_max - Migo.POD_min + 1 ) + Migo.POD_min) * 5;
-
-                var Movimiento_criatura = Migo.Movimiento;
-
-                var Descripcion = Migo.Descripcion_breve;
-
-                var Armadura = Migo.Armadura;
-
-                var Cantidad_ataques = Migo.Ataques_por_asalto;
-
-                var Ataques = Migo.Ataques_de_combate;
-
-                var Habilidades = Migo.Habilidades;
-
-                var Perdida_de_Cordura = Migo.Cordura;
-
-
-        }
-
-        else if (Codigo_criatura === 19) {
-
-                var Nombre_criatura = Perros_de_tindalos.Nombre;
-
-                var Fuerza_criatura = Math.floor(Math.random() * (Perros_de_tindalos.FUE_max - Perros_de_tindalos.FUE_min + 1 ) + Perros_de_tindalos.FUE_min) * 5;
-
-                var Constitucion_criatura = Math.floor(Math.random() * (Perros_de_tindalos.CON_max - Perros_de_tindalos.CON_min + 1 ) + Perros_de_tindalos.CON_min) * 5;
-
-                var Tamaño_criatura = Math.floor(Math.random() * (Perros_de_tindalos.TAM_max - Perros_de_tindalos.TAM_min + 1 ) + Perros_de_tindalos.TAM_min) * 5;
-
-                var Destresa_criatura = Math.floor(Math.random() * (Perros_de_tindalos.DES_max - Perros_de_tindalos.DES_min + 1 ) + Perros_de_tindalos.DES_min) * 5;
-
-                var Inteligencia_criatura = Math.floor(Math.random() * (Perros_de_tindalos.INT_max - Perros_de_tindalos.INT_min + 1 ) + Perros_de_tindalos.INT_min) * 5;
-
-                var Poder_criatura = Math.floor(Math.random() * (Perros_de_tindalos.POD_max - Perros_de_tindalos.POD_min + 1 ) + Perros_de_tindalos.POD_min) * 5;
-
-                var Movimiento_criatura = Perros_de_tindalos.Movimiento;
-
-                var Descripcion = Perros_de_tindalos.Descripcion_breve;
-
-                var Armadura = Perros_de_tindalos.Armadura;
-
-                var Cantidad_ataques = Perros_de_tindalos.Ataques_por_asalto;
-
-                var Ataques = Perros_de_tindalos.Ataques_de_combate;
-
-                var Habilidades = Perros_de_tindalos.Habilidades;
-
-                var Perdida_de_Cordura = Perros_de_tindalos.Cordura;
-
-
-        }
-
-        else if (Codigo_criatura === 20) {
-
-                var Nombre_criatura = Polipo_volante.Nombre;
-
-                var Fuerza_criatura = Math.floor(Math.random() * (Polipo_volante.FUE_max - Polipo_volante.FUE_min + 1 ) + Polipo_volante.FUE_min) * 5;
-
-                var Constitucion_criatura = Math.floor(Math.random() * (Polipo_volante.CON_max - Polipo_volante.CON_min + 1 ) + Polipo_volante.CON_min) * 5;
-
-                var Tamaño_criatura = Math.floor(Math.random() * (Polipo_volante.TAM_max - Polipo_volante.TAM_min + 1 ) + Polipo_volante.TAM_min) * 5;
-
-                var Destresa_criatura = Math.floor(Math.random() * (Polipo_volante.DES_max - Polipo_volante.DES_min + 1 ) + Polipo_volante.DES_min) * 5;
-
-                var Inteligencia_criatura = Math.floor(Math.random() * (Polipo_volante.INT_max - Polipo_volante.INT_min + 1 ) + Polipo_volante.INT_min) * 5;
-
-                var Poder_criatura = Math.floor(Math.random() * (Polipo_volante.POD_max - Polipo_volante.POD_min + 1 ) + Polipo_volante.POD_min) * 5;
-
-                var Movimiento_criatura = Polipo_volante.Movimiento;
-
-                var Descripcion = Polipo_volante.Descripcion_breve;
-
-                var Armadura = Polipo_volante.Armadura;
-
-                var Cantidad_ataques = Polipo_volante.Ataques_por_asalto;
-
-                var Ataques = Polipo_volante.Ataques_de_combate;
-
-                var Habilidades = Polipo_volante.Habilidades;
-
-                var Perdida_de_Cordura = Polipo_volante.Cordura;
-
-
-        }
-
-        else if (Codigo_criatura === 21) {
-
-                var Nombre_criatura = Profundo.Nombre;
-
-                var Fuerza_criatura = Math.floor(Math.random() * (Profundo.FUE_max - Profundo.FUE_min + 1 ) + Profundo.FUE_min) * 5;
-
-                var Constitucion_criatura = Math.floor(Math.random() * (Profundo.CON_max - Profundo.CON_min + 1 ) + Profundo.CON_min) * 5;
-
-                var Tamaño_criatura = Math.floor(Math.random() * (Profundo.TAM_max - Profundo.TAM_min + 1 ) + Profundo.TAM_min) * 5;
-
-                var Destresa_criatura = Math.floor(Math.random() * (Profundo.DES_max - Profundo.DES_min + 1 ) + Profundo.DES_min) * 5;
-
-                var Inteligencia_criatura = Math.floor(Math.random() * (Profundo.INT_max - Profundo.INT_min + 1 ) + Profundo.INT_min) * 5;
-
-                var Poder_criatura = Math.floor(Math.random() * (Profundo.POD_max - Profundo.POD_min + 1 ) + Profundo.POD_min) * 5;
-
-                var Movimiento_criatura = Profundo.Movimiento;
-
-                var Descripcion = Profundo.Descripcion_breve;
-
-                var Armadura = Profundo.Armadura;
-
-                var Cantidad_ataques = Profundo.Ataques_por_asalto;
-
-                var Ataques = Profundo.Ataques_de_combate;
-
-                var Habilidades = Profundo.Habilidades;
-
-                var Perdida_de_Cordura = Profundo.Cordura;
-
-
-        }
-
-        else if (Codigo_criatura === 22) {
-
-                var Nombre_criatura = Reptante.Nombre;
-
-                var Fuerza_criatura = Math.floor(Math.random() * (Reptante.FUE_max - Reptante.FUE_min + 1 ) + Reptante.FUE_min) * 5;
-
-                var Constitucion_criatura = Math.floor(Math.random() * (Reptante.CON_max - Reptante.CON_min + 1 ) + Reptante.CON_min) * 5;
-
-                var Tamaño_criatura = Math.floor(Math.random() * (Reptante.TAM_max - Reptante.TAM_min + 1 ) + Reptante.TAM_min) * 5;
-
-                var Destresa_criatura = Math.floor(Math.random() * (Reptante.DES_max - Reptante.DES_min + 1 ) + Reptante.DES_min) * 5;
-
-                var Inteligencia_criatura = Math.floor(Math.random() * (Reptante.INT_max - Reptante.INT_min + 1 ) + Reptante.INT_min) * 5;
-
-                var Poder_criatura = Math.floor(Math.random() * (Reptante.POD_max - Reptante.POD_min + 1 ) + Reptante.POD_min) * 5;
-
-                var Movimiento_criatura = Reptante.Movimiento;
-
-                var Descripcion = Reptante.Descripcion_breve;
-
-                var Armadura = Reptante.Armadura;
-
-                var Cantidad_ataques = Reptante.Ataques_por_asalto;
-
-                var Ataques = Reptante.Ataques_de_combate;
-
-                var Habilidades = Reptante.Habilidades;
-
-                var Perdida_de_Cordura = Reptante.Cordura;
-
-
-        }
-
-        else if (Codigo_criatura === 23) {
-
-                var Nombre_criatura = Retoño_oscuro.Nombre;
-
-                var Fuerza_criatura = Math.floor(Math.random() * (Retoño_oscuro.FUE_max - Retoño_oscuro.FUE_min + 1 ) + Retoño_oscuro.FUE_min) * 5;
-
-                var Constitucion_criatura = Math.floor(Math.random() * (Retoño_oscuro.CON_max - Retoño_oscuro.CON_min + 1 ) + Retoño_oscuro.CON_min) * 5;
-
-                var Tamaño_criatura = Math.floor(Math.random() * (Retoño_oscuro.TAM_max - Retoño_oscuro.TAM_min + 1 ) + Retoño_oscuro.TAM_min) * 5;
-
-                var Destresa_criatura = Math.floor(Math.random() * (Retoño_oscuro.DES_max - Retoño_oscuro.DES_min + 1 ) + Retoño_oscuro.DES_min) * 5;
-
-                var Inteligencia_criatura = Math.floor(Math.random() * (Retoño_oscuro.INT_max - Retoño_oscuro.INT_min + 1 ) + Retoño_oscuro.INT_min) * 5;
-
-                var Poder_criatura = Math.floor(Math.random() * (Retoño_oscuro.POD_max - Retoño_oscuro.POD_min + 1 ) + Retoño_oscuro.POD_min) * 5;
-
-                var Movimiento_criatura = Retoño_oscuro.Movimiento;
-
-                var Descripcion = Retoño_oscuro.Descripcion_breve;
-
-                var Armadura = Retoño_oscuro.Armadura;
-
-                var Cantidad_ataques = Retoño_oscuro.Ataques_por_asalto;
-
-                var Ataques = Retoño_oscuro.Ataques_de_combate;
-
-                var Habilidades = Retoño_oscuro.Habilidades;
-
-                var Perdida_de_Cordura = Retoño_oscuro.Cordura;
-
-
-        }
-
-        else if (Codigo_criatura === 24) {
-
-                var Nombre_criatura = Semilla_estelar.Nombre;
-
-                var Fuerza_criatura = Math.floor(Math.random() * (Semilla_estelar.FUE_max - Semilla_estelar.FUE_min + 1 ) + Semilla_estelar.FUE_min) * 50;
-
-                var Constitucion_criatura = Math.floor(Math.random() * (Semilla_estelar.CON_max - Semilla_estelar.CON_min + 1 ) + Semilla_estelar.CON_min) * 25;
-
-                var Tamaño_criatura = Math.floor(Math.random() * (Semilla_estelar.TAM_max - Semilla_estelar.TAM_min + 1 ) + Semilla_estelar.TAM_min) * 50;
-
-                var Destresa_criatura = Math.floor(Math.random() * (Semilla_estelar.DES_max - Semilla_estelar.DES_min + 1 ) + Semilla_estelar.DES_min) * 5;
-
-                var Inteligencia_criatura = Math.floor(Math.random() * (Semilla_estelar.INT_max - Semilla_estelar.INT_min + 1 ) + Semilla_estelar.INT_min) * 5;
-
-                var Poder_criatura = Math.floor(Math.random() * (Semilla_estelar.POD_max - Semilla_estelar.POD_min + 1 ) + Semilla_estelar.POD_min) * 5;
-
-                var Movimiento_criatura = Semilla_estelar.Movimiento;
-
-                var Descripcion = Semilla_estelar.Descripcion_breve;
-
-                var Armadura = Semilla_estelar.Armadura;
-
-                var Cantidad_ataques = Semilla_estelar.Ataques_por_asalto;
-
-                var Ataques = Semilla_estelar.Ataques_de_combate;
-
-                var Habilidades = Semilla_estelar.Habilidades;
-
-                var Perdida_de_Cordura = Semilla_estelar.Cordura;
-
-
-        }
-
-        else if (Codigo_criatura === 25) {
-
-                var Nombre_criatura = Semilla_informe.Nombre;
-
-                var Fuerza_criatura = Math.floor(Math.random() * (Semilla_informe.FUE_max - Semilla_informe.FUE_min + 1 ) + Semilla_informe.FUE_min) * 5;
-
-                var Constitucion_criatura = Math.floor(Math.random() * (Semilla_informe.CON_max - Semilla_informe.CON_min + 1 ) + Semilla_informe.CON_min) * 5;
-
-                var Tamaño_criatura = Math.floor(Math.random() * (Semilla_informe.TAM_max - Semilla_informe.TAM_min + 1 ) + Semilla_informe.TAM_min) * 5;
-
-                var Destresa_criatura = Math.floor(Math.random() * (Semilla_informe.DES_max - Semilla_informe.DES_min + 1 ) + Semilla_informe.DES_min) * 5;
-
-                var Inteligencia_criatura = Math.floor(Math.random() * (Semilla_informe.INT_max - Semilla_informe.INT_min + 1 ) + Semilla_informe.INT_min) * 5;
-
-                var Poder_criatura = Math.floor(Math.random() * (Semilla_informe.POD_max - Semilla_informe.POD_min + 1 ) + Semilla_informe.POD_min) * 5;
-
-                var Movimiento_criatura = Semilla_informe.Movimiento;
-
-                var Descripcion = Semilla_informe.Descripcion_breve;
-
-                var Armadura = Semilla_informe.Armadura;
-
-                var Cantidad_ataques = Semilla_informe.Ataques_por_asalto;
-
-                var Ataques = Semilla_informe.Ataques_de_combate;
-
-                var Habilidades = Semilla_informe.Habilidades;
-
-                var Perdida_de_Cordura = Semilla_informe.Cordura;
-
-
-        }
-
-        else if (Codigo_criatura === 26) {
-
-                //forma humana
-
-                var Nombre_humano = Math.floor(Math.random() * Firstname_Man.length);
-
-                var Fuerza_humano = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.FUE_max - Señor_de_los_shoggoths_humano.FUE_min + 1 ) + Señor_de_los_shoggoths_humano.FUE_min) * 5;
-
-                var Constitucion_humano = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.CON_max - Señor_de_los_shoggoths_humano.CON_min + 1 ) + Señor_de_los_shoggoths_humano.CON_min) * 5;
-
-                var Tamaño_humano = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.TAM_max - Señor_de_los_shoggoths_humano.TAM_min + 1 ) + Señor_de_los_shoggoths_humano.TAM_min) * 5;
-
-                var Destresa_humano = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.DES_max - Señor_de_los_shoggoths_humano.DES_min + 1 ) + Señor_de_los_shoggoths_humano.DES_min) * 5;
-
-                var Inteligencia_humano = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.INT_max - Señor_de_los_shoggoths_humano.INT_min + 1 ) + Señor_de_los_shoggoths_humano.INT_min) * 5;
-
-                var Poder_humano = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.POD_max - Señor_de_los_shoggoths_humano.POD_min + 1 ) + Señor_de_los_shoggoths_humano.POD_min) * 5;
-
-                var Apariencia_humano = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.APA_max - Señor_de_los_shoggoths_humano.APA_min + 1 ) + Señor_de_los_shoggoths_humano.APA_min) * 5;
-
-                var Educacion_humano = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.EDU_max - Señor_de_los_shoggoths_humano.EDU_min + 1 ) + Señor_de_los_shoggoths_humano.EDU_min) * 5;
-
-                var  Vida_humano  = Math.floor((Tamaño_humano+Constitucion_humano)/10);
-        
-                var Magia_humano = (Poder_humano/5);
-
-                var Movimiento_humano = Señor_de_los_shoggoths_humano.Movimiento;
-
-                var Descripcion_humano = Señor_de_los_shoggoths_humano.Descripcion_breve;
-
-                var Armadura_humano = Señor_de_los_shoggoths_humano.Armadura;
-
-                var Cantidad_ataques_humano = Señor_de_los_shoggoths_humano.Ataques_por_asalto;
-
-                var Ataques_humano = Señor_de_los_shoggoths_humano.Ataques_de_combate;
-
-                var Habilidades_humano = Señor_de_los_shoggoths_humano.Habilidades;
-
-                var Perdida_de_Cordura_humano = Señor_de_los_shoggoths_humano.Cordura;
-
-                var Corpulencia = Fuerza_humano + Tamaño_humano;
-
-                if (Corpulencia < 85){
-
-                        var Corpulencia_humano = -1
-                        var Daño_extra_humano = -1
-                }
-
-                else if (Corpulencia < 125){
-
-                        var Corpulencia_humano = 0
-                        var Daño_extra_humano = 0
-                }
-
-                else if (Corpulencia < 165){
-
-                        var Corpulencia_humano = 1
-                        var Daño_extra_humano = "1D4"
-                }
-
-                else if (Corpulencia < 205){
-
-                        var Corpulencia_humano = 2
-                        var Daño_extra_humano = "1D6"
-                }
-
-                else {
-
-                        var Corpulencia_humano = 3
-                        var Daño_extra_humano = "2D6"
-                }
-
-
-                // forma real
-
-                var Nombre_criatura = Señor_de_los_shoggoths.Nombre;
-
-                var Fuerza_criatura = Math.floor(Math.random() * (Señor_de_los_shoggoths.FUE_max - Señor_de_los_shoggoths.FUE_min + 1 ) + Señor_de_los_shoggoths.FUE_min) * 5;
-
-                var Constitucion_criatura = Math.floor(Math.random() * (Señor_de_los_shoggoths.CON_max - Señor_de_los_shoggoths.CON_min + 1 ) + Señor_de_los_shoggoths.CON_min) * 5;
-
-                var Tamaño_criatura = Math.floor(Math.random() * (Señor_de_los_shoggoths.TAM_max - Señor_de_los_shoggoths.TAM_min + 1 ) + Señor_de_los_shoggoths.TAM_min) * 5;
-
-                var Destresa_criatura = Math.floor(Math.random() * (Señor_de_los_shoggoths.DES_max - Señor_de_los_shoggoths.DES_min + 1 ) + Señor_de_los_shoggoths.DES_min) * 5;
-
-                var Inteligencia_criatura = Math.floor(Math.random() * (Señor_de_los_shoggoths.INT_max - Señor_de_los_shoggoths.INT_min + 1 ) + Señor_de_los_shoggoths.INT_min) * 5;
-
-                var Poder_criatura = Math.floor(Math.random() * (Señor_de_los_shoggoths.POD_max - Señor_de_los_shoggoths.POD_min + 1 ) + Señor_de_los_shoggoths.POD_min) * 5;
-
-                var Movimiento_criatura = Señor_de_los_shoggoths.Movimiento;
-
-                var Descripcion = Señor_de_los_shoggoths.Descripcion_breve;
-
-                var Armadura = Señor_de_los_shoggoths.Armadura;
-
-                var Cantidad_ataques = Señor_de_los_shoggoths.Ataques_por_asalto;
-
-                var Ataques = Señor_de_los_shoggoths.Ataques_de_combate;
-
-                var Habilidades = Señor_de_los_shoggoths.Habilidades;
-
-                var Perdida_de_Cordura = Señor_de_los_shoggoths.Cordura;
-
-
-        }
-
-        
-        else if (Codigo_criatura === 27) {
-
-                var Nombre_criatura = Ser_rata.Nombre;
-
-                var Fuerza_criatura = Math.floor(Math.random() * (Ser_rata.FUE_max - Ser_rata.FUE_min + 1 ) + Ser_rata.FUE_min) * 5;
-
-                var Constitucion_criatura = Math.floor(Math.random() * (Ser_rata.CON_max - Ser_rata.CON_min + 1 ) + Ser_rata.CON_min) * 5;
-
-                var Tamaño_criatura = Ser_rata.TAM;
-
-                var Destresa_criatura = Math.floor(Math.random() * (Ser_rata.DES_max - Ser_rata.DES_min + 1 ) + Ser_rata.DES_min) * 5;
-
-                var Inteligencia_criatura = Math.floor(Math.random() * (Ser_rata.INT_max - Ser_rata.INT_min + 1 ) + Ser_rata.INT_min) * 5;
-
-                var Poder_criatura = Math.floor(Math.random() * (Ser_rata.POD_max - Ser_rata.POD_min + 1 ) + Ser_rata.POD_min) * 5;
-
-                var Movimiento_criatura = Ser_rata.Movimiento;
-
-                var Descripcion = Ser_rata.Descripcion_breve;
-
-                var Armadura = Ser_rata.Armadura;
-
-                var Cantidad_ataques = Ser_rata.Ataques_por_asalto;
-
-                var Ataques = Ser_rata.Ataques_de_combate;
-
-                var Habilidades = Ser_rata.Habilidades;
-
-                var Perdida_de_Cordura = Ser_rata.Cordura;
-
-
-        }
-
-        else if (Codigo_criatura === 28) {
-
-                var Nombre_criatura = Servidor_de_los_otros_dioses.Nombre;
-
-                var Fuerza_criatura = Math.floor(Math.random() * (Servidor_de_los_otros_dioses.FUE_max - Servidor_de_los_otros_dioses.FUE_min + 1 ) + Servidor_de_los_otros_dioses.FUE_min) * 5;
-
-                var Constitucion_criatura = Math.floor(Math.random() * (Servidor_de_los_otros_dioses.CON_max - Servidor_de_los_otros_dioses.CON_min + 1 ) + Servidor_de_los_otros_dioses.CON_min) * 5;
-
-                var Tamaño_criatura = Math.floor(Math.random() * (Servidor_de_los_otros_dioses.TAM_max - Servidor_de_los_otros_dioses.TAM_min + 1 ) + Servidor_de_los_otros_dioses.TAM_min) * 5;
-
-                var Destresa_criatura = Math.floor(Math.random() * (Servidor_de_los_otros_dioses.DES_max - Servidor_de_los_otros_dioses.DES_min + 1 ) + Servidor_de_los_otros_dioses.DES_min) * 5;
-
-                var Inteligencia_criatura = Math.floor(Math.random() * (Servidor_de_los_otros_dioses.INT_max - Servidor_de_los_otros_dioses.INT_min + 1 ) + Servidor_de_los_otros_dioses.INT_min) * 5;
-
-                var Poder_criatura = Math.floor(Math.random() * (Servidor_de_los_otros_dioses.POD_max - Servidor_de_los_otros_dioses.POD_min + 1 ) + Servidor_de_los_otros_dioses.POD_min) * 5;
-
-                var Movimiento_criatura = Servidor_de_los_otros_dioses.Movimiento;
-
-                var Descripcion = Servidor_de_los_otros_dioses.Descripcion_breve;
-
-                var Armadura = Servidor_de_los_otros_dioses.Armadura;
-
-                var Cantidad_ataques = Servidor_de_los_otros_dioses.Ataques_por_asalto;
-
-                var Ataques = Servidor_de_los_otros_dioses.Ataques_de_combate;
-
-                var Habilidades = Servidor_de_los_otros_dioses.Habilidades;
-
-                var Perdida_de_Cordura = Servidor_de_los_otros_dioses.Cordura;
-
-
-        }
-
-        else if (Codigo_criatura === 29) {
-
-                var Nombre_criatura = Shantak.Nombre;
-
-                var Fuerza_criatura = Math.floor(Math.random() * (Shantak.FUE_max - Shantak.FUE_min + 1 ) + Shantak.FUE_min) * 5;
-
-                var Constitucion_criatura = Math.floor(Math.random() * (Shantak.CON_max - Shantak.CON_min + 1 ) + Shantak.CON_min) * 5;
-
-                var Tamaño_criatura = Math.floor(Math.random() * (Shantak.TAM_max - Shantak.TAM_min + 1 ) + Shantak.TAM_min) * 5;
-
-                var Destresa_criatura = Math.floor(Math.random() * (Shantak.DES_max - Shantak.DES_min + 1 ) + Shantak.DES_min) * 5;
-
-                var Inteligencia_criatura = Math.floor(Math.random() * (Shantak.INT_max - Shantak.INT_min + 1 ) + Shantak.INT_min) * 5;
-
-                var Poder_criatura = Math.floor(Math.random() * (Shantak.POD_max - Shantak.POD_min + 1 ) + Shantak.POD_min) * 5;
-
-                var Movimiento_criatura = Shantak.Movimiento;
-
-                var Descripcion = Shantak.Descripcion_breve;
-
-                var Armadura = Shantak.Armadura;
-
-                var Cantidad_ataques = Shantak.Ataques_por_asalto;
-
-                var Ataques = Shantak.Ataques_de_combate;
-
-                var Habilidades = Shantak.Habilidades;
-
-                var Perdida_de_Cordura = Shantak.Cordura;
-
-
-        }
-
-        else if (Codigo_criatura === 30) {
-
-                var Nombre_criatura = Shoggoth.Nombre;
-
-                var Fuerza_criatura = Math.floor(Math.random() * (Shoggoth.FUE_max - Shoggoth.FUE_min + 1 ) + Shoggoth.FUE_min) * 5;
-
-                var Constitucion_criatura = Math.floor(Math.random() * (Shoggoth.CON_max - Shoggoth.CON_min + 1 ) + Shoggoth.CON_min) * 5;
-
-                var Tamaño_criatura = Math.floor(Math.random() * (Shoggoth.TAM_max - Shoggoth.TAM_min + 1 ) + Shoggoth.TAM_min) * 5;
-
-                var Destresa_criatura = Math.floor(Math.random() * (Shoggoth.DES_max - Shoggoth.DES_min + 1 ) + Shoggoth.DES_min) * 5;
-
-                var Inteligencia_criatura = Math.floor(Math.random() * (Shoggoth.INT_max - Shoggoth.INT_min + 1 ) + Shoggoth.INT_min) * 5;
-
-                var Poder_criatura = Math.floor(Math.random() * (Shoggoth.POD_max - Shoggoth.POD_min + 1 ) + Shoggoth.POD_min) * 5;
-
-                var Movimiento_criatura = Shoggoth.Movimiento;
-
-                var Descripcion = Shoggoth.Descripcion_breve;
-
-                var Armadura = Shoggoth.Armadura;
-
-                var Cantidad_ataques = Shoggoth.Ataques_por_asalto;
-
-                var Ataques = Shoggoth.Ataques_de_combate;
-
-                var Habilidades = Shoggoth.Habilidades;
-
-                var Perdida_de_Cordura = Shoggoth.Cordura;
-
-
-        }
-
-        else if (Codigo_criatura === 31) {
-
-                var Nombre_criatura = Sirviente_Glaaki.Nombre;
-
-                var Fuerza_criatura = Math.floor(Math.random() * (Sirviente_Glaaki.FUE_max - Sirviente_Glaaki.FUE_min + 1 ) + Sirviente_Glaaki.FUE_min) * 5;
-
-                var Constitucion_criatura = Math.floor(Math.random() * (Sirviente_Glaaki.CON_max - Sirviente_Glaaki.CON_min + 1 ) + Sirviente_Glaaki.CON_min) * 10;
-
-                var Tamaño_criatura = Math.floor(Math.random() * (Sirviente_Glaaki.TAM_max - Sirviente_Glaaki.TAM_min + 1 ) + Sirviente_Glaaki.TAM_min) * 5;
-
-                var Destresa_criatura = Math.floor(Math.random() * (Sirviente_Glaaki.DES_max - Sirviente_Glaaki.DES_min + 1 ) + Sirviente_Glaaki.DES_min) * 5;
-
-                var Inteligencia_criatura = Math.floor(Math.random() * (Sirviente_Glaaki.INT_max - Sirviente_Glaaki.INT_min + 1 ) + Sirviente_Glaaki.INT_min) * 5;
-
-                var Poder_criatura = Math.floor(Math.random() * (Sirviente_Glaaki.POD_max - Sirviente_Glaaki.POD_min + 1 ) + Sirviente_Glaaki.POD_min) * 5;
-
-                var Movimiento_criatura = Sirviente_Glaaki.Movimiento;
-
-                var Descripcion = Sirviente_Glaaki.Descripcion_breve;
-
-                var Armadura = Sirviente_Glaaki.Armadura;
-
-                var Cantidad_ataques = Sirviente_Glaaki.Ataques_por_asalto;
-
-                var Ataques = Sirviente_Glaaki.Ataques_de_combate;
-
-                var Habilidades = Sirviente_Glaaki.Habilidades;
-
-                var Perdida_de_Cordura = Sirviente_Glaaki.Cordura;
-
-
-        }
-
-        else if (Codigo_criatura === 32) {
-
-                var Nombre_criatura = Tcho_tcho.Nombre;
-
-                var Fuerza_criatura = Math.floor(Math.random() * (Tcho_tcho.FUE_max - Tcho_tcho.FUE_min + 1 ) + Tcho_tcho.FUE_min) * 5;
-
-                var Constitucion_criatura = Math.floor(Math.random() * (Tcho_tcho.CON_max - Tcho_tcho.CON_min + 1 ) + Tcho_tcho.CON_min) * 5;
-
-                var Tamaño_criatura = Math.floor(Math.random() * (Tcho_tcho.TAM_max - Tcho_tcho.TAM_min + 1 ) + Tcho_tcho.TAM_min) * 5;
-
-                var Destresa_criatura = Math.floor(Math.random() * (Tcho_tcho.DES_max - Tcho_tcho.DES_min + 1 ) + Tcho_tcho.DES_min) * 5;
-
-                var Inteligencia_criatura = Math.floor(Math.random() * (Tcho_tcho.INT_max - Tcho_tcho.INT_min + 1 ) + Tcho_tcho.INT_min) * 5;
-
-                var Poder_criatura = Math.floor(Math.random() * (Tcho_tcho.POD_max - Tcho_tcho.POD_min + 1 ) + Tcho_tcho.POD_min) * 5;
-
-                var Movimiento_criatura = Tcho_tcho.Movimiento;
-
-                var Descripcion = Tcho_tcho.Descripcion_breve;
-
-                var Armadura = Tcho_tcho.Armadura;
-
-                var Cantidad_ataques = Tcho_tcho.Ataques_por_asalto;
-
-                var Ataques = Tcho_tcho.Ataques_de_combate;
-
-                var Habilidades = Tcho_tcho.Habilidades;
-
-                var Perdida_de_Cordura = Tcho_tcho.Cordura;
-
-
-        }
-
-        else if (Codigo_criatura === 33) {
-
-                var Nombre_criatura = Vagabundo_dimensiona.Nombre;
-
-                var Fuerza_criatura = Math.floor(Math.random() * (Vagabundo_dimensiona.FUE_max - Vagabundo_dimensiona.FUE_min + 1 ) + Vagabundo_dimensiona.FUE_min) * 5;
-
-                var Constitucion_criatura = Math.floor(Math.random() * (Vagabundo_dimensiona.CON_max - Vagabundo_dimensiona.CON_min + 1 ) + Vagabundo_dimensiona.CON_min) * 5;
-
-                var Tamaño_criatura = Math.floor(Math.random() * (Vagabundo_dimensiona.TAM_max - Vagabundo_dimensiona.TAM_min + 1 ) + Vagabundo_dimensiona.TAM_min) * 5;
-
-                var Destresa_criatura = Math.floor(Math.random() * (Vagabundo_dimensiona.DES_max - Vagabundo_dimensiona.DES_min + 1 ) + Vagabundo_dimensiona.DES_min) * 5;
-
-                var Inteligencia_criatura = Math.floor(Math.random() * (Vagabundo_dimensiona.INT_max - Vagabundo_dimensiona.INT_min + 1 ) + Vagabundo_dimensiona.INT_min) * 5;
-
-                var Poder_criatura = Math.floor(Math.random() * (Vagabundo_dimensiona.POD_max - Vagabundo_dimensiona.POD_min + 1 ) + Vagabundo_dimensiona.POD_min) * 5;
-
-                var Movimiento_criatura = Vagabundo_dimensiona.Movimiento;
-
-                var Descripcion = Vagabundo_dimensiona.Descripcion_breve;
-
-                var Armadura = Vagabundo_dimensiona.Armadura;
-
-                var Cantidad_ataques = Vagabundo_dimensiona.Ataques_por_asalto;
-
-                var Ataques = Vagabundo_dimensiona.Ataques_de_combate;
-
-                var Habilidades = Vagabundo_dimensiona.Habilidades;
-
-                var Perdida_de_Cordura = Vagabundo_dimensiona.Cordura;
-
-
-        }
-
-        else if (Codigo_criatura === 34) {
-
-                var Nombre_criatura = Vampiro_de_fuego.Nombre;
-
-                var Fuerza_criatura = 0;
-
-                var Constitucion_criatura = Math.floor(Math.random() * (Vampiro_de_fuego.CON_max - Vampiro_de_fuego.CON_min + 1 ) + Vampiro_de_fuego.CON_min) * 5;
-
-                var Tamaño_criatura = Vampiro_de_fuego.TAM;
-
-                var Destresa_criatura = Math.floor(Math.random() * (Vampiro_de_fuego.DES_max - Vampiro_de_fuego.DES_min + 1 ) + Vampiro_de_fuego.DES_min) * 5;
-
-                var Inteligencia_criatura = Math.floor(Math.random() * (Vampiro_de_fuego.INT_max - Vampiro_de_fuego.INT_min + 1 ) + Vampiro_de_fuego.INT_min) * 5;
-
-                var Poder_criatura = Math.floor(Math.random() * (Vampiro_de_fuego.POD_max - Vampiro_de_fuego.POD_min + 1 ) + Vampiro_de_fuego.POD_min) * 5;
-
-                var Movimiento_criatura = Vampiro_de_fuego.Movimiento;
-
-                var Descripcion = Vampiro_de_fuego.Descripcion_breve;
-
-                var Armadura = Vampiro_de_fuego.Armadura;
-
-                var Cantidad_ataques = Vampiro_de_fuego.Ataques_por_asalto;
-
-                var Ataques = Vampiro_de_fuego.Ataques_de_combate;
-
-                var Habilidades = Vampiro_de_fuego.Habilidades;
-
-                var Perdida_de_Cordura = Vampiro_de_fuego.Cordura;
-
-
-        }
-
-        else if (Codigo_criatura === 35) {
-
-                var Nombre_criatura = Vampiro_estelar.Nombre;
-
-                var Fuerza_criatura = Math.floor(Math.random() * (Vampiro_estelar.FUE_max - Vampiro_estelar.FUE_min + 1 ) + Vampiro_estelar.FUE_min) * 5;
-
-                var Constitucion_criatura = Math.floor(Math.random() * (Vampiro_estelar.CON_max - Vampiro_estelar.CON_min + 1 ) + Vampiro_estelar.CON_min) * 5;
-
-                var Tamaño_criatura = Math.floor(Math.random() * (Vampiro_estelar.TAM_max - Vampiro_estelar.TAM_min + 1 ) + Vampiro_estelar.TAM_min) * 5;
-
-                var Destresa_criatura = Math.floor(Math.random() * (Vampiro_estelar.DES_max - Vampiro_estelar.DES_min + 1 ) + Vampiro_estelar.DES_min) * 5;
-
-                var Inteligencia_criatura = Math.floor(Math.random() * (Vampiro_estelar.INT_max - Vampiro_estelar.INT_min + 1 ) + Vampiro_estelar.INT_min) * 5;
-
-                var Poder_criatura = Math.floor(Math.random() * (Vampiro_estelar.POD_max - Vampiro_estelar.POD_min + 1 ) + Vampiro_estelar.POD_min) * 5;
-
-                var Movimiento_criatura = Vampiro_estelar.Movimiento;
-
-                var Descripcion = Vampiro_estelar.Descripcion_breve;
-
-                var Armadura = Vampiro_estelar.Armadura;
-
-                var Cantidad_ataques = Vampiro_estelar.Ataques_por_asalto;
-
-                var Ataques = Vampiro_estelar.Ataques_de_combate;
-
-                var Habilidades = Vampiro_estelar.Habilidades;
-
-                var Perdida_de_Cordura = Vampiro_estelar.Cordura;
-
-
-        }
-
-        else if (Codigo_criatura === 36) {
-
-                var Nombre_criatura = Yithiano.Nombre;
-
-                var Fuerza_criatura = Math.floor(Math.random() * (Yithiano.FUE_max - Yithiano.FUE_min + 1 ) + Yithiano.FUE_min) * 5;
-
-                var Constitucion_criatura = Math.floor(Math.random() * (Yithiano.CON_max - Yithiano.CON_min + 1 ) + Yithiano.CON_min) * 5;
-
-                var Tamaño_criatura = Math.floor(Math.random() * (Yithiano.TAM_max - Yithiano.TAM_min + 1 ) + Yithiano.TAM_min) * 5;
-
-                var Destresa_criatura = Math.floor(Math.random() * (Yithiano.DES_max - Yithiano.DES_min + 1 ) + Yithiano.DES_min) * 5;
-
-                var Inteligencia_criatura = Math.floor(Math.random() * (Yithiano.INT_max - Yithiano.INT_min + 1 ) + Yithiano.INT_min) * 5;
-
-                var Poder_criatura = Math.floor(Math.random() * (Yithiano.POD_max - Yithiano.POD_min + 1 ) + Yithiano.POD_min) * 5;
-
-                var Movimiento_criatura = Yithiano.Movimiento;
-
-                var Descripcion = Yithiano.Descripcion_breve;
-
-                var Armadura = Yithiano.Armadura;
-
-                var Cantidad_ataques = Yithiano.Ataques_por_asalto;
-
-                var Ataques = Yithiano.Ataques_de_combate;
-
-                var Habilidades = Yithiano.Habilidades;
-
-                var Perdida_de_Cordura = Yithiano.Cordura;
-
-
-        }
-
+        // }
 
         // if de Corpulencia 
+
+        function atraparParametrosDeCriatura (criatura) {
+
+                return {
+
+                        nombre : function (criatura) { return criatura.Nombre},
+
+                        movimiento : function (criatura) { return criatura.Movimiento},
+
+                        descripcion : function (criatura) { return criatura.Descripcion_breve},
+
+                        armadura : function (criatura) { return criatura.Armadura},
+
+                        ataquesPorAsalto : function (criatura) { return criatura.Ataques_por_asalto},
+
+                        ataquesDeCombate : function (criatura) { return criatura.Ataques_de_combate},
+
+                        habilidades : function (criatura) { return criatura.Habilidades},
+
+                        Cordura : function (criatura) {return criatura.Cordura},
+
+                        fuerza : function (criatura) {
+
+                                return calculo = (Math.floor(Math.random() * (criatura.FUE_max - criatura.FUE_min + 1 ) + criatura.FUE_min)) * 5;
+                        },
+
+                        constitucion : function (criatura) {
+
+                                return (Math.floor(Math.random() * (criatura.CON_max - criatura.CON_min + 1 ) + criatura.CON_min)) * 5;
+                                
+                        },
+
+                        tamano : function (criatura) {
+
+                                return (Math.floor(Math.random() * (criatura.TAM_max - criatura.TAM_min + 1 ) + criatura.TAM_min)) * 5;
+                        },
+
+                        destreza : function (criatura) {
+
+                                return (Math.floor(Math.random() * (criatura.DES_max - criatura.DES_min + 1 ) + criatura.DES_min)) * 5;
+                        },
+
+                        inteligencia : function (criatura) {
+
+                                return (Math.floor(Math.random() * (criatura.INT_max - criatura.INT_min + 1 ) + criatura.INT_min)) * 5;
+                        },
+
+                        poder : function (criatura) {
+
+                                return (Math.floor(Math.random() * (criatura.POD_max - criatura.POD_min + 1 ) + criatura.POD_min)) * 5;
+                        }
+
+                }
+        } 
+
+        
+
+        const generador = atraparParametrosDeCriatura();
+        
+        let Nombre_criatura = generador.nombre(Codigo_Creacion);
+        let Movimiento_criatura = generador.movimiento(Codigo_Creacion);
+        let Descripcion = generador.descripcion(Codigo_Creacion);
+        let Armadura = generador.armadura(Codigo_Creacion);
+        let Cantidad_ataques = generador.ataquesPorAsalto(Codigo_Creacion);
+        let Ataques = generador.ataquesDeCombate(Codigo_Creacion);
+        let Habilidades = generador.habilidades(Codigo_Creacion);
+        let Fuerza_criatura = generador.fuerza(Codigo_Creacion);
+        let Constitucion_criatura = generador.constitucion(Codigo_Creacion);
+        let Tamaño_criatura = generador.tamano(Codigo_Creacion);
+        let Destresa_criatura = generador.destreza(Codigo_Creacion);
+        let Inteligencia_criatura = generador.inteligencia(Codigo_Creacion);
+        let Poder_criatura = generador.poder(Codigo_Creacion);
+        let Perdida_de_Cordura = generador.Cordura(Codigo_Creacion);
+
+        var  Vida_criatura  = Math.floor((Tamaño_criatura+Constitucion_criatura)/10);
+
+        var Magia_criatura = (Poder_criatura/5);
 
         var Corpulencia = Fuerza_criatura + Tamaño_criatura;
         
@@ -2379,10 +1364,6 @@ function Crear_criatura(){
 
                 }
 
-
-        var  Vida_criatura  = Math.floor((Tamaño_criatura+Constitucion_criatura)/10);
-
-        var Magia_criatura = (Poder_criatura/5);
 
 
 
