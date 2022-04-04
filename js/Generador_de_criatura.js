@@ -852,7 +852,7 @@ const Señor_de_los_shoggoths_humano = {
         Movimiento : "8 Caminando",
         Descripcion_breve: "A la vista un Humano Cualquiera" ,
         Armadura : "Ninguna, pero (1) los ataques de fuego o electricidad causan solo la mitad del daño; (2) las armas físicas como las armas de fuego y los cuchillos causan solo 1 punto de daño por impacto; (3) un shoggoth regenera 2 Puntos de Vida por asalto." ,
-        Ataques_por_asalto : "1" ,
+        Ataques_por_asalto : "2" ,
         Ataques_de_combate : "Los Shoggots en forma humana pueden utilizar armas igual que lo hacen los humanos." ,
         Habilidades : "<strong>Combatir</strong> 90% (45/18), daño 1D6+2 + Bonificación al daño de su forma actual;<br><strong>Esquivar</strong> 26% (13/5). <br><strong>Encanto</strong> 70%, <br><strong>Intimidar</strong> 60%, <br><strong>Persuasión</strong> 60%, <br><strong>Sigilo</strong> 65%, y todas aquellas que el Guardián estime oportunas." ,
         Cordura : "Ver la auténtica forma de un Señor de los shoggoths produce una pérdida de 1D6/1D20 Puntos de Cordura. El Guardián podrá añadir una pérdida de 1/1D3 Puntos de Cordura para aquellos que sean testigos de la transformación de un Señor de los shoggoths entre su forma humana y su forma monstruosa."
@@ -1068,120 +1068,10 @@ function Crear_criatura(){
 
         let Poder_especial_humano = "No";
 
-        // var Habilidades = "No" ;
-
-
-        // else if (Codigo_criatura === 26) {
-
-        //         //forma humana
-
-        //         var Nombre_humano = Math.floor(Math.random() * Firstname_Man.length);
-
-        //         var Fuerza_humano = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.FUE_max - Señor_de_los_shoggoths_humano.FUE_min + 1 ) + Señor_de_los_shoggoths_humano.FUE_min) * 5;
-
-        //         var Constitucion_humano = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.CON_max - Señor_de_los_shoggoths_humano.CON_min + 1 ) + Señor_de_los_shoggoths_humano.CON_min) * 5;
-
-        //         var Tamaño_humano = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.TAM_max - Señor_de_los_shoggoths_humano.TAM_min + 1 ) + Señor_de_los_shoggoths_humano.TAM_min) * 5;
-
-        //         var destreza_humano = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.DES_max - Señor_de_los_shoggoths_humano.DES_min + 1 ) + Señor_de_los_shoggoths_humano.DES_min) * 5;
-
-        //         var Inteligencia_humano = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.INT_max - Señor_de_los_shoggoths_humano.INT_min + 1 ) + Señor_de_los_shoggoths_humano.INT_min) * 5;
-
-        //         var Poder_humano = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.POD_max - Señor_de_los_shoggoths_humano.POD_min + 1 ) + Señor_de_los_shoggoths_humano.POD_min) * 5;
-
-        //         var Apariencia_humano = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.APA_max - Señor_de_los_shoggoths_humano.APA_min + 1 ) + Señor_de_los_shoggoths_humano.APA_min) * 5;
-
-        //         var Educacion_humano = Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.EDU_max - Señor_de_los_shoggoths_humano.EDU_min + 1 ) + Señor_de_los_shoggoths_humano.EDU_min) * 5;
-
-        //         var  Vida_humano  = Math.floor((Tamaño_humano+Constitucion_humano)/10);
-        
-        //         var Magia_humano = (Poder_humano/5);
-
-        //         var Movimiento_humano = Señor_de_los_shoggoths_humano.Movimiento;
-
-        //         var Descripcion_humano = Señor_de_los_shoggoths_humano.Descripcion_breve;
-
-        //         var Armadura_humano = Señor_de_los_shoggoths_humano.Armadura;
-
-        //         var Cantidad_ataques_humano = Señor_de_los_shoggoths_humano.Ataques_por_asalto;
-
-        //         var Ataques_humano = Señor_de_los_shoggoths_humano.Ataques_de_combate;
-
-        //         var Habilidades_humano = Señor_de_los_shoggoths_humano.Habilidades;
-
-        //         var Perdida_de_Cordura_humano = Señor_de_los_shoggoths_humano.Cordura;
-
-        //         var Corpulencia = Fuerza_humano + Tamaño_humano;
-
-        //         if (Corpulencia < 85){
-
-        //                 var Corpulencia_humano = -1
-        //                 var Daño_extra_humano = -1
-        //         }
-
-        //         else if (Corpulencia < 125){
-
-        //                 var Corpulencia_humano = 0
-        //                 var Daño_extra_humano = 0
-        //         }
-
-        //         else if (Corpulencia < 165){
-
-        //                 var Corpulencia_humano = 1
-        //                 var Daño_extra_humano = "1D4"
-        //         }
-
-        //         else if (Corpulencia < 205){
-
-        //                 var Corpulencia_humano = 2
-        //                 var Daño_extra_humano = "1D6"
-        //         }
-
-        //         else {
-
-        //                 var Corpulencia_humano = 3
-        //                 var Daño_extra_humano = "2D6"
-        //         }
-
-
-        //         // forma real
-
-        //         var Nombre_criatura = Señor_de_los_shoggoths.Nombre;
-
-        //         var Fuerza_criatura = Math.floor(Math.random() * (Señor_de_los_shoggoths.FUE_max - Señor_de_los_shoggoths.FUE_min + 1 ) + Señor_de_los_shoggoths.FUE_min) * 5;
-
-        //         var Constitucion_criatura = Math.floor(Math.random() * (Señor_de_los_shoggoths.CON_max - Señor_de_los_shoggoths.CON_min + 1 ) + Señor_de_los_shoggoths.CON_min) * 5;
-
-        //         var Tamaño_criatura = Math.floor(Math.random() * (Señor_de_los_shoggoths.TAM_max - Señor_de_los_shoggoths.TAM_min + 1 ) + Señor_de_los_shoggoths.TAM_min) * 5;
-
-        //         var destreza_criatura = Math.floor(Math.random() * (Señor_de_los_shoggoths.DES_max - Señor_de_los_shoggoths.DES_min + 1 ) + Señor_de_los_shoggoths.DES_min) * 5;
-
-        //         var Inteligencia_criatura = Math.floor(Math.random() * (Señor_de_los_shoggoths.INT_max - Señor_de_los_shoggoths.INT_min + 1 ) + Señor_de_los_shoggoths.INT_min) * 5;
-
-        //         var Poder_criatura = Math.floor(Math.random() * (Señor_de_los_shoggoths.POD_max - Señor_de_los_shoggoths.POD_min + 1 ) + Señor_de_los_shoggoths.POD_min) * 5;
-
-        //         var Movimiento_criatura = Señor_de_los_shoggoths.Movimiento;
-
-        //         var Descripcion = Señor_de_los_shoggoths.Descripcion_breve;
-
-        //         var Armadura = Señor_de_los_shoggoths.Armadura;
-
-        //         var Cantidad_ataques = Señor_de_los_shoggoths.Ataques_por_asalto;
-
-        //         var Ataques = Señor_de_los_shoggoths.Ataques_de_combate;
-
-        //         var Habilidades = Señor_de_los_shoggoths.Habilidades;
-
-        //         var Perdida_de_Cordura = Señor_de_los_shoggoths.Cordura;
-
-
-        // }
-
-        // if de Corpulencia 
 
         function velocidadHumano (DES,TAM,FUE) {
                 let velocidad;
-                let ano;
+                let epocaDeVida;
 
                 if (DES && FUE < TAM) {
 
@@ -1200,29 +1090,29 @@ function Crear_criatura(){
 
                 function edad () {
 
-                        let edad;
-                        edad = Math.floor(Math.random() * (89 - 15 + 1) + 15);
+                        let ano;
+                        ano = Math.floor(Math.random() * (89 - 15 + 1) + 15);
 
-                        if (edad < 40) {
+                        if (ano < 40) {
 
                                 return 0
                         }
 
-                                else if (edad < 50) {
+                                else if (ano < 50) {
 
                                         return 1
                                 } 
 
-                                else if (edad < 60) {
+                                else if (ano < 60) {
 
                                         return 2
                                 } 
 
-                                else if (edad < 70) {
+                                else if (ano < 70) {
                                         return 3
                                 } 
 
-                                else if (edad < 80) {
+                                else if (ano < 80) {
 
                                         return 4
                                 }
@@ -1232,9 +1122,9 @@ function Crear_criatura(){
                                         return 5
                                 }
                 };
-                ano = edad ();
-                return velocidad - edad;
 
+                epocaDeVida = edad ();
+                return velocidad - epocaDeVida;
         }
 
         function atraparParametrosDeCriatura (criatura) {
@@ -1366,7 +1256,7 @@ function Crear_criatura(){
         const Fuerza_criatura = generador.fuerza(Codigo_Creacion);
         const Constitucion_criatura = generador.constitucion(Codigo_Creacion);
         const Tamaño_criatura = generador.tamano(Codigo_Creacion);
-        const destreza_criatura = generador.destreza(Codigo_Creacion);
+        const Destreza_criatura = generador.destreza(Codigo_Creacion);
         const Inteligencia_criatura = generador.inteligencia(Codigo_Creacion);
         const Poder_criatura = generador.poder(Codigo_Creacion);
         const Perdida_de_Cordura = generador.cordura(Codigo_Creacion);
@@ -1382,13 +1272,14 @@ function Crear_criatura(){
 
         if ( Codigo_criatura === 27 ) {
 
+                const Firstname_Man = "Joshua"
+                const Educacion_humano = (Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.EDU_max - Señor_de_los_shoggoths_humano.EDU_min + 1 ) + Señor_de_los_shoggoths_humano.EDU_min)) * 5;
                 const Apariencia_humano = generador.apariencia(Señor_de_los_shoggoths_humano);
-                const Educacion_humano = generador.educacion(Señor_de_los_shoggoths_humano);
                 const Descripcion_humano = generador.descripcion(Señor_de_los_shoggoths_humano)
                 const Fuerza_humano = generador.fuerza(Señor_de_los_shoggoths_humano)
                 const Constitucion_humano = generador.constitucion(Señor_de_los_shoggoths_humano)
                 const Poder_humano = generador.poder(Señor_de_los_shoggoths_humano)
-                const destreza_humano = generador.destreza(Señor_de_los_shoggoths_humano)
+                const Destreza_humano = generador.destreza(Señor_de_los_shoggoths_humano)
                 const Tamaño_humano = generador.tamano(Señor_de_los_shoggoths_humano)
                 const Inteligencia_humano = generador.inteligencia(Señor_de_los_shoggoths_humano)
                 const Habilidades_humano = generador.habilidades(Señor_de_los_shoggoths_humano);
@@ -1397,15 +1288,20 @@ function Crear_criatura(){
                 const corpulenciaACalcular = Fuerza_humano + Tamaño_humano;
                 const Corpulencia_humano = generador.corpulencia(corpulenciaACalcular);
                 const Daño_extra_humano = generador.danoExtra(Corpulencia_humano);
+                const Movimiento_humano = "10"
+                const Armadura_humano = generador.armadura(Señor_de_los_shoggoths_humano);
+                const Cantidad_ataques_humano = generador.ataquesPorAsalto(Señor_de_los_shoggoths_humano)
+                const Ataques_humano = generador.ataquesDeCombate(Señor_de_los_shoggoths_humano)
+                const Perdida_de_Cordura_humano = generador.cordura(Señor_de_los_shoggoths_humano)
 
                 document.getElementById("result").innerHTML =
-                "<br><h3> Nombre : "+Firstname_Man[Nombre_humano]+"</h3>"+
+                "<br><h3> Nombre : "+Firstname_Man+"</h3>"+
                 "<br><h4> Descripcion breve : "+Descripcion_humano+"</h4>"+
                 "<h3><br>Stats</h3>"+
                 "<ul><li> Fue : "+Fuerza_humano+
                 "<br><li> Con : "+Constitucion_humano+
                 "<br><li> Pod : "+Poder_humano+
-                "<br><li> Des : "+destreza_humano+
+                "<br><li> Des : "+Destreza_humano+
                 "<br><li> Tam : "+Tamaño_humano+
                 "<br><li> Int : "+Inteligencia_humano+
                 "<br><li> PV  : "+Vida_humano+
@@ -1428,7 +1324,7 @@ function Crear_criatura(){
                 "<ul><li> Fue : "+Fuerza_criatura+
                 "<br><li> Con : "+Constitucion_criatura+
                 "<br><li> Pod : "+Poder_criatura+
-                "<br><li> Des : "+destreza_criatura+
+                "<br><li> Des : "+Destreza_criatura+
                 "<br><li> Tam : "+Tamaño_criatura+
                 "<br><li> Int : "+Inteligencia_criatura+
                 "<br><li> PV  : "+Vida_criatura+
@@ -1455,7 +1351,7 @@ function Crear_criatura(){
                 "<ul><li> Fue : "+Fuerza_criatura+
                 "<br><li> Con : "+Constitucion_criatura+
                 "<br><li> Pod : "+Poder_criatura+
-                "<br><li> Des : "+destreza_criatura+
+                "<br><li> Des : "+Destreza_criatura+
                 "<br><li> Tam : "+Tamaño_criatura+
                 "<br><li> Int : "+Inteligencia_criatura+
                 "<br><li> PV  : "+Vida_criatura+
@@ -1480,7 +1376,7 @@ function Crear_criatura(){
                 "<ul><li> Fue : "+Fuerza_criatura+
                 "<br><li> Con : "+Constitucion_criatura+
                 "<br><li> Pod : "+Poder_criatura+
-                "<br><li> Des : "+destreza_criatura+
+                "<br><li> Des : "+Destreza_criatura+
                 "<br><li> Tam : "+Tamaño_criatura+
                 "<br><li> Int : "+Inteligencia_criatura+"</ul>"+
                 "</ul><br><h3>Combate, habilidades y poderes especiales</h3>"+
