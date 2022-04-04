@@ -2,10 +2,10 @@ function NMujer(){
 
 
           //Area de variables random
-     
-     
-     
-     
+
+
+
+
           //Area de Nombres y Profesiones
 
           const Firstname_Woman = [ "Agatha", "Agnes","Alborz","Albrecht","Alden","Alejandra","Alexei", "Adelyn","Amelia", "Adriana", "Agatha", "Aileen", "Augusta","Ava","Abby","Abril","Alessa", "Alice","Amanda", "Anemone",

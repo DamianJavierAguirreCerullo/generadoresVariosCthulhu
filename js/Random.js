@@ -12,5 +12,5 @@ function Random(){
         document.getElementById("result").innerHTML =
         "<h1>Numero Aleatorio :</h1><div ><h2>"+resultado+"</h2></div>";
 
-      
+
 }

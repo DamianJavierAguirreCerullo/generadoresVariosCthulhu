@@ -14,8 +14,8 @@ function Sodas() {
     ]
 
      var Company = Math.floor(Math.random() * Sodas.length)
-     document.getElementById("result").innerHTML =
-     "<h1>Soda:</h1>"+"<h2>"+Sodas[Company]+"</h2>"
+    document.getElementById("result").innerHTML =
+    "<h1>Soda:</h1>"+"<h2>"+Sodas[Company]+"</h2>"
     //  var Company = Math.floor(Math.random() * Sodas.length)
     //  document.getElementById("resultN").innerHTML =
     //  "<h2>"+Sodas[Company]+"</h2>"
