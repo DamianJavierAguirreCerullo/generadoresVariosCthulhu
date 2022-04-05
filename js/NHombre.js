@@ -446,33 +446,37 @@ function Generate_Character(){
      
      
      function edad(){
-          let edad
           if(Edad < 20 ) {
-               return edad = cosas_edad[0];
+
+               return cosas_edad[0];
                }
      
                else if(Edad < 40) {
-               return edad = cosas_edad[1];
+
+                    return cosas_edad[1];
                }
      
                else if(Edad < 50) {
-               return edad = cosas_edad[2];
+
+                    return cosas_edad[2];
                }
-     
+
                else if(Edad < 60) {
-               return edad = cosas_edad[3];
+
+                    return cosas_edad[3];
                }
      
                else if(Edad < 70) {
-               return edad = cosas_edad[4];
+
+                    return cosas_edad[4];
                }
-     
+
                else if(Edad < 80) {
-               return edad = cosas_edad[5];
+                    return cosas_edad[5];
                }
-     
+
                else {
-               return edad = cosas_edad[6];
+                    return cosas_edad[6];
                }
           }
           
@@ -494,19 +498,19 @@ function Generate_Character(){
      
           function velocidadHumano (DES,TAM,FUE) {
      
-               if (DES && FUE < TAM) {
+               if (DES < TAM && FUE < TAM) {
      
                     return 7;
                }
      
-               else if (DES || FUE >= TAM) {
+               else if (DES > TAM && FUE > TAM) {
      
-                    return 8;
+                    return 9;
                }
      
                else {
      
-                    return 9;
+                    return 8;
                }
           }     
 
@@ -545,6 +549,7 @@ function Generate_Character(){
                          return 5;
                     }
      }
+     
 
 
      //Comienza el Area de Lugar de Nacimiento
@@ -581,6 +586,7 @@ function Generate_Character(){
      const movimientoActual = velocidadHumano(Des,Tam,Fue);
      const movimientoPorEdad = lentoPorViejo(Edad);
      const Movimiento = movimientoActual - movimientoPorEdad;
+     console.log(movimientoActual,movimientoPorEdad);
 
 
 
@@ -597,11 +603,11 @@ function Generate_Character(){
      "<br> Ciudad/Pueblo : "+Pueblo[rand_Pueblo]+
      "<h3><br>Stats</h3>"+
      "<ul><li> Fue : "+Fue+
+     "<br><li> Des : "+Des+
+     "<br><li> Tam : "+Tam+
      "<br><li> Con : "+Con+
      "<br><li> Pod : "+Pod+
-     "<br><li> Des : "+Des+
      "<br><li> Apa : "+Apa+
-     "<br><li> Tam : "+Tam+
      "<br><li> Int : "+Int+
      "<br><li> Edu : "+Edu+
      "<br><li> PV  : "+Pv+
