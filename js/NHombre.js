@@ -90,8 +90,7 @@
      "Beck Pond", "Chebacco Lake", "Gravelly", "Round Pound", "Sawmil Br", "Cat Brook", "Miles River", "Wenham Lake", "Bass River", "Porter River", "Crane River", "Water River", "Suntaug Lake", "North River", "Breeds Pond"];
 
 
-     const Ciudad = ["Falcon Point","Beach Bluff","Martin's beach",
-     "Manchester","Annisquam","Essex falls","Essex","Topsfield","Innsmouth","Rowley","Bolton","Gloucoster","Rockport", "Marblehead","Kingsport","Beverly","Arkham","Ipwitch","Danvers","Newbury Port","Amesbury","Salem"];
+     const Ciudad = ["Falcon Point","Beach Bluff","Martin's beach","Manchester","Annisquam","Essex falls","Essex","Topsfield","Innsmouth","Rowley","Bolton","Gloucoster","Rockport", "Marblehead","Kingsport","Beverly","Arkham","Ipwitch","Danvers","Newbury Port","Amesbury","Salem"];
 
 
      const Estados = ["Alabama","Arizona","Arkansas","California","Carolina del Norte","Carolina del Sur",
@@ -231,6 +230,7 @@ function Generate_Character(){
 
 
 
+
      //Area de Nombres y Profesiones
 
      let rand_first_man = Math.floor(Math.random() * Firstname_Man.length);
@@ -287,26 +287,6 @@ function Generate_Character(){
      let rand_Continentes = Math.floor(Math.random() * Continentes.length);
      let Extranjero = D100();
 
-
-
-
-
-     //Finaliza el Area de Variables random
-
-
-
-     
-
-     //Empiezan los if
-
-
-
-
-     //Area de Fobias y Manias
-
-
-     
-
      // if (rand_Manias < 11) {
      //      Mania = "No tiene Manias";
      // }
@@ -338,124 +318,109 @@ function Generate_Character(){
      //           Fobia = Fobias[Fobias_1] + "<br>" + " " + Fobias[Fobias_2] + "<br>" + " " + Fobias[Fobias_3];
      //      }
 
-     //Area de variables random
-     
      if (rand_Continentes === 0) {
           var Pais = Europa[rand_Europa]
           }
-     
+
                else if(rand_Continentes === 1) {
                var Pais = Africa[rand_Africa]
                }
-     
+
                else if(rand_Continentes === 2) {
                var Pais = Asia[rand_Asia]
                }
-     
+
                else if(rand_Continentes === 3) {
                var Pais = America[rand_America]
                }
-     
+
                else {
                var Pais = Oceania[rand_Oceania]
                }
-     
-     
-     
-          
+
+
           if (Extranjero < 19) {
                var Pais = Inmigrante[0];
           }
-     
+
                else if (Extranjero < 31) {
                     var Pais = Inmigrante[1];
                }
-     
+
                else if (Extranjero < 43) {
                     var Pais = Inmigrante[2];
                }
-     
+
                else if (Extranjero < 53) {
                     var Pais = Inmigrante[3];
                }
-     
+
                else if (Extranjero < 62) {
                     var Pais = Inmigrante[4];
                }
-     
+
                else if (Extranjero < 71) {
                     var Pais = Inmigrante[5];
                }
-     
+
                else if (Extranjero < 81) {
                     var Pais = Inmigrante[6];
                }
-     
+
                else if (Extranjero < 90) {
                     var Pais = Inmigrante[7];
                }
-     
+
                else if (Extranjero < 96) {
                     var Pais = Inmigrante[8];
                }
-     
+
                else if (Extranjero < 98) {
                     var Pais = Inmigrante[9];
                }
-     
+
                else if (Extranjero < 100) {
                     var Pais = Inmigrante[10];
                }
-     
+
                else {
                     var Pais = Pais;
                } 
-     
-     
-     
-     
-               
+
+
           if(Lugarnacimiento < 51){
                var Lugardenacimiento = "Nacio en la ciudad de " + Ciudad[rand_Ciudad];
-     
+
           }
           else if(Lugarnacimiento < 61){
                     var Lugardenacimiento = "Nacio en el Pueblo de " + Pueblo[rand_Pueblo];
-     
+
           }
-     
+
           else if (Lugarnacimiento < 75){
-          var Lugardenacimiento = "Nacio en el pais de " + Pais;
-     
+                    var Lugardenacimiento = "Nacio en el pais de " + Pais;
+
           }
-          
+
           else { 
-             var ran_Estado = Math.floor(Math.random() * Estados.length );
-          var Estado = Estados[ran_Estado];
-          var Lugardenacimiento = "Nacio en el estado de "+ Estado;
-     
+                    var ran_Estado = Math.floor(Math.random() * Estados.length );
+                    var Estado = Estados[ran_Estado];
+                    var Lugardenacimiento = "Nacio en el estado de "+ Estado;
+
           }
-          
-               
-          //Finaliza el area de lugar de Nacimiento
-     
-     
-     
-          //Comienza el Area de Edad y Trasfondo
-     
-     
-     
+
+
      function edad(){
           if(Edad < 20 ) {
 
                return cosas_edad[0];
                }
-     
+
                else if(Edad < 40) {
 
                     return cosas_edad[1];
                }
-     
+
                else if(Edad < 50) {
 
                     return cosas_edad[2];
@@ -465,7 +430,7 @@ function Generate_Character(){
 
                     return cosas_edad[3];
                }
-     
+
                else if(Edad < 70) {
 
                     return cosas_edad[4];
@@ -479,45 +444,48 @@ function Generate_Character(){
                     return cosas_edad[6];
                }
           }
-          
+
+
           function tresD6(){
                return Math.floor(Math.random() * (18 - 3 + 1) + 3)*5;
           }
-     
+
+
           function dosD6Mas6(){
                return Math.floor(Math.random() * (18 - 8 + 1) + 8)*5
           }
-     
+
+
           function D10(){
                return Math.floor(Math.random() * 10)
           }
-     
+
+
           function D100(){
                return Math.floor(Math.random() * (100 - 1 + 1) + 1)
           }
-     
+
+
           function velocidadHumano (DES,TAM,FUE) {
-     
+
                if (DES < TAM && FUE < TAM) {
-     
+
                     return 7;
                }
-     
+
                else if (DES > TAM && FUE > TAM) {
-     
+
                     return 9;
                }
-     
+
                else {
-     
+
                     return 8;
                }
-          }     
+          }
+
 
      function lentoPorViejo (ano) {
-     
-          
-          
 
           if (ano < 40) {
 
@@ -549,18 +517,7 @@ function Generate_Character(){
                          return 5;
                     }
      }
-     
 
-
-     //Comienza el Area de Lugar de Nacimiento
-
-     //Comienza el Area de Edad y Trasfondo
-          
-
-
-     //Terminan los if
-
-     //Zona de toma de valores para despues mostrarlos
 
           //Area de Caracteristicas y variables para resultados
 
@@ -641,37 +598,6 @@ function Generate_Character(){
 "Bodie","Kolmanskop","Iultin","Plymouth","Varosha","Brattleboro","Townshend","Finch","Fawn","Rosebud","Maple",
 "Paradise","Ferret","Daffodil","Grizzly","Primrose","Elk",
 
-
-     if(154 === 1 ) {
-          var 184 = ""
-          }
-          else if(154 === 2){
-          var 184 = ""
-          }
-          else if(154 === 3){
-          var 184 = ""
-          }
-          else if(154 === 4){
-               var 184 = ""
-               }
-          else if(154 === 5){
-               var 184 = ""
-               }
-          else if(154 === 6){
-               var 184 = ""
-               }
-          else if(154 === 7){
-               var 184 = ""
-               }
-          else if(154 === 8){
-               var 184 = ""
-               }
-          else if(154 === 9){
-               var 184 = ""
-               }
-          else{
-               var 184 = ""
-               }
 
      "Abduh","Abdul","Abdulah","Abdullah","Abdullo","Abdullohi","Abdurakhman","Abduweli","Abe","Abednego","Abel","Abele","Abenner","Abessa","Abessalom","Abhay","Abhijeet","Abhijit","Abhilash","Abhilash","Abhinav","Abhishek","Abia","Abiah","Abiathar","Abidan","Abidemi","Abiel","Abihu","Abijah","Abilio","Abilio","Abimael","Abimbola","Abiodun","Abioye","Abimelech","Abiram","Abisai","Abishai","Abner","Abolfazl","Aboubacar","Abraam",
      "Abraao","Abram","Abramo","Abrar","Abrasha","Absalom","Abu","Aca","Achaab","Achab","Achaicus","Achaicus","Achaikos","Achan","Achard","Acheloios","Achelous","Achille","Achilleas","Achilles","AChilleus","Achim","Acke","Aco","Ad","Adad","Adair","Adalberht","Adalbern","Adalberto","Adalfarus","Adalfuns","Adalhard","Adalia","Adalwin","Adalwolf","Adalya","Adam","Adamo","Adamou","Adamu","Adde","Addison","Addy","Adebayo","Adebola","Adebowale","Adedayo","Adegoke","Adelard","Adelardo","Adelbert","Adelmar","Adem","Ademar","Ademaro",

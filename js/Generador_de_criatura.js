@@ -1069,8 +1069,6 @@ function Crear_criatura(){
         let Poder_especial_humano = "No";
 
 
-
-
         function atraparParametrosDeCriatura (criatura) {
 
                 return {
@@ -1190,7 +1188,7 @@ function Crear_criatura(){
 
         const generador = atraparParametrosDeCriatura();
 
-        const Nombre_criatura = generador.nombre(Codigo_Creacion);
+        const Nombre_criatura = generador.nombre(Codigo_Creacion.Nombre);
         const Movimiento_criatura = generador.movimiento(Codigo_Creacion);
         const Descripcion = generador.descripcion(Codigo_Creacion);
         const Armadura = generador.armadura(Codigo_Creacion);
