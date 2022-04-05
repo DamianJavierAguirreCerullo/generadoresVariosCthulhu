@@ -1069,63 +1069,7 @@ function Crear_criatura(){
         let Poder_especial_humano = "No";
 
 
-        function velocidadHumano (DES,TAM,FUE) {
-                let velocidad;
-                let epocaDeVida;
 
-                if (DES && FUE < TAM) {
-
-                        velocidad = 7
-                }
-
-                else if (DES || FUE >= TAM) {
-
-                        velocidad = 8
-                }
-
-                else {
-
-                        velocidad = 9
-                }
-
-                function edad () {
-
-                        let ano;
-                        ano = Math.floor(Math.random() * (89 - 15 + 1) + 15);
-
-                        if (ano < 40) {
-
-                                return 0
-                        }
-
-                                else if (ano < 50) {
-
-                                        return 1
-                                } 
-
-                                else if (ano < 60) {
-
-                                        return 2
-                                } 
-
-                                else if (ano < 70) {
-                                        return 3
-                                } 
-
-                                else if (ano < 80) {
-
-                                        return 4
-                                }
-
-                                else {
-
-                                        return 5
-                                }
-                };
-
-                epocaDeVida = edad ();
-                return velocidad - epocaDeVida;
-        }
 
         function atraparParametrosDeCriatura (criatura) {
 
@@ -1272,6 +1216,9 @@ function Crear_criatura(){
 
         if ( Codigo_criatura === 27 ) {
 
+                let Poder_especial_criatura = "No";
+                let Poder_especial_humano = "No";
+
                 const Firstname_Man = "Joshua"
                 const Educacion_humano = (Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.EDU_max - Señor_de_los_shoggoths_humano.EDU_min + 1 ) + Señor_de_los_shoggoths_humano.EDU_min)) * 5;
                 const Apariencia_humano = generador.apariencia(Señor_de_los_shoggoths_humano);
@@ -1337,12 +1284,13 @@ function Crear_criatura(){
                 "<br><br><strong>Ataques durante el combate: </strong>"+Ataques+
                 "<br><br><strong>Habilidades : </strong>"+Habilidades+
                 "<br><strong>Perdida de cordura : </strong>"+Perdida_de_Cordura+ 
-                "<br><li>"+"Poder Especial: "+Poder_especial_criatura
+                "<br>"+"Poder Especial: "+Poder_especial_criatura
         }
 
         else if (Codigo_criatura === 12) {
 
                 const Apariencia_criatura = generador.apariencia(Codigo_Creacion);
+                let Poder_especial_criatura = "No";
 
                 document.getElementById("result").innerHTML =
                 "<br><h3> Nombre : "+Nombre_criatura+"</h3>"+
@@ -1369,6 +1317,9 @@ function Crear_criatura(){
         } 
 
         else {
+
+                let Poder_especial_criatura = "No";
+
                 document.getElementById("result").innerHTML =
                 "<br><h3> Nombre : "+Nombre_criatura+"</h3>"+
                 "<br><h4> Descripcion breve : "+Descripcion+"</h4>"+

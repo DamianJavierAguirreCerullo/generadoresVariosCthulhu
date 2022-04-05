@@ -227,7 +227,6 @@
 function Generate_Character(){
 
 
-     //Area de variables random
 
 
 
@@ -253,8 +252,8 @@ function Generate_Character(){
 
      //Area de Fobias y Manias
 
-     let rand_Manias = D100;
-     let rand_Fobias = D100;
+     let rand_Manias = D100();
+     let rand_Fobias = D100();
      // let Fobias_1 = fobiasRandom;
      // let Fobias_2 = fobiasRandom;
      // let Fobias_3 = fobiasRandom;
@@ -277,7 +276,7 @@ function Generate_Character(){
 
      //Area de Lugar de Nacimiento
 
-     let Lugarnacimiento = D100;
+     let Lugarnacimiento = D100();
      let rand_Pueblo = Math.floor(Math.random() * Pueblo.length);
      let rand_Ciudad = Math.floor(Math.random() * Ciudad.length);
      let rand_Europa = Math.floor(Math.random() * Europa.length);
@@ -286,7 +285,7 @@ function Generate_Character(){
      let rand_America = Math.floor(Math.random() * America.length);
      let rand_Oceania = Math.floor(Math.random() * Oceania.length);
      let rand_Continentes = Math.floor(Math.random() * Continentes.length);
-     let Extranjero = D100;
+     let Extranjero = D100();
 
 
 
@@ -339,163 +338,221 @@ function Generate_Character(){
      //           Fobia = Fobias[Fobias_1] + "<br>" + " " + Fobias[Fobias_2] + "<br>" + " " + Fobias[Fobias_3];
      //      }
 
+     //Area de variables random
+     
+     if (rand_Continentes === 0) {
+          var Pais = Europa[rand_Europa]
+          }
+     
+               else if(rand_Continentes === 1) {
+               var Pais = Africa[rand_Africa]
+               }
+     
+               else if(rand_Continentes === 2) {
+               var Pais = Asia[rand_Asia]
+               }
+     
+               else if(rand_Continentes === 3) {
+               var Pais = America[rand_America]
+               }
+     
+               else {
+               var Pais = Oceania[rand_Oceania]
+               }
+     
+     
+     
+          
+          if (Extranjero < 19) {
+               var Pais = Inmigrante[0];
+          }
+     
+               else if (Extranjero < 31) {
+                    var Pais = Inmigrante[1];
+               }
+     
+               else if (Extranjero < 43) {
+                    var Pais = Inmigrante[2];
+               }
+     
+               else if (Extranjero < 53) {
+                    var Pais = Inmigrante[3];
+               }
+     
+               else if (Extranjero < 62) {
+                    var Pais = Inmigrante[4];
+               }
+     
+               else if (Extranjero < 71) {
+                    var Pais = Inmigrante[5];
+               }
+     
+               else if (Extranjero < 81) {
+                    var Pais = Inmigrante[6];
+               }
+     
+               else if (Extranjero < 90) {
+                    var Pais = Inmigrante[7];
+               }
+     
+               else if (Extranjero < 96) {
+                    var Pais = Inmigrante[8];
+               }
+     
+               else if (Extranjero < 98) {
+                    var Pais = Inmigrante[9];
+               }
+     
+               else if (Extranjero < 100) {
+                    var Pais = Inmigrante[10];
+               }
+     
+               else {
+                    var Pais = Pais;
+               } 
+     
+     
+     
+     
+               
+          if(Lugarnacimiento < 51){
+               var Lugardenacimiento = "Nacio en la ciudad de " + Ciudad[rand_Ciudad];
+     
+          }
+          else if(Lugarnacimiento < 61){
+                    var Lugardenacimiento = "Nacio en el Pueblo de " + Pueblo[rand_Pueblo];
+     
+          }
+     
+          else if (Lugarnacimiento < 75){
+          var Lugardenacimiento = "Nacio en el pais de " + Pais;
+     
+          }
+          
+          else { 
+             var ran_Estado = Math.floor(Math.random() * Estados.length );
+          var Estado = Estados[ran_Estado];
+          var Lugardenacimiento = "Nacio en el estado de "+ Estado;
+     
+          }
+          
+               
+          //Finaliza el area de lugar de Nacimiento
+     
+     
+     
+          //Comienza el Area de Edad y Trasfondo
+     
+     
+     
+     function edad(){
+          let edad
+          if(Edad < 20 ) {
+               return edad = cosas_edad[0];
+               }
+     
+               else if(Edad < 40) {
+               return edad = cosas_edad[1];
+               }
+     
+               else if(Edad < 50) {
+               return edad = cosas_edad[2];
+               }
+     
+               else if(Edad < 60) {
+               return edad = cosas_edad[3];
+               }
+     
+               else if(Edad < 70) {
+               return edad = cosas_edad[4];
+               }
+     
+               else if(Edad < 80) {
+               return edad = cosas_edad[5];
+               }
+     
+               else {
+               return edad = cosas_edad[6];
+               }
+          }
+          
+          function tresD6(){
+               return Math.floor(Math.random() * (18 - 3 + 1) + 3)*5;
+          }
+     
+          function dosD6Mas6(){
+               return Math.floor(Math.random() * (18 - 8 + 1) + 8)*5
+          }
+     
+          function D10(){
+               return Math.floor(Math.random() * 10)
+          }
+     
+          function D100(){
+               return Math.floor(Math.random() * (100 - 1 + 1) + 1)
+          }
+     
+          function velocidadHumano (DES,TAM,FUE) {
+     
+               if (DES && FUE < TAM) {
+     
+                    return 7;
+               }
+     
+               else if (DES || FUE >= TAM) {
+     
+                    return 8;
+               }
+     
+               else {
+     
+                    return 9;
+               }
+          }     
 
+     function lentoPorViejo (ano) {
+     
+          
+          
+
+          if (ano < 40) {
+
+                    return 0;
+          }
+
+                    else if (ano < 50) {
+
+                         return 1;
+                    } 
+
+                    else if (ano < 60) {
+
+                         return 2;
+                    } 
+
+                    else if (ano < 70) {
+
+                         return 3;
+                    } 
+
+                    else if (ano < 80) {
+
+                         return 4;
+                    }
+
+                    else {
+
+                         return 5;
+                    }
+     }
 
 
      //Comienza el Area de Lugar de Nacimiento
 
-     if (rand_Continentes === 0) {
-     var Pais = Europa[rand_Europa]
-     }
-
-          else if(rand_Continentes === 1) {
-          var Pais = Africa[rand_Africa]
-          }
-
-          else if(rand_Continentes === 2) {
-          var Pais = Asia[rand_Asia]
-          }
-
-          else if(rand_Continentes === 3) {
-          var Pais = America[rand_America]
-          }
-
-          else {
-          var Pais = Oceania[rand_Oceania]
-          }
-
-
-
-     
-     if (Extranjero < 19) {
-          var Pais = Inmigrante[0];
-     }
-
-          else if (Extranjero < 31) {
-               var Pais = Inmigrante[1];
-          }
-
-          else if (Extranjero < 43) {
-               var Pais = Inmigrante[2];
-          }
-
-          else if (Extranjero < 53) {
-               var Pais = Inmigrante[3];
-          }
-
-          else if (Extranjero < 62) {
-               var Pais = Inmigrante[4];
-          }
-
-          else if (Extranjero < 71) {
-               var Pais = Inmigrante[5];
-          }
-
-          else if (Extranjero < 81) {
-               var Pais = Inmigrante[6];
-          }
-
-          else if (Extranjero < 90) {
-               var Pais = Inmigrante[7];
-          }
-
-          else if (Extranjero < 96) {
-               var Pais = Inmigrante[8];
-          }
-
-          else if (Extranjero < 98) {
-               var Pais = Inmigrante[9];
-          }
-
-          else if (Extranjero < 100) {
-               var Pais = Inmigrante[10];
-          }
-
-          else {
-               var Pais = Pais;
-          } 
-
-
-
-
-          
-     if(Lugarnacimiento < 51){
-          var Lugardenacimiento = "Nacio en la ciudad de " + Ciudad[rand_Ciudad];
-
-     }
-     else if(Lugarnacimiento < 61){
-               var Lugardenacimiento = "Nacio en el Pueblo de " + Pueblo[rand_Pueblo];
-
-     }
-
-     else if (Lugarnacimiento < 75){
-     var Lugardenacimiento = "Nacio en el pais de " + Pais;
-
-     }
-     
-     else { 
-        var ran_Estado = Math.floor(Math.random() * Estados.length );
-     var Estado = Estados[ran_Estado];
-     var Lugardenacimiento = "Nacio en el estado de "+ Estado;
-
-     }
-     
-          
-     //Finaliza el area de lugar de Nacimiento
-
-
-
-     //Comienza el Area de Edad y Trasfondo
-
-
-
-function edad(){
-     let edad
-     if(Edad < 20 ) {
-          return edad = cosas_edad[0];
-          }
-
-          else if(Edad < 40) {
-          return edad = cosas_edad[1];
-          }
-
-          else if(Edad < 50) {
-          return edad = cosas_edad[2];
-          }
-
-          else if(Edad < 60) {
-          return edad = cosas_edad[3];
-          }
-
-          else if(Edad < 70) {
-          return edad = cosas_edad[4];
-          }
-
-          else if(Edad < 80) {
-          return edad = cosas_edad[5];
-          }
-
-          else {
-          return edad = cosas_edad[6];
-          }
-     }
-     
-     function tresD6(){
-          return Math.floor(Math.random() * (18 - 3 + 1) + 3)*5;
-     }
-
-     function dosD6Mas6(){
-          return Math.floor(Math.random() * (18 - 8 + 1) + 8)*5
-     }
-
-     function D10(){
-          return Math.floor(Math.random() * (10 - 1 + 1) + 1)
-     }
-
      //Comienza el Area de Edad y Trasfondo
           
 
-               
+
      //Terminan los if
 
      //Zona de toma de valores para despues mostrarlos
@@ -521,6 +578,9 @@ function edad(){
      const rasgoDePersonalidad = rasgo_personalidad[Rasgoperso];
      const allegados = cualAllegado[Allega];
      const razonAllegado = razon_allegado[RazonAllega];
+     const movimientoActual = velocidadHumano(Des,Tam,Fue);
+     const movimientoPorEdad = lentoPorViejo(Edad);
+     const Movimiento = movimientoActual - movimientoPorEdad;
 
 
 
@@ -546,6 +606,7 @@ function edad(){
      "<br><li> Edu : "+Edu+
      "<br><li> PV  : "+Pv+
      "<br> Sue : "+Sue+
+     "<br><li> Movimiento  : "+Movimiento+
      "<br><li> Edad: "+Edad+"<br>"+"</ul>"+
      "<br>"+cosasEdad+"<br>"+
      "<br>"+"Ideologia/Creencia"+
