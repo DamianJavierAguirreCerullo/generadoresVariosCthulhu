@@ -180,18 +180,12 @@ function Generarpdf(){
 
 const Angel_descarnado = {
         Nombre : "Angel Descarnado de la Noche" ,
-        FUE_max : 18 ,
-        FUE_min : 3 ,
-        CON_max : 18 ,
-        CON_min : 3 ,
-        TAM_max : 24 ,
-        TAM_min : 4 ,
-        DES_max : 18 ,
-        DES_min : 8 ,
-        INT_max : 6 ,
-        INT_min : 1 ,
-        POD_max : 18 ,
-        POD_min : 3 ,
+        FUE : [18 , 3],
+        CON : [18 , 3],
+        TAM : [24 , 4],
+        DES : [18 , 8],
+        INT : [ 6 , 1],
+        POD : [18 , 3],
         Movimiento : "6/12 Volando" ,
         Descripcion_breve: "Seres sin rostro" ,
         Armadura :  "2 puntos de piel." ,
@@ -203,18 +197,12 @@ const Angel_descarnado = {
 
 const Antiguo = {
         Nombre : "Antiguo" ,
-        FUE_max : 48 ,
-        FUE_min : 28 ,
-        CON_max : 24 ,
-        CON_min : 9 ,
-        TAM_max : 48 ,
-        TAM_min : 8 ,
-        DES_max : 24 ,
-        DES_min : 9 ,
-        INT_max : 18 ,
-        INT_min : 13 ,
-        POD_max : 18 ,
-        POD_min : 3 ,
+        FUE : [48 , 28],
+        CON : [24 , 9 ],
+        TAM : [48 , 8 ],
+        DES : [24 , 9 ],
+        INT : [18 , 13],
+        POD : [18 , 3 ],
         Movimiento : "8/10 Volando",
         Descripcion_breve: "Misteriosos científicos de los albores del tiempo" ,
         Armadura : "7 puntos de piel." ,
@@ -226,18 +214,12 @@ const Antiguo = {
 
 const Byakhee = {
         Nombre : "Byakhee" ,
-        FUE_max : 30 ,
-        FUE_min : 5 ,
-        CON_max : 18 ,
-        CON_min : 3 ,
-        TAM_max : 30 ,
-        TAM_min : 5 ,
-        DES_max : 21 ,
-        DES_min : 6 ,
-        INT_max : 18 ,
-        INT_min : 3 ,
-        POD_max : 18 ,
-        POD_min : 3 ,
+        FUE : [30 , 5],
+        CON : [18 , 3 ],
+        TAM : [30 , 5],
+        DES : [21 , 6],
+        INT : [18 , 3 ],
+        POD : [18 , 3 ],
         Movimiento : "5/16 Volando",
         Descripcion_breve: "Monturas Estelares" , 
         Armadura : "2 puntos de pelaje y piel endurecida.",
@@ -249,18 +231,12 @@ const Byakhee = {
 
 const Chthonian = {
         Nombre : "Cthonian" ,
-        FUE_max : 90 ,
-        FUE_min : 15 ,
-        CON_max : 48 ,
-        CON_min : 33 ,
-        TAM_max : 90 ,
-        TAM_min : 15 ,
-        DES_max : 12 ,
-        DES_min : 2 ,
-        INT_max : 30 ,
-        INT_min : 5 ,
-        POD_max : 30 ,
-        POD_min : 5 ,
+        FUE : [90 , 15],
+        CON : [48 , 33],
+        TAM : [90 , 15],
+        DES : [12 , 2],
+        INT : [30 , 5],
+        POD : [30 , 5],
         Movimiento : "6/1 Cavando",
         Descripcion_breve: "Excavadores Tentaculares" ,
         Armadura : "5 puntos de piel y musculatura; tras recibir una herida regenera 5 Puntos de Vida por asalto, pero la regeneración dejará de funcionar cuando sus Puntos de Vida se reduzcan por debajo de 1." ,
@@ -272,16 +248,11 @@ const Chthonian = {
 
 const Color_surgido_del_espacio = {
         Nombre : "Color Surgido del espacio" ,
-        FUE_max : 6 ,
-        FUE_min : 1 ,
-        CON_max : 0 ,
-        CON_min : 0 ,
-        DES_max : 24 ,
-        DES_min : 14 ,
-        INT_max : 24 ,
-        INT_min : 4 ,
-        POD_max : 12 ,
-        POD_min : 6 ,
+        FUE : [6 , 1],
+        CON : [0 , 0],
+        DES : [24 , 14],
+        INT : [24 , 4],
+        POD : [12 , 6],
         Movimiento : "12 Fluyendo / 20 Volando ",
         Descripcion_breve: "Drenadores de fuerza Vital" ,
         Armadura : "Ninguna. Son invulnerables a todos los ataques físicos, a excepción de los camp os magnéticos, que son capaces de aprisionados. Son vulnerables a la magia." ,
@@ -293,12 +264,12 @@ const Color_surgido_del_espacio = {
 
 const Dagon_e_hidra = {
         Nombre : "Dagón e Hidra" ,
-        FUE_max : 260 ,
-        CON_max : 250 ,
-        TAM_max : 300 ,
-        DES_max : 100 ,
-        INT_max : 100 ,
-        POD_max : 150 ,
+        FUE : [260 , 260],
+        CON : [250 , 250],
+        TAM : [300 , 300],
+        DES : [100 , 100],
+        INT : [100 , 100],
+        POD : [150 , 150],
         Movimiento : "10/15 Nadando",
         Descripcion_breve: "Gobernantes de los profundos",
         Armadura : "6 puntos de piel." ,
@@ -310,18 +281,12 @@ const Dagon_e_hidra = {
 
 const Dhole = {
         Nombre : "Dhole" ,
-        FUE_max : 1000 ,
-        FUE_min : 10 ,
-        CON_max : 200 ,
-        CON_min : 101 ,
-        TAM_max : 100 ,
-        TAM_min : 1 ,
-        DES_max : 4 ,
-        DES_min : 1 ,
-        INT_max : 12 ,
-        INT_min : 2 ,
-        POD_max : 60 ,
-        POD_min : 10 ,
+        FUE : [1000 , 10],
+        CON : [200 , 101],
+        TAM : [100 , 1],
+        DES : [4 , 1],
+        INT : [12 , 2],
+        POD : [60 , 10],
         Movimiento : "15 Reptando / 10 Excavando",
         Descripcion_breve: "Horrores Excavadores" ,
         Armadura : "Igual a una quinta parte del POO del dhole." ,
@@ -333,12 +298,12 @@ const Dhole = {
 
 const El_horror_en_la_tinta = {
         Nombre : "Ursus Miles (El horror de la tinta)" ,
-        FUE_max : 110 ,
-        CON_max : 300 ,
-        TAM_max : 130 ,
-        DES_max : 80 ,
-        INT_max : 20 ,
-        POD_max : 150 ,
+        FUE : [110 , 110],
+        CON : [300 , 300],
+        TAM : [130 , 130],
+        DES : [ 80 , 80 ],
+        INT : [ 20 , 20 ],
+        POD : [150 , 150],
         Movimiento : "10",
         Descripcion_breve: "Tinta maligna" ,
         Armadura : "5 puntos de piel bullente como una alfombra de gusanos. Mientras se encuentra en estado inmaterial no puede ser dañado por ataques físicos." ,
@@ -350,18 +315,12 @@ const El_horror_en_la_tinta = {
 
 const Ghast = {
         Nombre : "Ghast" ,
-        FUE_max : 30 ,
-        FUE_min : 15 ,
-        CON_max : 24 ,
-        CON_min : 4 ,
-        TAM_max : 36 ,
-        TAM_min : 16 ,
-        DES_max : 18 ,
-        DES_min : 8 ,
-        INT_max : 6 ,
-        INT_min : 1 ,
-        POD_max : 18 ,
-        POD_min : 3 ,
+        FUE : [30 , 15],
+        CON : [24 , 4],
+        TAM : [36 , 16],
+        DES : [18 , 8],
+        INT : [6 , 1],
+        POD : [18 , 3],
         Movimiento : "10",
         Descripcion_breve: "Bestias Dañinas y Escabrosas" ,
         Armadura : "Ninguna" ,
@@ -372,18 +331,12 @@ const Ghast = {
 }
 const Gnoph_keh = {
         Nombre : "Gnoph-Keh" ,
-        FUE_max : 36 ,
-        FUE_min : 26 ,
-        CON_max : 30 ,
-        CON_min : 15 ,
-        TAM_max : 36 ,
-        TAM_min : 26 ,
-        DES_max : 24 ,
-        DES_min : 4 ,
-        INT_max : 18 ,
-        INT_min : 13 ,
-        POD_max : 36 ,
-        POD_min : 6 ,
+        FUE : [36 , 26],
+        CON : [30 , 15],
+        TAM : [36 , 26],
+        DES : [24 , 4],
+        INT : [18 , 13],
+        POD : [36 , 6],
         Movimiento : "9",
         Descripcion_breve: "Demonios de Hielo" ,
         Armadura : "9 puntos de cartílago, pelaje y piel endurecida." ,
@@ -395,18 +348,12 @@ const Gnoph_keh = {
 
 const Gul = {
         Nombre : "Gul" ,
-        FUE_max : 24 ,
-        FUE_min : 9 ,
-        CON_max : 18 ,
-        CON_min : 8 ,
-        TAM_max : 18 ,
-        TAM_min : 8 ,
-        DES_max : 18 ,
-        DES_min : 8 ,
-        INT_max : 18 ,
-        INT_min : 8 ,
-        POD_max : 18 ,
-        POD_min : 8 ,
+        FUE : [24 , 9],
+        CON : [18 , 8],
+        TAM : [18 , 8],
+        DES : [18 , 8],
+        INT : [18 , 8],
+        POD : [18 , 8],
         Movimiento : "9",
         Descripcion_breve: "Burlones Devoradores de Carroña" ,
         Armadura : "Las armas de fuego y los proyectiles causan la mitad del daño obtenido en la tirada; redondea cualquier fracción hacia abajo." ,
@@ -418,18 +365,12 @@ const Gul = {
 
 const Habitante_de_las_arenas = {
         Nombre : "Habitante de las Arenas" ,
-        FUE_max : 18 ,
-        FUE_min : 3 ,
-        CON_max : 18 ,
-        CON_min : 8 ,
-        TAM_max : 24 ,
-        TAM_min : 9 ,
-        DES_max : 18 ,
-        DES_min : 8 ,
-        INT_max : 18 ,
-        INT_min : 3 ,
-        POD_max : 18 ,
-        POD_min : 3 ,
+        FUE : [18 , 3],
+        CON : [18 , 8],
+        TAM : [24 , 9],
+        DES : [18 , 8],
+        INT : [18 , 3],
+        POD : [18 , 3],
         Movimiento : "8",
         Descripcion_breve: "Acechadores de los Yermos" ,
         Armadura : "3 puntos de piel gruesa." ,
@@ -441,18 +382,12 @@ const Habitante_de_las_arenas = {
 
 const Hombre_serpiente = {
         Nombre : "Hombre Serpiente" ,
-        FUE_max : 18 ,
-        FUE_min : 3 ,
-        CON_max : 18 ,
-        CON_min : 3 ,
-        TAM_max : 18 ,
-        TAM_min : 3 ,
-        DES_max : 18 ,
-        DES_min : 8 ,
-        INT_max : 24 ,
-        INT_min : 9 ,
-        POD_max : 18 ,
-        POD_min : 8 ,
+        FUE : [18 , 3],
+        CON : [18 , 3],
+        TAM : [18 , 3],
+        DES : [18 , 8],
+        INT : [24 , 9],
+        POD : [18 , 8],
         Movimiento : "8" ,
         Descripcion_breve: "Miembro Atávico de la Raza" ,
         Armadura : "1 punto de escamas." ,
@@ -464,18 +399,12 @@ const Hombre_serpiente = {
 
 const Horrendo_cazador = {
         Nombre : "Horrendo Cazador" ,
-        FUE_max : 42 ,
-        FUE_min : 17 ,
-        CON_max : 18 ,
-        CON_min : 3 ,
-        TAM_max : 54 ,
-        TAM_min : 29 ,
-        DES_max : 21 ,
-        DES_min : 6 ,
-        INT_max : 18 ,
-        INT_min : 13 ,
-        POD_max : 36 ,
-        POD_min : 6 ,
+        FUE : [42 , 17],
+        CON : [18 , 3],
+        TAM : [54 , 29],
+        DES : [21 , 6],
+        INT : [18 , 13],
+        POD : [36 , 6],
         Movimiento : "7/11" ,
         Descripcion_breve: "Viperinos Seres Voladores" ,
         Armadura : "9 puntos de piel." ,
@@ -487,18 +416,12 @@ const Horrendo_cazador = {
 
 const Lloigor = {
         Nombre : "Lloigor" ,
-        FUE_max : 48 ,
-        FUE_min : 33 ,
-        CON_max : 48 ,
-        CON_min : 8 ,
-        TAM_max : 8 ,
-        TAM_min : 2 ,
-        DES_max : 18 ,
-        DES_min : 3 ,
-        INT_max : 30 ,
-        INT_min : 10 ,
-        POD_max : 24 ,
-        POD_min : 4 ,
+        FUE : [48 , 33],
+        CON : [48 , 8],
+        TAM : [8 , 2],
+        DES : [18 , 3],
+        INT : [30 , 10],
+        POD : [24 , 4],
         Movimiento : "7 (Material)/3 (Inmaterial)",
         Descripcion_breve: "Maestros de la Telequinesis" ,
         Armadura : "8 puntos de piel de reptil. En su estado inmaterial son inmunes a todas las armas físicas, sean mágicas o no." ,
@@ -510,18 +433,12 @@ const Lloigor = {
 
 const Migo = {
         Nombre : "Mi-Go" ,
-        FUE_max : 18 ,
-        FUE_min : 3 ,
-        CON_max : 18 ,
-        CON_min : 3 ,
-        TAM_max : 18 ,
-        TAM_min : 3 ,
-        DES_max : 18 ,
-        DES_min : 4 ,
-        INT_max : 18 ,
-        INT_min : 8 ,
-        POD_max : 18 ,
-        POD_min : 8 ,
+        FUE : [18 , 3],
+        CON : [18 , 3],
+        TAM : [18 , 3],
+        DES : [18 , 4],
+        INT : [18 , 8],
+        POD : [18 , 8],
         Movimiento : "7/13 Volando" ,
         Descripcion_breve: "Enigmáticos Científicos de Yuggoth" ,
         Armadura : "Ninguna, pero su cuerpo de resonancia extraterrestre hace que todas las armas perforantes (incluidas las balas) les causen el menor daño posible." ,
@@ -533,18 +450,12 @@ const Migo = {
 
 const Perros_de_tindalos = {
         Nombre : "Perros de Tíndalos" ,
-        FUE_max : 24 ,
-        FUE_min : 9 ,
-        CON_max : 38 ,
-        CON_min : 23 ,
-        TAM_max : 24 ,
-        TAM_min : 9 ,
-        DES_max : 18 ,
-        DES_min : 3 ,
-        INT_max : 30 ,
-        INT_min : 5 ,
-        POD_max : 42 ,
-        POD_min : 7 ,
+        FUE : [24 , 9],
+        CON : [38 , 23],
+        TAM : [24 , 9],
+        DES : [18 , 3],
+        INT : [30 , 5],
+        POD : [42 , 7],
         Movimiento : "6/20 Volando",
         Descripcion_breve: "Carroñeros del Tiempo" ,
         Armadura : "2 puntos de piel. Además, regeneran 4 Puntos de Vida por asalto a no ser que hayan sido reducidos a O Puntos de Vida . Las armas mundanas no tienen efecto alguno sobre un perro de Tíndalos, aunque las armas encantadas y los hechizos les caus an el daño completo." ,
@@ -556,18 +467,12 @@ const Perros_de_tindalos = {
 
 const Polipo_volante = {
         Nombre : "Pólipos Volantes" ,
-        FUE_max : 60 ,
-        FUE_min : 40 ,
-        CON_max : 30 ,
-        CON_min : 20 ,
-        TAM_max : 60 ,
-        TAM_min : 40 ,
-        DES_max : 18 ,
-        DES_min : 8 ,
-        INT_max : 24 ,
-        INT_min : 4 ,
-        POD_max : 24 ,
-        POD_min : 9 ,
+        FUE : [60 , 40],
+        CON : [30 , 20],
+        TAM : [60 , 40],
+        DES : [18 , 8],
+        INT : [24 , 4],
+        POD : [24 , 9],
         Movimiento : "8/12 Volando",
         Descripcion_breve: "Terrores de las Oscuras Profundidades" ,
         Armadura : "4 puntos e invisibilidad . Los ultraterrenos pólipos volantes sufren solo el daño mínimo ca usado por cualquier a rma física, que además quedará reduci do en otros 4 puntos a causa de la a rmadura cutánea de l monstruo. Las armas encantadas ca usan el daño normal, así como otras fuerzas como el calor o la electricidad." ,
@@ -579,18 +484,12 @@ const Polipo_volante = {
 
 const Profundo = {
         Nombre : "Profundo" ,
-        FUE_max : 24 ,
-        FUE_min : 4 ,
-        CON_max : 18 ,
-        CON_min : 3 ,
-        TAM_max : 24 ,
-        TAM_min : 9 ,
-        DES_max : 18 ,
-        DES_min : 3 ,
-        INT_max : 18 ,
-        INT_min : 8 ,
-        POD_max : 18 ,
-        POD_min : 3 ,
+        FUE : [24 , 4],
+        CON : [18 , 3],
+        TAM : [24 , 9],
+        DES : [18 , 3],
+        INT : [18 , 8],
+        POD : [18 , 3],
         Movimiento : "8/10 Nadando",
         Descripcion_breve: "Señores Branquiados de las Profundidades" ,
         Armadura : "1 punto de piel y escamas." ,
@@ -602,20 +501,13 @@ const Profundo = {
 
 const Hibrido_profundo = {
         Nombre : "Híbrido Profundo" ,
-        FUE_max : 18 ,
-        FUE_min : 8 ,
-        CON_max : 18 ,
-        CON_min : 8 ,
-        TAM_max : 18 ,
-        TAM_min : 3 ,
-        DES_max : 18 ,
-        DES_min : 8 ,
-        INT_max : 18 ,
-        INT_min : 8 ,
-        POD_max : 18 ,
-        POD_min : 3 ,
-        APA_max : 12 ,
-        APA_min : 2 ,
+        FUE : [18 , 8],
+        CON : [18 , 8],
+        TAM : [18 , 3],
+        DES : [18 , 8],
+        INT : [18 , 8],
+        POD : [18 , 3],
+        APA : [12 , 2],
         Movimiento : "8/8 Nadando",
         Descripcion_breve: "La Progenie Degenerada de Innsmouth" ,
         Armadura : "Ninguna" ,
@@ -627,18 +519,12 @@ const Hibrido_profundo = {
 
 const Reptante = {
         Nombre : "Reptantes" ,
-        FUE_max : 12 ,
-        FUE_min : 7 ,
-        CON_max : 24 ,
-        CON_min : 4 ,
-        TAM_max : 18 ,
-        TAM_min : 8 ,
-        DES_max : 12 ,
-        DES_min : 2 ,
-        INT_max : 24 ,
-        INT_min : 4 ,
-        POD_max : 30 ,
-        POD_min : 10 ,
+        FUE : [12 , 7],
+        CON : [24 , 4],
+        TAM : [18 , 8],
+        DES : [12 , 2],
+        INT : [24 , 4],
+        POD : [30 , 10] ,
         Movimiento : "8",
         Descripcion_breve: "Agusanados Maestros de la Brujería" ,
         Armadura : "Ninguna; sin embargo, debido a la blanda y resistente cualidad de los cuerpos de los reptantes, las armas normales les causan el mínimo daño posible. Las balas solo les causan 1 punto de daño, excepto los perdigones de una escopeta, que causan el daño mínimo de ese tipo de arma de fuego." ,
@@ -650,18 +536,12 @@ const Reptante = {
 
 const Retoño_oscuro = {
         Nombre : "Retoños oscuros" ,
-        FUE_max : 54 ,
-        FUE_min : 34 ,
-        CON_max : 24 ,
-        CON_min : 9 ,
-        TAM_max : 54 ,
-        TAM_min : 34 ,
-        DES_max : 24 ,
-        DES_min : 9 ,
-        INT_max : 24 ,
-        INT_min : 4 ,
-        POD_max : 30 ,
-        POD_min : 5 ,
+        FUE : [54 , 34],
+        CON : [24 , 9],
+        TAM : [54 , 34],
+        DES : [24 , 9],
+        INT : [24 , 4],
+        POD : [30 , 5],
         Movimiento : "8",
         Descripcion_breve: "de Shub-Niggurath" ,
         Armadura : "Los retoños oscuros no están formados por materia terrenal, de modo que cualquier ataque con éx ito de un arma de fuego les causa solamente 1 punto de daño por cada bala (2 puntos en caso de empalamiento). Las armas cuerpo a cuerpo normales causan el daño normal. Los ataques basados en el calor, los e xplosivos, la corrosión, la electricidad o el envenenamiento no causan efecto alguno ." ,
@@ -673,18 +553,12 @@ const Retoño_oscuro = {
 
 const Semilla_estelar = {
         Nombre : "Semillas estelares de Cthulhu" ,
-        FUE_max : 120 ,
-        FUE_min : 20 ,
-        CON_max : 90 ,
-        CON_min : 15 ,
-        TAM_max : 18 ,
-        TAM_min : 3 ,
-        DES_max : 18 ,
-        DES_min : 3 ,
-        INT_max : 36 ,
-        INT_min : 6 ,
-        POD_max : 36 ,
-        POD_min : 6 ,
+        FUE : [120 , 20],
+        CON : [90 , 15],
+        TAM : [18 , 3],
+        DES : [18 , 3],
+        INT : [36 , 6],
+        POD : [36 , 6],
         Movimiento : "15/15 Nadando",
         Descripcion_breve: "Sátrapas del Durmiente" ,
         Armadura : "1O puntos de piel y grasa; regeneran 3 Puntos de vida por asalto." ,
@@ -696,18 +570,12 @@ const Semilla_estelar = {
 
 const Semilla_informe = {
         Nombre : "Semillas informe" ,
-        FUE_max : 42 ,
-        FUE_min : 7 ,
-        CON_max : 18 ,
-        CON_min : 3 ,
-        TAM_max : 48 ,
-        TAM_min : 13 ,
-        DES_max : 24 ,
-        DES_min : 14 ,
-        INT_max : 18 ,
-        INT_min : 8 ,
-        POD_max : 18 ,
-        POD_min : 3 ,
+        FUE : [42 , 7],
+        CON : [18 , 3],
+        TAM : [48 , 13],
+        DES : [24 , 14],
+        INT : [18 , 8],
+        POD : [18 , 3],
         Movimiento : "12",
         Descripcion_breve: "Horrores Metamórficos" ,
         Armadura : "Inmune a todas las armas físicas, incluso a las en cantadas; las heridas simplemente se cierran tras haber sido abiertas. Pueden verse afectadas por hechizos, así como por el fuego, productos químicos y otras fuerzas." ,
@@ -719,17 +587,12 @@ const Semilla_informe = {
 
 const Ser_rata = {
         Nombre : "Seres Rata" ,
-        FUE_max : 3 ,
-        FUE_min : 1 ,
-        CON_max : 12 ,
-        CON_min : 2 ,
-        TAM : 5 ,
-        DES_max : 28 ,
-        DES_min : 8 ,
-        INT_max : 18 ,
-        INT_min : 3 ,
-        POD_max : 12 ,
-        POD_min : 2 ,
+        FUE : [3 , 1],
+        CON : [12 , 2],
+        TAM : [5 , 5],
+        DES : [28 , 8],
+        INT : [18 , 3],
+        POD : [12 , 2],
         Movimiento : "9",
         Descripcion_breve: "Espías Escurridizos, Malévolos y Burlones" ,
         Armadura : "Ninguna , pero los ataques contra un ser rata a la Carrera se hacen con un dado de penalización." ,
@@ -741,18 +604,12 @@ const Ser_rata = {
 
 const Servidor_de_los_otros_dioses = {
         Nombre : "Servidor de los Otros Dioses" ,
-        FUE_max : 24 ,
-        FUE_min : 4 ,
-        CON_max : 24 ,
-        CON_min : 9 ,
-        TAM_max : 30 ,
-        TAM_min : 10 ,
-        DES_max : 24 ,
-        DES_min : 9 ,
-        INT_max : 30 ,
-        INT_min : 5 ,
-        POD_max : 24 ,
-        POD_min : 14 ,
+        FUE : [24 , 4],
+        CON : [24 , 9],
+        TAM : [30 , 10],
+        DES : [24 , 9],
+        INT : [30 , 5],
+        POD : [24 , 14],
         Movimiento : "7",
         Descripcion_breve: "de los Dioses Exteriores" ,
         Armadura : "Ninguna, aunque las armas físicas no pueden causarles daño; los hechizos y la s armas mágicas sí le s hacen el daño normal ; regeneran 3 Puntos de Vida por asalto hasta que mueren." ,
@@ -764,18 +621,12 @@ const Servidor_de_los_otros_dioses = {
 
 const Insectos_de_shaggai = {
         Nombre : "Insectos de Shaggai" ,
-        FUE_max : 3 ,
-        FUE_min : 1 ,
-        CON_max : 3 ,
-        CON_min : 1 ,
-        TAM_max : 1 ,
-        TAM_min : 1 ,
-        DES_max : 36 ,
-        DES_min : 26 ,
-        INT_max : 24 ,
-        INT_min : 9 ,
-        POD_max : 30 ,
-        POD_min : 5 ,
+        FUE : [3 , 1],
+        CON : [3 , 1],
+        TAM : [1 , 1],
+        DES : [36 , 26],
+        INT : [24 , 9],
+        POD : [30 , 5],
         Movimiento : "4/20 Volando",
         Descripcion_breve: "Parásitos Mentales" ,
         Armadura : "Ninguna" ,
@@ -787,18 +638,12 @@ const Insectos_de_shaggai = {
 
 const Shantak = {
         Nombre : "Shantak" ,
-        FUE_max : 44 ,
-        FUE_min : 24 ,
-        CON_max : 18 ,
-        CON_min : 8 ,
-        TAM_max : 60 ,
-        TAM_min : 40 ,
-        DES_max : 15 ,
-        DES_min : 5 ,
-        INT_max : 6 ,
-        INT_min : 1 ,
-        POD_max : 18 ,
-        POD_min : 3 ,
+        FUE : [44 , 24],
+        CON : [18 , 8],
+        TAM : [60 , 40],
+        DES : [15 , 5],
+        INT : [6 , 1],
+        POD : [18 , 3],
         Movimiento : "6/18 Volando",
         Descripcion_breve: "Colosales Monturas Aladas" ,
         Armadura : "9 puntos de piel gruesa." ,
@@ -810,18 +655,12 @@ const Shantak = {
 
 const Shoggoth = {
         Nombre : "Shoggoth" ,
-        FUE_max : 108 ,
-        FUE_min : 18 ,
-        CON_max : 72 ,
-        CON_min : 12 ,
-        TAM_max : 144 ,
-        TAM_min : 24 ,
-        DES_max : 6 ,
-        DES_min : 1 ,
-        INT_max : 12 ,
-        INT_min : 2 ,
-        POD_max : 18 ,
-        POD_min : 3 ,
+        FUE : [108 , 18],
+        CON : [72 , 12],
+        TAM : [144 , 24],
+        DES : [6 , 1],
+        INT : [12 , 2],
+        POD : [18 , 3],
         Movimiento : "6/18 Volando",
         Descripcion_breve: "Fétidas Iridiscencias" ,
         Armadura : "Ninguna, pero (1) los ataques de fuego o electricidad causan solo la mitad del daño; (2) armas físicas co mo las armas de fuego y los cuchillos causan solo 1 punto de daño por impacto; (3) un shoggoth regenera 2 Puntos de Vida por asalto." ,
@@ -833,23 +672,15 @@ const Shoggoth = {
 
 const Señor_de_los_shoggoths_humano = {
         Nombre : "Señor de los Shoggoths humano" ,
-        FUE_max : 20 ,
-        FUE_min : 10 ,
-        CON_max : 18 ,
-        CON_min : 8 ,
-        TAM_max : 21 ,
-        TAM_min : 6 ,
-        DES_max : 18 ,
-        DES_min : 3 ,
-        INT_max : 18 ,
-        INT_min : 8 ,
-        POD_max : 21 ,
-        POD_min : 6 ,
-        APA_max : 9 ,
-        APA_min : 4 ,
-        EDU_max : 18 ,
-        EDU_min : 3 ,
-        Movimiento : "8 Caminando",
+        FUE : [20 , 10],
+        CON : [18 , 8],
+        TAM : [21 , 6],
+        DES : [18 , 3],
+        INT : [18 , 8],
+        POD : [21 , 6],
+        APA : [9 , 4],
+        EDU : [18 , 3],
+        Movimiento : "8/10 Caminando",
         Descripcion_breve: "A la vista un Humano Cualquiera" ,
         Armadura : "Ninguna, pero (1) los ataques de fuego o electricidad causan solo la mitad del daño; (2) las armas físicas como las armas de fuego y los cuchillos causan solo 1 punto de daño por impacto; (3) un shoggoth regenera 2 Puntos de Vida por asalto." ,
         Ataques_por_asalto : "2" ,
@@ -860,18 +691,12 @@ const Señor_de_los_shoggoths_humano = {
 
 const Señor_de_los_shoggoths = {
         Nombre : "Señor de los Shoggoths" ,
-        FUE_max : 34 ,
-        FUE_min : 14 ,
-        CON_max : 46 ,
-        CON_min : 16 ,
-        TAM_max : 19 ,
-        TAM_min : 6 ,
-        DES_max : 18 ,
-        DES_min : 3 ,
-        INT_max : 18 ,
-        INT_min : 8 ,
-        POD_max : 21 ,
-        POD_min : 6 ,
+        FUE : [34 , 14],
+        CON : [46 , 16],
+        TAM : [19 , 6],
+        DES : [18 , 3],
+        INT : [18 , 8],
+        POD : [21 , 6],
         Movimiento : "8 Caminando/10 Rodando",
         Descripcion_breve: "Monstruosidades Corpulentas" ,
         Armadura : "Ninguna, pero (1) los ataques de fuego o electricidad causan solo la mitad del daño; (2) las armas físicas como las armas de fuego y los cuchillos causan solo 1 punto de daño por impacto; (3) un shoggoth regenera 2 Puntos de Vida por asalto." ,
@@ -883,18 +708,12 @@ const Señor_de_los_shoggoths = {
 
 const Sirviente_Glaaki = {
         Nombre : "Sirviente de Gla'aki" ,
-        FUE_max : 18 ,
-        FUE_min : 3 ,
-        CON_max : 36 ,
-        CON_min : 6 ,
-        TAM_max : 18 ,
-        TAM_min : 8 ,
-        DES_max : 6 ,
-        DES_min : 1 ,
-        INT_max : 18 ,
-        INT_min : 8 ,
-        POD_max : 18 ,
-        POD_min : 3 ,
+        FUE : [18 , 3],
+        CON : [36 , 6],
+        TAM : [18 , 8],
+        DES : [6 , 1],
+        INT : [18 , 8],
+        POD : [18 , 3],
         Movimiento : "5",
         Descripcion_breve: "Esclavos en Descomposición" ,
         Armadura : "Ninguna." ,
@@ -906,18 +725,12 @@ const Sirviente_Glaaki = {
 
 const Tcho_tcho = {
         Nombre : "Tcho-Tcho" ,
-        FUE_max : 18 ,
-        FUE_min : 3 ,
-        CON_max : 18 ,
-        CON_min : 3 ,
-        TAM_max : 14 ,
-        TAM_min : 4 ,
-        DES_max : 18 ,
-        DES_min : 3 ,
-        INT_max : 18 ,
-        INT_min : 3 ,
-        POD_max : 18 ,
-        POD_min : 3 ,
+        FUE : [18 , 3],
+        CON : [18 , 3],
+        TAM : [14 , 4],
+        DES : [18 , 3],
+        INT : [18 , 3],
+        POD : [18 , 3],
         Movimiento : "8",
         Descripcion_breve: "Crueles y Salvajes Adoradores de los Dioses Oscuros" ,
         Armadura : "Ninguna." ,
@@ -929,18 +742,12 @@ const Tcho_tcho = {
 
 const Vagabundo_dimensiona = {
         Nombre : "Vagabundo Dimensional" ,
-        FUE_max : 24 ,
-        FUE_min : 14 ,
-        CON_max : 24 ,
-        CON_min : 9 ,
-        TAM_max : 24 ,
-        TAM_min : 14 ,
-        DES_max : 18 ,
-        DES_min : 3 ,
-        INT_max : 12 ,
-        INT_min : 2 ,
-        POD_max : 18 ,
-        POD_min : 3 ,
+        FUE : [24 , 14],
+        CON : [24 , 9],
+        TAM : [24 , 14],
+        DES : [18 , 3],
+        INT : [12 , 2],
+        POD : [18 , 3],
         Movimiento : "7",
         Descripcion_breve: "Viajeros que se Desplazan Entre Dimensiones" ,
         Armadura : "3 puntos de piel gruesa" ,
@@ -952,18 +759,12 @@ const Vagabundo_dimensiona = {
 
 const Vampiro_estelar = {
         Nombre : "Vampiro Estelar" ,
-        FUE_max : 36 ,
-        FUE_min : 16 ,
-        CON_max : 18 ,
-        CON_min : 8 ,
-        TAM_max : 36 ,
-        TAM_min : 16 ,
-        DES_max : 12 ,
-        DES_min : 7 ,
-        INT_max : 18 ,
-        INT_min : 3 ,
-        POD_max : 18 ,
-        POD_min : 13 ,
+        FUE : [36 , 16],
+        CON : [18 , 8],
+        TAM : [36 , 16],
+        DES : [12 , 7],
+        INT : [18 , 3],
+        POD : [18 , 13],
         Movimiento : "6/9 Volando",
         Descripcion_breve: "Rapaces Invisibles" ,
         Armadura : "4 puntos de piel gruesa. Las balas solo causan la mitad de daño al integumento extraterrestre de los vampiros estelares." ,
@@ -975,15 +776,11 @@ const Vampiro_estelar = {
 
 const Vampiro_de_fuego = {
         Nombre : "Vampiro de Fuego" ,
-        CON_max : 12 ,
-        CON_min : 2 ,
-        TAM : 1 ,
-        DES_max : 24 ,
-        DES_min : 9 ,
-        INT_max : 18 ,
-        INT_min : 3 ,
-        POD_max : 18 ,
-        POD_min : 8 ,
+        CON : [12 , 2],
+        TAM : [1 , 1],
+        DES : [24 , 9],
+        INT : [18 , 3],
+        POD : [18 , 8],
         Movimiento : "11 Volando",
         Descripcion_breve: "Los que Alimentan la Llama" ,
         Armadura : "Las armas materiales normales (cuchillas, balas, etc.) no les hacen daño . El agua les causa 1 punto de daño por cada 2 litros que se les vierta encima; un extintor de mano les causa 1D6 puntos de daño; y un cubo de agua , 1D3 puntos de daño." ,
@@ -995,18 +792,12 @@ const Vampiro_de_fuego = {
 
 const Yithiano = {
         Nombre : "Yithiano" ,
-        FUE_max : 72 ,
-        FUE_min : 12 ,
-        CON_max : 36 ,
-        CON_min : 16 ,
-        TAM_max : 66 ,
-        TAM_min : 44 ,
-        DES_max : 15 ,
-        DES_min : 5 ,
-        INT_max : 30 ,
-        INT_min : 10 ,
-        POD_max : 18 ,
-        POD_min : 8 ,
+        FUE : [72 , 12],
+        CON : [36 , 16],
+        TAM : [66 , 44],
+        DES : [15 , 5],
+        INT : [30 , 10],
+        POD : [18 , 8],
         Movimiento : "7",
         Descripcion_breve: "Viajeros Menta les del Tiempo" ,
         Armadura : "8 puntos de piel." ,
@@ -1075,108 +866,67 @@ function Crear_criatura(){
         }
 
 
-        function atraparParametrosDeCriatura (criatura) {
+        function atraparEstadisticasDeCriatura (criatura) {
 
-                return {
+                return (Math.floor(Math.random() * (criatura[0] - criatura[1] + 1 ) + criatura[1])) * 5;
 
-                        fuerza : function (criatura) {
+        }
 
-                                return calculo = (Math.floor(Math.random() * (criatura.FUE_max - criatura.FUE_min + 1 ) + criatura.FUE_min)) * 5;
-                        },
+        function calcularCorpulencia (corpulencia) {
 
-                        constitucion : function (criatura) {
+                if (corpulencia < 65 ){
 
-                                return (Math.floor(Math.random() * (criatura.CON_max - criatura.CON_min + 1 ) + criatura.CON_min)) * 5;
-                        },
+                        return (-2)
+                        }
 
-                        tamano : function (criatura) {
+                        else if (corpulencia < 85){
 
-                                return (Math.floor(Math.random() * (criatura.TAM_max - criatura.TAM_min + 1 ) + criatura.TAM_min)) * 5;
-                        },
-
-                        destreza : function (criatura) {
-
-                                return (Math.floor(Math.random() * (criatura.DES_max - criatura.DES_min + 1 ) + criatura.DES_min)) * 5;
-                        },
-
-                        inteligencia : function (criatura) {
-
-                                return (Math.floor(Math.random() * (criatura.INT_max - criatura.INT_min + 1 ) + criatura.INT_min)) * 5;
-                        },
-
-                        poder : function (criatura) {
-
-                                return (Math.floor(Math.random() * (criatura.POD_max - criatura.POD_min + 1 ) + criatura.POD_min)) * 5;
-                        },
-
-                        apariencia : function (criatura) {
-
-                                return (Math.floor(Math.random() * (criatura.APA_max - criatura.APA_min + 1 ) + criatura.APA_min)) * 5;
-                        },
-
-                        educacion : function () {
-
-                                return (Math.floor(Math.random() * (criatura.EDU_max - criatura.EDU_min + 1 ) + criatura.EDU_min)) * 5;
-                        },
-
-                        corpulencia : function (Corpulencia) {
-
-                                if (Corpulencia < 65 ){
-
-                                        return (-2)
-
-                                }
-
-                                        else if (Corpulencia < 85){
-
-                                                return (-1)
+                                return (-1)
 
                                         }
 
-                                        else if (Corpulencia < 125){
+                        else if (corpulencia < 125){
 
-                                                return (0)
+                                return (0)
 
                                         }
 
-                                        else if (Corpulencia < 165){
+                        else if (corpulencia < 165){
 
-                                                return (1)
+                                return (1)
                                         }
 
-                                        else if (Corpulencia < 205){
+                        else if (corpulencia < 205){
 
-                                                return (2)
+                                return (2)
                                         }
 
-                                        else {
+                        else {
 
-                                                return (Math.ceil(((Corpulencia - 204) / 80))) + 2
-                                        }
-                        },
-
-                        danoExtra : function (Corpulencia) {
-
-                                if (Corpulencia < 1 ){
-
-                                        return Corpulencia
-
-                                }
-                                        else if (Corpulencia < 2) {
-
-                                                return Corpulencia + "D4"
-                                        }
-
-                                        else {
-                                                return (Corpulencia - 1) + "D6"
+                                return (Math.ceil(((corpulencia - 204) / 80))) + 2
                                         }
                         }
+
+        function danoExtra  (corpulencia) {
+
+                if (corpulencia < 1 ){
+
+                        return corpulencia
+
                 }
-        } 
+                        else if (corpulencia < 2) {
+
+                                return corpulencia + "D4"
+                        }
+
+                        else {
+                                return (corpulencia - 1) + "D6"
+                        }
+        }
 
 
 
-        const generador = atraparParametrosDeCriatura();
+
 
         const Nombre_criatura = atraparDescripcion(Codigo_Creacion.Nombre);
         const Movimiento_criatura = atraparDescripcion(Codigo_Creacion.Movimiento);
@@ -1186,18 +936,19 @@ function Crear_criatura(){
         const Ataques = atraparDescripcion(Codigo_Creacion.Ataques_de_combate);
         const Habilidades = atraparDescripcion(Codigo_Creacion.Habilidades);
         const Perdida_de_Cordura = atraparDescripcion(Codigo_Creacion.Cordura);
-        const Fuerza_criatura = generador.fuerza(Codigo_Creacion);
-        const Constitucion_criatura = generador.constitucion(Codigo_Creacion);
-        const Tamaño_criatura = generador.tamano(Codigo_Creacion);
-        const Destreza_criatura = generador.destreza(Codigo_Creacion);
-        const Inteligencia_criatura = generador.inteligencia(Codigo_Creacion);
-        const Poder_criatura = generador.poder(Codigo_Creacion);
+
+        const Fuerza_criatura = atraparEstadisticasDeCriatura(Codigo_Creacion.FUE);
+        const Constitucion_criatura = atraparEstadisticasDeCriatura(Codigo_Creacion.CON);
+        const Tamaño_criatura = atraparEstadisticasDeCriatura(Codigo_Creacion.TAM);
+        const Destreza_criatura = atraparEstadisticasDeCriatura(Codigo_Creacion.DES);
+        const Inteligencia_criatura = atraparEstadisticasDeCriatura(Codigo_Creacion.INT);
+        const Poder_criatura = atraparEstadisticasDeCriatura(Codigo_Creacion.POD);
 
         const Vida_criatura  = Math.floor((Tamaño_criatura+Constitucion_criatura)/10);
         const Magia_criatura = (Poder_criatura/5);
         const corpulenciaACalcular = Fuerza_criatura + Tamaño_criatura;
-        const Corpulencia_criatura = generador.corpulencia(corpulenciaACalcular);
-        const Daño_extra_criatura = generador.danoExtra(Corpulencia_criatura);
+        const Corpulencia_criatura = calcularCorpulencia(corpulenciaACalcular);
+        const Daño_extra_criatura = danoExtra(Corpulencia_criatura);
 
 
         // Se Genera en el html la criatura que se pide
@@ -1206,28 +957,30 @@ function Crear_criatura(){
 
                 let Poder_especial_criatura = "No";
                 let Poder_especial_humano = "No";
+                const humano = Señor_de_los_shoggoths_humano 
 
                 const Firstname_Man = "Joshua"
-                const Educacion_humano = (Math.floor(Math.random() * (Señor_de_los_shoggoths_humano.EDU_max - Señor_de_los_shoggoths_humano.EDU_min + 1 ) + Señor_de_los_shoggoths_humano.EDU_min)) * 5;
-                const Apariencia_humano = generador.apariencia(Señor_de_los_shoggoths_humano);
-                const Descripcion_humano = generador.descripcion(Señor_de_los_shoggoths_humano)
-                const Fuerza_humano = generador.fuerza(Señor_de_los_shoggoths_humano)
-                const Constitucion_humano = generador.constitucion(Señor_de_los_shoggoths_humano)
-                const Poder_humano = generador.poder(Señor_de_los_shoggoths_humano)
-                const Destreza_humano = generador.destreza(Señor_de_los_shoggoths_humano)
-                const Tamaño_humano = generador.tamano(Señor_de_los_shoggoths_humano)
-                const Inteligencia_humano = generador.inteligencia(Señor_de_los_shoggoths_humano)
-                const Habilidades_humano = generador.habilidades(Señor_de_los_shoggoths_humano);
-                const Vida_humano = Math.floor((Tamaño_humano+Constitucion_humano)/10);
+                const Descripcion_humano = atraparDescripcion(humano.Descripcion_breve);
+                const Habilidades_humano = atraparDescripcion(humano.Habilidades);
+                const Movimiento_humano = atraparDescripcion(humano.Movimiento);
+                const Armadura_humano = atraparDescripcion(humano.Armadura);
+                const Cantidad_ataques_humano = atraparDescripcion(humano.Ataques_por_asalto);
+                const Ataques_humano = atraparDescripcion(humano.Ataques_de_combate);
+                const Perdida_de_Cordura_humano = atraparDescripcion(humano.Cordura);
+                const Educacion_humano = atraparEstadisticasDeCriatura(humano.EDU);
+                const Apariencia_humano = atraparEstadisticasDeCriatura(humano.APA);
+                const Fuerza_humano = atraparEstadisticasDeCriatura(humano.FUE);
+                const Constitucion_humano = atraparEstadisticasDeCriatura(humano.CON);
+                const Poder_humano = atraparEstadisticasDeCriatura(humano.POD);
+                const Destreza_humano = atraparEstadisticasDeCriatura(humano.DES);
+                const Tamaño_humano = atraparEstadisticasDeCriatura(humano.TAM);
+                const Inteligencia_humano = atraparEstadisticasDeCriatura(humano.INT);
+                
                 const Magia_humano = (Poder_humano/5);
+                const Vida_humano = Math.floor((Tamaño_humano+Constitucion_humano)/10);
                 const corpulenciaACalcular = Fuerza_humano + Tamaño_humano;
-                const Corpulencia_humano = generador.corpulencia(corpulenciaACalcular);
-                const Daño_extra_humano = generador.danoExtra(Corpulencia_humano);
-                const Movimiento_humano = "10"
-                const Armadura_humano = generador.armadura(Señor_de_los_shoggoths_humano);
-                const Cantidad_ataques_humano = generador.ataquesPorAsalto(Señor_de_los_shoggoths_humano)
-                const Ataques_humano = generador.ataquesDeCombate(Señor_de_los_shoggoths_humano)
-                const Perdida_de_Cordura_humano = generador.cordura(Señor_de_los_shoggoths_humano)
+                const Corpulencia_humano = calcularCorpulencia(corpulenciaACalcular);
+                const Daño_extra_humano = danoExtra(Corpulencia_criatura);
 
                 document.getElementById("result").innerHTML =
                 "<br><h3> Nombre : "+Firstname_Man+"</h3>"+
