@@ -1069,25 +1069,15 @@ function Crear_criatura(){
         let Poder_especial_humano = "No";
 
 
+        function atraparDescripcion (criatura) {
+
+                return criatura
+        }
+
+
         function atraparParametrosDeCriatura (criatura) {
 
                 return {
-
-                        nombre : function (criatura) { return criatura.Nombre},
-
-                        movimiento : function (criatura) { return criatura.Movimiento},
-
-                        descripcion : function (criatura) { return criatura.Descripcion_breve},
-
-                        armadura : function (criatura) { return criatura.Armadura},
-
-                        ataquesPorAsalto : function (criatura) { return criatura.Ataques_por_asalto},
-
-                        ataquesDeCombate : function (criatura) { return criatura.Ataques_de_combate},
-
-                        habilidades : function (criatura) { return criatura.Habilidades},
-
-                        cordura : function (criatura) {return criatura.Cordura},
 
                         fuerza : function (criatura) {
 
@@ -1188,20 +1178,20 @@ function Crear_criatura(){
 
         const generador = atraparParametrosDeCriatura();
 
-        const Nombre_criatura = generador.nombre(Codigo_Creacion.Nombre);
-        const Movimiento_criatura = generador.movimiento(Codigo_Creacion);
-        const Descripcion = generador.descripcion(Codigo_Creacion);
-        const Armadura = generador.armadura(Codigo_Creacion);
-        const Cantidad_ataques = generador.ataquesPorAsalto(Codigo_Creacion);
-        const Ataques = generador.ataquesDeCombate(Codigo_Creacion);
-        const Habilidades = generador.habilidades(Codigo_Creacion);
+        const Nombre_criatura = atraparDescripcion(Codigo_Creacion.Nombre);
+        const Movimiento_criatura = atraparDescripcion(Codigo_Creacion.Movimiento);
+        const Descripcion = atraparDescripcion(Codigo_Creacion.Descripcion_breve);
+        const Armadura = atraparDescripcion(Codigo_Creacion.Armadura);
+        const Cantidad_ataques = atraparDescripcion(Codigo_Creacion.Ataques_por_asalto);
+        const Ataques = atraparDescripcion(Codigo_Creacion.Ataques_de_combate);
+        const Habilidades = atraparDescripcion(Codigo_Creacion.Habilidades);
+        const Perdida_de_Cordura = atraparDescripcion(Codigo_Creacion.Cordura);
         const Fuerza_criatura = generador.fuerza(Codigo_Creacion);
         const Constitucion_criatura = generador.constitucion(Codigo_Creacion);
         const Tamaño_criatura = generador.tamano(Codigo_Creacion);
         const Destreza_criatura = generador.destreza(Codigo_Creacion);
         const Inteligencia_criatura = generador.inteligencia(Codigo_Creacion);
         const Poder_criatura = generador.poder(Codigo_Creacion);
-        const Perdida_de_Cordura = generador.cordura(Codigo_Creacion);
 
         const Vida_criatura  = Math.floor((Tamaño_criatura+Constitucion_criatura)/10);
         const Magia_criatura = (Poder_criatura/5);
