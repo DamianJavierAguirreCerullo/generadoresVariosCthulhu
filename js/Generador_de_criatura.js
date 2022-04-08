@@ -1,14 +1,7 @@
-// Area de 
 const Criatura = document.getElementById("Criaturas");
 
 const crear = document.getElementById("creador");
 crear.addEventListener ("click",Crear_criatura);
-// var value = Criatura.options[Criatura.selectedIndex].value;
-// console.log(value); // en
-
-
-
-
 
 // grimorio
 
@@ -249,7 +242,8 @@ const Chthonian = {
 const Color_surgido_del_espacio = {
         Nombre : "Color Surgido del espacio" ,
         FUE : [6 , 1],
-        CON : [0 , 0],
+        CON : [0.00001, 0.00001],
+        TAM : [12 , 6],
         DES : [24 , 14],
         INT : [24 , 4],
         POD : [12 , 6],
@@ -623,7 +617,7 @@ const Insectos_de_shaggai = {
         Nombre : "Insectos de Shaggai" ,
         FUE : [3 , 1],
         CON : [3 , 1],
-        TAM : [1 , 1],
+        TAM : [0.00001, 0.00001],
         DES : [36 , 26],
         INT : [24 , 9],
         POD : [30 , 5],
@@ -666,7 +660,7 @@ const Shoggoth = {
         Armadura : "Ninguna, pero (1) los ataques de fuego o electricidad causan solo la mitad del daño; (2) armas físicas co mo las armas de fuego y los cuchillos causan solo 1 punto de daño por impacto; (3) un shoggoth regenera 2 Puntos de Vida por asalto." ,
         Ataques_por_asalto : "2" ,
         Ataques_de_combate : "Durante el combate, un shoggoth cubre un área de 5 m<sup>2</sup>. y es capaz de generar a voluntad tentáculos, zarpas o cualquier otro tipo de apéndices con los que llevar a cabo un ataque aplastante. Aquellos desafortunados que sean alcanzados por el ataque de un shoggoth también podrán ser engullidos. <br><strong>Engullir:</strong> Cada persona engullida en el interior del shoggoth es atacada por separado, y deberá vencer en una tirada enfrentada de FUE o será asimilada. Si el shoggoth ataca a más de un objetivo deberá dividir su FUE entre todos ellos. Las víctimas atrapadas en el interior de la oscura masa del shoggoth solo podrán contraatacar en aquellos asaltos en los que superen una tirada de FUE. Cada asalto que una víctima continúe atrapada en el interior de un shoggoth perderá una cantidad de Puntos de Vida igual a la Bonificación al daño del shoggoth; ese daño es producto de las fracturas, el aplastamiento y la succión. Un shoggoth es capaz de engullir cualquier cantidad de enemigos; sin embargo, el TAM combinado de estos no podrá exceder el TAM del shoggoth." ,
-        Habilidades : "<strong>Combatir<strong> 70% (35/14), daño igual a la Bonificación al daño o puede engullir al objetivo (como se indicaba anteriormente).<br><strong>Esquivar</strong> 8% (4/1)." ,
+        Habilidades : "<strong>Combatir</strong> 70% (35/14), daño igual a la Bonificación al daño o puede engullir al objetivo (como se indicaba anteriormente).<br><strong>Esquivar</strong> 8% (4/1)." ,
         Cordura : "Ver a un shoggoth produce un a pérdida de 1D6/1D20 Puntos de Cordura."
 }
 
@@ -776,8 +770,9 @@ const Vampiro_estelar = {
 
 const Vampiro_de_fuego = {
         Nombre : "Vampiro de Fuego" ,
+        FUE : [0.00001, 0.00001],
         CON : [12 , 2],
-        TAM : [1 , 1],
+        TAM : [0.00001, 0.00001],
         DES : [24 , 9],
         INT : [18 , 3],
         POD : [18 , 8],
@@ -808,7 +803,6 @@ const Yithiano = {
 }
 
 const Numero_Criatura = [
-        "",
         Angel_descarnado,
         Antiguo,
         Byakhee,
@@ -841,23 +835,17 @@ const Numero_Criatura = [
         Sirviente_Glaaki,
         Tcho_tcho,
         Vagabundo_dimensiona,
-        Vampiro_estelar,
         Vampiro_de_fuego,
+        Vampiro_estelar,
         Yithiano
 ]
 
 
-
-
 function Crear_criatura(){
-
-        let Poder_especial_criatura = "No";
 
         const Codigo_criatura = parseInt(Criatura.value);
 
         const Codigo_Creacion = Numero_Criatura[Codigo_criatura]
-
-        let Poder_especial_humano = "No";
 
 
         function atraparDescripcion (criatura) {
@@ -869,6 +857,8 @@ function Crear_criatura(){
         function atraparEstadisticasDeCriatura (criatura) {
 
                 return (Math.floor(Math.random() * (criatura[0] - criatura[1] + 1 ) + criatura[1])) * 5;
+
+
 
         }
 
@@ -944,6 +934,8 @@ function Crear_criatura(){
         const Inteligencia_criatura = atraparEstadisticasDeCriatura(Codigo_Creacion.INT);
         const Poder_criatura = atraparEstadisticasDeCriatura(Codigo_Creacion.POD);
 
+
+
         const Vida_criatura  = Math.floor((Tamaño_criatura+Constitucion_criatura)/10);
         const Magia_criatura = (Poder_criatura/5);
         const corpulenciaACalcular = Fuerza_criatura + Tamaño_criatura;
@@ -953,10 +945,10 @@ function Crear_criatura(){
 
         // Se Genera en el html la criatura que se pide
 
-        if ( Codigo_criatura === 27 ) {
+        if ( Codigo_criatura === 26 ) {
 
-                let Poder_especial_criatura = "No";
-                let Poder_especial_humano = "No";
+                const Poder_especial_criatura = "No";
+                const Poder_especial_humano = "No";
                 const humano = Señor_de_los_shoggoths_humano 
 
                 const Firstname_Man = "Joshua"
@@ -1028,10 +1020,10 @@ function Crear_criatura(){
                 "<br>"+"Poder Especial: "+Poder_especial_criatura
         }
 
-        else if (Codigo_criatura === 12) {
+        else if (Codigo_criatura === 11 ) {
 
-                const Apariencia_criatura = generador.apariencia(Codigo_Creacion);
-                let Poder_especial_criatura = "No";
+                const Apariencia_criatura = atraparEstadisticasDeCriatura(Codigo_Creacion.APA);
+                const Poder_especial_criatura = "No";
 
                 document.getElementById("result").innerHTML =
                 "<br><h3> Nombre : "+Nombre_criatura+"</h3>"+
@@ -1059,7 +1051,7 @@ function Crear_criatura(){
 
         else {
 
-                let Poder_especial_criatura = "No";
+                const Poder_especial_criatura = "No";
 
                 document.getElementById("result").innerHTML =
                 "<br><h3> Nombre : "+Nombre_criatura+"</h3>"+
