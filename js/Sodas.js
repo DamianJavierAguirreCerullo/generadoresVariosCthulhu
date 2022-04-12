@@ -1,5 +1,5 @@
 function Sodas() {
-    var Sodas = [
+    const Sodas = [
         "Hulthuc: Ginger Ale; Tónica; Común", 
         "Grapette: Uva; Naranja; Ginger Ale; Comun",
         "NuGrape: Uva; Ginger Ale; Frutilla",
@@ -13,14 +13,7 @@ function Sodas() {
         "Chelmsford: Ginger Ale"
     ]
 
-     var Company = Math.floor(Math.random() * Sodas.length)
+    const Company = Math.floor(Math.random() * Sodas.length)
     document.getElementById("result").innerHTML =
     "<h1>Soda:</h1>"+"<h2>"+Sodas[Company]+"</h2>"
-    //  var Company = Math.floor(Math.random() * Sodas.length)
-    //  document.getElementById("resultN").innerHTML =
-    //  "<h2>"+Sodas[Company]+"</h2>"
-    //  var Company = Math.floor(Math.random() * Sodas.length)
-    //  document.getElementById("resultP").innerHTML =
-    //  "<h2>"+Sodas[Company]+"</h2>"
-
 }

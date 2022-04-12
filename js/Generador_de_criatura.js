@@ -857,9 +857,6 @@ function Crear_criatura(){
         function atraparEstadisticasDeCriatura (criatura) {
 
                 return (Math.floor(Math.random() * (criatura[0] - criatura[1] + 1 ) + criatura[1])) * 5;
-
-
-
         }
 
         function calcularCorpulencia (corpulencia) {

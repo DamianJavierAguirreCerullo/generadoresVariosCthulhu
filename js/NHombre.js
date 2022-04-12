@@ -208,13 +208,6 @@
 
      //Terminan el area de listas
 
-     const D4 = Math.floor(Math.random() * (4 - 1 + 1) + 1);
-     const D6 = Math.floor(Math.random() * (6 - 1 + 1) + 1);
-     const D8 = Math.floor(Math.random() * (8 - 1 + 1) + 1);
-     const D10 = Math.floor(Math.random() * (10 - 1 + 1) + 1);
-     const D100 = Math.floor(Math.random() * (100 - 1 + 1) + 1);
-     const tresD6 = Math.floor(Math.random() * (18 - 3 + 1) + 3)*5;
-     const dosD6Mas6 = Math.floor(Math.random() * (18 - 8 + 1) + 8)*5;
      // const fobiasRandom = Math.floor(Math.random() * Fobias.length);
      // const maniasRandom = Math.floor(Math.random() * Manias.length);
 
@@ -543,7 +536,6 @@ function Generate_Character(){
      const movimientoActual = velocidadHumano(Des,Tam,Fue);
      const movimientoPorEdad = lentoPorViejo(Edad);
      const Movimiento = movimientoActual - movimientoPorEdad;
-     console.log(movimientoActual,movimientoPorEdad);
 
 
 

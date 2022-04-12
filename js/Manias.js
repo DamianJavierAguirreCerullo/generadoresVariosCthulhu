@@ -1,4 +1,4 @@
-        var Manias = [
+        const Manias = [
         "Ablutomarúa: Interés excesivo en la limpieza personal",
         "Aboulomanía: Indecisión patológica",
         "Acluomanía: Gusto excesivo por la oscuridad",
@@ -104,7 +104,7 @@
 function Generar_Mania() {
 
 
-    Manias_leght = Math.floor(Math.random() * Manias.length)
+    const Manias_leght = Math.floor(Math.random() * Manias.length)
     document.getElementById("result").innerHTML =
     "<h1>Manía</h1><h2>"+Manias[Manias_leght]+"<h2>"
 

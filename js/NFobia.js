@@ -1,4 +1,4 @@
-        var Fobias =[ 
+        const Fobias =[ 
         "Ablutofobia:Miedo a bañarse", 
         "Acrofobia: Alturas", 
         "Aerofobia: Volar", 
@@ -103,7 +103,7 @@
 
 function Generar_Fobia(){
 
-        var Fobia_leght = Math.floor(Math.random() * Fobias.length);
+        const Fobia_leght = Math.floor(Math.random() * Fobias.length);
         document.getElementById("result").innerHTML = 
         "<h1>Fobia :</h1>"+"<h2>"+Fobias[Fobia_leght]+"</h2>"
         //  document.getElementById("resultE").innerHTML =
