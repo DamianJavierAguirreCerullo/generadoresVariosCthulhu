@@ -5,7 +5,7 @@
 <head>
 
     <!-- fuente de google -->
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -26,9 +26,11 @@
             element = document.getElementById("content");
             check = document.getElementById("check");
             if (check.checked) {
+
                 element.style.display='block';
             }
             else {
+
                 element.style.display='none';
             }
         }
@@ -66,11 +68,10 @@
         <button class="btn-generadores" onclick="Generar_Fobia()">Generar Fobia</button>
         <button class="btn-generadores" onclick="Generar_Mania()">Generar Manía</button>
         <button class="btn-generadores" onclick="Localizacion()">Area de impacto</button>
-        
 
-        
-        
+
         <input type="checkbox" name="Check" id="check" value="0" onchange="showContent()" /> Lanzar Dados
+
 
         <form action="">
             <select  id="Criaturas">
@@ -123,8 +124,7 @@
         <input type="number" id="numeros">
         <input type="button" value="Lanzar" id="lanzador">
         </div>
-            <div id="result"></div>
-
+        <div id="result"></div>
     </div>
 </div>
 <button onclick="Generarpdf()">Descargar PDF</button>
