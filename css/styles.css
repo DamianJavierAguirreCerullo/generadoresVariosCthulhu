@@ -14,7 +14,12 @@
         }
 
         img{
-            width: 100%;
+            width: 80%;
+            padding-top: 8px;
+        }
+
+        .container{
+        text-align: center;
         }
 
         .btn-generadores{
@@ -27,8 +32,8 @@
         }
 
         h3{
-           margin: 0; 
-           font-weight: lighter;
+        margin: 0; 
+        font-weight: lighter;
         }
 
         hr{
@@ -37,6 +42,8 @@
 
         a{
             font-size: large;
+            text-decoration: none;
+            color: white;
         }
 
         td{
