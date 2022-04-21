@@ -4,101 +4,101 @@
      // https://www.behindthename.com/
 
      const Firstname_Man = ["Abraham", "Addison", "Archibald","Angelo","Alton", "Andrew", "Arnold", "Axel", "Alan", "Albano", "Albert", "Ambroise", "Andie", "Ansel", "Alfredo", "Apollo", "Archie" ,"Arlen" ,"Atreus" ,"Auster" , "Arwel" ,
-     "Baxter", "Bradon","Baldwin" ,"Bennet" ,"Benton" ,"Beret" ,"Biff" ,"Billie" ,"Bobbie" ,"Bongani" ,"Boris" ,"Braiden" ,"Bruno" ,"Brook" ,"Buster" ,"Byron" ,"Bronte" ,"Basilio" ,"Bayran" ,"Bellamy" ,
-     "Caleb", "Cecil", "Chester", "Clifford","Clinton", "Cornelius", "Curtis","Comfort","Charlie","Callum","Calvin" ,"Cameron" ,"Charlie" ,"Christopher" ,"Connor" ,"Conrad" ,"Constantine" ,"Cristian" ,"Cyril" ,"Craig" ,
-     "Dayton", "Delbert", "Douglas", "Dudley","Dixon", "Dexter","Daniel","Duncan","Daniel" ,"Darrel" ,"Demetrio" ,"Dermot" ,"Dillan" ,"Dmitri" ,"Dominic" ,"Donar" ,"Douglas" ,"Dietmar" ,"Dorin" ,"Dean" ,
-     "Ernest", "Eldridge", "Elwin", "Emanuel", "Emmet", "Edgard", "Emilio", "Everett", "","Ethan","Engel", "Elam", "Erik", "Ernie", "Ezra","Eugen" ,"Ezra" ,"Elwood" ,"Erasmus" ,
-     "Forest","Freeman","Fabian" ,"Fabio" ,"Fenton" ,"Ferdo" ,"Festus" ,"Filat" ,"Flavio" ,"Florent" ,"Folant" ,"Franco" ,"Franklyn" ,"Fredrick" ,"Friso" ,"Fulco" ,"Fynn" ,"Folcher" ,"Frank" ,"Firmin" ,
-     "Gilbert", "Granville", "Gustaf","Gordon","Gabe" ,"Garnett" ,"Garth" ,"Geoffrey" ,"Georgius" ,"Gerry" ,"Gideon" ,"Glenn" ,"Gollum" ,"Gordon" ,"Gunni" ,"Gwydion" ,"Glauco" ,"Gary" ,"Genesio" ,"Georgy" ,
-     "Helios", "Harmon", "Henderson", "Herman", "Hilliard", "Howard", "Hernando","Henry","Hugo","Hiram", "Holcom", "Hosea", "Hubbard","Harry","Hannibal" ,"Hector" ,"Holger" ,"Hoyt" ,"Howie" ,"Herberto" ,
-     "Irvin", "Ian", "Iker", "Isaac","Isador" ,"Indra" ,"Igor" ,"Ignacio" ,"Ignac" ,"Idwal" ,"Ismael" ,"Ivan" ,"Ingomar" ,"Illiam" ,"Iared" ,"Isidro" ,"Issur" ,"Izem" ,"Iustinus" ,"Ivairo" ,
-     "Jacob", "Jackson", "Jayden", "Jeremy", "Jeremiah", "Jonah", "Josiah", "Jarvis", "Jasper", "Joris","Joe","James","Jack","Josué","Jules" ,"Jeff" ,"Jere" ,"Joaquin" ,"Joffrey" ,"Joseph" ,
-     "Kirk","Kyle","Kaden" ,"Kane" ,"Kapel" ,"Kenan" ,"Kenton" ,"Kenzo" ,"Ketil" ,"Kian" ,"Klavs" ,"Knox" ,"Koba" ,"Koldo" ,"Kord" ,"Korey" ,"Kreios" ,"Kudret" ,"Kumar" ,"Kusti" ,
-     "Larkin", "Leland", "Leopold", "Lloyd", "Luther","Liam", "Lian","Leandro","Larry" ,"Lebron" ,"Lenni" ,"Leonard" ,"Lester" ,"Livio" ,"Lochan" ,"Logan" ,"Loman" ,"Lovro" ,"Lucius" ,"Lutfi" ,
-     "Manford", "Martin", "Merdan", "Maurice", "Maynard", "Melvin", "Miles", "Milton", "Morgan", "Mortimer","Maykel","Michael","Mark","Mathew","Macsen" ,"Malcom" ,"Merlin" ,"Monty" ,"Morley" ,"Murali" ,
-     "Napoleon", "Nelson", "Newton","Noah", "Nahum", "Nathan","Nabu" ,"Nando" ,"Narir" ,"Nathaniel" ,"Neitan" ,"Nicholai" ,"Nick" ,"Norton" ,"Nazim" ,"Ned" ,"Nemanja" ,"Nereus" ,"Neville" ,"Noa" ,
-     "Oliver", "Orson", "Oswald","Oscar","Obadiah", "Oren", "Orris", "Ozias","Omondi" ,"Omri" ,"Ophir" ,"Orel" ,"Orril" ,"Orso" ,"Osmond" ,"Oswald" ,"Ovid" ,"Orestes" ,"Orhan" ,"Onisim" ,
-     "Pablo", "Percival", "Porter", "Pedro","Pierce","Patryk" ,"Patton" ,"Perun" ,"Peti" ,"Photios" ,"Pierino" ,"Pierre" ,"Placidus" ,"Pratap" ,"Pridon" ,"Prosper" ,"Pythios" ,"Poncio" ,"Porter" ,"Pranav" ,
-     "Quincy","Quinti" ,"Quique" ,"Qamar" ,"Qemal" ,"Qadir" ,"Quanah" ,"Quidel" ,"Quincey" ,"Quinlan" ,"Quang" ,"Qismat" ,"Quidel" ,
-     "Randall", "Reginald", "Richmond", "Rodney", "Roscoe", "Rowland", "Rupert","Robert","Reece","Reuben","Ralph" ,"Rasmus" ,"Raymund" ,"Reggie" ,"Ronald" ,"Rufus" ,"Rupert" ,"Raffael" ,"Ramon" ,"Rashaun" ,
-     "Sanford", "Sebastian", "Shelby", "Sidney", "Solomon","Squire", "Sterling", "Sidney","Stuart","Sharman","Simon","Steven", "Salmon", "Sefton", "Sylvanus","Samuel","Scott","Shawn","Sven" ,"Sullivan" ,
-     "Thaddeus","Tomas","Tailor","Todd","Travis","Thiago","Ted" ,"Teodoro" ,"Terence" ,"Tilen" ,"Timur" ,"Tobias" ,"Torin" ,"Tristan" ,"Tian" ,"Tieder" ,"Tito" ,"Torben" ,"Tancred" ,"Taras" ,
-     "Uzziel","Uttar","Usman","Urien","Urias","Urbanus","Umran","Ulysse","Ujarak","Udo","Ualan","Ubirajara","Udi","Ulick","Ulrich",
-     "Valentino","Vincent","Vicente","Vadik" ,"Vadim" ,"Viriato" ,"Vipun" ,"Vilmos" ,"Vikrama" ,"Vibol" ,"Veselko" ,"Veselin" ,"Vergil" ,"Vazgen" ,"Vaughan" ,"Vlado" ,"Vlas" ,"Volker" ,"Vragi" ,"Vural" ,
-     "Walter", "Wilbur", "Wilfred","William","Willard","Wade" ,"Wadud" ,"Wetzel" ,"Wigand" ,"Wilmer" ,"Wilson" ,"Winfred" ,"Wotan" ,"Wulfsige" ,"Wystan" ,"Wilmot" ,"Waldo" ,"Waheed" ,"Waclaw" ,"Webster" ,
-     "Xabi" ,"Xanti" ,"Xenon" ,"Xolani" ,"Xystos" ,"Xacobe" ,"Xaime" ,
-     "Yachin" ,"Yacoub" ,"Yahui" ,"Yaqoob" ,"Yaromir" ,"Yaron" ,"Yasen" ,"Yasin" ,"Yavor" ,"Yefim" ,"Yisra" ,"Yoan" ,"Yolotli" ,"Yehiel" ,"Yegor" ,"Yefren" ,
-     "Zadok", ,"Zaahir" ,"Zach" ,"Zimri" ,"Zawar" ,"Zahi" ,"Zabulon" ,"Zac"];
+                              "Baxter", "Bradon","Baldwin" ,"Bennet" ,"Benton" ,"Beret" ,"Biff" ,"Billie" ,"Bobbie" ,"Bongani" ,"Boris" ,"Braiden" ,"Bruno" ,"Brook" ,"Buster" ,"Byron" ,"Bronte" ,"Basilio" ,"Bayran" ,"Bellamy" ,
+                              "Caleb", "Cecil", "Chester", "Clifford","Clinton", "Cornelius", "Curtis","Comfort","Charlie","Callum","Calvin" ,"Cameron" ,"Charlie" ,"Christopher" ,"Connor" ,"Conrad" ,"Constantine" ,"Cristian" ,"Cyril" ,"Craig" ,
+                              "Dayton", "Delbert", "Douglas", "Dudley","Dixon", "Dexter","Daniel","Duncan","Daniel" ,"Darrel" ,"Demetrio" ,"Dermot" ,"Dillan" ,"Dmitri" ,"Dominic" ,"Donar" ,"Douglas" ,"Dietmar" ,"Dorin" ,"Dean" ,
+                              "Ernest", "Eldridge", "Elwin", "Emanuel", "Emmet", "Edgard", "Emilio", "Everett", "","Ethan","Engel", "Elam", "Erik", "Ernie", "Ezra","Eugen" ,"Ezra" ,"Elwood" ,"Erasmus" ,
+                              "Forest","Freeman","Fabian" ,"Fabio" ,"Fenton" ,"Ferdo" ,"Festus" ,"Filat" ,"Flavio" ,"Florent" ,"Folant" ,"Franco" ,"Franklyn" ,"Fredrick" ,"Friso" ,"Fulco" ,"Fynn" ,"Folcher" ,"Frank" ,"Firmin" ,
+                              "Gilbert", "Granville", "Gustaf","Gordon","Gabe" ,"Garnett" ,"Garth" ,"Geoffrey" ,"Georgius" ,"Gerry" ,"Gideon" ,"Glenn" ,"Gollum" ,"Gordon" ,"Gunni" ,"Gwydion" ,"Glauco" ,"Gary" ,"Genesio" ,"Georgy" ,
+                              "Helios", "Harmon", "Henderson", "Herman", "Hilliard", "Howard", "Hernando","Henry","Hugo","Hiram", "Holcom", "Hosea", "Hubbard","Harry","Hannibal" ,"Hector" ,"Holger" ,"Hoyt" ,"Howie" ,"Herberto" ,
+                              "Irvin", "Ian", "Iker", "Isaac","Isador" ,"Indra" ,"Igor" ,"Ignacio" ,"Ignac" ,"Idwal" ,"Ismael" ,"Ivan" ,"Ingomar" ,"Illiam" ,"Iared" ,"Isidro" ,"Issur" ,"Izem" ,"Iustinus" ,"Ivairo" ,
+                              "Jacob", "Jackson", "Jayden", "Jeremy", "Jeremiah", "Jonah", "Josiah", "Jarvis", "Jasper", "Joris","Joe","James","Jack","Josué","Jules" ,"Jeff" ,"Jere" ,"Joaquin" ,"Joffrey" ,"Joseph" ,
+                              "Kirk","Kyle","Kaden" ,"Kane" ,"Kapel" ,"Kenan" ,"Kenton" ,"Kenzo" ,"Ketil" ,"Kian" ,"Klavs" ,"Knox" ,"Koba" ,"Koldo" ,"Kord" ,"Korey" ,"Kreios" ,"Kudret" ,"Kumar" ,"Kusti" ,
+                              "Larkin", "Leland", "Leopold", "Lloyd", "Luther","Liam", "Lian","Leandro","Larry" ,"Lebron" ,"Lenni" ,"Leonard" ,"Lester" ,"Livio" ,"Lochan" ,"Logan" ,"Loman" ,"Lovro" ,"Lucius" ,"Lutfi" ,
+                              "Manford", "Martin", "Merdan", "Maurice", "Maynard", "Melvin", "Miles", "Milton", "Morgan", "Mortimer","Maykel","Michael","Mark","Mathew","Macsen" ,"Malcom" ,"Merlin" ,"Monty" ,"Morley" ,"Murali" ,
+                              "Napoleon", "Nelson", "Newton","Noah", "Nahum", "Nathan","Nabu" ,"Nando" ,"Narir" ,"Nathaniel" ,"Neitan" ,"Nicholai" ,"Nick" ,"Norton" ,"Nazim" ,"Ned" ,"Nemanja" ,"Nereus" ,"Neville" ,"Noa" ,
+                              "Oliver", "Orson", "Oswald","Oscar","Obadiah", "Oren", "Orris", "Ozias","Omondi" ,"Omri" ,"Ophir" ,"Orel" ,"Orril" ,"Orso" ,"Osmond" ,"Oswald" ,"Ovid" ,"Orestes" ,"Orhan" ,"Onisim" ,
+                              "Pablo", "Percival", "Porter", "Pedro","Pierce","Patryk" ,"Patton" ,"Perun" ,"Peti" ,"Photios" ,"Pierino" ,"Pierre" ,"Placidus" ,"Pratap" ,"Pridon" ,"Prosper" ,"Pythios" ,"Poncio" ,"Porter" ,"Pranav" ,
+                              "Quincy","Quinti" ,"Quique" ,"Qamar" ,"Qemal" ,"Qadir" ,"Quanah" ,"Quidel" ,"Quincey" ,"Quinlan" ,"Quang" ,"Qismat" ,"Quidel" ,
+                              "Randall", "Reginald", "Richmond", "Rodney", "Roscoe", "Rowland", "Rupert","Robert","Reece","Reuben","Ralph" ,"Rasmus" ,"Raymund" ,"Reggie" ,"Ronald" ,"Rufus" ,"Rupert" ,"Raffael" ,"Ramon" ,"Rashaun" ,
+                              "Sanford", "Sebastian", "Shelby", "Sidney", "Solomon","Squire", "Sterling", "Sidney","Stuart","Sharman","Simon","Steven", "Salmon", "Sefton", "Sylvanus","Samuel","Scott","Shawn","Sven" ,"Sullivan" ,
+                              "Thaddeus","Tomas","Tailor","Todd","Travis","Thiago","Ted" ,"Teodoro" ,"Terence" ,"Tilen" ,"Timur" ,"Tobias" ,"Torin" ,"Tristan" ,"Tian" ,"Tieder" ,"Tito" ,"Torben" ,"Tancred" ,"Taras" ,
+                              "Uzziel","Uttar","Usman","Urien","Urias","Urbanus","Umran","Ulysse","Ujarak","Udo","Ualan","Ubirajara","Udi","Ulick","Ulrich",
+                              "Valentino","Vincent","Vicente","Vadik" ,"Vadim" ,"Viriato" ,"Vipun" ,"Vilmos" ,"Vikrama" ,"Vibol" ,"Veselko" ,"Veselin" ,"Vergil" ,"Vazgen" ,"Vaughan" ,"Vlado" ,"Vlas" ,"Volker" ,"Vragi" ,"Vural" ,
+                              "Walter", "Wilbur", "Wilfred","William","Willard","Wade" ,"Wadud" ,"Wetzel" ,"Wigand" ,"Wilmer" ,"Wilson" ,"Winfred" ,"Wotan" ,"Wulfsige" ,"Wystan" ,"Wilmot" ,"Waldo" ,"Waheed" ,"Waclaw" ,"Webster" ,
+                              "Xabi" ,"Xanti" ,"Xenon" ,"Xolani" ,"Xystos" ,"Xacobe" ,"Xaime" ,
+                              "Yachin" ,"Yacoub" ,"Yahui" ,"Yaqoob" ,"Yaromir" ,"Yaron" ,"Yasen" ,"Yasin" ,"Yavor" ,"Yefim" ,"Yisra" ,"Yoan" ,"Yolotli" ,"Yehiel" ,"Yegor" ,"Yefren" ,
+                              "Zadok", ,"Zaahir" ,"Zach" ,"Zimri" ,"Zawar" ,"Zahi" ,"Zabulon" ,"Zac"];
 
 
      const Lastname = ["Abraham", "Adler", "Ankins", "Avery","Acheson","Aitken","Allan","Allaway","Allen","Angus","Atchison","Atwater","Appleton","Armistead","Ashworth","Atkin","Audley","Averill",
-     "Barnham", "Bentz", "Bessler", "Bleeker", "Bretz", "Brock", "Buchman", "Brown","Baker","Byrne",,"Barlow","Bardsley","Barret","Bartram","Batts","Belanger","Bennett","Benson","Bernard","Bishop","Blackburn","Bloodworth","Boothman","Bowman","Bradford","Bradley","Braxton","Brent","Brett","Brinley","Bronson","Burnham","Baird","Barber","Beattie","Beatty","Begbie","Blackwood","Blair","Boyd","Breckenridge","Breckinridge","Brody","Bruce","Burns","Bridge","Barbour", "Beman", "Beckwith", "Bliss", "Bristol","Bain","Bannister",
-     "Click", "Cordova", "Crabtree", "Crankovitch", "Cuthburt","Cuttling","Caldwell","Cantrell","Carter","Carver","Causer","Chambers","Chapman","Cheshire","Clement","Colbert","Cadwell", "Case", "Chittenden", "Corey","Calhoun","Campbell","Carson","Clacher","Coburn","Cockburn","Coutts","Craig","Cunningham","Coleman","Collingwood","Colton","Crawford","Crouch",
-     "Dorman","Darrow","Davies","Davis","Donne","Drummond","Dubhghlas","Dunbar","Dunn","Dabney","Dixon","Dodge","Durant","Dill",
-     "Eakley", "Eddie", "Elsner","Ellsworth","Emerson","Eustis","Evered","Evans", 
-     "Fandrick", "Farwell", "Felten", "Fenske", "Fillman","Finley", "Firske", "Flanagan", "Franklin", "Freeman", "Frisbe","Fairbairn","Falconer","Faulkner","Ferguson","Findlay","Fraser","Farnham","Farran","Frost","Fuller","Forest",
-     "Gore", "Greenwald","Gibbs","Gibson","Glen","Graeme","Graham","Grant","Grier","Grieve","Gadsby","Garland","Garnet","Gilliam","Gladwyn","Glass","Godfrey","Goodwin","Groves","Gardener","Green", "Griffith",
-     "Hahn", "Heminger","Hogue","Hollister","Harland","Hartell","Hathway","Hayden","Haywood","Hedley","Heath","Henson","Herbert","Herriot","Hobbs","Holland","Hooper","Hopson","Huff","Hurst","Huxley","Hyland","Haig","Hardie","Henderson","Hendry","Hepburn","Houston","Hume","Hunter","Hackett","Haig","Hambleton","Harding","Hardwick","Hill","Higley",
-     //i
-     "Johnson","Jones","Jarrett","Jerome","Jernigan","Jinks","Jewell","Johnston",
-     "Kasper", "Kisro", "Kleeman","Keir","Kendrick","Kinley","Kinnaird","Kerr","Keen","Kimball","Kingsley","Knight",
-     "Lake","Levard", "Lockhart", "Luckstrim", "Lynch","Lenmox","Lester","Lindsay","Lister","Lithgow","Lusk","Lamb","Langley","Lawrence","Leach","Levitt","Li",
-     "Madison", "Mantei", "Marsh", "McBurney", "McCarney", "Moses","Mac Alastair","MacBeth", "MacCallum","MacConnell","MacDaniel","MacDougall","MacGrory","MacKay","MacNeil","Maxwell","Mathieson","McAfee","Milne","Mitchell","Moffett","Monroe","Moray","Morris","Munro","Murdoch","Murray","Midgley","Mondy","Myers","Marchand","Marston","Mathers","Mercer","Morton",  "Martin", "Murphy","Merrill", "Mills",
-     "Nickels", "O'Neil","Neil","Ness","Nevin","Norris","Nash","Neville","Nielson","Norwood","Northway",
-     "Olson", "Ozanich","Oakley","Overton","O'Sullivan",  "O'Brien","Oakes",
-     "Patterson","Patzer", "Peppin", "Porter","Posch","Pettibone", "Phelps", "Pike","Prentice", "Proctor","Padmore","Palmer","Parks","Payne","Peak","Pearce","Pemberton","Peterson","Pickle","Pilgrim","Poindexter","Powers","Pryor","Putnam","Purcell","Paterson","Patton","Pollock","Page",
-     //q
-     "Raslo", "Razner", "Rifenberg", "Riley", "Ripley", "Rossini","Rains","Rake","Reed","Reeve","Remington","Reynolds","Richardson","Rigby","Rimmer","Roach","Roscoe","Rowland","Russell","Rae","Ralston","Ramsey","Rattray","Reid","Ross","Ruskin","Rutherford","Rye","Roberts", 
-     "Schiltgan", "Schmidt", "Schroeder", "Schwartz", "Shane", "Shattuck", "Shea", "Slaughter", "Smith", "Speltzer","Stimac", "Strenburg", "Strong", "Swanson","Sangster","Saunders","Sheach","Starrett","Sterling","Stewart","Stirling","Seaver","Sempers","Sharman","Sharrow","Shelton","Shine","Siddall","Simen","Simmons","Simpkin","Sinclair","Skeates","Slater","Snell", "Snider","Solomon","Sommer","Southgate","Spalding","Spear","Speight","Spencer","Stacy","Stanley","Stanton","Statham","Stern","Stevenson","Stidolph","Stoddard","Stone","Strickland","Stroud","Sadler","Sampson","Sanderson","Sanford","Sangster","Sappington","Sephard", "Scudder","Singh", "Silva", "Sedgwick", "Sidrach", "Smith",
-     "Tillinghast", "Traver","Taft","Tanner","Tash","Tate","Tatham","Temple", "Tuller","Tatum","Tennison","Terrell","Thacker","Thompkins","Thorn","Tifft","Tindall","Tipton","Tirrel","Tobin","Trask","Toft","Toller","Tolbert","Trent","Triggs","Truman","Tucker","Turner","Twist","Taggart","Thorburn","Thatcher","Thomas",
-     "Urton","Urquhart","Underhill","Upton",
-     "Vallier","Vance","Varley","Varnham","Verity","Vernon","Vipond",
-     "Wagner", "Walsted", "Wang",
-     "Warner", "Webber", "Welch", "Winters",  "Williams","Walsh", "Wadsworth","Ward", "Westcott", "Wickes", "Wilcox", "Willard", "Witherell", "Wolcott", "Woodford","Wallace","Wallis","Woods","Wolf","Woodham","Woodrow","Wootton","Wragge","Wray","Wynne","Wade","Walker","Whitney","Whittemore","Wickham","Wiley","Winslow","Winter","Winthrop","White",
-     "Yarbrough", "Yeske","Yap","Yates","Yoxall",
-     "zanquell"];
+                         "Barnham", "Bentz", "Bessler", "Bleeker", "Bretz", "Brock", "Buchman", "Brown","Baker","Byrne",,"Barlow","Bardsley","Barret","Bartram","Batts","Belanger","Bennett","Benson","Bernard","Bishop","Blackburn","Bloodworth","Boothman","Bowman","Bradford","Bradley","Braxton","Brent","Brett","Brinley","Bronson","Burnham","Baird","Barber","Beattie","Beatty","Begbie","Blackwood","Blair","Boyd","Breckenridge","Breckinridge","Brody","Bruce","Burns","Bridge","Barbour", "Beman", "Beckwith", "Bliss", "Bristol","Bain","Bannister",
+                         "Click", "Cordova", "Crabtree", "Crankovitch", "Cuthburt","Cuttling","Caldwell","Cantrell","Carter","Carver","Causer","Chambers","Chapman","Cheshire","Clement","Colbert","Cadwell", "Case", "Chittenden", "Corey","Calhoun","Campbell","Carson","Clacher","Coburn","Cockburn","Coutts","Craig","Cunningham","Coleman","Collingwood","Colton","Crawford","Crouch",
+                         "Dorman","Darrow","Davies","Davis","Donne","Drummond","Dubhghlas","Dunbar","Dunn","Dabney","Dixon","Dodge","Durant","Dill",
+                         "Eakley", "Eddie", "Elsner","Ellsworth","Emerson","Eustis","Evered","Evans", 
+                         "Fandrick", "Farwell", "Felten", "Fenske", "Fillman","Finley", "Firske", "Flanagan", "Franklin", "Freeman", "Frisbe","Fairbairn","Falconer","Faulkner","Ferguson","Findlay","Fraser","Farnham","Farran","Frost","Fuller","Forest",
+                         "Gore", "Greenwald","Gibbs","Gibson","Glen","Graeme","Graham","Grant","Grier","Grieve","Gadsby","Garland","Garnet","Gilliam","Gladwyn","Glass","Godfrey","Goodwin","Groves","Gardener","Green", "Griffith",
+                         "Hahn", "Heminger","Hogue","Hollister","Harland","Hartell","Hathway","Hayden","Haywood","Hedley","Heath","Henson","Herbert","Herriot","Hobbs","Holland","Hooper","Hopson","Huff","Hurst","Huxley","Hyland","Haig","Hardie","Henderson","Hendry","Hepburn","Houston","Hume","Hunter","Hackett","Haig","Hambleton","Harding","Hardwick","Hill","Higley",
+                         //i
+                         "Johnson","Jones","Jarrett","Jerome","Jernigan","Jinks","Jewell","Johnston",
+                         "Kasper", "Kisro", "Kleeman","Keir","Kendrick","Kinley","Kinnaird","Kerr","Keen","Kimball","Kingsley","Knight",
+                         "Lake","Levard", "Lockhart", "Luckstrim", "Lynch","Lenmox","Lester","Lindsay","Lister","Lithgow","Lusk","Lamb","Langley","Lawrence","Leach","Levitt","Li",
+                         "Madison", "Mantei", "Marsh", "McBurney", "McCarney", "Moses","Mac Alastair","MacBeth", "MacCallum","MacConnell","MacDaniel","MacDougall","MacGrory","MacKay","MacNeil","Maxwell","Mathieson","McAfee","Milne","Mitchell","Moffett","Monroe","Moray","Morris","Munro","Murdoch","Murray","Midgley","Mondy","Myers","Marchand","Marston","Mathers","Mercer","Morton",  "Martin", "Murphy","Merrill", "Mills",
+                         "Nickels", "O'Neil","Neil","Ness","Nevin","Norris","Nash","Neville","Nielson","Norwood","Northway",
+                         "Olson", "Ozanich","Oakley","Overton","O'Sullivan",  "O'Brien","Oakes",
+                         "Patterson","Patzer", "Peppin", "Porter","Posch","Pettibone", "Phelps", "Pike","Prentice", "Proctor","Padmore","Palmer","Parks","Payne","Peak","Pearce","Pemberton","Peterson","Pickle","Pilgrim","Poindexter","Powers","Pryor","Putnam","Purcell","Paterson","Patton","Pollock","Page",
+                         //q
+                         "Raslo", "Razner", "Rifenberg", "Riley", "Ripley", "Rossini","Rains","Rake","Reed","Reeve","Remington","Reynolds","Richardson","Rigby","Rimmer","Roach","Roscoe","Rowland","Russell","Rae","Ralston","Ramsey","Rattray","Reid","Ross","Ruskin","Rutherford","Rye","Roberts", 
+                         "Schiltgan", "Schmidt", "Schroeder", "Schwartz", "Shane", "Shattuck", "Shea", "Slaughter", "Smith", "Speltzer","Stimac", "Strenburg", "Strong", "Swanson","Sangster","Saunders","Sheach","Starrett","Sterling","Stewart","Stirling","Seaver","Sempers","Sharman","Sharrow","Shelton","Shine","Siddall","Simen","Simmons","Simpkin","Sinclair","Skeates","Slater","Snell", "Snider","Solomon","Sommer","Southgate","Spalding","Spear","Speight","Spencer","Stacy","Stanley","Stanton","Statham","Stern","Stevenson","Stidolph","Stoddard","Stone","Strickland","Stroud","Sadler","Sampson","Sanderson","Sanford","Sangster","Sappington","Sephard", "Scudder","Singh", "Silva", "Sedgwick", "Sidrach", "Smith",
+                         "Tillinghast", "Traver","Taft","Tanner","Tash","Tate","Tatham","Temple", "Tuller","Tatum","Tennison","Terrell","Thacker","Thompkins","Thorn","Tifft","Tindall","Tipton","Tirrel","Tobin","Trask","Toft","Toller","Tolbert","Trent","Triggs","Truman","Tucker","Turner","Twist","Taggart","Thorburn","Thatcher","Thomas",
+                         "Urton","Urquhart","Underhill","Upton",
+                         "Vallier","Vance","Varley","Varnham","Verity","Vernon","Vipond",
+                         "Wagner", "Walsted", "Wang",
+                         "Warner", "Webber", "Welch", "Winters",  "Williams","Walsh", "Wadsworth","Ward", "Westcott", "Wickes", "Wilcox", "Willard", "Witherell", "Wolcott", "Woodford","Wallace","Wallis","Woods","Wolf","Woodham","Woodrow","Wootton","Wragge","Wray","Wynne","Wade","Walker","Whitney","Whittemore","Wickham","Wiley","Winslow","Winter","Winthrop","White",
+                         "Yarbrough", "Yeske","Yap","Yates","Yoxall",
+                         "zanquell"];
 
 
      const Profession_Man = ["Acrobata", "Actor", "Agente Federal", "Alienista", "Alpinista", "Anticuario", "Arqueologo", "Arquitecto", "Artesano","Artista", "Atleta", "Medico", "Ayudante de Laboratorio",
-     "Barman", "Bibliotecario", "Bombero", "Boxeador/Luchador","Buzo", "Camillero",
-     "Cazador", "Cazador de Recompensas", "Chofer", "Cientifico", "Cirujano Forense", "Clerigo", "Conductor", "Conservador",
-     "Contador", "Corresponsal en el Extranjero", "Detective de Agencia", "Arquitecto","Pintor/Escultor","Escenista",
-     "Diletante", "Diseñador", "Editor", "Entrenador de Animales", "Escritor", "Especialista", "Espia","Musico de Jass",
-     "Estudiante/Interno", "Explorador", "Fanatico", "Farmaceutico","Abogado","Oficial Militar","Aviador","Buzo",
-     "Forastero", "Fotografo", "Funcionario Electo", "Funerario", "Granjero","Buscador de Tesoro","Patron de Yate",
-     "Guardian de Zoo", "Ingeniero", "Interprete", "Investigador Academico","Piloto de Carreras","Diacono", "Vendedor",
-     "Investigador Privado", "Jugador","Juez","Lider de una Secta","Lider religioso","Ministro Protestante", "Soldado",
-     "Jurista", "Leñador", "Libero", "Loquero", "Marinero", "Mayordomo", "Mecanico", "Minero", "Misionero", "Montañero", "Musico",
-     "Ocultista", "Oficinista", "Parapsicologo", "Peon", "Perista", "Profesor de Universidad", "Prospector", "Psicologo/Psicoanalista",
-     "Agente del oeste", "Agente Uniformado", "Inspecto de Policia", "Psiquiatra", "Reportero", "Soldado",
-     "Reportero Geografico", "Secretaria", "Sindicalista", "Taxista", "Tendero", "Tratante de Antiguedades", "Vagabundo",
-     "Vaquero","Sacristan","Portero","Sastre","Gerente","Constructor","Director de Obra","Ganchero","Maderero",
-     "leñador","Barbero","Herrero","Stewar","Marinero","Marine","Montacargas","Supervisor","Capataz","Cristalero",
-     "carretero","Camionero","Empleado","transporte ferroviario","Carpintero","Molinero","fabricantes de herramientas",
-     "Maquinistas","criadores de ganado","trabajador de ganado",
-     "Profesor de secundaria", "Trabajador industrial", "Encargado del registro", "Trabajador Gubernamental",
-     "Guarda Expedientes", "mecanógrafo", "jardineros","Productor de Fruta","Trabajador de vivero","Trabajador textil",
-     "Obrero","Repartidor","colportores","Recolectores de Basura","Colportor","Viajeros comerciales",
-     "operarios semicalificados/calificados","Fabrica de comida","Operador Telefonico","Fabrica de Zapatos",
-     "fontanero","Electricista","Peluquero","Fabrica de ropa","Fabrica de muebles","Lavanderia",
-     "Fabrica de Caucho","Fabrica de Escobas","Fabrica de Botones","Taquígrafo","Fabrica de Metal","Cajero",
-     "Fabrica de telas","Distribuidor minorista","Granja lechera"];
+                              "Barman", "Bibliotecario", "Bombero", "Boxeador/Luchador","Buzo", "Camillero",
+                              "Cazador", "Cazador de Recompensas", "Chofer", "Cientifico", "Cirujano Forense", "Clerigo", "Conductor", "Conservador",
+                              "Contador", "Corresponsal en el Extranjero", "Detective de Agencia", "Arquitecto","Pintor/Escultor","Escenista",
+                              "Diletante", "Diseñador", "Editor", "Entrenador de Animales", "Escritor", "Especialista", "Espia","Musico de Jass",
+                              "Estudiante/Interno", "Explorador", "Fanatico", "Farmaceutico","Abogado","Oficial Militar","Aviador","Buzo",
+                              "Forastero", "Fotografo", "Funcionario Electo", "Funerario", "Granjero","Buscador de Tesoro","Patron de Yate",
+                              "Guardian de Zoo", "Ingeniero", "Interprete", "Investigador Academico","Piloto de Carreras","Diacono", "Vendedor",
+                              "Investigador Privado", "Jugador","Juez","Lider de una Secta","Lider religioso","Ministro Protestante", "Soldado",
+                              "Jurista", "Leñador", "Libero", "Loquero", "Marinero", "Mayordomo", "Mecanico", "Minero", "Misionero", "Montañero", "Musico",
+                              "Ocultista", "Oficinista", "Parapsicologo", "Peon", "Perista", "Profesor de Universidad", "Prospector", "Psicologo/Psicoanalista",
+                              "Agente del oeste", "Agente Uniformado", "Inspecto de Policia", "Psiquiatra", "Reportero", "Soldado",
+                              "Reportero Geografico", "Secretaria", "Sindicalista", "Taxista", "Tendero", "Tratante de Antiguedades", "Vagabundo",
+                              "Vaquero","Sacristan","Portero","Sastre","Gerente","Constructor","Director de Obra","Ganchero","Maderero",
+                              "leñador","Barbero","Herrero","Stewar","Marinero","Marine","Montacargas","Supervisor","Capataz","Cristalero",
+                              "carretero","Camionero","Empleado","transporte ferroviario","Carpintero","Molinero","fabricantes de herramientas",
+                              "Maquinistas","criadores de ganado","trabajador de ganado",
+                              "Profesor de secundaria", "Trabajador industrial", "Encargado del registro", "Trabajador Gubernamental",
+                              "Guarda Expedientes", "mecanógrafo", "jardineros","Productor de Fruta","Trabajador de vivero","Trabajador textil",
+                              "Obrero","Repartidor","colportores","Recolectores de Basura","Colportor","Viajeros comerciales",
+                              "operarios semicalificados/calificados","Fabrica de comida","Operador Telefonico","Fabrica de Zapatos",
+                              "fontanero","Electricista","Peluquero","Fabrica de ropa","Fabrica de muebles","Lavanderia",
+                              "Fabrica de Caucho","Fabrica de Escobas","Fabrica de Botones","Taquígrafo","Fabrica de Metal","Cajero",
+                              "Fabrica de telas","Distribuidor minorista","Granja lechera"];
 
 
      const Pueblo = ["Garden Lake", "Tuxbury Pond","Merrimac River", "Merrimac Bay","Indian River", "Parker River Oeste", "Parker River Este", "Bachelder Br", "Mill River", "Mud Creek", "Egypt R", "Plum Island", 
-     "Hower Pond", "Howlett Brook", "Pye Brook", "Danes Pond", "Ipswich River", "Castle Neck", "Essex Bay", "Essex River", "Annisquam River", "Alewife Br", "Nichols Br", "Fish Br", "Muddy Pond", "Pleasan Pond", 
-     "Beck Pond", "Chebacco Lake", "Gravelly", "Round Pound", "Sawmil Br", "Cat Brook", "Miles River", "Wenham Lake", "Bass River", "Porter River", "Crane River", "Water River", "Suntaug Lake", "North River", "Breeds Pond"];
+                    "Hower Pond", "Howlett Brook", "Pye Brook", "Danes Pond", "Ipswich River", "Castle Neck", "Essex Bay", "Essex River", "Annisquam River", "Alewife Br", "Nichols Br", "Fish Br", "Muddy Pond", "Pleasan Pond", 
+                    "Beck Pond", "Chebacco Lake", "Gravelly", "Round Pound", "Sawmil Br", "Cat Brook", "Miles River", "Wenham Lake", "Bass River", "Porter River", "Crane River", "Water River", "Suntaug Lake", "North River", "Breeds Pond"];
 
 
      const Ciudad = ["Falcon Point","Beach Bluff","Martin's beach","Manchester","Annisquam","Essex falls","Essex","Topsfield","Innsmouth","Rowley","Bolton","Gloucoster","Rockport", "Marblehead","Kingsport","Beverly","Arkham","Ipwitch","Danvers","Newbury Port","Amesbury","Salem"];
 
 
      const Estados = ["Alabama","Arizona","Arkansas","California","Carolina del Norte","Carolina del Sur",
-     "Colorado","Connecticut","Dakota del Norte","Dakota del Sur","Delaware","Florida","Georgia","Hawai","Idaho",
-     "Illinois","Indiana","Iowa","Kansas","Kentucky","Luisiana","Maine","Maryland","Michigan","Minenesota",
-     "Missisipi","Misuri","Montana","Nebraska","Nevada","Nueva Jersey","Nueva York","Nuevo Hampshire",
-     "Nuevo Mexico","Ohio","Oklahoma","Oregon","Pensilvania","Rhode Island","Tennessee","Texas","Utah","Vermont",
-     "Virginia","Virginia Occidental","Washington","Wisconsin","Wyoming"];
+                    "Colorado","Connecticut","Dakota del Norte","Dakota del Sur","Delaware","Florida","Georgia","Hawai","Idaho",
+                    "Illinois","Indiana","Iowa","Kansas","Kentucky","Luisiana","Maine","Maryland","Michigan","Minenesota",
+                    "Missisipi","Misuri","Montana","Nebraska","Nevada","Nueva Jersey","Nueva York","Nuevo Hampshire",
+                    "Nuevo Mexico","Ohio","Oklahoma","Oregon","Pensilvania","Rhode Island","Tennessee","Texas","Utah","Vermont",
+                    "Virginia","Virginia Occidental","Washington","Wisconsin","Wyoming"];
 
 
      const Continentes = ["Africa","Europa","America","Asia","Oceania"];
@@ -108,12 +108,12 @@
 
 
      const Europa = ["Francia","Dinamarca","Portugal","San Marino","Andorra","España","Suecia","Liechtenstein",
-     "Paises Bajos","Suiza","Belgica","Grecia","Monaco","Rumania","Serbia","Luxemburgo","Noruega","Bulgaria","Albania",
-     "Finlandia","Polonia"];
+                    "Paises Bajos","Suiza","Belgica","Grecia","Monaco","Rumania","Serbia","Luxemburgo","Noruega","Bulgaria","Albania",
+                    "Finlandia","Polonia"];
 
 
      const America = ["Estados Unidos","Haiti","Colombia","Paraguay","Venezuela","Argentina","Chile","Peru","Brasil","Bolivia",    "Uruguay",
-     "Ecuador","Costa Rica","Honduras","Nicaragua","Guatemala","El Salvador","Republica Dominicana","Cuba"];
+                         "Ecuador","Costa Rica","Honduras","Nicaragua","Guatemala","El Salvador","Republica Dominicana","Cuba"];
 
 
      const Asia = ["Japón","Irán","Omán","Afganistan","Tailandia","Nepal","China","Butan","Mongolia"];
@@ -123,7 +123,8 @@
 
 
      const Inmigrante = ["Alemania","Austria-Hungria","Rusia","Irlanda","Escandinavia","Reino Unido","Italia",
-     "Canada","Europa","Asia","Mexico"];
+                         "Canada","Europa","Asia","Mexico"];
+
 
 
      const cosas_edad = ["Resta 5 puntos entre FUE y TAM, y también de EDU. Tira dos veces para determinar la Suerte y  elige el resultado mayor",
@@ -204,6 +205,27 @@
                     "Remordimiento (deberías haber muerto en su lugar, discutisteis por algo que diji ste, no te ofreciste a ayudarle cuando tuviste la oportunidad, etc.).",
                     "Quieres demostrar que eres mejor que esa persona. ¿Cuál era su defecto? (pereza, a lcoholismo, incapaz de amar, etc.).",
                     "Te hizo daño y ahora buscas venganza. ¿De qué le culpas? (la muerte de un ser querido, tu ruina finan ciera,la ruptura de tu matrimonio, etc.)."];
+
+     const rasgos_fisicos = ["Acné o marcas de acné","Manos grandes","Ojos en forma de almendra",
+                    "Nariz grande","Apariencia andrógina","Cojera","Mal aliento","Pestañas largas",
+                    "Ojeroso","Dedos largos","Calvo o a punto de serlo","Cabello largo","Cuerpo de barril",
+                    "Uñas largas","Ojos redondos como canicas","Muchos lunares","Barba","Voz chillona",
+                    "Marca de nacimiento","Sin Pestaña(s)","Ojos inyectados en sangre","Dedo amputado",
+                    "Piernas arqueadas","Uña perdida","Barba trenzada","Cabello alborotado","Cabello trenzado",
+                    "Mostacho","Bigote trenzado","Voz Musical","Marcado con un sello a fuego","Quijada de carnero",
+                    "Hombros anchos","Noble porte","Nariz rota,Mechón de cabellos blancos","Dientes rotos",
+                    "Dedos de pie de pichón","Piel morena","Panza regordeta","Dientes filosos","Marcas de pústulas",
+                    "Bizco","Orejas desiguales","Cicatriz de quemaduras","Rostro redondo","Cejas pobladas","Tez rojiza",
+                    "Cachetes regordetes","Rostro arrugado","Labios hendidos","Cabello corto","Dientes torcidos",
+                    "Manos de seis dedos","Olor peculiar","Pequeña calva","Cabello enrulado","Pies apestoso",
+                    "Piel oscura,Ojos risueños","Voz profunda","Mirada despectiva","Hoyuelos","Voz suave","Andar peculiar",
+                    "Rostro cuadrado","Articulaciones dobles","Bizco","Cabello teñido","Mirada inflexible","Abundante Cabellera",
+                    "Encorvado","Ojos de diferentes colores","Espalda erguida","Piel blanquecina","Extrañamente normal",
+                    "Pie de fina vellosidad","Acento fuerte","Cabello fino","Rostro severo","Ojos empedernidos","Ojos hundidos",
+                    "Pecas","Fanfarrón","Entrecejo","Tatuaje","Ojos glaseados","Horrible cicatriz","Cabello grasiento",
+                    "Uñas del pie mugrosas","Voz áspera","Verruga","Lunar peludo","Barbilla frágil","Rostro apuesto/bello",
+                    "Dientes blancos","Pómulos altivos","Pico de viuda","Nariz ganchuda","Sonrisa ganadora","Cabello enmarañado",
+                    "Lanuda vellosidad de pie","Orejas grandes","Dientes amarillos"]
 
 
      //Terminan el area de listas
@@ -458,6 +480,10 @@ function Generate_Character(){
                return Math.floor(Math.random() * (100 - 1 + 1) + 1)
           }
 
+          function listaAleatoria(lista){
+               return Math.floor(Math.random() * lista)
+          }
+
 
           function velocidadHumano (DES,TAM,FUE) {
 
@@ -536,6 +562,7 @@ function Generate_Character(){
      const movimientoActual = velocidadHumano(Des,Tam,Fue);
      const movimientoPorEdad = lentoPorViejo(Edad);
      const Movimiento = movimientoActual - movimientoPorEdad;
+     const Rasgos_Fisicos = listaAleatoria(rasgos_fisicos.length)
 
 
 
@@ -563,6 +590,7 @@ function Generate_Character(){
      "<br> Sue : "+Sue+
      "<br><li> Movimiento  : "+Movimiento+
      "<br><li> Edad: "+Edad+"<br>"+"</ul>"+
+     "<br>"+rasgos_fisicos[Rasgos_Fisicos]+"<br>"+
      "<br>"+cosasEdad+"<br>"+
      "<br>"+"Ideologia/Creencia"+
      "<br>"+ideoCreencia+"<br>"+

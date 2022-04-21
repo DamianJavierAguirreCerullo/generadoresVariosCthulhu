@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+
+        *{
+
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        html{
+
+            font-size: 62.5%; /* 10 px */
+
+        }
+
+        label{
+
+            font-size: 4.0rem;
+            padding-bottom: 1%;
+
+        }
+
+        .Todo{
+
+            width: 100vw;
+            height: 100vh;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .Hora, .Fecha{
+
+            width: 28%;
+            height: 28%;
+            font-size: 8.0rem;
+
+        }
+
+        .Lugar{
+
+            font-size: 3.8rem;
+            width: 40%;
+            height: 40%;
+
+        }
+
+        textarea {
+
+        resize: none;
+
+        }
+
+    </style>
+    <title>Fecha y Lugar</title>
+</head>
+<body>
+
+
+        <div class="Todo">
+            <a class="volver" href="/index.html">Volver</a>
+            <label for="Unidos">Lugar y Hora Juntos</label>
+            <textarea name="" wrap="soft" class="Lugar" cols="30" rows="10"></textarea>
+            <input type="time" class="Hora">
+            <input type="date" id="start" name="trip-start" value="1920-08-16" min="1920-08-16" max="1920-12-31" class="Fecha">
+        </div>
+
+</body>
+</html>
