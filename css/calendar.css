@@ -3,7 +3,6 @@
     --light-body: #f3f8fe;
     --light-main: #fdfdfd;
     --light-second: #c3c2c8;
-    --light-hover: #edf0f5;
     --light-text: #151426;
 
     --blue: #0000ff;
@@ -22,12 +21,6 @@
     --color-txt: var(--light-text);
 }
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 .calendar {
     height: max-content;
     width: max-content;
@@ -39,17 +32,13 @@
     /* transform: scale(1.25); */
 }
 
-.light .calendar {
-    box-shadow: var(--shadow);
-}
-
 .calendar-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 25px;
     font-weight: 600;
-    color: var(--color-txt);
+    color: black;
     padding: 10px;
 }
 
@@ -67,7 +56,8 @@
 .calendar-week-day div {
     display: grid;
     place-items: center;
-    color: var(--bg-second);
+    background-image: url(/img/Calendario.jpg);
+    color: black;
 }
 
 .calendar-days {
@@ -131,12 +121,6 @@
     right: 0;
 }
 
-.calendar-days div.curr-date,
-.calendar-days div.curr-date:hover {
-    background-color: var(--blue);
-    color: var(--white);
-    /* border-radius: 50%; */
-}
 
 .calendar-days div.curr-date span {
     display: none;
@@ -146,10 +130,6 @@
     padding: 5px 10px;
     border-radius: 10px;
     cursor: pointer;
-}
-
-.month-picker:hover {
-    background-color: var(--color-hover);
 }
 
 .year-picker {
@@ -167,9 +147,7 @@
     cursor: pointer;
 }
 
-.year-change:hover {
-    background-color: var(--color-hover);
-}
+
 
 .month-list {
     position: absolute;
@@ -177,7 +155,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: var(--bg-main);
+    background-image: url(/img/Calendario.jpg);
     padding: 20px;
     grid-template-columns: repeat(3, auto);
     gap: 5px;
@@ -208,20 +186,49 @@
     color: var(--color-txt);
 }
 
-.month-list > div > div:hover {
-    background-color: var(--color-hover);
-}
 
 .container{
     display: flex;
     justify-content: space-around;
-    align-items: baseline;
+    width: 80vw;
+    height: 80vh;
 }
 
+.time{
+    border-radius: 5px;
+    background: center;
+    width: 250px;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.calendar{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
 
 textarea{
+    margin-top: 20%;
+    height: 500px;
+    width: 600px;
+    border-radius: 10px;
+    font-size: 4.0rem;
+    background-image: url(/img/Calendario.jpg);
     resize: none;
 }
+
+.conteiner_lugar{
+    text-align: center;
+}
+
+.lugar{
+    background-image: url(/img/Calendario.jpg);
+    height: 50px;
+    width: 450px;
+    font-size: 50px;
+}
+
+
 
 
 
