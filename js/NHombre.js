@@ -225,7 +225,11 @@
                     "Pecas","Fanfarrón","Entrecejo","Tatuaje","Ojos glaseados","Horrible cicatriz","Cabello grasiento",
                     "Uñas del pie mugrosas","Voz áspera","Verruga","Lunar peludo","Barbilla frágil","Rostro apuesto/bello",
                     "Dientes blancos","Pómulos altivos","Pico de viuda","Nariz ganchuda","Sonrisa ganadora","Cabello enmarañado",
-                    "Lanuda vellosidad de pie","Orejas grandes","Dientes amarillos"]
+                    "Lanuda vellosidad de pie","Orejas grandes","Dientes amarillos"];
+
+     const tipos_de_pelo = ["Fino","Ondulado","Rizado","Crespo"];
+
+     const color_de_ojos = ["Castaño Claro","Castaño Oscuro","Azul","Verde","Heterocromia","Avellana","Grises","Ambar","Violeta","Rojizo o Rosado"];
 
 
      //Terminan el area de listas

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #personajes{
+            width: 100vw;
+            height: 80vh;
+            display: flex;
+        }
+        #lado1{
+            width: 50vw;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        #lado2{
+            width: 50vw;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .PJ{
+            margin: 0.5rem;
+            text-align: center;
+        }
+
+        .lugar{
+            width: 100vw;
+            height: 20vh;
+            display: flex;
+            text-align: center;
+        }
+        .lado1{
+            width: 50vw;
+            height: 20vh;
+        }
+        .lado2{
+            width: 50vw;
+            height: 20vh;
+        }
+    </style>
+    <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+<body>
+
+    <div class="lugar">
+        <div class="lado1"><h1>Con Lara</h1></div> 
+        <span><a href="/index.html">volver</a></span>
+        <div class="lado2"><h1>Con Harry</h1></div> 
+
+        
+        
+    </div>
+
+    <div class="list-group" id="personajes">
+        
+        <div id="lado1">
+
+            <div class="PJ">
+                <h5>Viriato</h5>
+                <p>POD: PV: DES: CONS:</p>
+            </div>
+            <div class="PJ">
+                <h5>Nicole</h5>
+                <p>POD: PV: DES: CONS:</p>
+            </div>
+            <div class="PJ">
+                <h5>Eldrich</h5>
+                <p>POD: PV: DES: CONS:</p>
+            </div>
+            <div class="PJ">
+                <h5>Mark</h5>
+                <p>POD: PV: DES: CONS:</p>
+            </div>
+
+        </div>
+
+        <div id="lado2">
+            
+            <div class="PJ">
+                <h5> Jerry</h5>
+                <p>POD: PV: DES: CONS:</p>
+            </div>
+            <div class="PJ">
+                <h5>Paralcus</h5>
+                <p>POD: PV: DES: CONS:</p>
+            </div>
+            <div class="PJ">
+                <h5>Silvia</h5>
+                <p>POD: PV: DES: CONS:</p>
+            </div>
+            <div class="PJ">
+                <h5>Luisa</h5>
+                <p>POD: PV: DES: CONS:</p>
+            </div>
+            <div class="PJ">
+                <h5>Zilpa</h5>
+                <p>POD: PV: DES: CONS:</p>
+            </div>
+            <div class="PJ">
+                <h5>Ameli</h5>
+                <p>POD: PV: DES: CONS:</p>
+            </div>
+            <div class="PJ">
+                <h5>Garry</h5>
+                <p>POD: PV: DES: CONS:</p>
+            </div>
+            <div class="PJ">
+                <h5>Bongani</h5>
+                <p>POD: PV: DES: CONS:</p>
+            </div>
+            <div class="PJ">
+                <h5>Miles</h5>
+                <p>POD: PV: DES: CONS:</p>
+            </div>
+            <div class="PJ">
+                <h5>Jeremy</h5>
+                <p>POD: PV: DES: CONS:</p>
+            </div>
+            <div class="PJ">
+                <h5>Magnus</h5>
+                <p>POD: PV: DES: CONS:</p>
+            </div>
+            <div class="PJ">
+                <h5>Nicanor</h5>
+                <p>POD: PV: DES: CONS:</p>
+            </div>
+            <div class="PJ">
+                <h5>Nelly</h5>
+                <p>POD: PV: DES: CONS:</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="/js/Sortable.min.js"></script>
+    <script>
+        const lista1 = document.getElementById("lado1");
+        const lista2 = document.getElementById("lado2");
+
+
+        new Sortable(lista1, {
+        group: 'Grupo',
+        animation: 300
+        });
+
+        new Sortable(lista2, {
+        group: 'Grupo',
+        animation: 300
+        });
+
+    </script>
+</body>
+</html>
